@@ -1,0 +1,375 @@
+{% extends "base.html" %}
+{% import "bootstrap_wtf.html" as wtf %}
+
+{% block content %}
+    <style>
+
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #eaeaea;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #0d6efd;
+            margin-top: 30px;
+            font-size: 1.8em;
+            border-bottom: 1px solid #eaeaea;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            color: #0d6efd;
+            margin-top: 25px;
+            font-size: 1.4em;
+        }
+
+        .authors {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .mission-statement {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #0d6efd;
+        }
+
+        .comparative-analysis {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .analysis-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ddd;
+        }
+
+        .analysis-item:last-child {
+            border-bottom: none;
+        }
+
+        .strengths, .weaknesses {
+            font-weight: bold;
+        }
+
+        .strengths {
+            color: darkgreen;
+        }
+
+        .weaknesses {
+            color: darkred;
+        }
+
+        .wireframe {
+            text-align: center;
+            margin: 20px 0;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .wireframe img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+        }
+
+        .technical-diagram {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .code-block {
+            background-color: #2d2d2d;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 20px 0;
+        }
+
+        .future-features {
+            background-color: #e8f8f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            border-left: 4px solid #0d6efd;
+        }
+
+        .feature-item {
+            margin-bottom: 10px;
+            padding-left: 15px;
+            border-left: 3px solid #0d6efd;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tamagotchi Web App</h1>
+        <div class="authors">By: Connor Kearns and Andrew Swartz</div>
+    </header>
+
+    <section class="mission-statement">
+        <h2>Mission Statement</h2>
+        <p>We aim to build a Tamagotchi web app with features similar to the late 90s handheld Tamagotchi toy.</p>
+
+        <h3>Summary Statement</h3>
+        <p>Our Tamagotchi Web app is a virtual pet that can simply be used for fun or in a learning setting:</p>
+        <ul>
+            <li>People from the late 90s who were nostalgic for the Tamagotchi but cannot access one easily nowadays can use our easily accessible website</li>
+            <li>Parents trying to teach their kids to take care of a pet can use this website to reinforce concepts like consistency and responsibility</li>
+            <li>This more accessible Tamagotchi could also reinvigorate the real life product as it brings a whole new generation</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Planned Features</h2>
+        <ul>
+            <li>Adopting a pet</li>
+            <li>Feeding</li>
+            <li>Games/walk</li>
+            <li>Accessories for the pet such as Toys, collars, hats, leashes</li>
+            <li>Shop to buy accessories and food</li>
+            <li>Stats section to monitor hunger, mood, and health levels</li>
+        </ul>
+    </section>
+
+
+        <h2>Comparative Analysis</h2>
+
+        <div class="analysis-item">
+            <h3><a href="https://arcadespot.com/game/tamagotchi/" target="_blank">1997 GameBoy Tamagotchi</a></h3>
+            <p class="strengths">Strengths - Cool pixel art/animation, a wide variety of features, clean interface. Simple games</p>
+            <p class="weaknesses">Weaknesses - Not very clear what each button does, not clear how each action affects the pet, no accessories.</p>
+            <p><strong>Our Implementation:</strong> Include a little more direction for the player so they know how to treat the pet in order to keep it healthy and make it grow. This could be done through a hints/tips section. Include some of the simple games that this website had like rock paper scissors. Include simple feeding mechanics similar to what is in the screenshot above.</p>
+        </div>
+
+        <div class="analysis-item">
+            <h3><a href="https://www.neopets.com/reg/page4.phtml" target="_blank">Neopets</a></h3>
+            <p class="strengths">Strengths - Has an intuitive UI, allows a lot of customization but keeps it simplistic, allows you to bookmark a favorite pet</p>
+            <p class="weaknesses">Weaknesses - The art looks a little dated and cheap, the stats are not explained very well, the clothing selection is limited</p>
+            <p><strong>Our Implementation:</strong> Include the customizable pet menu that allows you to pick the species and name of your pet, a currency system. Not including the ability to allow you to choose the personality of your pet.</p>
+        </div>
+
+        <div class="analysis-item">
+            <h3><a href="https://www.coolmathgames.com/0-duck-life" target="_blank">Duck Life</a></h3>
+            <p class="strengths">Strengths - Easy to learn, hard to master minigames with responsive controls, intuitive UI, shop with customization and food</p>
+            <p class="weaknesses">Weaknesses - Little customization, little variety of minigames, lots of grinding necessary to progress</p>
+            <p><strong>Our Implementation:</strong> Include shop feature, minigames to level up Tamagotchi. Not including race feature.</p>
+        </div>
+
+
+    <section>
+        <h2>Personas, Use Cases, and Storyboards</h2>
+
+        <h3>Personas</h3>
+
+        <h4>Sam</h4>
+        <p><strong>Age:</strong> 10</p>
+        <p><strong>Scenario:</strong> Sam wants to get a pet and prove to his parents he can take care of it.</p>
+        <p><strong>Likes:</strong> computer games</p>
+
+        <h4>Seamus</h4>
+        <p><strong>Age:</strong> 33</p>
+        <p><strong>Scenario:</strong> Grew up with a Tamagotchi and wants to feel childhood nostalgia. Does not want to be bullied by his coworkers for bringing a toy into work. Looking for a Tamagotchi that is discrete and is accessible from his phone.</p>
+
+        <h3>Storyboard</h3>
+
+        <h4>Seamus</h4>
+        <p>Seamus finds his old tamagotchi and discovers it's broken. Distraught by the loss of his precious tamagotchi he goes to the internet to search for online tamagotchi that can never break.</p>
+        <p>Seamus finds the site by looking up "Online tamagotchi website". Since Seamus is not logged in he is taken into the login page where he clicks the hyperlink to register.</p>
+        <p>Seamus's use case if fulfilled as he is able to have a Tamagotchi again with the convenience of it being on his phone.</p>
+
+        <h4>Sam</h4>
+        <p>Sam has been asking his parents to buy him a pet fish but they keep saying no because they don't think he is responsible enough. Frustrated and lonely, Sam is determined to prove them wrong.</p>
+        <p>On his computer, Sam searches "Online pet game" and finds our website. In our website he sees that he could take care of an online pet and thinks it could be a great way to prove to his parents he is responsible enough.</p>
+    </section>
+
+
+    <section>
+        <h2>Overall Design</h2>
+
+        <h3>Aesthetics</h3>
+        <p>For our website, we aimed to make our aesthetics match the retro Tamagotchi look. We did this through using blocky pixel art for the pet as well as the toys, food, and collars that were available for purchase in the store in-game shop, and a retro Game Boy looking border.</p>
+
+        <h3>User-Friendliness and Functionality</h3>
+        <p>On top of keeping the retro look through our art style, it was important to us to keep our website intuitive and child-friendly. To do this, we kept the interactive buttons big and clearly labeled. Keeping the percent levels visible on the stat bars was also done to insure users could easily keep track of their Tamagotchi's well-being.</p>
+        <ul>
+            <li>Real-time stat tracking with progress bars for health, cleanliness, hunger, and happiness that update instantly on user actions</li>
+            <li>We used expressive pixel art cues to prompt or show interaction without using text:
+                <ul>
+                    <li>Stink lines appearing when the Tamagotchi Cleanliness level gets below 20%</li>
+                    <li>Bubbles appearing when user cleans pet</li>
+                    <li>Tears appearing on the Tamagotchi when the happiness level gets below 20%</li>
+                    <li>Having the pet jump up and down when the user chooses to play with the pet</li>
+                    <li>Food appearing near, and disappearing into pets mouth when pet is fed</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+        <h2>Technical Development</h2>
+
+        <p>This was our Tamagotchi Web App database scheme diagram. In our database we have it so the user can only have one pet at a time and a pet can only belong to one user. This is useful as if the user does not have a pet currently they are redirected to the adoption screen, so there will never be an instance where the user can access the home menu without a pet. The same logic applies to the graveyard and inventory except these are initialized when the user first interacts with them for the first time, being when a pet dies or an item is purchased respectively.</p>
+
+        <img src="../../static/Screenshot 2025-05-19 at 3.33.10 PM.png" height="800" width=auto/>
+
+        <p>Due to our reliance on an object related mapping style database it made dynamic conditional routing very easy. If a user attempts to access any pet required page without being signed in they will be redirected to the sign in page where they can register or sign in. On top of this we all query our database to check if the current user has a pet every time they try to access a page requiring one, if they don't we will reroute them to the adoption page where they will start the adoption process. We have other dynamic reroutes that adapt to your pet's status such as when their health goes below zero we will have a pop up appear informing you they have passed away before rerouting you to the appropriate death screen. We also have API routes that map URL paths to server side logic without directly loading another page, such as our feed, clean and play functions. This allows us to alter data upon user interaction without a full page reload allowing us to cohesively update the page without interruption. All these API functions utilize POST requests to manipulate data allowing the JavaScript on the frontend to directly interact with our backend routing. Here we have a routes diagram that displays the connections between all our pages. Some screens are only accessible if a variable is in a certain state such as a dead pet so I could not map that relation. Other relationships would have over cluttered it such as the bottom 3 buttons connecting to back, graveyard and log out respectively.</p>
+
+        <img src="../../static/Screenshot 2025-05-19 at 3.36.35 PM.png" height="800" width="auto"/>
+
+        <h3>Key Code Implementation</h3>
+
+        <p>One of the most important pieces of code for our project were the dynamic API functions which changed the status of the Tamagotchi in real time. The function would be called upon clicking its respective button in the home menu and alters the user's pet's stats that are being requested through a POST request. It evaluates if that pet's stats are able to be altered right now and updates the database if the request is successful through the dump stats function which operates through JSON.</p>
+
+        <div class="code-block">
+            <pre>
+@app.route('/api/feed', methods=['POST'])
+@login_required
+def api_feed():
+    pet = Pet.query.filter_by(user_id=current_user.id).first()
+    if not pet:
+        return jsonify({"error": "No pet found!"}), 400
+
+    if pet.hunger > 80:
+        return jsonify({
+            **(_dump_stats(current_user)),
+            "message": "Tamagotchi is not hungry!"
+        })
+
+    pet.hunger = max(0, pet.hunger + 20)
+    current_user.currency += 2
+    db.session.commit()
+
+    return jsonify(_dump_stats(current_user))
+</pre>
+        </div>
+
+        <p>As these API routes are intended to alter the look of the front end we have JavaScript which recognizes when these functions are called and alters the front end. This is displayed below when the front end recognizes when the clean function is called, which sends a request to the server which alters the database as well as displays a short clean animation to give user feedback. This also calls the refresh bars function which checks the current pets stats after the database change and reflects that to the front end. The refresh bars function also checks if the stats are below a certain point and alter the user view if they are.</p>
+
+        <div class="code-block">
+            <pre>
+document.getElementById('cleanBtn').addEventListener('click', async () => {
+    const bubbles = document.getElementById('bubbles-effect');
+    const stink = document.getElementById('stink');
+
+    bubbles.style.opacity = '1';
+    stink.style.opacity = '0';
+
+    const data = await callApi('/api/clean');
+
+    setTimeout(() => {
+        bubbles.style.opacity = '0';
+    }, 2000);
+
+    if (data.message) {
+        alert(data.message);
+    }
+    refreshBars(data);
+});</pre>
+        </div>
+
+        <p>For how we update the user's pets over time we used an asynchronous function which calls itself every 1000 ms, sped up for the sake of demonstration, this function calls the API decay function as well as checks the alive status of the pet. The aforementioned decay function is what alters the tamagotchi's stats and does multiple checks of the pet's current status. At the end of the function the updated data is returned to the front end and committed to the database so the user can visually see the Tamagotchi's status changing in real time.</p>
+
+        <div class="code-block">
+            <pre>
+@app.route('/api/decay', methods=['POST'])
+@login_required
+def api_decay():
+    pet = Pet.query.filter_by(user_id=current_user.id).first()
+
+    if not pet:
+        return redirect(url_for('adopt'))
+
+    if pet.health <= 0:
+        kill_pet(pet)
+        db.session.commit()
+        return jsonify({
+            "status": "dead",
+            "message": f"{pet.username} has passed away",
+            "redirect": url_for('death_screen')
+        })
+
+    pet.cleanliness = max(0, pet.cleanliness - 1)
+    pet.happiness = max(0, pet.happiness - 1)
+    pet.hunger = max(0, pet.hunger - 1)
+
+    if pet.cleanliness < 20:
+        pet.health = max(0, pet.health - 1)
+    elif pet.cleanliness > 20:
+        pet.health = min(100, pet.health + 1)
+
+    if pet.happiness < 20:
+        pet.health = max(0, pet.health - 1)
+        if pet.mood != 'Sad':
+            pet.mood = 'Sad'
+    elif pet.happiness > 20:
+        if pet.mood == 'Sad':
+            pet.mood = 'Happy'
+        pet.health = min(100, pet.health + 1)
+
+    if pet.hunger < 20:
+        pet.health = max(0, pet.health - 1)
+    elif pet.hunger > 20:
+        pet.health = min(100, pet.health + 1)
+
+
+    db.session.commit()
+
+    return jsonify(_dump_stats(current_user))</pre>
+        </div>
+
+
+
+        <h2>Future Development Potential</h2>
+
+        <div class="feature-item">
+            <h3>Mini-Game Activities</h3>
+            <p>Addition of simple pixel-style games such as Hide-and-Seek, Memory Match, and Rock-Paper-Scissors. Playing these games would boost specific stats like happiness, and winning would earn bonus coins giving players a fun way to interact in addition to feeding and cleaning it.</p>
+        </div>
+
+        <div class="feature-item">
+            <h3>Social System</h3>
+            <p>Let users add friends, visit each other's pets, send gifts, and host playdates. This feature would bring a community layer to the game and provide more of an incentive to continue returning to the website.</p>
+        </div>
+
+        <div class="feature-item">
+            <h3>Deeper Dive Into Pet Personality</h3>
+            <p>Generate a unique personality at adoption like playful, stubborn, or witty. These personalities could alter the way their stats decay, how they interact in certain games. Pets would also have more of a back story to read about in the adoption process.</p>
+        </div>
+
+        <div class="feature-item">
+            <h3>Expanded Adoption Options</h3>
+            <p>Offer Multiple more species and adoption options. These options could include dog cat, dragon, or a random option. Pets would have randomly generated traits such as what color they are and slight differences in the face. The combination of these things would create thousands of possible pet combinations.</p>
+        </div>
+
+
+    <section>
+        <h2>Hosted Web App</h2>
+        <h3><a href="https://tamagotchi-uorn.onrender.com/">Tamagotchi Web App</a></h3>
+    </section>
+</body>
+</html>
+
+{% endblock %}
