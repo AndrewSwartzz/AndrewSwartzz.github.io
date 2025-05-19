@@ -7,9 +7,6 @@ import sqlalchemy as sa
 from app import app, db
 
 
-@login_manager.user_loader
-def load_user(id):
-    return db.session.get(User, int(id))
 @app.route('/')
 @app.route('/index')
 def home():
