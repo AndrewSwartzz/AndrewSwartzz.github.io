@@ -4,123 +4,180 @@
 {% block content %}
 
 <html lang="en">
-<style>
-    img {
-  border-radius: 15%;
-}
-</style>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        img {
+            border-radius: 15%;
+            max-width: 100%;
+            height: auto;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 0 15px;
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 25px;
+            font-size: 1.5em;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .header-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile-img {
+            width: 120px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .education-item, .experience-item {
+            margin-bottom: 15px;
+        }
+        .date {
+            color: #666;
+            font-style: italic;
+            display: block;
+        }
+        hr {
+            margin: 20px 0;
+            border: 0;
+            height: 1px;
+            background-color: #ddd;
+        }
+        a {
+            color: #3498db;
+            word-break: break-all;
+        }
 
+        /* Responsive layout */
+        @media (min-width: 768px) {
+            .header-content {
+                flex-direction: row;
+                justify-content: center;
+                text-align: left;
+            }
+            .profile-img {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+            .date {
+                display: inline;
+                float: right;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-<h2>
-    <img src="https://i.postimg.cc/Dwyp9rf2/Screenshot-2025-05-17-at-12-37-39-PM.png" width="150" height="auto" style="float:right">
-Andrew Swartz
-</h2>
-        <p>Computer Science/Emerging Media Student │ Easton,PA</p>
-
+        <div class="header-content">
+            <img src="https://i.postimg.cc/Dwyp9rf2/Screenshot-2025-05-17-at-12-37-39-PM.png" alt="Andrew Swartz" class="profile-img">
+            <div>
+                <h1>Andrew Swartz</h1>
+                <p>Computer Science/Emerging Media Student │ Easton, PA</p>
+            </div>
+        </div>
     </header>
 
     <section id="about">
         <h2>About Me</h2>
-        <p>Hello my name is Andrew Swartz! I am a Computer Science student at Ithaca College
-        who is also majoring in Emerging Media. I have hands-on experience in Python and web development including
-            Flask, and HTML/CSS.
-            Developed a Flask-based dynamic virtual pet website and a forum website during academic projects.
-            Seeking an entry-level role to apply my technical skills and grow in a collaborative environment.
-
-        </p>
-        <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <p>Hello my name is Andrew Swartz! I am a Computer Science student at Ithaca College who is also majoring in Emerging Media. I have hands-on experience in Python and web development including Flask, and HTML/CSS. Developed a Flask-based dynamic virtual pet website and a forum website during academic projects. Seeking an entry-level role to apply my technical skills and grow in a collaborative environment.</p>
+        <hr>
     </section>
 
     <section id="education">
         <h2>Education</h2>
-        <p style="text-align:left;">
-    <strong>Ithaca College, School of Humanities and Science,</strong> Ithaca College, NY
-    <span style="float:right;">
-        Anticipated May 2027
-    </span>
+        <div class="education-item">
+            <h3>Ithaca College, School of Humanities and Science</h3>
+            <p>Ithaca College, NY <span class="date">Anticipated May 2027</span></p>
+            <p>Bachelor of Science in Computer Science <span class="date">GPA: 3.5</span></p>
+            <p>Bachelor of Science in Emerging Media</p>
 
-    <br>
-            <span style="text-align:left;">
-    Bachelor of Science in Computer Science
-    <span style="float:right;">
-        GPA: 3.5
-    </span>
-    <br>
+            <p><strong>Relevant Coursework:</strong></p>
+            <ul>
+                <li>Tamagotchi Web App</li>
+                <li>API Based Role Playing Game</li>
+            </ul>
 
-    <span style="text-align:left;">
-    Bachelor of Science in Computer Science
-    </span>
+            <p><strong>Extracurricular Achievements:</strong></p>
+            <ul>
+                <li>Dean's List (Fall 2024)</li>
+                <li>WICB Radio DJ</li>
+            </ul>
+        </div>
 
-    <p><strong>Relevant Coursework:</strong><br> Tamagotchi Web App <br> API Based Role Playing Game</p>
-    <p><strong>Extracurricular Achievements:</strong><br> Dean’s List (Fall 2024) <br> WICB Radio DJ </p>
-
-    <br>
-
-
-
-            <p style="text-align:left;">
-    <strong>Easton Area High School</strong> Easton, PA
-    <span style="float:right;">
-        Graduated May 2023
-    </span>
-
-    <br>
-            <span style="text-align:left;">
-    National Honors Society
-    <span style="float:right;">
-        GPA: 3.7
-    </span>
-    <br>
-
+        <div class="education-item">
+            <h3>Easton Area High School</h3>
+            <p>Easton, PA <span class="date">Graduated May 2023</span></p>
+            <p>National Honors Society <span class="date">GPA: 3.7</span></p>
+        </div>
+        <hr>
     </section>
-<hr style="height:2px;border-width:0;color:gray;background-color:gray">
-
 
     <section id="skills">
         <h2>Skills</h2>
-            <div class="skill-category">
-                <ul>
-                    <li>Experienced in Python and Java</li>
-                    <li>Back End Development Proficiency with Flask and SQL</li>
-                    <li>Front End Development Proficiency with CSS, JavaScript and HTML</li>
-                    <li>Experience with Premiere Pro and Photoshop</li>
-                    <li>Hobbyist of physical computing such as Raspberry Pi</li>
-                    <li>Proficient in Google Sheets</li>
-                </ul>
-            </div>
-<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+        <ul>
+            <li>Experienced in Python and Java</li>
+            <li>Back End Development Proficiency with Flask and SQL</li>
+            <li>Front End Development Proficiency with CSS, JavaScript and HTML</li>
+            <li>Experience with Premiere Pro and Photoshop</li>
+            <li>Hobbyist of physical computing such as Raspberry Pi</li>
+            <li>Proficient in Google Sheets</li>
+        </ul>
+        <hr>
     </section>
 
-        <section id="experience">
+    <section id="experience">
         <h2>Work Experience</h2>
-        <div class="experience">
+        <div class="experience-item">
             <h3>Sub Shop Employee</h3>
-            <p><strong>Wegmans</strong> | November 2023-Present</p>
+            <p><strong>Wegmans</strong> <span class="date">November 2023-Present</span></p>
             <ul>
                 <li>Handled multiple tasks simultaneously while under pressure during rush hours.</li>
                 <li>Worked collaboratively with fellow employees to ensure smooth operations and customer satisfaction during consistent shortages.</li>
                 <li>Learned attention to detail to ensure an approachable, sanitary environment.</li>
             </ul>
+        </div>
+
+        <div class="experience-item">
             <h3>Customer Service Associate</h3>
-            <p><strong>Walgreens</strong> | July 2021-August 2023</p>
+            <p><strong>Walgreens</strong> <span class="date">July 2021-August 2023</span></p>
             <ul>
                 <li>Assisted with technology issues during the holiday rushes.</li>
                 <li>Learned to collaborate with colleagues to manage the store and assist customers.</li>
                 <li>Balanced tasks within specific timeframes such as managing photo orders.</li>
             </ul>
         </div>
+        <hr>
     </section>
-<hr style="height:2px;border-width:0;color:gray;background-color:gray">
 
-<section id="addexperience">
-        <h2><b>Additional Experience</b></h2>
-        <div class="experience">
+    <section id="addexperience">
+        <h2>Additional Experience</h2>
+        <div class="experience-item">
             <h3>President and Founder</h3>
-            <p><a href="https://ithaca.campuslabs.com/engage/organization/ithacagamedevelopment" target="_blank"><strong>Ithaca Game Development Org</strong></a> | March 2025-Present</p>
+            <p><a href="https://ithaca.campuslabs.com/engage/organization/ithacagamedevelopment" target="_blank"><strong>Ithaca Game Development Org</strong></a> <span class="date">March 2025-Present</span></p>
             <ul>
                 <li>Conceptualized and founded club for game developers of any skill level</li>
                 <li>Facilitated group engagement on the writing of our constitution</li>
@@ -128,8 +185,9 @@ Andrew Swartz
                 <li>Educate those interested in game development through presentations and Godot game engine demonstrations</li>
             </ul>
         </div>
+        <hr>
     </section>
-<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: aswartz1@ithaca.edu</p>
