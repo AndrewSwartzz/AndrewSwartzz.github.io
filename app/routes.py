@@ -19,7 +19,6 @@ def bio():
 @app.route('/posts')
 def posts():
     # Query posts from database
-    posts = Post.query.all()  # Assuming you have a Post model
     return render_template('posts.html', title='Posts', posts=posts)
 
 @app.route('/project')
