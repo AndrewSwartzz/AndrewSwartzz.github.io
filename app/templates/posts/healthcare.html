@@ -51,6 +51,20 @@
         .sources h2 {
             color: #2c3e50;
         }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+                .image-caption {
+            font-style: italic;
+            color: #6c757d;
+            margin-top: 8px;
+            font-size: 0.9em;
+        }
+
     </style>
 </head>
 <body>
@@ -69,14 +83,23 @@
         <p>Before we even feed AI the medical data we need to do some preprocessing beforehand to ensure everything goes smoothly. Data preprocessing is the generation of data for use in machine learning models. This step is extremely important in reducing the complexity of learning algorithms. Accounting for missing data is a big aspect of the whole machine learning process as gaps or unusable information can skew data algorithms from functioning accurately and properly.</p>
         <p>To fix missing data we can remove the whole category of that data but in doing that we end up losing lots more data, alternatively you can make an estimation by using mean, median or mode of the rest of the data. Arranging the data is also essential to making non numerical data usable, if you have data such as country converting that to a number allows this data to be understood by machine learning. Scaling is also another important step to be considered as scaling down data into shorter ranges allows for greater efficiency in the code. Reduction helps clean up your data and only keeps the data that is necessary for the algorithm you are creating.</p>
 
+        <img src="../../static/Screenshot 2025-05-23 at 1.32.41 PM.png" height=auto width="500"/>
+        <div class="image-caption">Figure 1: Data structured for use in a decision tree</div>
+
         <h2>Decision Trees in Machine Learning</h2>
         <p>Now that we have usable data we can use that data within a machine learning algorithm. There are many machine learning methods but one of the more approachable ones I will be explaining is the decision tree. A decision tree is basically a flow chart that makes decisions based on data.</p>
         <p>The first step of this decision tree is determining the threshold of the flowchart. A threshold is determined and all the data is run through that threshold and the algorithm determines if that piece of data is worthy of being passed further down the flowchart. A gini is also determined at each step of the flowchart which is essentially the quality of the split and is always numbered between 0 and .5, 0 would mean all data had the same result and .5 would be the data was split perfectly in half.</p>
         <p>A number of samples is also registered and keeps a count of how many pieces of data is currently left in the flowchart, this will slowly shrink as more data fail the thresholds. Finally a value is determined which is the number of data pieces that fall into certain categories that should not affect overall decisions but are important to hold onto such as Male, Female and Other. Decision trees don't give you the same results every time as the tree determines the optimal threshold for your current data so results with the same data may often vary.</p>
 
+        <img src="../../static/img_ml_decision_tree (1).png" height="636" width="376"/>
+        <div class="image-caption">Figure 2: Decision tree model for a comedy show</div>
+
         <h2>Random Forests</h2>
         <p>Decision trees are used on their own but to ensure optimal foresight multiple can be employed and compared in a system called a Random Forest. First a collection of data is collected and processed to be utilized similar to what we did for the decision trees. Instead of keeping all the categories of values together though they are all split into their own decision trees and determines which values pass their decision tree.</p>
         <p>Next all the results of the separate decision trees are compared to each other to determine the final prediction of all the combined decision trees. Random Forests are the natural progression as they help bolster the accuracy of predictions due to multiple results of decision trees helping lower bias in their results.</p>
+
+        <img src="../../static/random_forest_algorithm (1).jpg" height="460" width="700"/>
+        <div class="image-caption">Figure 3: How multiple decision trees form a random forest model</div>
 
         <h2>Addressing Bias in Algorithms</h2>
         <p>Bias among other issues are something to consider in creating these algorithms. Bias occurs when utilizing a large data set as the machine begins to learn mostly from the majority of the population so ensuring your data samples are diverse can help ensure the algorithm does not favor a certain population.</p>
@@ -167,7 +190,6 @@
 }
 
 .case-study {
-    background-color: #e8f4f8;
     padding: 15px;
     border-left: 4px solid #0d6efd;
     margin: 25px 0;
