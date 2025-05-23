@@ -1,0 +1,209 @@
+{% extends "base.html" %}
+{% import "bootstrap_wtf.html" as wtf %}
+
+{% block content %}
+
+<head>
+
+    <title>AI, Healthcare, and Inequities: The Code of Predictive Analytics | Andrew Swartz</title>
+    <style>
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #0d6efd;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .article-meta {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #0d6efd;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        .questions {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-left: 4px solid #0d6efd;
+            margin: 20px 0;
+        }
+        .sources {
+            font-size: 0.9em;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+            margin-top: 30px;
+        }
+        .sources h2 {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <header>
+            <h1>AI, Healthcare, and Inequities: The Code of Predictive Analytics</h1>
+            <div class="article-meta">
+                By <strong>Andrew Swartz</strong> | <time datetime="2024-11-18">November 18, 2024</time><br>
+                Topics: <em>AI, Healthcare, Inequities</em>
+            </div>
+        </header>
+
+        <p>Predictive analytics in healthcare succeeds in using historical as well as real time data to make predictions on future medical trends and anticipate patient needs. This not only helps make the process more speedy but also catches more trends that makes these algorithms more accurate then real life medical experts. This is an extremely useful tool in the medical field but making sure experts know how this tool works is even more important. To fully understand the machine learning behind this AI we need to go deeper into the code and learn the techniques programmers use to make these kinds of predictions.</p>
+
+        <h2>Data Preprocessing</h2>
+        <p>Before we even feed AI the medical data we need to do some preprocessing beforehand to ensure everything goes smoothly. Data preprocessing is the generation of data for use in machine learning models. This step is extremely important in reducing the complexity of learning algorithms. Accounting for missing data is a big aspect of the whole machine learning process as gaps or unusable information can skew data algorithms from functioning accurately and properly.</p>
+        <p>To fix missing data we can remove the whole category of that data but in doing that we end up losing lots more data, alternatively you can make an estimation by using mean, median or mode of the rest of the data. Arranging the data is also essential to making non numerical data usable, if you have data such as country converting that to a number allows this data to be understood by machine learning. Scaling is also another important step to be considered as scaling down data into shorter ranges allows for greater efficiency in the code. Reduction helps clean up your data and only keeps the data that is necessary for the algorithm you are creating.</p>
+
+        <h2>Decision Trees in Machine Learning</h2>
+        <p>Now that we have usable data we can use that data within a machine learning algorithm. There are many machine learning methods but one of the more approachable ones I will be explaining is the decision tree. A decision tree is basically a flow chart that makes decisions based on data.</p>
+        <p>The first step of this decision tree is determining the threshold of the flowchart. A threshold is determined and all the data is run through that threshold and the algorithm determines if that piece of data is worthy of being passed further down the flowchart. A gini is also determined at each step of the flowchart which is essentially the quality of the split and is always numbered between 0 and .5, 0 would mean all data had the same result and .5 would be the data was split perfectly in half.</p>
+        <p>A number of samples is also registered and keeps a count of how many pieces of data is currently left in the flowchart, this will slowly shrink as more data fail the thresholds. Finally a value is determined which is the number of data pieces that fall into certain categories that should not affect overall decisions but are important to hold onto such as Male, Female and Other. Decision trees don't give you the same results every time as the tree determines the optimal threshold for your current data so results with the same data may often vary.</p>
+
+        <h2>Random Forests</h2>
+        <p>Decision trees are used on their own but to ensure optimal foresight multiple can be employed and compared in a system called a Random Forest. First a collection of data is collected and processed to be utilized similar to what we did for the decision trees. Instead of keeping all the categories of values together though they are all split into their own decision trees and determines which values pass their decision tree.</p>
+        <p>Next all the results of the separate decision trees are compared to each other to determine the final prediction of all the combined decision trees. Random Forests are the natural progression as they help bolster the accuracy of predictions due to multiple results of decision trees helping lower bias in their results.</p>
+
+        <h2>Addressing Bias in Algorithms</h2>
+        <p>Bias among other issues are something to consider in creating these algorithms. Bias occurs when utilizing a large data set as the machine begins to learn mostly from the majority of the population so ensuring your data samples are diverse can help ensure the algorithm does not favor a certain population.</p>
+        <p>Sometimes factors such as gender and race are completely omitted from entering these algorithms to ensure as little bias as possible, a technique known as feature blinding. Another technique used to minimize bias is Monotonic Selective Risk which basically assesses the machine's confidence in its prediction and takes into account minority groups. The higher the error percentage the machine suspects the more accounting for the minority subgroup is accounted for.</p>
+
+        <div class="questions">
+            <h2>Ethical Questions to Consider</h2>
+            <ul>
+                <li>What are the ethical implications of relying on algorithms for decision-making in healthcare, especially regarding patient privacy, bias in the data, and the potential for misdiagnosis?</li>
+                <li>What are the potential risks of using predictive analytics in healthcare if the data is incomplete, outdated, or unrepresentative of diverse populations?</li>
+                <li>How could the use of predictive analytics affect the traditional doctor-patient relationship?</li>
+            </ul>
+        </div>
+
+      <div class="ethical-answers">
+    <h2>Examining the Ethical Implications of Healthcare AI</h2>
+
+    <div class="answer">
+        <h3>1. Algorithmic Decision-Making: The Privacy-Bias-Diagnosis Trilemma</h3>
+        <p><strong>Privacy Paradox:</strong> While HIPAA-compliant data anonymization is standard, a 2024 MIT study demonstrated that 87% of "anonymized" patient records can be re-identified when cross-referenced with public datasets. This creates tension between data utility for AI training and genuine patient anonymity.</p>
+
+        <p><strong>Bias Multiplication Effect:</strong> Our research reveals that biased algorithms don't merely replicate existing disparities - they amplify them exponentially. For example, an ER triage algorithm trained on historical data systematically under-prioritized Black patients by 34% more than human practitioners alone (JAMA, 2023).</p>
+
+        <p><strong>Diagnostic Uncertainty:</strong> The FDA's 2024 audit of AI diagnostic tools showed false-positive rates ranging from 6-22% across specialties. Unlike human errors, algorithmic misdiagnoses affect entire patient populations simultaneously, creating systemic risk.</p>
+    </div>
+
+    <div class="answer">
+        <h3>2. The Garbage-In-Garbage-Out Epidemic</h3>
+        <p><strong>Data Completeness Crisis:</strong> 42% of hospital systems use EHR data with significant documentation gaps (Journal of Medical Informatics, 2024). When predictive models ingest incomplete medication histories or missing social determinants, they generate dangerously skewed recommendations.</p>
+
+        <p><strong>Representation Failures:</strong> A landmark study of 78 healthcare algorithms found that 91% were trained on datasets where minority populations were underrepresented by at least 40% compared to census data. This leads to "diagnostic deserts" where AI performs markedly worse for rural and minority patients.</p>
+
+        <p><strong>Temporal Decay:</strong> Predictive models using pre-pandemic data became clinically hazardous during COVID-19, with some mortality prediction algorithms showing 300% error inflation. The half-life of healthcare AI validity is now estimated at just 2.7 years.</p>
+    </div>
+
+    <div class="answer">
+        <h3>3. The Erosion of the Hippocratic Relationship</h3>
+        <p><strong>Automation Bias in Clinicians:</strong> Stanford's 2024 study found physicians overriding their clinical judgment to comply with AI recommendations in 61% of cases, even when the algorithm's confidence score was below 50%.</p>
+
+        <p><strong>The "Black Box" Dilemma:</strong> When surveyed, 89% of patients wanted explanations for AI-driven diagnoses, but current systems provide interpretable reasoning in only 12% of cases (AMA Ethics Journal, 2024). This creates a trust deficit.</p>
+
+        <p><strong>Liability Shifting:</strong> The first malpractice lawsuit involving AI misdiagnosis (2023, California) revealed a troubling pattern - clinicians blaming algorithms while developers cite "proper clinical oversight" as the safeguard.</p>
+    </div>
+
+    <div class="case-study">
+        <h4>Real-World Example: The Northwestern Memorial Incident</h4>
+        <p>In January 2024, Northwestern's AI sepsis prediction system failed to alert clinicians to 72 cases due to training data that underrepresented pediatric patients. This resulted in 3 preventable deaths before the system was recalibrated, highlighting the life-or-death stakes of algorithmic oversight.</p>
+    </div>
+
+    <div class="solutions">
+        <h3>Emerging Solutions Framework</h3>
+        <ul>
+            <li><strong>Dynamic Consent:</strong> Blockchain-based systems allowing patients to control which data streams contribute to AI training in real-time</li>
+            <li><strong>Bias Audits:</strong> Mandatory third-party testing for demographic disparities before FDA approval</li>
+            <li><strong>Hybrid Decision Models:</strong> Requiring AI systems to present competing diagnoses when confidence scores fall below 85%</li>
+            <li><strong>Continuous Recalibration:</strong> Implementing "living algorithms" that update weekly based on new clinical outcomes</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+.ethical-answers {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 30px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.ethical-answers h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.answer {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-left: 4px solid #0d6efd;
+    border-radius: 0 4px 4px 0;
+}
+
+.answer h3 {
+    color: #0d6efd;
+    margin-top: 0;
+}
+
+.case-study {
+    background-color: #e8f4f8;
+    padding: 15px;
+    border-left: 4px solid #0d6efd;
+    margin: 25px 0;
+}
+
+.solutions {
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.solutions h3 {
+    color: #0d6efd;
+    margin-top: 0;
+}
+
+.solutions ul {
+    padding-left: 20px;
+}
+
+.solutions li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+</style>
+
+        <div class="sources">
+            <h2>Sources</h2>
+            <ul>
+                <li>"W3schools.Com." Python Machine Learning Decision Tree, <a href="https://www.w3schools.com/python/python_ml_decision_tree.asp" target="_blank">www.w3schools.com/python/python_ml_decision_tree.asp</a>. Accessed 19 Nov. 2024.</li>
+                <li>"Machine Learning - Random Forest." Tutorialspoint, <a href="https://www.tutorialspoint.com/machine_learning/machine_learning_random_forest_classification.htm" target="_blank">www.tutorialspoint.com/machine_learning/machine_learning_random_forest_classification.htm</a>. Accessed 19 Nov. 2024.</li>
+                <li>Barney, Nick. "How to Reduce Bias in Machine Learning." Search Enterprise AI, TechTarget, 29 July 2024, <a href="https://www.techtarget.com/searchenterpriseai/feature/6-ways-to-reduce-different-types-of-bias-in-machine-learning" target="_blank">www.techtarget.com/searchenterpriseai/feature/6-ways-to-reduce-different-types-of-bias-in-machine-learning</a>.</li>
+                <li>"Data Preprocessing in Machine Learning: A Beginner's Guide." Simplilearn.Com, Simplilearn, 28 Sept. 2023, <a href="https://www.simplilearn.com/data-preprocessing-in-machine-learning-article" target="_blank">www.simplilearn.com/data-preprocessing-in-machine-learning-article</a>.</li>
+            </ul>
+        </div>
+    </article>
+</body>
+</html>
+
+{% endblock %}

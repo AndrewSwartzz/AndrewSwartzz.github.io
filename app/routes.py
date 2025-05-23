@@ -18,12 +18,15 @@ def bio():
 
 @app.route('/posts')
 def posts():
-    # Query posts from database
     return render_template('posts.html', title='Posts', posts=posts)
+
+@app.route('/post')
+def post():
+    return render_template('posts/healthcare.html', title='Posts', posts=posts)
 
 @app.route('/project')
 def project():
-    return render_template('posts/tamagotchi.html', title='Project')
+    return render_template('projects/tamagotchi.html', title='Project')
 
 @app.route('/projects')
 def projects():

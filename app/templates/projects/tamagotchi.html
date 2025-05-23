@@ -233,11 +233,11 @@
 
         <p>This was our Tamagotchi Web App database scheme diagram. In our database we have it so the user can only have one pet at a time and a pet can only belong to one user. This is useful as if the user does not have a pet currently they are redirected to the adoption screen, so there will never be an instance where the user can access the home menu without a pet. The same logic applies to the graveyard and inventory except these are initialized when the user first interacts with them for the first time, being when a pet dies or an item is purchased respectively.</p>
 
-        <img src="../../static/Screenshot 2025-05-19 at 3.33.10 PM.png" height="800" width=auto/>
+        <img src="../../static/Screenshot%202025-05-19%20at%203.33.10%E2%80%AFPM.png" height="800" width=auto/>
 
         <p>Due to our reliance on an object related mapping style database it made dynamic conditional routing very easy. If a user attempts to access any pet required page without being signed in they will be redirected to the sign in page where they can register or sign in. On top of this we all query our database to check if the current user has a pet every time they try to access a page requiring one, if they don't we will reroute them to the adoption page where they will start the adoption process. We have other dynamic reroutes that adapt to your pet's status such as when their health goes below zero we will have a pop up appear informing you they have passed away before rerouting you to the appropriate death screen. We also have API routes that map URL paths to server side logic without directly loading another page, such as our feed, clean and play functions. This allows us to alter data upon user interaction without a full page reload allowing us to cohesively update the page without interruption. All these API functions utilize POST requests to manipulate data allowing the JavaScript on the frontend to directly interact with our backend routing. Here we have a routes diagram that displays the connections between all our pages. Some screens are only accessible if a variable is in a certain state such as a dead pet so I could not map that relation. Other relationships would have over cluttered it such as the bottom 3 buttons connecting to back, graveyard and log out respectively.</p>
 
-        <img src="../../static/Screenshot 2025-05-19 at 3.36.35 PM.png" height="800" width="auto"/>
+        <img src="../../static/Screenshot%202025-05-19%20at%203.36.35%E2%80%AFPM.png" height="800" width="auto"/>
 
         <h3>Key Code Implementation</h3>
 
