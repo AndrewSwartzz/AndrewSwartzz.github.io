@@ -24,6 +24,10 @@ def posts():
 def post():
     return render_template('posts/healthcare.html', title='Posts', posts=posts)
 
+@app.route('/data')
+def data():
+    return render_template('posts/datasecurity.html', title='Posts', posts=posts)
+
 @app.route('/project')
 def project():
     return render_template('projects/tamagotchi.html', title='Project')
