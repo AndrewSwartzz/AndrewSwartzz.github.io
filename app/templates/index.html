@@ -2,6 +2,60 @@
 {% import "bootstrap_wtf.html" as wtf %}
 
 {% block content %}
-    <h1>Hello, Welcome to Andrew Swartz's Web Page!</h1>
-    <div><p>Rising Computer Science and Emerging Media Major</p></div>
+    <div class="container">
+        <!-- Welcome Section -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <h1>Hello, Welcome to Andrew Swartz's Web Page!</h1>
+                <p class="lead">Rising Computer Science and Emerging Media Major</p>
+            </div>
+        </div>
+
+        <!-- Latest Activities Section -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h3>Recent Activity</h3>
+                    </div>
+                    <div class="card-body">
+                        <!-- Predictive Analytics Post -->
+                        <div class="media mb-3">
+                            <img src="https://images.icon-icons.com/2269/PNG/512/health_education_article_computer_knowledge_blog_coronavirus_icon_140616.png"
+                                 class="mr-3"
+                                 height="50"
+                                 alt="Predictive Analytics">
+                            <div class="media-body">
+                                <h5 class="mt-0">
+                                    <a href="{{ url_for('post') }}">Code of Predictive Analytics</a>
+                                </h5>
+                                <p>Exploring data analysis and prediction techniques</p>
+                            </div>
+                        </div>
+
+                        <!-- Privacy and Data Security Post -->
+                       <div class="media">
+                            <img src="{{ url_for('static', filename='duck.png') }}"
+                                 class="mr-3"
+                                 height="50"
+                                 alt="Tamagotchi">
+                            <div class="media-body">
+                                <h5 class="mt-0">
+                                    <a href="{{ url_for('project') }}">Tamagotchi Web App</a>
+                                </h5>
+                                <p>A virtual pet simulation web application</p>
+                                <span class="badge badge-info">JavaScript</span>
+                                <span class="badge badge-info">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
 {% endblock %}
