@@ -1,200 +1,465 @@
 {% extends "base.html" %}
-{% import "bootstrap_wtf.html" as wtf %}
-
 {% block content %}
 
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        img {
-            border-radius: 15%;
-            max-width: 100%;
-            height: auto;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            padding: 0 15px;
-            max-width: 100%;
-            overflow-x: hidden;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-            position: relative;
-        }
-        h2 {
-            color: #2c3e50;
-            margin-top: 25px;
-            font-size: 1.5em;
-        }
-        h3 {
-            font-size: 1.2em;
-            margin-bottom: 5px;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 5px;
-        }
-        .header-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .profile-img {
-            width: 120px;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        .education-item, .experience-item {
-            margin-bottom: 15px;
-        }
-        .date {
-            color: #666;
-            font-style: italic;
-            display: block;
-        }
-        hr {
-            margin: 20px 0;
-            border: 0;
-            height: 1px;
-            background-color: #ddd;
-        }
-        a {
-            color: #3498db;
-            word-break: break-all;
-        }
+<style>
+body{
+    background:linear-gradient(180deg,#eef5ff,#ffffff);
+}
+.hero{
+    background:linear-gradient(135deg,#0d6efd,#5aa9ff);
+    color:white;
+    border-radius:24px;
+    padding:60px 40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+.hero img{
+    width:220px;
+    border-radius:50%;
+    border:6px solid rgba(255,255,255,.8);
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+}
+.section-card{
+    background:white;
+    border:none;
+    border-radius:18px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.25s;
+}
+.section-card:hover{
+    transform:translateY(-4px);
+}
+.stat-card{
+    background:white;
+    border-radius:18px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+.project-card{
+    border:none;
+    border-radius:18px;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+    transition:.25s;
+}
+.project-card:hover{
+    transform:translateY(-5px);
+}
+.badge{
+    margin:4px;
+    padding:.55rem .8rem;
+    font-size:.9rem;
+}
+.timeline-item{
+    border-left:4px solid #0d6efd;
+    padding-left:20px;
+    margin-bottom:25px;
+}
+</style>
 
-        /* Responsive layout */
-        @media (min-width: 768px) {
-            .header-content {
-                flex-direction: row;
-                justify-content: center;
-                text-align: left;
-            }
-            .profile-img {
-                margin-right: 20px;
-                margin-bottom: 0;
-            }
-            .date {
-                display: inline;
-                float: right;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <img src="https://i.postimg.cc/Dwyp9rf2/Screenshot-2025-05-17-at-12-37-39-PM.png" alt="Andrew Swartz" class="profile-img">
-            <div>
-                <h1>Andrew Swartz</h1>
-                <p>Computer Science/Emerging Media Student │ Easton, PA</p>
-            </div>
-        </div>
-    </header>
+<div class="container py-5">
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello my name is Andrew Swartz! I am a Computer Science student at Ithaca College who is also majoring in Emerging Media. I have hands-on experience in Python and web development including Flask, and HTML/CSS. Developed a Flask-based dynamic virtual pet website and a forum website during academic projects. Seeking an entry-level role to apply my technical skills and grow in a collaborative environment.</p>
-        <hr>
-    </section>
+<div class="hero mb-5">
+<div class="row align-items-center">
+<div class="col-lg-8">
+<h1 class="display-4 fw-bold">Andrew Swartz</h1>
+<p class="lead">
+Computer Science & Emerging Media Student • Software Developer • Game Developer • Video Editor
+</p>
 
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-item">
-            <h3>Ithaca College, School of Humanities and Science</h3>
-            <p>Ithaca College, NY <span class="date">Anticipated May 2027</span></p>
-            <p>Bachelor of Science in Computer Science <span class="date">GPA: 3.5</span></p>
-            <p>Bachelor of Science in Emerging Media</p>
+<p>
+Passionate about building web applications, games in Godot, creative media,
+and interactive experiences.
+</p>
 
-            <p><strong>Relevant Coursework:</strong></p>
-            <ul>
-                <li>Tamagotchi Web App</li>
-                <li>API Based Role Playing Game</li>
+<a href="{{ url_for('projects') }}" class="btn btn-light btn-lg me-2">
+View Projects
+</a>
+
+<a href="#contact" class="btn btn-outline-light btn-lg">
+Contact Me
+</a>
+
+</div>
+
+<div class="col-lg-4 text-center mt-4 mt-lg-0">
+<img src="https://i.postimg.cc/Dwyp9rf2/Screenshot-2025-05-17-at-12-37-39-PM.png">
+</div>
+
+</div>
+</div>
+
+<div class="row g-4 mb-5">
+<div class="col-md-3"><div class="stat-card"><h2>15+</h2><p>Projects</p></div></div>
+<div class="col-md-3"><div class="stat-card"><h2>4+</h2><p>Years Coding</p></div></div>
+<div class="col-md-3"><div class="stat-card"><h2>3.5</h2><p>College GPA</p></div></div>
+<div class="col-md-3"><div class="stat-card"><h2>2</h2><p>Majors</p></div></div>
+</div>
+
+<div class="cardx">
+    <h2>About Me</h2>
+
+    <p>
+        Hello! I'm Andrew Swartz, a Computer Science and Emerging Media student
+        at Ithaca College pursuing dual bachelor's degrees. I enjoy combining
+        software engineering with creativity to build websites, games, and
+        interactive digital experiences.
+    </p>
+
+    <p>
+        My interests include full-stack web development, game development with
+        Godot, video production, and emerging technologies. Whether I'm building
+        a Flask application, editing educational videos, or designing a new game,
+        I enjoy solving problems and creating engaging experiences for users.
+    </p>
+
+    <p>
+        Outside of academics, I founded the Ithaca Game Development Organization,
+        work in consumer technology at Best Buy, and am currently developing
+        BirdDex—a birding companion inspired by collectible adventure games.
+    </p>
+</div>
+
+<div class="section-card">
+<h2>Featured Projects</h2>
+<div class="row">
+
+<div class="col-md-4 mb-4">
+<div class="card project-card h-100">
+<div class="card-body">
+<div class="timeline">
+
+<h4>BirdDex</h4>
+
+<p>
+BirdDex is an educational birding application currently in development using
+the Godot Engine. Inspired by games like Pokémon, it encourages users to
+identify birds, complete collections, participate in seasonal events, take
+photographs, and learn about local wildlife through interactive gameplay.
+</p>
+
+<p>
+The project combines my interests in software development, game design,
+ornithology, and education into a single platform designed to make birding
+accessible and engaging for all ages.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 mb-4">
+
+    <div class="card project-card h-100">
+
+        <div class="card-body">
+
+            <h4>
+                <a href="https://nasafastpitch.com"
+                   target="_blank"
+                   class="text-decoration-none">
+                    NASA Fastpitch Tournament Platform
+                </a>
+            </h4>
+
+            <p>
+                Developed and continue to maintain the official website for NASA
+                Fastpitch, providing a centralized platform for tournament
+                registrations, schedules, brackets, merchandise, and organization
+                updates.
+            </p>
+
+            <p>
+                Working directly with the client, I designed new features and
+                improved the website's functionality to better support tournament
+                operations while ensuring a responsive experience across desktop
+                and mobile devices.
+            </p>
+
+            <ul class="small">
+                <li>Designed and implemented custom tournament management features.</li>
+                <li>Built registration, bracket, and merchandise tools.</li>
+                <li>Developed responsive pages using HTML, CSS, JavaScript, and Flask.</li>
+                <li>Collaborated directly with stakeholders to deliver new features.</li>
             </ul>
 
-            <p><strong>Extracurricular Achievements:</strong></p>
-            <ul>
-                <li>Dean's List (Fall 2024)</li>
-                <li>WICB Radio DJ</li>
+        </div>
+
+        <div class="card-footer bg-transparent border-0">
+
+            <a href="https://nasafastpitch.com"
+               target="_blank"
+               class="btn btn-primary w-100">
+                Visit Website →
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="col-md-4 mb-4">
+
+    <div class="card project-card h-100">
+
+        <div class="card-body">
+
+            <h4>Dad Life Property Solutions</h4>
+
+            <p>
+                Designed and developed a professional real estate website for Dad
+                Life Property Solutions, helping homeowners quickly learn about
+                the home-selling process and request cash offers through an
+                intuitive online experience.
+            </p>
+
+            <p>
+                The website features a responsive design, property estimate
+                calculator, lead generation forms, project showcases, and custom
+                pages tailored to the client's business. Working directly with
+                the client strengthened my experience in full-stack web
+                development, UI/UX design, SEO, and translating business
+                requirements into a polished production website.
+            </p>
+
+            <ul class="small">
+                <li>Developed a responsive website using Flask, HTML, CSS, JavaScript, and SQL.</li>
+                <li>Built a home estimate calculator and lead capture system.</li>
+                <li>Designed modern UI components and optimized the site for mobile devices.</li>
+                <li>Collaborated directly with the client to implement new features and improve the user experience.</li>
             </ul>
+
         </div>
 
-        <div class="education-item">
-            <h3>Easton Area High School</h3>
-            <p>Easton, PA <span class="date">Graduated May 2023</span></p>
-            <p>National Honors Society <span class="date">GPA: 3.7</span></p>
-        </div>
-        <hr>
-    </section>
+    </div>
 
-    <section id="skills">
-        <h2>Skills</h2>
+</div>
+
+</div>
+</div>
+
+<div class="section-card">
+<h2>Education</h2>
+
+<div class="timeline-item">
+<h4>Ithaca College</h4>
+<p>B.S. Computer Science<br>
+B.S. Emerging Media<br>
+Expected Graduation: May 2027<br>
+Study Abroad: Prague, Czechia</p>
+</div>
+
+<div class="timeline-item">
+<h4>Easton Area High School</h4>
+<p>National Honor Society</p>
+</div>
+
+</div>
+
+<div class="section-card">
+<h2>Experience</h2>
+
+<div class="section-card">
+
+    <h2>Experience</h2>
+
+    <div class="timeline-item">
+
+        <h4>Sales Associate</h4>
+        <p><strong>Best Buy</strong> | June 2025 – Present</p>
+
+        <p>
+            Working in consumer electronics has strengthened both my technical
+            knowledge and customer service skills. Every day I help customers
+            choose computers, smartphones, home entertainment systems,
+            networking equipment, and smart home devices while troubleshooting
+            technical issues and explaining complex products in an approachable
+            way.
+        </p>
+
+        <p>
+            This role has improved my communication, problem-solving, teamwork,
+            and ability to adapt in a fast-paced retail environment while
+            keeping me current with emerging consumer technologies.
+        </p>
+
         <ul>
-            <li>Experienced in Python and Java</li>
-            <li>Back End Development Proficiency with Flask and SQL</li>
-            <li>Front End Development Proficiency with CSS, JavaScript and HTML</li>
-            <li>Experience with Premiere Pro and Photoshop</li>
-            <li>Hobbyist of physical computing such as Raspberry Pi</li>
-            <li>Proficient in Google Sheets</li>
+            <li>Provided customer support and technology recommendations across a wide range of electronics.</li>
+            <li>Maintained inventory accuracy and merchandising standards during high-volume sales periods.</li>
+            <li>Collaborated with team members to deliver excellent customer experiences.</li>
+            <li>Developed expertise in consumer technology, device compatibility, and home networking solutions.</li>
         </ul>
-        <hr>
-    </section>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <div class="experience-item">
-            <h3>Sub Shop Employee</h3>
-            <p><strong>Wegmans</strong> <span class="date">November 2023-Present</span></p>
-            <ul>
-                <li>Handled multiple tasks simultaneously while under pressure during rush hours.</li>
-                <li>Worked collaboratively with fellow employees to ensure smooth operations and customer satisfaction during consistent shortages.</li>
-                <li>Learned attention to detail to ensure an approachable, sanitary environment.</li>
-            </ul>
-        </div>
+    </div>
 
-        <div class="experience-item">
-            <h3>Customer Service Associate</h3>
-            <p><strong>Walgreens</strong> <span class="date">July 2021-August 2023</span></p>
-            <ul>
-                <li>Assisted with technology issues during the holiday rushes.</li>
-                <li>Learned to collaborate with colleagues to manage the store and assist customers.</li>
-                <li>Balanced tasks within specific timeframes such as managing photo orders.</li>
-            </ul>
-        </div>
-        <hr>
-    </section>
+    <div class="timeline-item">
 
-    <section id="addexperience">
-        <h2>Additional Experience</h2>
-        <div class="experience-item">
-            <h3>President and Founder</h3>
-            <p><a href="https://ithaca.campuslabs.com/engage/organization/ithacagamedevelopment" target="_blank"><strong>Ithaca Game Development Org</strong></a> <span class="date">March 2025-Present</span></p>
-            <ul>
-                <li>Conceptualized and founded club for game developers of any skill level</li>
-                <li>Facilitated group engagement on the writing of our constitution</li>
-                <li>Run the clubs social platforms such as Instagram, Discord and Engage</li>
-                <li>Educate those interested in game development through presentations and Godot game engine demonstrations</li>
-            </ul>
-        </div>
-        <hr>
-    </section>
+        <h4>Vineyard Crew Member</h4>
+        <p><strong>Alba Vineyard</strong> | Summer 2026</p>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: aswartz1@ithaca.edu</p>
-        <p>Phone: (484) 541-9520</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/andrew-swartz-5b871b256/">linkedin.com/in/andrew-swartz</a></p>
-    </section>
-</body>
-</html>
+        <p>
+            Worked as part of the vineyard operations team assisting with daily
+            vineyard maintenance, grape cultivation, and seasonal agricultural
+            tasks. The position required physical endurance, attention to
+            detail, and close collaboration with coworkers to ensure the health
+            and quality of the vineyard.
+        </p>
+
+        <p>
+            This experience strengthened my work ethic, teamwork, and ability
+            to perform efficiently in demanding outdoor environments.
+        </p>
+
+        <ul>
+            <li>Maintained grape vines through pruning, training, and seasonal care.</li>
+            <li>Assisted with harvesting and general vineyard operations.</li>
+            <li>Worked efficiently outdoors in varying weather conditions.</li>
+            <li>Collaborated with crew members to complete daily production goals.</li>
+        </ul>
+
+    </div>
+
+    <div class="timeline-item">
+
+        <h4>President & Founder</h4>
+        <p><strong>Ithaca Game Development Organization</strong> | March 2025 – Present</p>
+
+        <p>
+            I founded the Ithaca Game Development Organization to create an
+            inclusive community where students of all experience levels can
+            learn game development, collaborate on projects, and share ideas.
+            As president, I organize workshops, recruit members, and teach the
+            Godot Engine through presentations and live demonstrations.
+        </p>
+
+        <p>
+            Leading the organization has strengthened my leadership, public
+            speaking, project management, and mentoring abilities while helping
+            build a growing community of student developers.
+        </p>
+
+        <ul>
+            <li>Founded and organized the university's game development club.</li>
+            <li>Delivered workshops introducing students to Godot and game programming.</li>
+            <li>Managed Discord, Instagram, and Engage platforms to grow membership.</li>
+            <li>Coordinated meetings, collaborative projects, and educational events.</li>
+        </ul>
+
+    </div>
+
+    <div class="timeline-item">
+
+        <h4>Content Creator & Video Editor</h4>
+        <p><strong>Self-Directed / Freelance</strong></p>
+
+        <p>
+            Produce promotional and educational video content for businesses
+            using Adobe Premiere Pro and Photoshop. Projects include real
+            estate marketing, educational content, and social media campaigns.
+        </p>
+
+        <p>
+            Collaborating directly with clients has strengthened my skills in
+            storytelling, visual communication, branding, and project
+            management.
+        </p>
+
+        <ul>
+            <li>Edited professional promotional and educational videos.</li>
+            <li>Applied visual storytelling techniques to improve audience retention.</li>
+            <li>Collaborated with clients from concept through final delivery.</li>
+        </ul>
+
+    </div>
+
+    <div class="timeline-item">
+
+        <h4>Website Developer</h4>
+        <p><strong>andrewswartz.org</strong></p>
+
+        <p>
+            Designed and developed my personal portfolio website to showcase
+            software projects, web applications, game development work, and
+            media production while continually expanding my full-stack
+            development skills.
+        </p>
+
+        <p>
+            The website serves as a central hub for my professional portfolio
+            and demonstrates responsive design, Flask development, and modern
+            UI/UX practices.
+        </p>
+
+        <ul>
+            <li>Designed and developed a responsive portfolio website.</li>
+            <li>Implemented interactive front-end components using HTML, CSS, and JavaScript.</li>
+            <li>Integrated Flask backend functionality and project showcases.</li>
+        </ul>
+
+    </div>
+
+    <div class="timeline-item">
+
+        <h4>Volunteer</h4>
+        <p><strong>FURR</strong> | September 2019 – August 2023</p>
+
+        <p>
+            Volunteered with FURR supporting animal welfare efforts while also
+            fostering an elderly rescue cat for two years. Responsibilities
+            included assisting with daily shelter operations and providing
+            long-term care in a home environment.
+        </p>
+
+        <ul>
+            <li>Fostered an elderly rescue cat for two years.</li>
+            <li>Assisted with feeding, cleaning, and daily shelter operations.</li>
+            <li>Supported the organization's mission through long-term volunteer service.</li>
+        </ul>
+
+    </div>
+
+</div>
+
+
+
+<div class="section-card">
+
+<h2>Skills</h2>
+
+<span class="badge bg-primary">Python</span>
+<span class="badge bg-primary">Java</span>
+<span class="badge bg-success">Flask</span>
+<span class="badge bg-success">SQL</span>
+<span class="badge bg-info text-dark">HTML</span>
+<span class="badge bg-info text-dark">CSS</span>
+<span class="badge bg-warning text-dark">JavaScript</span>
+<span class="badge bg-dark">Godot</span>
+<span class="badge bg-secondary">Adobe Premiere Pro</span>
+<span class="badge bg-secondary">Photoshop</span>
+
+</div>
+
+<div class="section-card" id="contact">
+
+<h2>Contact</h2>
+
+<div class="row">
+<div class="col-md-6">
+<p><strong>Email</strong><br>aswartz1@ithaca.edu</p>
+<p><strong>Phone</strong><br>(484) 541-9520</p>
+</div>
+
+<div class="col-md-6">
+<p><strong>Website</strong><br>andrewswartz.org</p>
+<p><strong>LinkedIn</strong><br>linkedin.com/in/andrew-swartz-5b871b256</p>
+</div>
+</div>
+
+</div>
+
+</div>
 
 {% endblock %}

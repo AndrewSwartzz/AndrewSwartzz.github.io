@@ -36,6 +36,10 @@ def project():
 def projects():
     return render_template('projects.html', title='Projects')
 
+@app.route('/mandible')
+def mandible():
+    return render_template('projects/mandible.html', title='Mandible')
+
 
 
 

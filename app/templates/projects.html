@@ -3,12 +3,191 @@
 
 {% block content %}
 
-<a href="{{ url_for('project') }}" style="display: inline-block; vertical-align: middle;">
-    <h3 style="display: inline;">Tamagotchi Web App</h3>
-</a>
-<img src="static/duck.png"
-     height="50"
-     width="auto"
-     style="display: inline-block; vertical-align: middle; margin-left: 10px;"/>
+<style>
+.hero{
+    background:linear-gradient(135deg,#0d6efd,#5aa9ff);
+    color:white;
+    border-radius:24px;
+    padding:60px 40px;
+    margin-bottom:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.project-card{
+    border:none;
+    border-radius:20px;
+    overflow:hidden;
+    transition:.25s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.project-card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.badge{
+    margin-right:5px;
+    margin-bottom:8px;
+}
+
+.section-title{
+    font-weight:700;
+    margin-bottom:25px;
+}
+</style>
+
+<div class="container py-5">
+
+    <div class="hero text-center">
+        <h1 class="display-4 fw-bold">Projects</h1>
+        <p class="lead mb-0">
+            A collection of software, web development, game development,
+            and creative media projects I've built.
+        </p>
+    </div>
+
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="row g-4">
+
+        <!-- Tamagotchi -->
+        <div class="col-lg-4">
+            <div class="card project-card h-100">
+
+                <img src="{{ url_for('static', filename='duck.png') }}" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h3>Tamagotchi Web App</h3>
+
+                    <p>
+                        A browser-based virtual pet inspired by classic
+                        Tamagotchi devices. Users care for a digital pet by
+                        feeding, playing, cleaning, and monitoring its health.
+                    </p>
+
+                    <span class="badge bg-primary">Flask</span>
+                    <span class="badge bg-success">Python</span>
+                    <span class="badge bg-warning text-dark">JavaScript</span>
+                    <span class="badge bg-info text-dark">SQL</span>
+
+                </div>
+
+                <div class="card-footer bg-transparent border-0">
+                    <a href="{{ url_for('project') }}" class="btn btn-primary w-100">
+                        View Project
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BirdDex -->
+        <div class="col-lg-4">
+            <div class="card project-card h-100">
+
+                <div class="card-body">
+
+                    <h3>BirdDex</h3>
+
+                    <p>
+                        An educational birding game currently in development
+                        using the Godot Engine. Players identify birds,
+                        complete collections, photograph wildlife, and
+                        participate in seasonal events.
+                    </p>
+
+                    <span class="badge bg-dark">Godot</span>
+                    <span class="badge bg-primary">Game Dev</span>
+                    <span class="badge bg-success">GDScript</span>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- NASA -->
+        <div class="col-lg-4">
+            <div class="card project-card h-100">
+
+                <img src="{{ url_for('static', filename='nasa.png') }}" class="card-img-top">
+
+                <div class="card-body">
+
+                    <h3>NASA Fastpitch</h3>
+
+                    <p>
+                        Developed and maintain the official tournament website
+                        featuring registrations, brackets, schedules,
+                        merchandise, and responsive design.
+                    </p>
+
+                    <span class="badge bg-primary">Flask</span>
+                    <span class="badge bg-info text-dark">HTML/CSS</span>
+                    <span class="badge bg-warning text-dark">JavaScript</span>
+
+                </div>
+
+                <div class="card-footer bg-transparent border-0">
+                    <a href="https://nasafastpitch.com"
+                       target="_blank"
+                       class="btn btn-outline-primary w-100">
+                        Visit Website
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mandible -->
+
+<div class="col-lg-4">
+    <div class="card project-card h-100">
+
+        <img src="{{ url_for('static', filename='mandible.png') }}"
+             class="card-img-top"
+             alt="Mandible Game Screenshot">
+
+        <div class="card-body">
+
+            <h3>Mandible</h3>
+
+            <p>
+                A psychological exploration game developed in the Godot Engine
+                that visualizes anxiety, paranoia, identity, and resilience
+                through surreal environments, unsettling creatures, and
+                interactive storytelling. Hand-drawn artwork, custom dialogue
+                systems, and atmospheric level design create an immersive world
+                where players experience emotional themes through exploration.
+            </p>
+
+            <span class="badge bg-dark">Godot</span>
+            <span class="badge bg-success">GDScript</span>
+            <span class="badge bg-secondary">Pixel Art</span>
+            <span class="badge bg-danger">Narrative Design</span>
+
+        </div>
+
+        <div class="card-footer bg-transparent border-0">
+
+            <a href="{{ url_for('mandible') }}"
+               class="btn btn-primary w-100">
+                Read Development Article
+            </a>
+
+        </div>
+
+    </div>
+</div>
+
+    </div>
+
+</div>
 
 {% endblock %}

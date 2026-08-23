@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+{% import "bootstrap_wtf.html" as wtf %}
+
+{% block content %}
+
+<head>
+    <title>Mandible: Using Game Design to Visualize Anxiety | Andrew Swartz</title>
+
+    <style>
+
+        header{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        h1{
+            color:#2c3e50;
+            border-bottom:2px solid #0d6efd;
+            padding-bottom:10px;
+            margin-bottom:10px;
+        }
+
+        .article-meta{
+            color:#7f8c8d;
+            font-style:italic;
+            margin-bottom:20px;
+            text-align:center;
+        }
+
+        h2{
+            color:#0d6efd;
+            margin-top:30px;
+            margin-bottom:10px;
+        }
+
+        p{
+            margin-bottom:15px;
+            line-height:1.8;
+        }
+
+        img{
+            display:block;
+            margin-left:auto;
+            margin-right:auto;
+            max-width:50%;
+            border-radius:10px;
+        }
+
+        .image-caption{
+            font-style:italic;
+            color:#6c757d;
+            margin-top:8px;
+            margin-bottom:25px;
+            text-align:center;
+        }
+
+        .highlight{
+            background:#eef6ff;
+            border-left:4px solid #0d6efd;
+            padding:18px;
+            margin:25px 0;
+            border-radius:4px;
+        }
+
+        .sources{
+            font-size:.95em;
+            border-top:1px solid #ddd;
+            padding-top:20px;
+            margin-top:40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<article>
+
+<header>
+
+<h1>Mandible: Using Game Design to Visualize Anxiety</h1>
+
+<div class="article-meta">
+    By <strong>Andrew Swartz</strong> |
+    <time datetime="2026-07-21">July 21, 2026</time><br>
+    Topics:
+    <em>Godot, Game Development, Interactive Storytelling, Digital Art</em>
+</div>
+
+</header>
+
+<!-- ===================================================== -->
+<!-- INTRODUCTION                                          -->
+<!-- Paste your opening paragraphs below                   -->
+<!-- ===================================================== -->
+
+<p>
+
+Games often ask players to overcome external obstacles, but Mandible was created to explore something more internal. Rather than centering the experience around combat or traditional progression, the project examines anxiety, paranoia, identity, and resilience by transforming emotional states into explorable environments. Every creature, conversation, and location was designed to represent a different manifestation of fear, allowing players to experience emotions that are often difficult to describe through words alone.
+
+The world of Mandible takes place almost entirely underground. Narrow tunnels, abandoned rooms, and surreal landscapes create an atmosphere that constantly shifts between curiosity and unease. Strange creatures inhabit these spaces, each embodying a different aspect of anxiety. Some obsess over maintaining control in situations that cannot be controlled, while others warn the player about invisible dangers that may not exist at all. Many characters contradict one another, making it impossible to determine who can be trusted. This uncertainty mirrors the experience of anxiety itself, where imagined threats can become just as convincing as real ones.
+
+Unlike many horror games, Mandible is not intended to frighten players through jump scares or violence. Instead, the discomfort comes from psychological tension. Dialogue is fragmented and intentionally ambiguous, encouraging players to interpret conversations rather than simply reading exposition. Characters often repeat themselves, speak in incomplete thoughts, or fixate on irrational fears. These interactions reflect anxious thinking patterns that many people experience internally but rarely see represented in interactive media.
+
+</p>
+
+<img src="{{ url_for('static', filename='mandible_intro.png') }}">
+<div class="image-caption">
+Figure 1: Early concept art and environmental sketches.
+</div>
+
+<h2>Developing the World in Godot</h2>
+
+<p>
+
+The project was built entirely in the Godot Engine using GDScript. One of my goals was to create a modular system that allowed environments, dialogue, enemies, and scripted events to be expanded throughout development without rewriting large portions of the project.
+
+The game uses a top-down perspective with tile-based environments. I constructed levels using Godot's TileMap system, allowing me to rapidly prototype rooms while maintaining a cohesive visual style. Collision layers separate walls, interactable objects, and characters, making it easy to design complex environments while keeping player movement intuitive. Areas are connected through scene transitions, enabling the world to grow organically as new locations are added.
+
+Characters are built as independent scenes, each containing animated sprites, collision shapes, dialogue triggers, and custom scripts. By making every NPC self-contained, I can reuse behaviors while giving each character unique dialogue and interactions. This modular approach makes adding new creatures or modifying existing ones significantly easier as development continues.
+
+Dialogue is managed through a custom interaction system written in GDScript. When the player enters an interaction area, scripted conversations are loaded dynamically, allowing different characters to react depending on where the player is in the story. Because much of Mandible relies on atmosphere instead of combat, dialogue became one of the primary gameplay mechanics rather than simply delivering exposition.
+
+</p>
+
+<img src="{{ url_for('static', filename='mandible_godot.png') }}">
+<div class="image-caption">
+Figure 2: Godot editor showing TileMaps and scene hierarchy.
+</div>
+
+<div class="highlight">
+
+<h3>Technical Highlights</h3>
+
+<ul>
+<li>Godot 4</li>
+<li>GDScript</li>
+<li>TileMaps</li>
+<li>Scene Tree Architecture</li>
+<li>AnimatedSprite2D</li>
+<li>Signals</li>
+<li>Custom Dialogue System</li>
+<li>Top-down Level Design</li>
+</ul>
+
+</div>
+
+<h2>From Sketchbook to Game Assets</h2>
+
+<p>
+
+One of the defining aspects of Mandible is its visual style. Rather than beginning with digital art, I started by drawing every major creature and environmental object traditionally on paper. The rough, uneven lines created an imperfect quality that felt appropriate for a world centered around instability and uncertainty.
+
+After scanning these drawings, I imported them into digital art software where they were cleaned, colored, and adapted into pixel-art inspired sprites. Each asset was then exported into Godot as individual textures or sprite sheets. Animation was handled using Godot's AnimatedSprite2D node, allowing characters to idle, walk, and react while preserving the hand-drawn appearance.
+
+Maintaining this imperfect aesthetic was an intentional artistic decision. Rather than polishing every line, I wanted players to feel as though the world itself was unstable. The slightly uneven proportions, muted color palette, and grotesque creature designs reinforce the emotional themes without relying on realistic graphics.
+
+</p>
+
+<img src="{{ url_for('static', filename='mandible_assets.png') }}">
+<div class="image-caption">
+Figure 3: Hand-drawn artwork converted into in-game sprites.
+</div>
+
+<h2>Creating Atmosphere Through Systems</h2>
+
+<p>
+
+Atmosphere in Mandible comes from the interaction of multiple systems rather than visual design alone. Dynamic lighting creates isolated pockets of visibility while large portions of the underground remain hidden in darkness. Carefully placed sound effects and ambient audio provide constant feedback about nearby spaces, encouraging players to imagine what exists beyond the edge of the screen.
+
+Movement is intentionally deliberate. Rather than emphasizing speed, the controls encourage players to slow down, observe their surroundings, and carefully consider interactions with unfamiliar characters. Environmental storytelling replaces lengthy exposition, allowing abandoned objects, architecture, and visual details to communicate much of the world's history without explicit explanation.
+
+</p>
+
+<img src="{{ url_for('static', filename='mandible_gameplay.gif') }}">
+<div class="image-caption">
+Figure 4: Gameplay emphasizing exploration and atmosphere.
+</div>
+
+<h2>Themes of Isolation and Resilience</h2>
+
+<p>
+
+Although Mandible focuses heavily on fear and uncertainty, it ultimately argues that resilience comes through connection. As the player progresses deeper into the underground, encounters become increasingly unsettling, yet the final conversations shift away from paranoia and toward hope. The ending suggests that while uncertainty can never be completely eliminated, confronting it alongside others makes it significantly less overwhelming.
+
+This message reflects my own experiences with anxiety. Many anxious thoughts gain strength through isolation, convincing people that they must face their fears alone. Mandible attempts to challenge that idea by presenting empathy, trust, and community as genuine forms of strength rather than simple optimism.
+
+</p>
+
+<h2>Reflection</h2>
+
+<p>
+
+Developing Mandible allowed me to combine multiple disciplines that I am passionate about: programming, game design, digital illustration, storytelling, psychology, and interactive media. Building the project in Godot gave me practical experience designing reusable game systems, scripting gameplay mechanics in GDScript, creating modular scene architecture, and integrating custom artwork into a cohesive interactive experience.
+
+More importantly, the project demonstrated how games can communicate complex emotional experiences in ways that traditional media often cannot. Rather than telling players what anxiety feels like, Mandible invites them to navigate a world shaped by uncertainty, encouraging reflection through exploration and interaction. For me, the project represents both a technical achievement and an artistic exploration of how interactive media can foster empathy through play.
+
+</p>
+
+<div class="sources">
+
+<h2>Acknowledgements</h2>
+
+<p>
+Mandible is an original independent game developed by Andrew Swartz using the
+Godot Engine. All artwork, programming, narrative design, and game systems were
+created as part of an ongoing exploration of interactive storytelling and
+psychological game design.
+</p>
+
+</div>
+
+</article>
+
+</body>
+
+{% endblock %}

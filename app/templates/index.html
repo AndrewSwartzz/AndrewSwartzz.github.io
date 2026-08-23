@@ -2,60 +2,185 @@
 {% import "bootstrap_wtf.html" as wtf %}
 
 {% block content %}
-    <div class="container">
-        <!-- Welcome Section -->
-        <div class="row mb-4">
-            <div class="col-12">
-                <h1>Hello, Welcome to Andrew Swartz's Web Page!</h1>
-                <p class="lead">Rising Computer Science and Emerging Media Major</p>
+
+<div class="container py-5">
+
+    <style>
+        body{
+    background:#f7f9fc;
+}
+
+.card{
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 12px 30px rgba(0,0,0,.15);
+}
+
+.btn{
+    border-radius:30px;
+}
+
+.badge{
+    font-size:.85rem;
+}
+
+.display-4{
+    font-weight:700;
+}
+    </style>
+
+
+
+    <!-- Hero -->
+    <div class="row align-items-center mb-5">
+
+        <!-- Text -->
+        <div class="col-lg-8">
+            <h1 class="display-4 font-weight-bold">
+                Hi, I'm Andrew Swartz
+            </h1>
+
+            <p class="lead text-muted mt-3">
+                Computer Science & Emerging Media Student
+                building software, games, websites, and creative digital experiences.
+            </p>
+
+            <div class="mt-4">
+                <a href="{{ url_for('projects') }}" class="btn btn-primary btn-lg mr-2">
+                    View Projects
+                </a>
+
+                <a href="{{ url_for('bio') }}" class="btn btn-outline-secondary btn-lg">
+                    About Me
+                </a>
+            </div>
+
+            <div class="mt-4">
+                <span class="badge badge-primary p-2 mr-2">Python</span>
+                <span class="badge badge-info p-2 mr-2">Flask</span>
+                <span class="badge badge-success p-2 mr-2">JavaScript</span>
+                <span class="badge badge-dark p-2 mr-2">Godot</span>
+                <span class="badge badge-warning p-2">SQL</span>
             </div>
         </div>
 
-        <!-- Latest Activities Section -->
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card mb-4">
-                    <div class="card-header bg-primary text-white">
-                        <h3>Recent Activity</h3>
-                    </div>
-                    <div class="card-body">
-                        <!-- Predictive Analytics Post -->
-                        <div class="media mb-3">
-                            <img src="https://images.icon-icons.com/2269/PNG/512/health_education_article_computer_knowledge_blog_coronavirus_icon_140616.png"
-                                 class="mr-3"
-                                 height="50"
-                                 alt="Predictive Analytics">
-                            <div class="media-body">
-                                <h5 class="mt-0">
-                                    <a href="{{ url_for('post') }}">Code of Predictive Analytics</a>
-                                </h5>
-                                <p>Exploring data analysis and prediction techniques</p>
-                            </div>
-                        </div>
+        <!-- Logo Space -->
+        <div class="col-lg-4 text-center mt-5 mt-lg-0">
 
-                        <!-- Privacy and Data Security Post -->
-                       <div class="media">
-                            <img src="{{ url_for('static', filename='duck.png') }}"
-                                 class="mr-3"
-                                 height="50"
-                                 alt="Tamagotchi">
-                            <div class="media-body">
-                                <h5 class="mt-0">
-                                    <a href="{{ url_for('project') }}">Tamagotchi Web App</a>
-                                </h5>
-                                <p>A virtual pet simulation web application</p>
-                                <span class="badge badge-info">JavaScript</span>
-                                <span class="badge badge-info">HTML/CSS</span>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Replace with your logo -->
+            <img src="{{ url_for('static', filename='logo.gif') }}"
+                 style="max-width:250px;"
+                 alt="Andrew Swartz Logo">
+
+        </div>
+
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="row mb-5">
+
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm border-0 text-center h-100">
+                <div class="card-body">
+                    <h2 class="text-primary">10+</h2>
+                    <p class="mb-0">Programming Projects</p>
                 </div>
             </div>
+        </div>
 
-
-
-
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm border-0 text-center h-100">
+                <div class="card-body">
+                    <h2 class="text-success">Web</h2>
+                    <p class="mb-0">Full Stack Development</p>
+                </div>
             </div>
         </div>
+
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm border-0 text-center h-100">
+                <div class="card-body">
+                    <h2 class="text-info">Game Dev</h2>
+                    <p class="mb-0">Godot Engine</p>
+                </div>
+            </div>
+        </div>
+
     </div>
+
+    <!-- Recent Activity -->
+    <div class="card shadow border-0">
+
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">Recent Activity</h3>
+        </div>
+
+        <div class="card-body">
+
+            <div class="media mb-4">
+
+                <img
+                    src="https://images.icon-icons.com/2269/PNG/512/health_education_article_computer_knowledge_blog_coronavirus_icon_140616.png"
+                    class="mr-4 rounded"
+                    width="70"
+                    alt="Predictive Analytics">
+
+                <div class="media-body">
+
+                    <h5>
+                        <a href="{{ url_for('post') }}">
+                            Code of Predictive Analytics
+                        </a>
+                    </h5>
+
+                    <p class="text-muted">
+                        Exploring predictive analytics, data science,
+                        and machine learning concepts.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="media">
+
+                <img
+                    src="{{ url_for('static', filename='duck.png') }}"
+                    class="mr-4 rounded"
+                    width="70"
+                    alt="Tamagotchi">
+
+                <div class="media-body">
+
+                    <h5>
+                        <a href="{{ url_for('project') }}">
+                            Tamagotchi Web App
+                        </a>
+                    </h5>
+
+                    <p class="text-muted">
+                        A virtual pet simulation built using Flask,
+                        JavaScript, HTML, CSS, and SQL.
+                    </p>
+
+                    <span class="badge badge-primary">Flask</span>
+                    <span class="badge badge-success">JavaScript</span>
+                    <span class="badge badge-info">HTML/CSS</span>
+                    <span class="badge badge-dark">SQL</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 {% endblock %}
