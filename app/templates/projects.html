@@ -108,31 +108,7 @@
         </div>
 
 
-        <!-- BirdDex -->
-        <div class="col-lg-4">
 
-            <div class="card project-card h-100">
-
-                <div class="card-body">
-
-                    <h3>BirdDex</h3>
-
-                    <p>
-                        An educational birding game currently in development
-                        using the Godot Engine. Players identify birds,
-                        complete collections, photograph wildlife, and
-                        participate in seasonal events.
-                    </p>
-
-                    <span class="badge bg-dark">Godot</span>
-                    <span class="badge bg-primary">Game Dev</span>
-                    <span class="badge bg-success">GDScript</span>
-
-                </div>
-
-            </div>
-
-        </div>
 
 
         <!-- NASA Fastpitch -->
@@ -175,6 +151,41 @@
 
         </div>
 
+<!-- Potoo -->
+<div class="col-lg-4">
+    <div class="card shadow-sm border-0 h-100">
+
+        <img
+            src="{{ url_for('static', filename='potoo.png') }}"
+            class="card-img-top"
+            alt="Potoo"
+            style="height: 220px; object-fit: cover;">
+
+        <div class="card-body d-flex flex-column">
+
+            <h3 class="card-title">Potoo</h3>
+
+            <p class="card-text text-muted">
+                A mobile nature companion combining species identification,
+                local discovery, and game-like progression to encourage
+                people to explore the natural world.
+            </p>
+
+            <div class="mb-3">
+                <span class="badge badge-primary">React Native</span>
+                <span class="badge badge-dark">Godot</span>
+                <span class="badge badge-success">GDScript</span>
+                <span class="badge badge-info">Mobile</span>
+            </div>
+
+            <a href="{{ url_for('potoo') }}"
+               class="btn btn-primary mt-auto">
+                View Project →
+            </a>
+
+        </div>
+    </div>
+</div>
 
         <!-- Mandible -->
         <div class="col-lg-4">

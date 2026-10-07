@@ -237,6 +237,9 @@ def calculate_accuracy(game_state):
     ) * 100
 
 
+@app.route('/potoo')
+def potoo():
+   return render_template('projects/potoo.html', title='Potoo') 
 
 
 

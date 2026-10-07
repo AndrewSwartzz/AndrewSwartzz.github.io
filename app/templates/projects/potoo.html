@@ -1,0 +1,192 @@
+{% extends "base.html" %}
+{% import "bootstrap_wtf.html" as wtf %}
+
+{% block content %}
+<style>
+body{background:#f7f9fc}
+.potoo-hero{background:linear-gradient(135deg,#6d1749,#a23b72);color:white;border-radius:24px;padding:55px 40px;margin-bottom:35px}
+.potoo-hero h1{font-size:4rem;font-weight:700}
+.potoo-icon{max-width:200px;width:100%;border-radius:30px;box-shadow:0 15px 35px rgba(0,0,0,.25)}
+.section-card{background:white;border:0;border-radius:20px;padding:32px;margin-bottom:28px;box-shadow:0 8px 25px rgba(0,0,0,.08)}
+.section-card h2{color:#6d1749;font-weight:700;margin-bottom:18px}
+.feature-card{background:#faf4f7;border-radius:16px;padding:24px;height:100%;border-left:5px solid #8f2860}
+.feature-card h3{color:#7d2859;margin-top:0}
+.tech-badge{display:inline-block;padding:8px 13px;margin:4px 3px;border-radius:20px;background:#f0e4eb;color:#6d1749;font-weight:600;font-size:.9rem}
+.flow-step{text-align:center;padding:20px 12px;height:100%}
+.flow-number{width:42px;height:42px;line-height:42px;margin:0 auto 12px;border-radius:50%;background:#6d1749;color:white;font-weight:700}
+.flow-step h4{font-size:1.05rem;color:#6d1749;font-weight:700}
+.potoo-button{border-radius:30px;padding:11px 22px}
+@media(max-width:768px){.potoo-hero{text-align:center;padding:40px 25px}.potoo-hero h1{font-size:2.8rem}.potoo-icon{margin-top:25px;max-width:160px}}
+</style>
+
+<div class="container py-5">
+
+<div class="potoo-hero">
+<div class="row align-items-center">
+<div class="col-lg-8">
+<span class="badge badge-light mb-3">Mobile Nature Companion</span>
+<h1>Potoo</h1>
+<p class="lead">Your window to the wild.</p>
+<p>
+A nature exploration concept combining location-based discovery, species
+identification, and game-like progression while encouraging people to put
+their phones away and pay attention to the world around them.
+</p>
+<div class="mt-4">
+<span class="tech-badge">React Native</span>
+<span class="tech-badge">Godot</span>
+<span class="tech-badge">Mobile Development</span>
+<span class="tech-badge">Nature & Birding</span>
+</div>
+</div>
+<div class="col-lg-4 text-center">
+<img src="{{ url_for('static', filename='potoo.png') }}" class="potoo-icon" alt="Potoo owl icon">
+</div>
+</div>
+</div>
+
+<div class="section-card">
+<h2>Project Overview</h2>
+<p>
+Potoo is a mobile nature companion designed to make outdoor exploration more
+accessible and engaging. It combines location-based exploration, nature
+identification, and game-like progression without making the phone the center
+of the experience.
+</p>
+<p>
+Before going outside, users can learn about species they are likely to
+encounter. While exploring, they are encouraged to put their phones away,
+observe their surroundings, and return afterward to record what they remember
+seeing or hearing.
+</p>
+<p>
+Instead of immediately revealing an identification, Potoo can provide clues
+about appearance, habitat, behavior, season, and calls. Users make their own
+identification before receiving feedback and learning more about the species.
+</p>
+</div>
+
+<div class="row mb-4">
+<div class="col-lg-6 mb-4"><div class="feature-card">
+<h3>Mission</h3>
+<p class="mb-0">Make outdoor exploration more engaging while keeping technology as unobtrusive as possible.</p>
+</div></div>
+<div class="col-lg-6 mb-4"><div class="feature-card">
+<h3>Design Philosophy</h3>
+<p class="mb-0">Technology should support the nature experience rather than replace it.</p>
+</div></div>
+</div>
+
+<div class="section-card">
+<h2>Core Concepts</h2>
+<div class="row">
+<div class="col-md-6 mb-4"><div class="feature-card"><h3>📍 Local Discovery</h3><p>Discover nearby nature hotspots and species relevant to the surrounding area.</p></div></div>
+<div class="col-md-6 mb-4"><div class="feature-card"><h3>🔎 Identify & Collect</h3><p>Identify unfamiliar species, log observations, and build a personal nature encyclopedia.</p></div></div>
+<div class="col-md-6 mb-4"><div class="feature-card"><h3>🍂 Seasonal Events</h3><p>Encourage attention to seasonal changes, migrations, and other real-world activity.</p></div></div>
+<div class="col-md-6 mb-4"><div class="feature-card"><h3>🔬 Research Stations</h3><p>Locations where users can view recent data, test their knowledge, and participate in nature-focused activities.</p></div></div>
+</div>
+</div>
+
+<div class="section-card">
+<h2>Intended User Flow</h2>
+<div class="row">
+{% set steps = [
+("1","Before Exploring","Check which species might be encountered and learn what to look and listen for."),
+("2","While Exploring","Put the phone away and actively look and listen for species."),
+("3","After Finding a Species","Return to Potoo and record what you remember seeing or hearing."),
+("4","Identification","Work through questions and clues before receiving the identification."),
+("5","After Identification","Learn more about the species and add it to the personal encyclopedia."),
+("6","Over Time","Develop naturalist skills and progress through discoveries and research stations.")
+] %}
+{% for n,title,text in steps %}
+<div class="col-md-4"><div class="flow-step">
+<div class="flow-number">{{ n }}</div><h4>{{ title }}</h4><p>{{ text }}</p>
+</div></div>
+{% endfor %}
+</div>
+</div>
+
+<div class="section-card">
+<h2>React Native Direction</h2>
+<p>
+Potoo is especially suited to mobile development because its experience depends
+on location, observation, photography, identification, and interactions that
+happen while users are outside.
+</p>
+<p>
+A React Native implementation provides a path toward an iOS and Android
+interface while connecting the project to mobile-development concepts such as
+components, state, functional programming, stylesheets, and responsive mobile
+UI.
+</p>
+<div>
+<span class="tech-badge">React Native</span><span class="tech-badge">Expo</span>
+<span class="tech-badge">JavaScript</span><span class="tech-badge">Components</span>
+<span class="tech-badge">State</span><span class="tech-badge">Mobile UI</span>
+</div>
+</div>
+
+<div class="section-card">
+<h2>Godot & Game Design Direction</h2>
+<p>
+Potoo also connects naturally to game development. Its collection system,
+progression, identification challenges, research stations, and exploration
+mechanics can be represented as interactive game systems.
+</p>
+<p>
+Godot provides a way to prototype these systems while exploring transferable
+skills including object-oriented programming, modularity, state management,
+event-driven programming, debugging, and software architecture.
+</p>
+<p>
+This makes Potoo an example of how game design techniques can be applied
+outside a conventional game: progression and feedback can encourage learning
+and exploration without turning the outdoor experience into a screen-based game.
+</p>
+<div>
+<span class="tech-badge">Godot</span><span class="tech-badge">GDScript</span>
+<span class="tech-badge">Game Design</span><span class="tech-badge">State Management</span>
+<span class="tech-badge">Event-Driven Systems</span><span class="tech-badge">Prototyping</span>
+</div>
+</div>
+
+<div class="section-card">
+<h2>Audience</h2>
+<div class="row">
+<div class="col-md-6"><ul><li>Beginning naturalists</li><li>Students</li><li>Outdoor enthusiasts</li></ul></div>
+<div class="col-md-6"><ul><li>Experienced naturalists seeking a more interactive way to discover and identify species</li><li>People interested in learning about the natural world through exploration</li></ul></div>
+</div>
+</div>
+
+<div class="section-card">
+<h2>Why Potoo?</h2>
+<p>
+Potoo sits at the intersection of software development, game design, emerging
+media, and natural history. The project uses technology to connect these areas
+rather than treating them as separate disciplines.
+</p>
+<p>
+The challenge is not simply building an identification app. It is designing
+technology that knows when to get out of the way. Potoo's most important
+interaction may ultimately be the moment when the user closes the app, looks
+into the trees, and starts paying attention.
+</p>
+</div>
+
+<div class="section-card">
+<h2>Project Direction</h2>
+<p>
+Potoo is an evolving project concept and prototype direction. Future
+development can explore how the same core experience can be expressed through
+a mobile React Native application and interactive Godot prototypes.
+</p>
+<p>
+The long-term goal is to combine nature information, identification challenges,
+location-based discovery, and game-inspired progression into an experience that
+helps people become better observers of the world around them.
+</p>
+<a href="{{ url_for('projects') }}" class="btn btn-primary potoo-button">← Back to Projects</a>
+</div>
+
+</div>
+{% endblock %}
