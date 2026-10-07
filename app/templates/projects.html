@@ -44,23 +44,38 @@
 
 <div class="container py-5">
 
+    <!-- Hero -->
     <div class="hero text-center">
-        <h1 class="display-4 fw-bold">Projects</h1>
+
+        <h1 class="display-4 fw-bold">
+            Projects
+        </h1>
+
         <p class="lead mb-0">
             A collection of software, web development, game development,
             and creative media projects I've built.
         </p>
+
     </div>
 
-    <h2 class="section-title">Featured Projects</h2>
+
+    <h2 class="section-title">
+        Featured Projects
+    </h2>
+
 
     <div class="row g-4">
 
+
         <!-- Tamagotchi -->
         <div class="col-lg-4">
+
             <div class="card project-card h-100">
 
-                <img src="{{ url_for('static', filename='duck.png') }}" class="card-img-top">
+                <img
+                    src="{{ url_for('static', filename='duck.png') }}"
+                    class="card-img-top"
+                    alt="Tamagotchi Web App">
 
                 <div class="card-body">
 
@@ -80,16 +95,22 @@
                 </div>
 
                 <div class="card-footer bg-transparent border-0">
-                    <a href="{{ url_for('project') }}" class="btn btn-primary w-100">
+
+                    <a href="{{ url_for('project') }}"
+                       class="btn btn-primary w-100">
                         View Project
                     </a>
+
                 </div>
 
             </div>
+
         </div>
+
 
         <!-- BirdDex -->
         <div class="col-lg-4">
+
             <div class="card project-card h-100">
 
                 <div class="card-body">
@@ -110,13 +131,19 @@
                 </div>
 
             </div>
+
         </div>
 
-        <!-- NASA -->
+
+        <!-- NASA Fastpitch -->
         <div class="col-lg-4">
+
             <div class="card project-card h-100">
 
-                <img src="{{ url_for('static', filename='nasa.png') }}" class="card-img-top">
+                <img
+                    src="{{ url_for('static', filename='nasa.png') }}"
+                    class="card-img-top"
+                    alt="NASA Fastpitch Website">
 
                 <div class="card-body">
 
@@ -135,56 +162,193 @@
                 </div>
 
                 <div class="card-footer bg-transparent border-0">
+
                     <a href="https://nasafastpitch.com"
                        target="_blank"
                        class="btn btn-outline-primary w-100">
                         Visit Website
                     </a>
+
                 </div>
 
             </div>
+
         </div>
+
 
         <!-- Mandible -->
+        <div class="col-lg-4">
 
-<div class="col-lg-4">
-    <div class="card project-card h-100">
+            <div class="card project-card h-100">
 
-        <img src="{{ url_for('static', filename='mandible.png') }}"
-             class="card-img-top"
-             alt="Mandible Game Screenshot">
+                <img
+                    src="{{ url_for('static', filename='mandible.png') }}"
+                    class="card-img-top"
+                    alt="Mandible Game Screenshot">
 
-        <div class="card-body">
+                <div class="card-body">
 
-            <h3>Mandible</h3>
+                    <h3>Mandible</h3>
 
-            <p>
-                A psychological exploration game developed in the Godot Engine
-                that visualizes anxiety, paranoia, identity, and resilience
-                through surreal environments, unsettling creatures, and
-                interactive storytelling. Hand-drawn artwork, custom dialogue
-                systems, and atmospheric level design create an immersive world
-                where players experience emotional themes through exploration.
-            </p>
+                    <p>
+                        A psychological exploration game developed in the
+                        Godot Engine that visualizes anxiety, paranoia,
+                        identity, and resilience through surreal environments,
+                        unsettling creatures, and interactive storytelling.
+                        Hand-drawn artwork, custom dialogue systems, and
+                        atmospheric level design create an immersive world
+                        where players experience emotional themes through
+                        exploration.
+                    </p>
 
-            <span class="badge bg-dark">Godot</span>
-            <span class="badge bg-success">GDScript</span>
-            <span class="badge bg-secondary">Pixel Art</span>
-            <span class="badge bg-danger">Narrative Design</span>
+                    <span class="badge bg-dark">Godot</span>
+                    <span class="badge bg-success">GDScript</span>
+                    <span class="badge bg-secondary">Pixel Art</span>
+                    <span class="badge bg-danger">Narrative Design</span>
+
+                </div>
+
+                <div class="card-footer bg-transparent border-0">
+
+                    <a href="{{ url_for('mandible') }}"
+                       class="btn btn-primary w-100">
+                        Read Development Article
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
-        <div class="card-footer bg-transparent border-0">
 
-            <a href="{{ url_for('mandible') }}"
-               class="btn btn-primary w-100">
-                Read Development Article
-            </a>
+        <!-- Independent Study -->
+        <div class="col-lg-4">
+
+            <div class="card project-card h-100">
+
+                <img
+                    src="{{ url_for('static', filename='independent_study.png') }}"
+                    class="card-img-top"
+                    alt="Independent Study Game Development Curriculum">
+
+                <div class="card-body">
+
+                    <h3>
+                        Computer Science Game Development Curriculum
+                    </h3>
+
+                    <p>
+                        An independent study exploring how game development
+                        can be used to teach foundational computer science
+                        concepts through interactive, project-based learning.
+                        The project combines curriculum design, Godot
+                        development, software architecture, debugging,
+                        prototyping, and educational design.
+                    </p>
+
+                    <span class="badge bg-primary">Computer Science</span>
+                    <span class="badge bg-dark">Godot</span>
+                    <span class="badge bg-success">GDScript</span>
+                    <span class="badge bg-info text-dark">Education</span>
+
+                </div>
+
+                <div class="card-footer bg-transparent border-0">
+
+                    <a href="{{ url_for('independent_study') }}"
+                       class="btn btn-primary w-100">
+                        View Independent Study
+                    </a>
+
+                </div>
+
+            </div>
 
         </div>
 
-    </div>
-</div>
+
+        <!-- Dad Life Property Solutions -->
+        <div class="col-lg-4">
+
+            <div class="card project-card h-100">
+
+                <img
+                    src="{{ url_for('static', filename='dad_life.png') }}"
+                    class="card-img-top"
+                    alt="Dad Life Property Solutions">
+
+                <div class="card-body">
+
+                    <h3>Dad Life Property Solutions</h3>
+
+                    <p>
+                        A full-stack real estate website built for a local
+                        Lehigh Valley home-buying company. The project combines
+                        Flask development, responsive UI design, lead
+                        generation, an offer estimator, database
+                        functionality, and digital media content.
+                    </p>
+
+                    <span class="badge bg-primary">Flask</span>
+                    <span class="badge bg-success">Python</span>
+                    <span class="badge bg-info text-dark">Tailwind CSS</span>
+                    <span class="badge bg-secondary">SQLite</span>
+                    <span class="badge bg-warning text-dark">Client Work</span>
+
+                </div>
+
+                <div class="card-footer bg-transparent border-0">
+
+                    <a href="{{ url_for('dad_life') }}"
+                       class="btn btn-primary w-100">
+                        View Project
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Pokémon Learning Game -->
+        <div class="col-lg-4">
+
+            <div class="card project-card h-100">
+
+                <div class="card-body">
+
+                    <h3>Pokémon Learning Game</h3>
+
+                    <p>
+                        An interactive Pokémon identification game built
+                        with Flask and JavaScript. Players identify randomly
+                        selected Pokémon, track their score and accuracy,
+                        and build a personal collection of Pokémon.
+                    </p>
+
+                    <span class="badge bg-primary">Flask</span>
+                    <span class="badge bg-success">Python</span>
+                    <span class="badge bg-warning text-dark">JavaScript</span>
+                    <span class="badge bg-info text-dark">REST API</span>
+                    <span class="badge bg-dark">PokéAPI</span>
+
+                </div>
+
+                <div class="card-footer bg-transparent border-0">
+
+                    <a href="{{ url_for('pokemon_game_project') }}"
+                       class="btn btn-primary w-100">
+                        View Project
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
 
     </div>
 

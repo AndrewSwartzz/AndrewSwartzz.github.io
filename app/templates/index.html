@@ -31,6 +31,18 @@
 .display-4{
     font-weight:700;
 }
+
+.media p {
+    margin-bottom: 8px;
+}
+
+.media h5 {
+    margin-bottom: 6px;
+}
+
+.media {
+    margin-bottom: 0 !important;
+}
     </style>
 
 
@@ -112,35 +124,68 @@
 
     </div>
 
-    <!-- Recent Activity -->
-    <div class="card shadow border-0">
+<!-- Recent Activity -->
+<div class="card shadow border-0">
 
-        <div class="card-header bg-primary text-white">
-            <h3 class="mb-0">Recent Activity</h3>
-        </div>
+    <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">Recent Activity</h3>
+    </div>
 
-        <div class="card-body">
+    <div class="card-body">
 
-            <div class="media mb-4">
+        <style>
+            .recent-activity .media h5 {
+                margin-bottom: 5px;
+            }
+
+            .recent-activity .media p {
+                margin-bottom: 8px;
+            }
+
+            .recent-activity .media {
+                margin-bottom: 0 !important;
+            }
+
+            .recent-activity hr {
+                margin: 16px 0;
+            }
+
+            .recent-activity .badge {
+                margin-bottom: 3px;
+            }
+        </style>
+
+        <div class="recent-activity">
+
+            <!-- Dad Life Property Solutions -->
+            <div class="media">
 
                 <img
-                    src="https://images.icon-icons.com/2269/PNG/512/health_education_article_computer_knowledge_blog_coronavirus_icon_140616.png"
+                    src="{{ url_for('static', filename='dad_life.png') }}"
                     class="mr-4 rounded"
                     width="70"
-                    alt="Predictive Analytics">
+                    height="70"
+                    style="object-fit:contain;"
+                    alt="Dad Life Property Solutions">
 
                 <div class="media-body">
 
                     <h5>
-                        <a href="{{ url_for('post') }}">
-                            Code of Predictive Analytics
+                        <a href="{{ url_for('dad_life') }}">
+                            Dad Life Property Solutions
                         </a>
                     </h5>
 
                     <p class="text-muted">
-                        Exploring predictive analytics, data science,
-                        and machine learning concepts.
+                        Built a full-stack real estate website for a local
+                        Lehigh Valley home-buying company using Flask, Python,
+                        Tailwind CSS, JavaScript, and SQLite.
                     </p>
+
+                    <span class="badge badge-primary">Flask</span>
+                    <span class="badge badge-success">Python</span>
+                    <span class="badge badge-info">Tailwind CSS</span>
+                    <span class="badge badge-dark">SQLite</span>
 
                 </div>
 
@@ -148,31 +193,70 @@
 
             <hr>
 
+            <!-- NASA Fastpitch -->
             <div class="media">
 
                 <img
-                    src="{{ url_for('static', filename='duck.png') }}"
+                    src="{{ url_for('static', filename='nasa.png') }}"
                     class="mr-4 rounded"
                     width="70"
-                    alt="Tamagotchi">
+                    height="70"
+                    style="object-fit:contain;"
+                    alt="NASA Fastpitch">
 
                 <div class="media-body">
 
                     <h5>
-                        <a href="{{ url_for('project') }}">
-                            Tamagotchi Web App
+                        <a href="https://nasafastpitch.com" target="_blank">
+                            NASA Fastpitch
                         </a>
                     </h5>
 
                     <p class="text-muted">
-                        A virtual pet simulation built using Flask,
-                        JavaScript, HTML, CSS, and SQL.
+                        Developed a website for NASA Fastpitch combining
+                        responsive web design, interactive features, and
+                        full-stack development.
                     </p>
 
                     <span class="badge badge-primary">Flask</span>
                     <span class="badge badge-success">JavaScript</span>
                     <span class="badge badge-info">HTML/CSS</span>
-                    <span class="badge badge-dark">SQL</span>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- Garden of Earthly Delights -->
+            <div class="media">
+
+                <img
+                    src="{{ url_for('static', filename='garden_of_earthly_delights.png') }}"
+                    class="mr-4 rounded"
+                    width="70"
+                    height="70"
+                    style="object-fit:contain;"
+                    alt="The Garden of Earthly Delights">
+
+                <div class="media-body">
+
+                    <h5>
+                        <a href="{{ url_for('garden') }}">
+                            The Garden of Earthly Delights
+                        </a>
+                    </h5>
+
+                    <p class="text-muted">
+                        Research and analysis exploring Hieronymus Bosch's
+                        <em>The Garden of Earthly Delights</em>, its symbolism,
+                        cultural context, and possible intentions.
+                    </p>
+
+                    <span class="badge badge-primary">Art History</span>
+                    <span class="badge badge-success">Renaissance</span>
+                    <span class="badge badge-info">Symbolism</span>
+                    <span class="badge badge-dark">Art & Culture</span>
 
                 </div>
 
@@ -183,4 +267,7 @@
     </div>
 
 </div>
+
+</div>
 {% endblock %}
+

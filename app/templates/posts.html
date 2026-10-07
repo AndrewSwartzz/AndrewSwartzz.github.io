@@ -28,9 +28,9 @@
 }
 
 .post-card img{
-    height:180px;
+    height:225px;
     object-fit:contain;
-    padding:25px;
+    padding:10px;
 }
 
 .section-title{
@@ -139,6 +139,101 @@
                 <div class="card-footer bg-transparent border-0">
 
                     <a href="{{ url_for('data') }}"
+                       class="btn btn-outline-primary w-100">
+
+                        Read Article
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Article 3 -->
+
+        <div class="col-lg-6">
+
+            <div class="card post-card h-100">
+
+                <img src="{{ url_for('static', filename='garden_of_earthly_delights.png') }}"
+                     class="card-img-top">
+
+                <div class="card-body">
+
+                    <h3>
+                        The Garden of Earthly Delights:
+                        Hieronymus Bosch’s Intentions
+                    </h3>
+
+                    <p>
+                        An exploration of Hieronymus Bosch's
+                        <em>The Garden of Earthly Delights</em>,
+                        examining its symbolism, religious context,
+                        artistic techniques, and the anxieties of
+                        late medieval Europe. The article also explores
+                        Bosch's influence on later artists and the
+                        painting's continued relevance to modern audiences.
+                    </p>
+
+                    <span class="badge bg-dark">Art History</span>
+                    <span class="badge bg-primary">Renaissance</span>
+                    <span class="badge bg-success">Symbolism</span>
+                    <span class="badge bg-secondary">Art & Culture</span>
+
+                </div>
+
+                <div class="card-footer bg-transparent border-0">
+
+                    <a href="{{ url_for('garden') }}"
+                       class="btn btn-outline-primary w-100">
+
+                        Read Article
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Article 4 -->
+
+        <div class="col-lg-6">
+
+            <div class="card post-card h-100">
+
+                <img src="{{ url_for('static', filename='the_trial.png') }}"
+                     class="card-img-top">
+
+                <div class="card-body">
+
+                    <h3>
+                        Franz Kafka’s <em>The Trial</em>
+                    </h3>
+
+                    <p>
+                        An exploration of bureaucracy, guilt, psychological
+                        punishment, and institutional power in Franz Kafka’s
+                        <em>The Trial</em>. The article examines Josef K.’s
+                        struggle against an incomprehensible legal system and
+                        compares Kafka’s ideas of guilt and psychological
+                        imprisonment to <em>Silent Hill 2</em>.
+                    </p>
+
+                    <span class="badge bg-dark">Literature</span>
+                    <span class="badge bg-danger">Psychology</span>
+                    <span class="badge bg-secondary">Philosophy</span>
+                    <span class="badge bg-primary">Media Analysis</span>
+
+                </div>
+
+                <div class="card-footer bg-transparent border-0">
+
+                    <a href="{{ url_for('trial') }}"
                        class="btn btn-outline-primary w-100">
 
                         Read Article

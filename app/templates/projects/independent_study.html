@@ -1,0 +1,742 @@
+{% extends "base.html" %}
+{% import "bootstrap_wtf.html" as wtf %}
+
+{% block content %}
+
+<style>
+
+    header{
+        text-align:center;
+        margin-bottom:35px;
+    }
+
+    article{
+        max-width:900px;
+        margin:0 auto;
+        padding:40px 20px 70px;
+    }
+
+    h1{
+        color:#2c3e50;
+        border-bottom:2px solid #0d6efd;
+        padding-bottom:12px;
+        margin-bottom:12px;
+        line-height:1.25;
+    }
+
+    .article-meta{
+        color:#7f8c8d;
+        font-style:italic;
+        margin-bottom:25px;
+        text-align:center;
+        line-height:1.7;
+    }
+
+    h2{
+        color:#0d6efd;
+        margin-top:40px;
+        margin-bottom:12px;
+        line-height:1.3;
+    }
+
+    h3{
+        color:#2c3e50;
+        margin-top:25px;
+        margin-bottom:10px;
+    }
+
+    p{
+        margin-bottom:18px;
+        line-height:1.8;
+    }
+
+    ul{
+        margin-bottom:20px;
+        padding-left:25px;
+    }
+
+    li{
+        margin-bottom:8px;
+        line-height:1.6;
+    }
+
+    .highlight{
+        background:#eef6ff;
+        border-left:4px solid #0d6efd;
+        padding:20px 22px;
+        margin:28px 0;
+        border-radius:0 6px 6px 0;
+    }
+
+    .highlight h3{
+        margin-top:0;
+        color:#0d6efd;
+    }
+
+    .project-card{
+        background:#f8fafc;
+        border:1px solid #e5e7eb;
+        border-left:4px solid #0d6efd;
+        padding:20px 22px;
+        margin:25px 0;
+        border-radius:0 8px 8px 0;
+    }
+
+    .project-card h3{
+        margin-top:0;
+        color:#2c3e50;
+    }
+
+    .skills{
+        display:flex;
+        flex-wrap:wrap;
+        gap:8px;
+        margin:15px 0 25px;
+    }
+
+    .skill{
+        background:#0d6efd;
+        color:white;
+        padding:6px 12px;
+        border-radius:20px;
+        font-size:.9rem;
+    }
+
+    .timeline{
+        border-left:3px solid #0d6efd;
+        margin:25px 0;
+        padding-left:25px;
+    }
+
+    .timeline-item{
+        margin-bottom:28px;
+    }
+
+    .timeline-item strong{
+        color:#0d6efd;
+    }
+
+    .github-link{
+        display:inline-block;
+        margin-top:8px;
+        color:#0d6efd;
+        text-decoration:none;
+        font-weight:600;
+    }
+
+    .github-link:hover{
+        text-decoration:underline;
+    }
+
+    .reflection{
+        background:linear-gradient(135deg,#eef6ff,#f8fafc);
+        border-radius:12px;
+        padding:25px;
+        margin-top:30px;
+    }
+
+    .sources{
+        font-size:.95em;
+        border-top:1px solid #ddd;
+        padding-top:20px;
+        margin-top:45px;
+    }
+
+    .sources h2{
+        color:#2c3e50;
+    }
+
+    @media(max-width:700px){
+        article{
+            padding:25px 15px 50px;
+        }
+
+        h1{
+            font-size:1.8rem;
+        }
+
+        .highlight,
+        .project-card,
+        .reflection{
+            padding:18px;
+        }
+    }
+
+</style>
+
+<article>
+
+    <header>
+
+        <h1>
+            Designing a Foundational Computer Science
+            Game Development Curriculum
+        </h1>
+
+        <div class="article-meta">
+
+            By <strong>Andrew Swartz</strong> |
+            <time datetime="2026-05">Spring 2026</time><br>
+
+            Independent Study with
+            <strong>Professor Toby Dragon</strong><br>
+
+            Topics:
+            <em>Game Development, Computer Science Education,
+            Godot, Software Architecture, Curriculum Design</em>
+
+        </div>
+
+    </header>
+
+
+    <!-- INTRODUCTION -->
+
+    <h2>Introduction</h2>
+
+    <p>
+        This independent study explored how game development can be used as a
+        framework for reinforcing foundational computer science concepts through
+        interactive, project-based learning. Rather than treating game development
+        as an isolated specialization, I wanted to investigate how the systems
+        required to build games could become a practical way of teaching concepts
+        that appear throughout computer science.
+    </p>
+
+    <p>
+        The original goal was to analyze existing university-level game development
+        programs and use that research to design a curriculum that could introduce
+        students with prior programming experience to interactive software
+        development. The project eventually evolved beyond simply studying existing
+        programs. Through prototyping, assignment design, debugging exercises,
+        refactoring projects, and curriculum planning, I developed a complete
+        framework for teaching computer science through game development.
+    </p>
+
+    <div class="highlight">
+
+        <h3>The Core Idea</h3>
+
+        <p>
+            Students should learn computer science through game systems,
+            rather than simply learning how to make visually impressive games.
+        </p>
+
+        <p>
+            Game development provides a practical environment where concepts such
+            as object-oriented programming, modularity, state management,
+            event-driven programming, debugging, and software architecture
+            naturally become necessary.
+        </p>
+
+    </div>
+
+
+    <!-- GOALS -->
+
+    <h2>Initial Goals of the Study</h2>
+
+    <p>
+        The project began with several specific goals. I wanted to create a
+        foundational course for students who already understood basic programming
+        but had little or no experience with game development.
+    </p>
+
+    <ul>
+        <li>A foundational course for students already familiar with programming basics.</li>
+        <li>A curriculum applicable across multiple game engines.</li>
+        <li>Projects emphasizing transferable technical skills.</li>
+        <li>Assignments that reinforce computer science concepts through game systems.</li>
+    </ul>
+
+    <p>
+        A major design principle was engine independence. Although Godot became
+        the primary engine used for developing and testing the curriculum, the
+        underlying concepts were intentionally designed to transfer to other
+        engines and programming environments.
+    </p>
+
+    <h3>Programming Skills</h3>
+
+    <div class="skills">
+        <span class="skill">Object-Oriented Programming</span>
+        <span class="skill">Modular Design</span>
+        <span class="skill">Debugging</span>
+        <span class="skill">Game Loops</span>
+        <span class="skill">Event Systems</span>
+    </div>
+
+    <h3>Algorithmic Thinking</h3>
+
+    <div class="skills">
+        <span class="skill">Collision Systems</span>
+        <span class="skill">Rule Systems</span>
+        <span class="skill">State Management</span>
+        <span class="skill">Performance Thinking</span>
+    </div>
+
+    <h3>Game Development Skills</h3>
+
+    <div class="skills">
+        <span class="skill">Input Systems</span>
+        <span class="skill">Feedback Systems</span>
+        <span class="skill">Interactive Design</span>
+        <span class="skill">Prototyping</span>
+    </div>
+
+
+    <!-- RESEARCH -->
+
+    <h2>Researching Existing Game Development Programs</h2>
+
+    <p>
+        To understand how these concepts are currently taught, I examined
+        university game development and computer science programs from several
+        institutions.
+    </p>
+
+    <ul>
+        <li>University of Utah — Entertainment Arts and Engineering Program</li>
+        <li>USC — Interactive Media &amp; Games Division</li>
+        <li>DigiPen Institute of Technology</li>
+        <li>University of Washington Bothell</li>
+        <li>San José State University</li>
+        <li>Union College</li>
+    </ul>
+
+    <p>
+        Across these programs, several strengths appeared repeatedly. Effective
+        curricula tended to use milestone-based development, iterative
+        prototyping, collaboration, and increasing project complexity.
+    </p>
+
+    <p>
+        I also identified several challenges. Some programs placed too much
+        emphasis on visual polish, while others did not consistently emphasize
+        computer science fundamentals. Team projects could also create uneven
+        individual accountability.
+    </p>
+
+    <div class="highlight">
+
+        <h3>A Different Approach</h3>
+
+        <p>
+            The curriculum I designed emphasizes the idea that the game is the
+            environment for learning, not necessarily the final educational goal.
+            The important outcome is understanding the underlying systems.
+        </p>
+
+    </div>
+
+
+    <!-- SCAFFOLDING -->
+
+    <h2>Designing Scaffolded Assignments</h2>
+
+    <p>
+        One of the most important parts of the independent study was developing
+        assignments that gradually increase in complexity. Instead of asking
+        students to immediately build a complete game, each project introduces
+        another layer of software architecture.
+    </p>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <strong>Project 1 — Interactive Systems Foundations</strong>
+
+            <p>
+                Students learn game loops, object spawning, object destruction,
+                real-time updates, player movement, and state tracking.
+                The goal is to help students transition from thinking about
+                linear programs to thinking about continuous interactive systems.
+            </p>
+
+            <a class="github-link"
+               href="https://github.com/AndrewSwartzz/gameDevelopmentProject1"
+               target="_blank">
+                View Project 1 on GitHub →
+            </a>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <strong>Project 2 — Behavior and Interaction Systems</strong>
+
+            <p>
+                Students expand their systems by implementing autonomous enemy
+                behavior, collision systems, camera systems, UI systems, and
+                state transitions.
+            </p>
+
+            <p>
+                This introduces event-driven systems, AI logic, and the challenge
+                of managing multiple interacting entities. These ideas begin to
+                resemble the larger software architecture problems students will
+                encounter in more advanced projects.
+            </p>
+
+            <a class="github-link"
+               href="https://github.com/AndrewSwartzz/gameDevelopmentProject2"
+               target="_blank">
+                View Project 2 on GitHub →
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- GODOT -->
+
+    <h2>Godot Workshop: From Engine to Independent Development</h2>
+
+    <p>
+        A major component of the independent study was developing a Godot
+        onboarding workshop. The workshop was designed to bridge the gap between
+        learning an unfamiliar engine and being able to independently construct
+        interactive systems.
+    </p>
+
+    <p>
+        Students work through scene creation, TileMaps, animation systems,
+        collisions, platforming, top-down systems, combat, and UI systems.
+        Rather than simply following tutorials, the workshop provides a foundation
+        students can use to begin building their own projects.
+    </p>
+
+    <div class="project-card">
+
+        <h3>Godot Workshop</h3>
+
+        <p>
+            The workshop introduces the engine while reinforcing broader concepts
+            such as scene architecture, reusable systems, interactions, and
+            debugging.
+        </p>
+
+        <ul>
+            <li>Scene creation</li>
+            <li>TileMaps</li>
+            <li>Animation systems</li>
+            <li>Collision systems</li>
+            <li>Platforming</li>
+            <li>Top-down systems</li>
+            <li>Combat systems</li>
+            <li>UI systems</li>
+        </ul>
+
+    </div>
+
+
+    <!-- ANTI LESSON -->
+
+    <h2>The Anti-Lesson: Refactoring a Bad Project</h2>
+
+    <p>
+        One of the more unusual assignments I developed was intentionally designed
+        around bad software architecture. Instead of only showing students what
+        good code looks like, the project gives them a deliberately flawed game
+        and asks them to identify and repair its problems.
+    </p>
+
+    <p>
+        Students examine giant scripts, hardcoded references, duplicated logic,
+        poor scalability, and other architectural problems. They then refactor
+        the project into a more maintainable structure.
+    </p>
+
+    <div class="highlight">
+
+        <h3>Why Teach Through a Broken Project?</h3>
+
+        <p>
+            Real software engineering rarely involves building everything from
+            scratch. Developers frequently inherit existing codebases, identify
+            problems, and gradually improve systems. The anti-lesson introduces
+            students to that reality earlier in their education.
+        </p>
+
+    </div>
+
+    <ul>
+        <li>Maintainability</li>
+        <li>Inheritance</li>
+        <li>Debugging</li>
+        <li>Scalability</li>
+        <li>Testing</li>
+        <li>Documentation</li>
+    </ul>
+
+    <a class="github-link"
+       href="https://github.com/AndrewSwartzz/bad-project"
+       target="_blank">
+        View the Bad Project on GitHub →
+    </a>
+
+
+    <!-- QUEST -->
+
+    <h2>Incomplete Quest: Working Inside an Existing Codebase</h2>
+
+    <p>
+        Another assignment focuses on a partially completed project. Instead of
+        creating everything themselves, students enter an existing codebase and
+        finish missing systems.
+    </p>
+
+    <p>
+        Students complete player systems, bug systems, NPC interactions, door
+        systems, UI systems, and GameManager integration.
+    </p>
+
+    <div class="project-card">
+
+        <h3>Professional Development Through Game Development</h3>
+
+        <p>
+            This assignment addresses a skill that is especially important outside
+            of the classroom: the ability to understand and modify software that
+            someone else has already written.
+        </p>
+
+        <p>
+            Working inside an existing codebase gives students experience that
+            more closely resembles collaborative development and professional
+            software environments.
+        </p>
+
+    </div>
+
+    <a class="github-link"
+       href="https://github.com/AndrewSwartzz/quest-assignment"
+       target="_blank">
+        View the Quest Assignment on GitHub →
+    </a>
+
+
+    <!-- FINAL PROJECT -->
+
+    <h2>Collaborative Final Project</h2>
+
+    <p>
+        The final stage of the curriculum brings the individual systems together
+        into a larger collaborative game project. Students combine the concepts
+        introduced throughout the earlier assignments and begin working with a
+        larger software architecture.
+    </p>
+
+    <ul>
+        <li>Player systems</li>
+        <li>Enemies</li>
+        <li>Progression systems</li>
+        <li>UI systems</li>
+        <li>State transitions</li>
+        <li>Reusable architecture</li>
+    </ul>
+
+    <p>
+        The goal is not simply to produce a finished game. The final project
+        requires students to think about how multiple systems communicate and
+        how a growing codebase can remain organized.
+    </p>
+
+    <a class="github-link"
+       href="https://github.com/AndrewSwartzz/final-project"
+       target="_blank">
+        View the Final Project Framework on GitHub →
+    </a>
+
+
+    <!-- PERSONAL PROTOTYPE -->
+
+    <h2>The Personal Game Prototype</h2>
+
+    <p>
+        The curriculum was also informed by my own experience developing a game
+        prototype. The original prototype included movement, rolling, combat,
+        bug catching, bosses, doors, progression systems, UI systems, and
+        exploration mechanics.
+    </p>
+
+    <p>
+        While developing the prototype, I encountered architectural problems
+        that later inspired the anti-lesson assignment. This became an important
+        part of the study because the curriculum was not designed entirely
+        theoretically. Problems encountered during actual development directly
+        influenced how I approached teaching software architecture.
+    </p>
+
+    <div class="highlight">
+
+        <h3>From Building Games to Teaching Game Development</h3>
+
+        <p>
+            One of the biggest shifts during the independent study was realizing
+            that my own development mistakes could become educational material.
+            Instead of hiding architectural problems, I could turn them into
+            exercises that teach students why certain approaches fail.
+        </p>
+
+    </div>
+
+
+    <!-- TECHNICAL SKILLS -->
+
+    <h2>Technical Skills Developed</h2>
+
+    <p>
+        The independent study helped me develop skills across both software
+        engineering and educational design.
+    </p>
+
+    <h3>Software Architecture</h3>
+
+    <div class="skills">
+        <span class="skill">Modularity</span>
+        <span class="skill">Inheritance</span>
+        <span class="skill">Separation of Concerns</span>
+        <span class="skill">Scene Architecture</span>
+    </div>
+
+    <h3>Debugging and Systems</h3>
+
+    <div class="skills">
+        <span class="skill">Signals</span>
+        <span class="skill">Collision Systems</span>
+        <span class="skill">Scene References</span>
+        <span class="skill">Debugging</span>
+    </div>
+
+    <h3>Curriculum and Educational Design</h3>
+
+    <div class="skills">
+        <span class="skill">Assignment Scaffolding</span>
+        <span class="skill">Pacing</span>
+        <span class="skill">Difficulty Design</span>
+        <span class="skill">Assessment</span>
+        <span class="skill">Technical Communication</span>
+    </div>
+
+
+    <!-- CHALLENGES -->
+
+    <h2>Challenges</h2>
+
+    <p>
+        Designing the curriculum required balancing several competing goals.
+        Game development naturally encourages creativity and experimentation,
+        while a computer science course needs to maintain technical rigor.
+    </p>
+
+    <p>
+        Some of the biggest challenges involved determining the appropriate
+        difficulty for each assignment, ensuring projects remained achievable,
+        and figuring out how to intentionally teach debugging rather than
+        treating it as something students would simply discover on their own.
+    </p>
+
+    <div class="project-card">
+
+        <h3>The Central Design Problem</h3>
+
+        <p>
+            How do you give students enough freedom to be creative while still
+            ensuring that every project reinforces meaningful computer science
+            concepts?
+        </p>
+
+    </div>
+
+
+    <!-- DELIVERABLES -->
+
+    <h2>Final Deliverables</h2>
+
+    <p>
+        By the end of the study, the project had developed into a substantial
+        collection of curriculum materials and working prototypes.
+    </p>
+
+    <ul>
+        <li>Course proposal</li>
+        <li>University game development program analysis</li>
+        <li>Project 1 assignment</li>
+        <li>Project 2 assignment</li>
+        <li>Godot onboarding workshop</li>
+        <li>Anti-refactoring assignment</li>
+        <li>Incomplete quest assignment</li>
+        <li>Collaborative final project framework</li>
+        <li>Playable prototypes</li>
+        <li>GitHub repositories</li>
+    </ul>
+
+
+    <!-- REFLECTION -->
+
+    <h2>Final Reflection</h2>
+
+    <div class="reflection">
+
+        <p>
+            This study began as an exploration of game development education.
+            It evolved into designing a full curriculum that teaches computer
+            science principles through interactive systems.
+        </p>
+
+        <p>
+            I created a framework that helps students understand architecture,
+            debugging, modular design, event systems, collaboration, and
+            iterative development through projects that they can actually
+            interact with and modify.
+        </p>
+
+        <p>
+            The experience also reinforced an important connection between
+            computer science and game development. A game is ultimately a
+            collection of interacting software systems. Movement, enemies,
+            dialogue, UI, state transitions, input, and progression all require
+            the same kinds of computational thinking that appear throughout
+            computer science.
+        </p>
+
+        <p>
+            My goal going forward is to continue developing these ideas through
+            Godot and other engines while exploring how the same foundational
+            concepts can transfer across development environments. The work
+            could realistically be adapted into an actual introductory game
+            development course and provides a foundation for continuing to
+            experiment with interactive computer science education.
+        </p>
+
+    </div>
+
+
+    <!-- ACKNOWLEDGEMENTS -->
+
+    <div class="sources">
+
+        <h2>Acknowledgements</h2>
+
+        <p>
+            This independent study was completed with Professor Toby Dragon at
+            Ithaca College during Spring 2026. The project combined academic
+            research, curriculum development, game programming, prototyping,
+            debugging, and educational design.
+        </p>
+
+        <p>
+            The independent study's final report,
+            <em>Designing a Foundational Computer Science Game Development
+            Curriculum</em>, documents the research, assignments, prototypes,
+            and curriculum framework developed throughout the project.
+        </p>
+
+    </div>
+
+</article>
+
+{% endblock %}

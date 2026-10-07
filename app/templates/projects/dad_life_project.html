@@ -1,0 +1,261 @@
+{% extends "base.html" %}
+{% import "bootstrap_wtf.html" as wtf %}
+
+{% block content %}
+
+<style>
+    article{max-width:950px;margin:0 auto;padding:40px 20px 70px;line-height:1.75;color:#333}
+    header{text-align:center;margin-bottom:40px}
+    h1{color:#2c3e50;border-bottom:2px solid #0d6efd;padding-bottom:12px;margin-bottom:15px;line-height:1.25}
+    .project-meta{color:#7f8c8d;font-style:italic;line-height:1.7}
+    h2{color:#0d6efd;margin-top:42px;margin-bottom:15px;line-height:1.3}
+    h3{color:#2c3e50;margin-top:25px}
+    p{margin-bottom:18px}
+    .hero-project{background:linear-gradient(135deg,#0d6efd,#5aa9ff);color:white;border-radius:20px;padding:35px;margin-bottom:40px;box-shadow:0 12px 30px rgba(0,0,0,.12)}
+    .hero-project h2{color:white;margin-top:0}
+    .site-button,.cta-button{display:inline-block;padding:11px 22px;border-radius:8px;text-decoration:none;font-weight:600}
+    .site-button{background:white;color:#0d6efd}
+    .site-button:hover{background:#f1f5f9;color:#0a58ca}
+    .highlight{background:#eef6ff;border-left:4px solid #0d6efd;padding:20px 24px;margin:28px 0;border-radius:0 7px 7px 0}
+    .feature-card{background:#f8fafc;border:1px solid #e5e7eb;border-left:4px solid #0d6efd;padding:20px 22px;margin:20px 0;border-radius:0 8px 8px 0}
+    .feature-card h3{margin-top:0}
+    .tech-list{display:flex;flex-wrap:wrap;gap:9px;margin:15px 0 25px}
+    .tech{background:#0d6efd;color:white;padding:7px 13px;border-radius:20px;font-size:.9rem}
+    .process{border-left:3px solid #0d6efd;padding-left:25px;margin:25px 0}
+    .process-item{margin-bottom:28px}
+    .process-item strong{color:#0d6efd;font-size:1.05rem}
+    .cta{text-align:center;background:#f8fafc;border-radius:14px;padding:30px;margin-top:45px}
+    .cta h2{margin-top:0;color:#2c3e50}
+    .cta-button{background:#0d6efd;color:white}
+    .cta-button:hover{background:#0b5ed7;color:white}
+    @media(max-width:700px){article{padding:25px 15px 50px}h1{font-size:1.8rem}.hero-project,.feature-card,.highlight,.cta{padding:20px}}
+</style>
+
+<article>
+
+    <header>
+        <h1>Dad Life Property Solutions</h1>
+        <div class="project-meta">
+            Website Development &amp; Digital Media Project<br>
+            Lehigh Valley, Pennsylvania<br>
+            <em>Flask · Python · Tailwind CSS · JavaScript · SQLite</em>
+        </div>
+    </header>
+
+    <div class="hero-project">
+        <h2>Building a Real Estate Website for a Local Home Buyer</h2>
+        <p>
+            I designed and developed a custom website for Dad Life Property
+            Solutions, a family-owned home-buying company serving the Lehigh
+            Valley. The project combined full-stack web development,
+            responsive interface design, lead collection, real estate
+            content, and digital media into a production website.
+        </p>
+        <a class="site-button" href="https://dadlife-site-wpbi.onrender.com/" target="_blank">
+            Visit Live Website →
+        </a>
+    </div>
+
+    <h2>Project Overview</h2>
+
+    <p>
+        Dad Life Property Solutions needed a website that communicated a
+        straightforward and trustworthy approach to selling a home. Rather
+        than presenting the company as a traditional high-pressure real estate
+        service, the site emphasizes honest conversations, local knowledge,
+        flexibility, and a no-pressure selling process.
+    </p>
+
+    <p>
+        The live site currently focuses on homeowners who need to sell quickly,
+        have properties requiring repairs, have inherited a home, or do not
+        want to go through traditional showings and listings. The site guides
+        visitors through a simple process: describe the property, receive an
+        honest offer range, and choose a closing timeline that works for them.
+    </p>
+
+    <h2>My Role</h2>
+
+    <p>
+        I worked on the project as both the developer and digital media
+        contributor. My responsibilities included designing and implementing
+        the website, developing its interactive functionality, structuring
+        content, and creating video and marketing material for the client.
+    </p>
+
+    <div class="highlight">
+        <strong>Real Client Project</strong>
+        <p>
+            This project gave me experience working from a real client's
+            business goals rather than building a purely academic application.
+            Design and technical decisions had to support communication, trust,
+            lead generation, and the client's actual workflow.
+        </p>
+    </div>
+
+    <h2>Website Features</h2>
+
+    <div class="feature-card">
+        <h3>Lead Generation</h3>
+        <p>
+            The website is structured around turning visitors into potential
+            homeowner leads. Calls to action direct visitors toward learning
+            what their property could be worth and starting a conversation
+            with the company.
+        </p>
+    </div>
+
+    <div class="feature-card">
+        <h3>Offer Estimator</h3>
+        <p>
+            A central feature is an offer-estimation experience designed to
+            give homeowners an initial idea of what their property could sell
+            for without requiring them to commit to anything. The live site
+            presents the estimator as free, with no signup and no pressure.
+        </p>
+    </div>
+
+    <div class="feature-card">
+        <h3>Simple Selling Process</h3>
+        <p>
+            The website explains the process in three steps: tell the company
+            about the property, get an honest offer range, and close on a
+            timeline that works for the homeowner.
+        </p>
+    </div>
+
+    <div class="feature-card">
+        <h3>Responsive Design</h3>
+        <p>
+            The interface was designed to work across desktop and mobile
+            screens while keeping the most important information and calls
+            to action easy to find.
+        </p>
+    </div>
+
+    <h2>Technology</h2>
+
+    <p>
+        The project was built as a custom Flask application, giving me control
+        over the application's backend, templates, forms, and data-handling
+        logic.
+    </p>
+
+    <div class="tech-list">
+        <span class="tech">Python</span>
+        <span class="tech">Flask</span>
+        <span class="tech">HTML / CSS</span>
+        <span class="tech">Tailwind CSS</span>
+        <span class="tech">JavaScript</span>
+        <span class="tech">SQLite</span>
+        <span class="tech">Flask-Mail</span>
+    </div>
+
+    <h2>Development Process</h2>
+
+    <div class="process">
+
+        <div class="process-item">
+            <strong>1. Understanding the Client</strong>
+            <p>
+                I first focused on understanding the company's target
+                customers and how the business wanted to position itself.
+                The site needed to feel local, approachable, and transparent.
+            </p>
+        </div>
+
+        <div class="process-item">
+            <strong>2. Designing the User Experience</strong>
+            <p>
+                I organized the experience around the questions a homeowner
+                is likely to have: Is this company legitimate? Is selling my
+                situation appropriate? What happens next? Can I sell without
+                dealing with the traditional listing process?
+            </p>
+        </div>
+
+        <div class="process-item">
+            <strong>3. Building the Application</strong>
+            <p>
+                I implemented the website using Flask and Python, connecting
+                the frontend to backend functionality and creating the site's
+                forms and data-handling systems.
+            </p>
+        </div>
+
+        <div class="process-item">
+            <strong>4. Deployment</strong>
+            <p>
+                The application was deployed online so the client has a
+                publicly accessible website rather than a project that only
+                runs locally.
+            </p>
+        </div>
+
+    </div>
+
+    <h2>Content &amp; Digital Media</h2>
+
+    <p>
+        The project extended beyond website development. I also worked on
+        video content explaining the home-selling process and topics relevant
+        to homeowners considering selling their properties.
+    </p>
+
+    <p>
+        This included informational content around selling a property as-is
+        and helping communicate when working with a cash buyer may or may not
+        make sense. This connected the technical development work with
+        communication, marketing, and emerging media skills.
+    </p>
+
+    <h2>Designing for Trust</h2>
+
+    <p>
+        A major design consideration was trust. Selling a home is a high-stakes
+        decision, so the website avoids overwhelming visitors with technical
+        language or aggressive sales messaging.
+    </p>
+
+    <p>
+        Instead, the current site emphasizes that the company is local and
+        family-owned, has no hidden fees, and provides honest advice.
+    </p>
+
+    <div class="highlight">
+        <h3>Design Principle</h3>
+        <p>
+            The website should make a homeowner feel like they are starting
+            a conversation with a person, not entering a sales funnel.
+        </p>
+    </div>
+
+    <h2>What I Learned</h2>
+
+    <p>
+        This project helped me understand the difference between building a
+        website as a technical exercise and building one for an actual
+        organization. Technical decisions had to support a business goal,
+        while visual and content decisions had to support the client's
+        relationship with potential customers.
+    </p>
+
+    <p>
+        I gained experience connecting backend development, frontend design,
+        database management, deployment, content creation, and client
+        communication into one project. It also gave me experience maintaining
+        and iterating on a real deployed application rather than treating
+        the project as finished once the code worked locally.
+    </p>
+
+    <div class="cta">
+        <h2>View the Project</h2>
+        <p>Explore the live Dad Life Property Solutions website.</p>
+        <a class="cta-button" href="https://dadlife-site-wpbi.onrender.com/" target="_blank">
+            Visit Dad Life Property Solutions →
+        </a>
+    </div>
+
+</article>
+
+{% endblock %}

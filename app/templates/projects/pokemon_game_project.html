@@ -1,0 +1,402 @@
+{% extends "base.html" %}
+{% import "bootstrap_wtf.html" as wtf %}
+
+{% block content %}
+
+<style>
+    .project-hero {
+        background: linear-gradient(135deg, #0d6efd, #5aa9ff);
+        color: white;
+        border-radius: 24px;
+        padding: 60px 40px;
+        margin-bottom: 40px;
+    }
+
+    .project-section {
+        margin-bottom: 40px;
+    }
+
+    .project-card {
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(0,0,0,.08);
+        height: 100%;
+        transition: .3s;
+    }
+
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 30px rgba(0,0,0,.15);
+    }
+
+    .tech-badge {
+        margin-right: 5px;
+        margin-bottom: 8px;
+    }
+
+    .feature-icon {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .code-feature {
+        background: #f7f9fc;
+        border-radius: 15px;
+        padding: 25px;
+    }
+
+    .btn {
+        border-radius: 30px;
+    }
+</style>
+
+<div class="container py-5">
+
+    <!-- Hero -->
+    <div class="project-hero text-center">
+
+        <h1 class="display-4 font-weight-bold">
+            Pokémon Learning Game
+        </h1>
+
+        <p class="lead mt-3">
+            An interactive Pokémon identification game built with Flask,
+            Python, JavaScript, and the PokéAPI.
+        </p>
+
+        <div class="mt-4">
+            <span class="badge badge-light p-2 tech-badge">Python</span>
+            <span class="badge badge-light p-2 tech-badge">Flask</span>
+            <span class="badge badge-light p-2 tech-badge">JavaScript</span>
+            <span class="badge badge-light p-2 tech-badge">REST API</span>
+            <span class="badge badge-light p-2 tech-badge">HTML/CSS</span>
+        </div>
+
+    </div>
+
+
+    <!-- Overview -->
+    <div class="project-section">
+
+        <h2 class="text-primary font-weight-bold mb-4">
+            Project Overview
+        </h2>
+
+        <div class="card project-card">
+            <div class="card-body p-4">
+
+                <p>
+                    This project is an interactive Pokémon learning game
+                    designed to help players recognize and learn Pokémon
+                    through repeated identification challenges.
+                </p>
+
+                <p>
+                    Each round randomly selects a Pokémon and presents the
+                    player with multiple possible answers. Players receive
+                    immediate feedback and can track their score and accuracy
+                    as they continue playing.
+                </p>
+
+                <p class="mb-0">
+                    The application combines a Flask backend with the
+                    <strong>PokéAPI</strong> to dynamically retrieve Pokémon
+                    information, sprites, and names.
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Features -->
+    <div class="project-section">
+
+        <h2 class="text-primary font-weight-bold mb-4">
+            Game Features
+        </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body p-4">
+
+                        <div class="feature-icon">🎮</div>
+
+                        <h4>Pokémon Identification</h4>
+
+                        <p class="text-muted mb-0">
+                            Each round displays a randomly selected Pokémon
+                            with four possible answers. One answer is correct
+                            while the others are randomly generated choices.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body p-4">
+
+                        <div class="feature-icon">📊</div>
+
+                        <h4>Score & Accuracy</h4>
+
+                        <p class="text-muted mb-0">
+                            The game tracks correct guesses, total guesses,
+                            score, and overall accuracy throughout the session.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body p-4">
+
+                        <div class="feature-icon">❤️</div>
+
+                        <h4>Pokémon Collection</h4>
+
+                        <p class="text-muted mb-0">
+                            Players can save Pokémon to a personal collection
+                            and view the Pokémon they have discovered during
+                            the game.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 mb-4">
+                <div class="card project-card">
+                    <div class="card-body p-4">
+
+                        <div class="feature-icon">🔄</div>
+
+                        <h4>Dynamic Rounds</h4>
+
+                        <p class="text-muted mb-0">
+                            After every guess, the application loads a new
+                            Pokémon and generates a fresh set of possible
+                            answers.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Technical Implementation -->
+    <div class="project-section">
+
+        <h2 class="text-primary font-weight-bold mb-4">
+            Technical Implementation
+        </h2>
+
+        <div class="row">
+
+            <div class="col-lg-6 mb-4">
+
+                <div class="card project-card">
+                    <div class="card-body p-4">
+
+                        <h4>Flask Backend</h4>
+
+                        <p class="text-muted">
+                            Flask manages the game routes, session state,
+                            Pokémon retrieval, scoring, and player collections.
+                        </p>
+
+                        <ul>
+                            <li>Game state stored with Flask sessions</li>
+                            <li>Dynamic Pokémon selection</li>
+                            <li>Score and accuracy tracking</li>
+                            <li>JSON API responses for guesses</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6 mb-4">
+
+                <div class="card project-card">
+                    <div class="card-body p-4">
+
+                        <h4>PokéAPI Integration</h4>
+
+                        <p class="text-muted">
+                            The application uses the PokéAPI to retrieve
+                            Pokémon information instead of maintaining a
+                            manually created database of Pokémon.
+                        </p>
+
+                        <ul>
+                            <li>Random Pokémon retrieval</li>
+                            <li>Pokémon names</li>
+                            <li>Sprite images</li>
+                            <li>Dynamic answer generation</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <div class="project-section">
+
+        <h2 class="text-primary font-weight-bold mb-4">
+            Interactive JavaScript
+        </h2>
+
+        <div class="code-feature">
+
+            <p>
+                JavaScript handles communication between the game interface
+                and Flask without requiring the player to manually submit a
+                traditional HTML form.
+            </p>
+
+            <p>
+                When a player selects an answer, JavaScript sends a request
+                to the Flask endpoint:
+            </p>
+
+            <pre><code>fetch(`/pokemon-guess/${guess}`)</code></pre>
+
+            <p class="mb-0">
+                The server evaluates the answer and returns JSON containing
+                whether the guess was correct, the correct Pokémon, the
+                updated score, and the player's accuracy.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Architecture -->
+    <div class="project-section">
+
+        <h2 class="text-primary font-weight-bold mb-4">
+            Application Architecture
+        </h2>
+
+        <div class="card project-card">
+
+            <div class="card-body p-4">
+
+                <div class="row text-center">
+
+                    <div class="col-md-3 mb-3">
+                        <h5>1. Flask</h5>
+                        <p class="text-muted small">
+                            Handles routes and game state
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <h5>2. PokéAPI</h5>
+                        <p class="text-muted small">
+                            Provides Pokémon data
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <h5>3. JavaScript</h5>
+                        <p class="text-muted small">
+                            Handles player interaction
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <h5>4. Session</h5>
+                        <p class="text-muted small">
+                            Tracks game progress
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- What I Learned -->
+    <div class="project-section">
+
+        <h2 class="text-primary font-weight-bold mb-4">
+            What I Learned
+        </h2>
+
+        <div class="card project-card">
+
+            <div class="card-body p-4">
+
+                <p>
+                    This project gave me experience connecting a Python
+                    web application to an external REST API and using the
+                    returned data to create a dynamic interactive experience.
+                </p>
+
+                <p>
+                    It also provided practical experience with Flask sessions,
+                    asynchronous JavaScript requests, JSON responses, random
+                    data generation, and designing game logic for a web
+                    application.
+                </p>
+
+                <p class="mb-0">
+                    Most importantly, the project demonstrated how traditional
+                    web development techniques can be combined with game
+                    mechanics to create an engaging learning experience.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+<!-- Project Links -->
+<div class="text-center mt-5">
+
+    <a href="{{ url_for('pokemon_game') }}"
+       class="btn btn-success btn-lg mr-2">
+        🎮 Play the Game
+    </a>
+
+    <a href="{{ url_for('projects') }}"
+       class="btn btn-primary btn-lg">
+        ← Back to Projects
+    </a>
+
+</div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,458 @@
+{% extends "base.html" %}
+{% import "bootstrap_wtf.html" as wtf %}
+
+{% block content %}
+
+<style>
+    article {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 40px 20px 70px;
+        line-height: 1.75;
+        color: #333;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    h1 {
+        color: #2c3e50;
+        border-bottom: 2px solid #0d6efd;
+        padding-bottom: 12px;
+        margin-bottom: 15px;
+        line-height: 1.25;
+    }
+
+    .article-meta {
+        color: #7f8c8d;
+        font-style: italic;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        color: #0d6efd;
+        margin-top: 42px;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+
+    h3 {
+        color: #2c3e50;
+        margin-top: 30px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    .intro-box {
+        background-color: #f8fafc;
+        border-left: 4px solid #0d6efd;
+        padding: 20px 24px;
+        margin: 30px 0 40px;
+        border-radius: 0 6px 6px 0;
+    }
+
+    .theme-box {
+        background-color: #e8f4fc;
+        border-left: 4px solid #0d6efd;
+        padding: 20px 24px;
+        margin: 30px 0;
+        border-radius: 0 6px 6px 0;
+    }
+
+    .quote {
+        background-color: #f8f9fa;
+        border-left: 4px solid #6c757d;
+        padding: 18px 24px;
+        margin: 25px 0;
+        font-style: italic;
+        color: #495057;
+    }
+
+    .works-cited {
+        border-top: 1px solid #ddd;
+        padding-top: 25px;
+        margin-top: 50px;
+    }
+
+    .works-cited h2 {
+        color: #2c3e50;
+    }
+
+    .works-cited p {
+        padding-left: 25px;
+        text-indent: -25px;
+        margin-bottom: 14px;
+        font-size: 0.95rem;
+    }
+
+    .back-to-top {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    @media (max-width: 700px) {
+        article {
+            padding: 25px 15px 50px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        .intro-box,
+        .theme-box,
+        .quote {
+            padding: 15px 18px;
+        }
+    }
+</style>
+
+<article>
+
+    <header>
+        <h1>Franz Kafka’s <em>The Trial</em></h1>
+
+        <div class="article-meta">
+            An exploration of bureaucracy, guilt, psychological punishment,
+            and institutional power
+        </div>
+    </header>
+
+    <div class="intro-box">
+        <p>
+            Franz Kafka’s <em>The Trial</em> is often interpreted as a criticism of
+            bureaucracy, legal corruption, and the absurdity of modern institutions.
+            The novel follows Josef K., a successful bank employee who is unexpectedly
+            arrested one morning and informed that legal proceedings have begun against
+            him. However Kafka quickly makes it clear that this is not a traditional
+            legal narrative.
+        </p>
+
+        <p>
+            Josef K. is never told what crime he has committed, never encounters a
+            transparent judicial process, and never receives a fair opportunity to
+            defend himself. Although many readers focus on the bizarre structure of
+            the court itself, Kafka presents something even more unsettling than
+            institutional failure. The legal system in <em>The Trial</em> gains power
+            because it convinces individuals to accept its authority without ever
+            proving its legitimacy.
+        </p>
+
+        <p>
+            Through the court’s deliberate ambiguity, Josef K.’s growing paranoia,
+            and the novel’s conclusion in which K. submits to his own execution,
+            Kafka argues that modern institutions maintain control through
+            psychological domination rather than physical force. It is a message
+            which Kafka believed rang true then and, in comparison today, nothing
+            much has changed in that regard. Kafka does not offer a deep political
+            narrative, nor does he critique the system with a solution, but instead
+            gives a terrifying perspective into how one may feel trapped inside a
+            system beyond one’s comprehension or control.
+        </p>
+    </div>
+
+    <section>
+        <h2>The Arrest and Psychological Control</h2>
+
+        <p>
+            The novel immediately establishes this idea during Josef K.’s arrest.
+            On the morning of his thirtieth birthday, two unidentified guards enter
+            his apartment and inform him that he is under arrest. Unlike traditional
+            arrests, however, K. is not handcuffed or taken to prison. Instead, the
+            guards simply tell him that legal proceedings have begun while allowing
+            him to continue his daily routine.
+        </p>
+
+        <div class="quote">
+            “You can’t leave, you’re under arrest. But that shouldn’t prevent you
+            from carrying on your profession” (Kafka).
+        </div>
+
+        <p>
+            This contradiction demonstrates that the court’s authority does not rely
+            on physical imprisonment. Josef K. remains outwardly free, yet he
+            immediately begins behaving as though his life has fundamentally changed.
+            He becomes defensive, anxious, and increasingly obsessed with proving his
+            innocence. This anxiety was not caused by physical threats or anything
+            of the sort but instead by the psychological manipulation performed by
+            the system that forces K.’s own mind to work against him.
+        </p>
+    </section>
+
+    <section>
+        <h2><em>Silent Hill 2</em> and Internalized Guilt</h2>
+
+        <p>
+            One modern work that reflects Kafka’s ideas about guilt and self-inflicted
+            punishment is <em>Silent Hill 2</em>. In the game, protagonist James
+            Sunderland enters the town of Silent Hill after receiving a letter from
+            his deceased wife, only to encounter disturbing monsters and environments
+            that reflect his own repressed guilt over killing her.
+        </p>
+
+        <p>
+            Much like Josef K. in <em>The Trial</em>, James is trapped within a system
+            of punishment that is deeply psychological rather than clearly legal or
+            physical. Neither character fully understands the forces judging them at
+            first, yet both gradually realize that their suffering is tied to internal
+            guilt.
+        </p>
+
+        <div class="theme-box">
+            <strong>Kafka and <em>Silent Hill 2</em>:</strong>
+            Both narratives suggest that the most terrifying forms of punishment can
+            occur when individuals internalize guilt and become participants in their
+            own suffering.
+        </div>
+
+        <p>
+            Kafka’s court never explains Josef K.’s crime, but K. still becomes
+            consumed by shame and eventually accepts execution. Similarly, Silent Hill
+            never explicitly sentences James through a formal authority, yet the town
+            forces him to confront manifestations of his own wrongdoing until he can
+            no longer avoid the truth.
+        </p>
+
+        <p>
+            Both works suggest that the most terrifying forms of punishment occur when
+            individuals internalize guilt and become participants in their own suffering.
+            While Kafka uses absurd bureaucracy and <em>Silent Hill 2</em> uses
+            psychological horror imagery, both narratives reveal how guilt can create
+            prisons far more powerful than physical walls.
+        </p>
+
+        <p>
+            Similarly, both works play with the ideas of a generic protagonist.
+            Anyone could really be in K.’s shoes. He is remarkably unimpressive and is
+            working a generic job. His will is not the strongest, constantly being
+            pulled around but still doing his best to prove his innocence. Similarly
+            to James, who is much more a character readers can project onto as he is a
+            controllable video game protagonist, it is very easy to place oneself in
+            these characters’ scenarios and realize these issues are not ones only
+            happening to ordinary people.
+        </p>
+    </section>
+
+    <section>
+        <h2>The Court as a Psychological Prison</h2>
+
+        <p>
+            Kafka’s court also functions in a similar way. The court does not need
+            prison bars because Josef K. becomes mentally imprisoned almost immediately.
+            He voluntarily rearranges his life around defending himself against
+            accusations that remain undefined. Kafka suggests that institutions become
+            most powerful when individuals begin enforcing authority upon themselves.
+        </p>
+
+        <p>
+            The physical structure of the court further reinforces its psychological
+            dominance. Throughout the novel, court offices are hidden in cramped
+            attics, apartment buildings, and obscure locations that appear disconnected
+            from traditional legal institutions.
+        </p>
+
+        <p>
+            When Josef K. attends his first hearing, he struggles to locate the
+            courtroom and discovers it in a crowded apartment complex filled with
+            confusion and disorder. Kafka describes suffocating hallways and chaotic
+            rooms that make the legal process appear deliberately inaccessible.
+            This environment reflects the court’s refusal to provide clarity.
+        </p>
+
+        <p>
+            Another parallel to <em>Silent Hill 2</em> is its use of confusing,
+            labyrinthine corridors and rooms to disorient the player and suck them
+            into a suffocating mind state.
+        </p>
+    </section>
+
+    <section>
+        <h2><em>In the Penal Colony</em>: Physical Punishment</h2>
+
+        <p>
+            Kafka explores similar themes of punishment and authority in
+            <em>In the Penal Colony</em>, but the story presents punishment in a far
+            more physically violent form than <em>The Trial</em>.
+        </p>
+
+        <p>
+            In <em>In the Penal Colony</em>, a prisoner is sentenced without
+            understanding his crime and is condemned by a machine that carves the law
+            he violated directly into his body until he dies. The condemned man is
+            never given an opportunity to defend himself, mirroring Josef K.’s
+            inability to understand the charges against him in <em>The Trial</em>.
+        </p>
+
+        <p>
+            However, while the punishment in <em>In the Penal Colony</em> is immediate
+            and visibly brutal, Kafka presents a more psychologically disturbing form
+            of punishment in <em>The Trial</em>. Josef K. is allowed to continue living
+            his normal life, yet the uncertainty of his trial gradually destroys his
+            sense of identity and freedom.
+        </p>
+
+        <p>
+            Both texts reveal legal systems that operate without fairness or
+            transparency, but <em>The Trial</em> suggests that psychological torment
+            may be even more effective than physical violence. By replacing the
+            execution machine with endless ambiguity, Kafka demonstrates how modern
+            institutions can punish individuals without ever needing instruments of
+            torture.
+        </p>
+    </section>
+
+    <section>
+        <h2>Josef K.’s Growing Complicity</h2>
+
+        <p>
+            As the novel progresses, Josef K. becomes increasingly complicit in his
+            own downfall. At the beginning of the story, he confidently believes that
+            the charges against him must be a mistake. He mocks the court officials
+            and assumes that logic will eventually resolve the situation.
+        </p>
+
+        <p>
+            However, this confidence gradually disappears. K. begins missing work
+            obligations, obsessing over legal strategy, and withdrawing from normal
+            life. His identity becomes consumed by the trial.
+        </p>
+    </section>
+
+    <section>
+        <h2>The Absurd and <em>The Myth of Sisyphus</em></h2>
+
+        <p>
+            This transformation reflects existential ideas later discussed by
+            <em>The Myth of Sisyphus</em>. Camus argues that human beings often search
+            for meaning in systems that provide no meaningful answers. Josef K.
+            repeatedly seeks justice from a legal structure that offers none.
+        </p>
+
+        <p>
+            Instead of rejecting the absurdity of the court, he becomes trapped within
+            it. His inability to abandon the trial demonstrates how deeply
+            institutional expectations shape human behavior. Even when evidence
+            suggests the court is illegitimate, K. continues participating because
+            he cannot imagine life outside its authority.
+        </p>
+    </section>
+
+    <section>
+        <h2>“Before the Law”</h2>
+
+        <p>
+            The cathedral scene represents one of the most important moments in the
+            novel because it reveals the philosophical foundation of Josef K.’s
+            suffering. A priest tells K. the parable “Before the Law,” in which a man
+            spends his entire life attempting to gain access to the law but is
+            continually denied entry.
+        </p>
+
+        <p>
+            Just before his death, he learns that the entrance had been meant only
+            for him. The story suggests that individuals may devote their lives to
+            seeking justice, truth, or meaning from institutions that were never
+            designed to provide those things.
+        </p>
+
+        <p>
+            The priest explains that misunderstanding is central to the law’s power.
+            Josef K. desperately tries to interpret the story, but no explanation
+            provides certainty. This mirrors his own legal struggle. Like the man in
+            the parable, K. continues seeking fairness from a system built on exclusion.
+            Kafka implies that institutions often preserve power by convincing
+            individuals that justice exists somewhere beyond their reach.
+        </p>
+    </section>
+
+    <section>
+        <h2>The Execution and Complete Surrender</h2>
+
+        <p>
+            The novel’s final execution demonstrates the complete success of the
+            court’s psychological control. Two men arrive at K.’s apartment and
+            escort him to a quarry where they prepare to kill him. K. offers minimal
+            resistance. Although he briefly considers fighting back, he ultimately
+            cooperates with the execution process.
+        </p>
+
+        <div class="quote">
+            Kafka writes that K. dies “like a dog” (Kafka).
+        </div>
+
+        <p>
+            This final line reflects both humiliation and surrender.
+        </p>
+
+        <p>
+            The execution is disturbing because the court never formally proves K.’s
+            guilt. No evidence is presented, no verdict is explained, and no crime
+            is named. Nevertheless, K. accepts his punishment. By the novel’s
+            conclusion, the court no longer needs to force obedience because K. has
+            fully internalized its authority. He participates in his own destruction.
+        </p>
+    </section>
+
+    <section>
+        <h2>Conclusion</h2>
+
+        <p>
+            Kafka’s <em>The Trial</em> remains relevant because it reveals how
+            institutions can control individuals without relying on overt violence.
+            Through ambiguity, surveillance, and psychological manipulation, the court
+            transforms Josef K. from a confident professional into someone who accepts
+            punishment without understanding his crime.
+        </p>
+
+        <p>
+            Kafka warns readers that systems of authority become most dangerous when
+            individuals stop questioning them. The true horror of <em>The Trial</em>
+            is not that the legal system is irrational, but that people willingly
+            surrender themselves to systems they cannot understand.
+        </p>
+
+        <p>
+            In presenting Josef K.’s psychological imprisonment, Kafka offers a
+            timeless critique of institutional power that continues to resonate in
+            modern society.
+        </p>
+    </section>
+
+    <section class="works-cited">
+        <h2>Works Cited</h2>
+
+        <p>
+            Camus, Albert. <em>The Myth of Sisyphus.</em>
+            Translated by Justin O’Brien, Vintage International, 1991.
+        </p>
+
+        <p>
+            Kafka, Franz. “In the Penal Colony.”
+            <em>The Complete Stories</em>, edited by Nahum N. Glatzer,
+            Schocken Books, 1971, pp. 140–167.
+        </p>
+
+        <p>
+            Kafka, Franz. <em>The Trial.</em>
+            Translated by Breon Mitchell, Schocken Books, 1998.
+        </p>
+
+        <p>
+            <em>Silent Hill 2.</em>
+            Developed by Team Silent, published by Konami, 2001.
+        </p>
+    </section>
+
+    <div class="back-to-top">
+        <a href="#" class="btn btn-outline-primary">
+            Back to Top
+        </a>
+    </div>
+
+</article>
+
+{% endblock %}

@@ -1,0 +1,79 @@
+<div class="cute-list-container">
+    <h1>Your Cute Pokémon List</h1>
+    <a href="/pokemon-game" class="back-btn">← Back to Game</a>
+
+    {% if cute_list %}
+        <div class="cute-grid">
+            {% for pokemon in cute_list %}
+                <div class="cute-pokemon">
+                    <img src="{{ pokemon.sprite }}" alt="{{ pokemon.name }}">
+                    <p>{{ pokemon.name|title }} #{{ pokemon.id }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="empty-message">Your cute list is empty! Click "So Cute!" on Pokémon you like.</p>
+    {% endif %}
+</div>
+
+<style>
+
+body {text-align: center; }
+
+.cute-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.cute-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cute-pokemon {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.cute-pokemon:hover {
+    transform: translateY(-5px);
+}
+
+.cute-pokemon img {
+    width: 100px;
+    height: 100px;
+}
+
+.cute-pokemon p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.empty-message {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 50px;
+}
+</style>
