@@ -1,0 +1,686 @@
+{% extends "base.html" %}
+{% import "bootstrap_wtf.html" as wtf %}
+
+{% block content %}
+
+<!-- Slow Parallax Background -->
+<div class="media-background"></div>
+
+<style>
+body {
+    background: #f7f9fc;
+    position: relative;
+}
+
+/* Same parallax background as index */
+.media-background {
+    position: fixed;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+
+    background-image: url("{{ url_for('static', filename='waves.webp') }}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.65;
+    z-index: -2;
+    pointer-events: none;
+    will-change: transform;
+}
+
+    /* Soft atmospheric glow */
+    .media-background::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+            radial-gradient(
+                circle at 20% 20%,
+                rgba(255,255,255,.8),
+                transparent 25%
+            ),
+            radial-gradient(
+                circle at 80% 70%,
+                rgba(120,255,230,.3),
+                transparent 30%
+            );
+    }
+
+    .media-hero {
+        background:
+            linear-gradient(
+                135deg,
+                rgba(255,255,255,.78),
+                rgba(220,250,247,.68)
+            );
+        color: #174b4b;
+
+        border: 1px solid rgba(255,255,255,.8);
+        border-radius: 30px;
+
+        padding: 60px 45px;
+        margin-bottom: 45px;
+
+        box-shadow:
+            0 15px 40px rgba(30,100,100,.15),
+            inset 0 2px 2px rgba(255,255,255,.9);
+
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    .media-hero h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+
+        background: linear-gradient(
+            90deg,
+            #147d87,
+            #e76f00,
+            #d82c3b
+        );
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .media-hero p {
+        font-size: 1.2rem;
+        max-width: 750px;
+    }
+
+    .media-section {
+        margin-bottom: 55px;
+    }
+
+    .media-section h2 {
+        color: #126c76;
+        font-weight: 700;
+        margin-bottom: 12px;
+        text-shadow: 0 2px 3px rgba(255,255,255,.8);
+    }
+
+    .section-description {
+        color: #315c60;
+        margin-bottom: 25px;
+        max-width: 800px;
+    }
+
+.media-card img {
+    display: block;
+    width: auto;
+    max-width: 82%;
+    height: 360px;
+    margin: 24px auto 10px;
+
+    object-fit: contain;
+
+    background: transparent;
+    border-radius: 8px;
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.2s ease;
+
+    transform-style: preserve-3d;
+    will-change: transform;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Slightly lift the artwork when hovering */
+.media-card img:hover {
+    box-shadow:
+        0 18px 35px rgba(0, 0, 0, 0.18);
+}
+   .media-card {
+    background: rgba(255,255,255,.45);
+    border: 1px solid rgba(255,255,255,.7);
+
+    border-radius: 24px;
+    overflow: hidden;
+    height: 100%;
+
+    box-shadow:
+        0 12px 30px rgba(30,100,100,.12),
+        inset 0 2px 2px rgba(255,255,255,.8);
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+    .media-card:hover {
+        transform: translateY(-7px);
+
+        box-shadow:
+            0 20px 40px rgba(30,100,100,.22),
+            inset 0 2px 3px rgba(255,255,255,1);
+    }
+
+    .media-card iframe {
+        border: 0;
+    }
+
+    .media-card-body {
+        padding: 24px;
+    }
+
+    .media-card h3 {
+        color: #155c63;
+        margin-bottom: 10px;
+    }
+
+    .media-card p {
+        color: #45676a;
+    }
+
+    .media-tag {
+        display: inline-block;
+
+        padding: 7px 13px;
+        border-radius: 20px;
+
+        background:
+            linear-gradient(
+                180deg,
+                rgba(255,255,255,.9),
+                rgba(205,241,237,.75)
+            );
+
+        color: #17656d;
+
+        border: 1px solid rgba(255,255,255,.8);
+
+        font-size: .85rem;
+        margin: 3px;
+
+        box-shadow:
+            0 2px 5px rgba(30,100,100,.1),
+            inset 0 1px 1px white;
+    }
+
+    /* Artwork */
+    .artwork {
+        border-radius: 22px;
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+
+        border: 4px solid rgba(255,255,255,.75);
+
+        box-shadow:
+            0 10px 25px rgba(30,100,100,.18),
+            inset 0 2px 3px white;
+
+        transition:
+            transform .25s ease,
+            box-shadow .25s ease;
+    }
+
+    .artwork:hover {
+        transform: scale(1.025);
+
+        box-shadow:
+            0 15px 35px rgba(30,100,100,.25),
+            0 0 20px rgba(255,255,255,.7);
+    }
+
+    /* Extra glossy section container */
+    .media-section {
+        position: relative;
+    }
+
+    /* Small responsive adjustments */
+    @media (max-width: 768px) {
+
+        .media-hero {
+            padding: 40px 25px;
+        }
+
+        .media-hero h1 {
+            font-size: 2.6rem;
+        }
+
+        .media-background {
+            background-position: center;
+        }
+    }
+</style>
+
+
+<div class="container py-5">
+
+    <!-- Hero -->
+    <div class="media-hero">
+
+        <h1>Media & Creative Work</h1>
+
+        <p class="mt-3 mb-0">
+            Video, graphic design, artwork, and other creative work
+            combining technology, storytelling, and visual communication.
+        </p>
+
+    </div>
+
+
+    <!-- Video Production -->
+<section class="media-section">
+
+    <h2>Video Production</h2>
+
+    <p class="section-description">
+        Video editing and digital media work created for clients,
+        projects, and promotional content.
+    </p>
+
+   <div class="row g-4 justify-content-center">
+
+        <!-- Zillow Video -->
+        <div class="col-lg-6">
+            <div class="media-card">
+
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.youtube.com/embed/v0GXBKcsT0E"
+                        title="3 Reasons the Zillow Zestimate Is Wrong"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <div class="media-card-body">
+                    <h3>
+                        3 Reasons the Zillow Zestimate Is Wrong
+                    </h3>
+
+                    <p>
+                        Educational real estate video created for Dad Life
+                        Property Solutions explaining why Zillow estimates
+                        can be inaccurate and what homeowners should consider
+                        when evaluating their property's value.
+                    </p>
+
+                    <span class="media-tag">Video Editing</span>
+                    <span class="media-tag">Real Estate</span>
+                    <span class="media-tag">Client Work</span>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Renovation Video -->
+        <div class="col-lg-6">
+            <div class="media-card">
+
+                <div class="ratio ratio-16x9">
+                    <iframe
+                        src="https://www.youtube.com/embed/9nkPIEPYiRI"
+                        title="How Much Does It Cost to Renovate a Home?"
+                        allowfullscreen>
+                </iframe>
+                </div>
+
+                <div class="media-card-body">
+                    <h3>
+                        How Much Does It Cost to Renovate a Home?
+                    </h3>
+
+                    <p>
+                        Educational content created for Dad Life Property
+                        Solutions exploring the hidden costs of home
+                        renovations and the financial considerations
+                        homeowners should understand.
+                    </p>
+
+                    <span class="media-tag">Video Editing</span>
+                    <span class="media-tag">Storytelling</span>
+                    <span class="media-tag">Client Work</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+  <div class="media-card">
+    <div class="ratio ratio-16x9">
+      <iframe
+        src="https://www.youtube.com/embed/lwgjFoKFBqw"
+        title="Experimental Art Music Video"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="media-card-body">
+      <h3>Sakura Music Video</h3>
+
+      <p>
+        An experimental music video exploring visual rhythm, atmosphere,
+        and abstract imagery through editing, composition, and sound.
+        Created as a personal creative project to experiment with
+        audiovisual storytelling outside of traditional narrative filmmaking.
+      </p>
+
+      <span class="media-tag">Video Production</span>
+      <span class="media-tag">Experimental Art</span>
+      <span class="media-tag">Music</span>
+      <span class="media-tag">Editing</span>
+    </div>
+  </div>
+</div>
+
+    </div>
+
+</section>
+
+
+    <!-- Graphic Design -->
+<section class="media-section">
+  <h2>Graphic Design & Visual Design</h2>
+
+  <p class="section-description">
+    Posters, promotional graphics, event materials, and experimental
+    image editing created for student organizations, personal projects,
+    and creative work.
+  </p>
+
+  <div class="row g-4 justify-content-center">
+
+    <!-- Fall Game Dev Meeting -->
+    <div class="col-lg-6">
+      <div class="media-card">
+        <img
+          src="{{ url_for('static', filename='fall_game_dev_meeting.jpg') }}"
+          alt="Fall meeting promotional graphic for Ithaca Game Development">
+
+        <div class="media-card-body">
+          <h3>Ithaca Game Development — Fall Meeting</h3>
+
+          <p>
+            Promotional artwork created for the Ithaca Game Development
+            organization to advertise a fall meeting and introduce students
+            to the club.
+          </p>
+
+          <span class="media-tag">Graphic Design</span>
+          <span class="media-tag">Event Promotion</span>
+          <span class="media-tag">Game Development</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- First Game Dev Meeting -->
+    <div class="col-lg-6">
+      <div class="media-card">
+        <img
+          src="{{ url_for('static', filename='first_game_dev_meeting.jpg') }}"
+          alt="Promotional poster for the first Ithaca Game Development meeting">
+
+        <div class="media-card-body">
+          <h3>Ithaca Game Development — First Meeting</h3>
+
+          <p>
+            Promotional poster designed for the first meeting of Ithaca Game
+            Development, combining pixel-art aesthetics with bold typography
+            and social media-oriented event information.
+          </p>
+
+          <span class="media-tag">Graphic Design</span>
+          <span class="media-tag">Poster Design</span>
+          <span class="media-tag">Branding</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Art Exhibition -->
+    <div class="col-lg-6">
+      <div class="media-card">
+        <img
+          src="{{ url_for('static', filename='art_exhibition_poster.jpg') }}"
+          alt="Final Art Exhibition promotional poster">
+
+        <div class="media-card-body">
+          <h3>Final Art Exhibition</h3>
+
+          <p>
+            Promotional artwork for a final art exhibition, combining
+            illustration, photography, typography, and a surreal
+            retro-inspired visual style.
+          </p>
+
+          <span class="media-tag">Graphic Design</span>
+          <span class="media-tag">Illustration</span>
+          <span class="media-tag">Typography</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Kutna Hora -->
+    <div class="col-lg-6">
+      <div class="media-card">
+        <img
+          src="{{ url_for('static', filename='kutna_hora_edit.jpg') }}"
+          alt="Edited photograph from the Kutná Hora mines">
+
+        <div class="media-card-body">
+          <h3>Kutná Hora — Experimental Photo Edit</h3>
+
+          <p>
+            An edited photograph from the Kutná Hora mines exploring
+            atmosphere, surreal imagery, lighting, and photographic
+            manipulation.
+          </p>
+
+          <span class="media-tag">Photo Editing</span>
+          <span class="media-tag">Digital Art</span>
+          <span class="media-tag">Experimental</span>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Rome -->
+    <div class="col-lg-6">
+      <div class="media-card">
+        <img
+          src="{{ url_for('static', filename='rome_windows_edit.jpg') }}"
+          alt="Edited photograph of Rome with retro Windows aesthetic">
+
+        <div class="media-card-body">
+          <h3>Rome — Old Windows Aesthetic</h3>
+
+          <p>
+            An experimental photographic composition combining a portrait
+            of Rome with nostalgic computer interfaces and an early-2000s
+            Windows visual aesthetic.
+          </p>
+
+          <span class="media-tag">Photo Editing</span>
+          <span class="media-tag">Digital Art</span>
+          <span class="media-tag">Visual Experimentation</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Artwork -->
+<section class="media-section">
+
+    <h2>Artwork & Visual Experiments</h2>
+
+    <p class="section-description">
+        Personal artwork, concept development, and visual experiments
+        exploring illustration, game design, and digital media.
+    </p>
+
+    <div class="row g-4 justify-content-center">
+
+        <!-- Aquatic Computer -->
+        <div class="col-lg-6">
+            <div class="media-card artwork-card">
+
+                <img
+                    src="{{ url_for('static', filename='aquatic_computer.jpg') }}"
+                    class="artwork"
+                    alt="Aquatic Computer artwork">
+
+                <div class="media-card-body">
+                    <h3>Aquatic Computer</h3>
+
+                    <p>
+                        An experimental physical art piece combining an
+                        old computer, found imagery, natural materials,
+                        and aquatic themes.
+                    </p>
+
+                    <span class="media-tag">Mixed Media</span>
+                    <span class="media-tag">Sculpture</span>
+                    <span class="media-tag">Experimental</span>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Mandible Concept Art -->
+        <div class="col-lg-6">
+            <div class="media-card artwork-card">
+
+                <img
+                    src="{{ url_for('static', filename='mandible_concept_art.jpg') }}"
+                    class="artwork"
+                    alt="Mandible concept art">
+
+                <div class="media-card-body">
+                    <h3>Mandible — Concept Art</h3>
+
+                    <p>
+                        Early concept artwork for <em>Mandible</em>,
+                        exploring characters, environments, and ideas
+                        that would eventually become part of the game.
+                    </p>
+
+                    <span class="media-tag">Concept Art</span>
+                    <span class="media-tag">Game Design</span>
+                    <span class="media-tag">Illustration</span>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Mandible Final Draft -->
+        <div class="col-lg-6">
+            <div class="media-card artwork-card">
+
+                <img
+                    src="{{ url_for('static', filename='mandible_antenna_sentinel.png') }}"
+                    class="artwork"
+                    alt="Mandible Antenna Sentinel final draft">
+
+                <div class="media-card-body">
+                    <h3>Mandible — Antenna Sentinel</h3>
+
+                    <p>
+                        A final character design from <em>Mandible</em>,
+                        developing the visual language and strange
+                        creatures that inhabit the game's world.
+                    </p>
+
+                    <span class="media-tag">Character Design</span>
+                    <span class="media-tag">Mandible</span>
+                    <span class="media-tag">Digital Art</span>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Spinning Cat -->
+        <div class="col-lg-6">
+            <div class="media-card artwork-card">
+
+                <img
+                    src="{{ url_for('static', filename='logo.gif') }}"
+                    class="artwork"
+                    alt="Spinning cat animation">
+
+                <div class="media-card-body">
+                    <h3>Spinning Cat</h3>
+
+                    <p>
+                        A small animated experiment made for fun.
+                    </p>
+
+                    <span class="media-tag">Animation</span>
+                    <span class="media-tag">GIF</span>
+                    <span class="media-tag">Just for Fun</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+</div>
+
+<script>
+    window.addEventListener("scroll", function () {
+
+        const background =
+            document.querySelector(".media-background");
+
+        if (background) {
+
+            const scrollPosition = window.scrollY;
+
+            background.style.transform =
+                `translateY(${scrollPosition * 0.15}px)`;
+        }
+
+    });
+</script>
+<script>
+document.querySelectorAll(".media-card img").forEach(function (image) {
+
+    image.addEventListener("mousemove", function (e) {
+
+        const rect = image.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+
+        const rotateX = ((y - centerY) / centerY) * -4;
+        const rotateY = ((x - centerX) / centerX) * 4;
+
+        image.style.transform =
+            `perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
+    });
+
+    image.addEventListener("mouseleave", function () {
+        image.style.transform =
+            "perspective(800px) rotateX(0deg) rotateY(0deg) scale(1)";
+    });
+
+});
+</script>
+{% endblock %}

@@ -241,6 +241,10 @@ def calculate_accuracy(game_state):
 def potoo():
    return render_template('projects/potoo.html', title='Potoo') 
 
+@app.route('/media')
+def media():
+    return render_template('media.html')
+
 
 
 

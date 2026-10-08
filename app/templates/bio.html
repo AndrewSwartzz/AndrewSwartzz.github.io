@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="parallax-background"></div>
 
 <style>
-body{
-    background:linear-gradient(180deg,#eef5ff,#ffffff);
+body {
+    background: #f7f9fc;
+    position: relative;
 }
 .hero{
     background:linear-gradient(135deg,#0d6efd,#5aa9ff);
@@ -56,6 +58,32 @@ body{
     padding-left:20px;
     margin-bottom:25px;
 }
+
+body {
+    background: #f7f9fc;
+    position: relative;
+}
+
+/* Same parallax background as index */
+.parallax-background {
+    position: fixed;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+
+    background-image: url("{{ url_for('static', filename='waves.webp') }}");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 0.65;
+
+    z-index: -1;
+    pointer-events: none;
+    will-change: transform;
+}
+
 </style>
 
 <div class="container py-5">
@@ -117,7 +145,7 @@ Contact Me
     <p>
         Outside of academics, I founded the Ithaca Game Development Organization,
         work in consumer technology at Best Buy, and am currently developing
-        BirdDex—a birding companion inspired by collectible adventure games.
+        Potoo—a birding companion inspired by collectible adventure games.
     </p>
 </div>
 
@@ -130,10 +158,10 @@ Contact Me
 <div class="card-body">
 <div class="timeline">
 
-<h4>BirdDex</h4>
+<h4>Potoo</h4>
 
 <p>
-BirdDex is an educational birding application currently in development using
+Potoo is an educational birding application currently in development using
 the Godot Engine. Inspired by games like Pokémon, it encourages users to
 identify birds, complete collections, participate in seasonal events, take
 photographs, and learn about local wildlife through interactive gameplay.
@@ -351,6 +379,23 @@ Study Abroad: Prague, Czechia</p>
     </div>
 
     <div class="timeline-item">
+    <h4>Independent Study — Game Development Curriculum</h4>
+    <p><strong>Ithaca College</strong> | Spring 2026</p>
+    <p>
+        Completed an independent study focused on designing a foundational
+        computer science game development curriculum using the Godot Engine.
+        The project explored how game development can be used to teach
+        transferable computer science concepts through hands-on projects.
+    </p>
+    <ul>
+        <li>Researched existing university game development and computer science curricula.</li>
+        <li>Designed scaffolded Godot projects to introduce foundational programming concepts.</li>
+        <li>Developed and delivered a Godot workshop for student game developers.</li>
+        <li>Created debugging and refactoring exercises focused on software architecture and problem solving.</li>
+    </ul>
+</div>
+
+    <div class="timeline-item">
 
         <h4>Content Creator & Video Editor</h4>
         <p><strong>Self-Directed / Freelance</strong></p>
@@ -400,6 +445,22 @@ Study Abroad: Prague, Czechia</p>
         </ul>
 
     </div>
+
+    <div class="timeline-item">
+    <h4>Volunteer</h4>
+    <p><strong>Cornell Lab of Ornithology</strong></p>
+    <p>
+        Volunteer with the Cornell Lab of Ornithology supporting bird-related
+        outreach and educational activities. This experience combines my
+        interests in ornithology, environmental education, and public
+        communication.
+    </p>
+    <ul>
+        <li>Supported outreach and educational activities related to birds and conservation.</li>
+        <li>Helped explain the importance of bird-safe glass and bird-friendly design.</li>
+        <li>Communicated bird-related information to visitors and community members.</li>
+    </ul>
+</div>
 
     <div class="timeline-item">
 
@@ -461,5 +522,18 @@ Study Abroad: Prague, Czechia</p>
 </div>
 
 </div>
+
+<script>
+window.addEventListener("scroll", function () {
+    const background = document.querySelector(".parallax-background");
+
+    if (background) {
+        const scrollPosition = window.scrollY;
+
+        background.style.transform =
+            `translateY(${scrollPosition * 0.15}px)`;
+    }
+});
+</script>
 
 {% endblock %}
