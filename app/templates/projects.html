@@ -213,6 +213,45 @@
     </div>
 </div>
 
+
+<!-- Birding Data Explorer -->
+<div class="col-lg-4">
+    <div class="card project-card h-100">
+
+        <img
+            src="{{ url_for('static', filename='ebird.png') }}"
+            class="card-img-top"
+            alt="Birding Data Explorer">
+
+        <div class="card-body d-flex flex-column">
+
+            <h3 class="card-title">Birding Data Explorer</h3>
+
+            <p class="card-text text-muted">
+                An interactive bird-observation explorer built from my
+                personal eBird data. Explore recorded species, observation
+                locations, and dates through a searchable table and
+                interactive map.
+            </p>
+
+            <div class="mb-3">
+                <span class="badge bg-primary">Flask</span>
+                <span class="badge bg-success">Python</span>
+                <span class="badge bg-info text-dark">eBird CSV</span>
+                <span class="badge bg-warning text-dark">Leaflet</span>
+                <span class="badge bg-secondary">Data Visualization</span>
+            </div>
+
+            <a href="{{ url_for('birding') }}"
+               class="btn btn-primary mt-auto">
+                Explore Birding Data →
+            </a>
+
+        </div>
+    </div>
+</div>
+
+
         <!-- Mandible -->
         <div class="col-lg-4">
 

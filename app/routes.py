@@ -1,5 +1,8 @@
 from datetime import datetime, timezone, date
 from urllib.parse import urlsplit
+import csv
+from pathlib import Path
+
 
 from flask import (
     render_template,
@@ -240,6 +243,63 @@ def calculate_accuracy(game_state):
 @app.route('/potoo')
 def potoo():
    return render_template('projects/potoo.html', title='Potoo') 
+
+
+@app.route("/birding")
+def birding():
+    csv_path = Path(app.root_path) / "data" / "MyEBirdData-1.csv"
+
+    observations = []
+
+    with csv_path.open(
+        "r", encoding="utf-8-sig", newline=""
+    ) as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            try:
+                latitude = float(row["Latitude"])
+                longitude = float(row["Longitude"])
+
+                if not (
+                    -90 <= latitude <= 90
+                    and -180 <= longitude <= 180
+                ):
+                    continue
+
+                observations.append({
+                    "species": row["Common Name"] or "Unknown species",
+                    "scientific_name": row["Scientific Name"] or "",
+                    "count": row["Count"] or "Not recorded",
+                    "location": row["Location"] or "Unknown location",
+                    "date": row["Date"] or "",
+                    "time": row["Time"] or "",
+                    "latitude": latitude,
+                    "longitude": longitude,
+                    "location_id": row["Location ID"] or "",
+                })
+
+            except (ValueError, TypeError, KeyError):
+                continue
+
+    species_names = {
+        obs["species"] for obs in observations
+    }
+
+    location_names = {
+        obs["location_id"] or obs["location"]
+        for obs in observations
+    }
+
+    return render_template(
+        "projects/birding.html",
+        title="Birding",
+        observations=observations,
+        total_observations=len(observations),
+        unique_species=len(species_names),
+        unique_locations=len(location_names),
+    )
+
 
 @app.route('/media')
 def media():
