@@ -156,23 +156,8 @@ body {
     margin-top: 8px;
 }
 
-/* Bubble layout */
 
-.activity-bubble-grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 55px;
-    padding: 45px 15px;
-}
 
-.activity-node {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 0 1 210px;
-}
 
 /* GLASS WATER BUBBLES */
 
@@ -321,6 +306,101 @@ body {
     opacity: .8;
 }
 
+
+/* Organic bubble arrangement */
+.activity-bubble-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-auto-rows: minmax(210px, auto);
+    align-items: center;
+    justify-items: center;
+    gap: 5px 15px;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding: 45px 15px;
+}
+
+.activity-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+/* Different bubble sizes */
+.bubble-large {
+    width: 190px;
+    height: 190px;
+}
+
+.bubble-medium {
+    width: 165px;
+    height: 165px;
+}
+
+.bubble-small {
+    width: 140px;
+    height: 140px;
+}
+
+/* Uneven positioning: creates a natural bubble field */
+.activity-node:nth-child(1) {
+    transform: translate(15px, 25px);
+}
+
+.activity-node:nth-child(2) {
+    transform: translate(-25px, -15px);
+}
+
+.activity-node:nth-child(3) {
+    transform: translate(30px, 40px);
+}
+
+.activity-node:nth-child(4) {
+    transform: translate(-35px, -20px);
+}
+
+.activity-node:nth-child(5) {
+    transform: translate(15px, 30px);
+}
+
+.activity-node:nth-child(6) {
+    transform: translate(35px, -25px);
+}
+
+.activity-node:nth-child(7) {
+    transform: translate(-20px, 15px);
+}
+
+.activity-node:nth-child(8) {
+    transform: translate(25px, -35px);
+}
+
+.activity-node:nth-child(9) {
+    transform: translate(-30px, 20px);
+}
+
+/* Smaller screens */
+@media (max-width: 768px) {
+    .activity-bubble-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-auto-rows: minmax(190px, auto);
+    }
+
+    .activity-node {
+        transform: none !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .activity-bubble-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+}
+
+
 /* Hover = extra shine */
 
 .activity-bubble:hover {
@@ -404,11 +484,6 @@ body {
     font-size: .85rem;
 }
 
-@media (max-width: 576px) {
-    .activity-bubble-grid {
-        gap: 35px;
-    }
-}
 
 @media (prefers-reduced-motion: reduce) {
     .activity-bubble,
@@ -580,6 +655,187 @@ body {
                    class="btn btn-sm btn-primary mt-3">Explore Project →</a>
             </div>
         </div>
+
+
+<!-- Bird Map -->
+<div class="activity-node">
+    <button class="activity-bubble bubble-large"
+            aria-expanded="false"
+            aria-controls="activity-birding">
+        <span class="bubble-number">04</span>
+        <span class="bubble-title">Bird Map</span>
+        <span class="bubble-subtitle">GIS & Data</span>
+    </button>
+
+    <div class="activity-details" id="activity-birding" hidden>
+        <h5>Birding Data Explorer</h5>
+        <p>
+            An interactive explorer built from personal eBird data.
+            Explore recorded bird species, observation locations,
+            and dates through a searchable table and interactive map.
+        </p>
+        <div class="activity-tags">
+            <span>Python</span>
+            <span>Flask</span>
+            <span>eBird</span>
+            <span>Leaflet</span>
+            <span>GIS</span>
+        </div>
+        <a href="{{ url_for('birding') }}"
+           class="btn btn-sm btn-primary mt-3">
+            Explore Bird Map →
+        </a>
+    </div>
+</div>
+
+<!-- Mandible -->
+<div class="activity-node">
+    <button class="activity-bubble bubble-medium"
+            aria-expanded="false"
+            aria-controls="activity-mandible">
+        <span class="bubble-number">05</span>
+        <span class="bubble-title">Mandible</span>
+        <span class="bubble-subtitle">Game Development</span>
+    </button>
+
+    <div class="activity-details" id="activity-mandible" hidden>
+        <h5>Mandible</h5>
+        <p>
+            A psychological exploration game about anxiety,
+            paranoia, identity, and resilience. Features hand-drawn
+            artwork, surreal environments, and interactive storytelling.
+        </p>
+        <div class="activity-tags">
+            <span>Godot</span>
+            <span>GDScript</span>
+            <span>Pixel Art</span>
+            <span>Narrative Design</span>
+        </div>
+        <a href="{{ url_for('mandible') }}"
+           class="btn btn-sm btn-primary mt-3">
+            Read Development Article →
+        </a>
+    </div>
+</div>
+
+<!-- Potoo -->
+<div class="activity-node">
+    <button class="activity-bubble bubble-large"
+            aria-expanded="false"
+            aria-controls="activity-potoo">
+        <span class="bubble-number">06</span>
+        <span class="bubble-title">Potoo</span>
+        <span class="bubble-subtitle">Nature & Technology</span>
+    </button>
+
+    <div class="activity-details" id="activity-potoo" hidden>
+        <h5>Potoo</h5>
+        <p>
+            A mobile nature companion combining species identification,
+            local discovery, and game-like progression to encourage
+            people to explore the natural world.
+        </p>
+        <div class="activity-tags">
+            <span>React Native</span>
+            <span>Godot</span>
+            <span>Mobile</span>
+        </div>
+        <a href="{{ url_for('potoo') }}"
+           class="btn btn-sm btn-primary mt-3">
+            Explore Potoo →
+        </a>
+    </div>
+</div>
+
+<!-- Tamagotchi -->
+<div class="activity-node">
+    <button class="activity-bubble bubble-small"
+            aria-expanded="false"
+            aria-controls="activity-tamagotchi">
+        <span class="bubble-number">07</span>
+        <span class="bubble-title">Tamagotchi</span>
+        <span class="bubble-subtitle">Web Development</span>
+    </button>
+
+    <div class="activity-details" id="activity-tamagotchi" hidden>
+        <h5>Virtual Pet Web App</h5>
+        <p>
+            A browser-based virtual pet inspired by classic Tamagotchi
+            devices. Feed, play with, and care for a digital companion.
+        </p>
+        <div class="activity-tags">
+            <span>Flask</span>
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>SQL</span>
+        </div>
+        <a href="{{ url_for('project') }}"
+           class="btn btn-sm btn-primary mt-3">
+            View Project →
+        </a>
+    </div>
+</div>
+
+<!-- Independent Study -->
+<div class="activity-node">
+    <button class="activity-bubble bubble-large"
+            aria-expanded="false"
+            aria-controls="activity-study">
+        <span class="bubble-number">08</span>
+        <span class="bubble-title">Game Dev</span>
+        <span class="bubble-subtitle">Computer Science Education</span>
+    </button>
+
+    <div class="activity-details" id="activity-study" hidden>
+        <h5>Game Development Curriculum</h5>
+        <p>
+            An independent study exploring how game development
+            can teach foundational computer science concepts through
+            interactive, project-based learning.
+        </p>
+        <div class="activity-tags">
+            <span>Godot</span>
+            <span>GDScript</span>
+            <span>Education</span>
+            <span>OOP</span>
+        </div>
+        <a href="{{ url_for('independent_study') }}"
+           class="btn btn-sm btn-primary mt-3">
+            View Independent Study →
+        </a>
+    </div>
+</div>
+
+<!-- Pokémon Learning Game -->
+<div class="activity-node">
+    <button class="activity-bubble bubble-medium"
+            aria-expanded="false"
+            aria-controls="activity-pokemon">
+        <span class="bubble-number">09</span>
+        <span class="bubble-title">Pokémon</span>
+        <span class="bubble-subtitle">Interactive Applications</span>
+    </button>
+
+    <div class="activity-details" id="activity-pokemon" hidden>
+        <h5>Pokémon Learning Game</h5>
+        <p>
+            An interactive identification game where players identify
+            randomly selected Pokémon, track their accuracy, and build
+            a personal collection.
+        </p>
+        <div class="activity-tags">
+            <span>Flask</span>
+            <span>Python</span>
+            <span>JavaScript</span>
+            <span>REST API</span>
+        </div>
+        <a href="{{ url_for('pokemon_game_project') }}"
+           class="btn btn-sm btn-primary mt-3">
+            View Project →
+        </a>
+    </div>
+</div>
+
 
     </div>
 
