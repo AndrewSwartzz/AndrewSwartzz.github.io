@@ -244,6 +244,9 @@ def calculate_accuracy(game_state):
 def potoo():
    return render_template('projects/potoo.html', title='Potoo') 
 
+@app.route("/biodiversity")
+def biodiversity():
+    return render_template("posts/biodiversity.html")
 
 @app.route("/birding")
 def birding():

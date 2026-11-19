@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+:root{
+  --ink:#203d36;--muted:#63766e;--green:#477b62;--dark:#28543f;
+  --sage:#e8f0e8;--paper:#f5f7f1;--line:#dce6dc;--gold:#c99b4a;
+}
+.bio-page{color:var(--ink);background:var(--paper);padding:34px 0 70px}
+.bio-page .container{max-width:1120px}
+.bio-hero{overflow:hidden;border-radius:26px;padding:clamp(32px,6vw,68px);margin-bottom:26px;color:#f8fbf6;background:radial-gradient(circle at 85% 15%,rgba(205,220,183,.24),transparent 28%),linear-gradient(125deg,#203f35 0%,#35634b 58%,#668568 100%);box-shadow:0 18px 42px rgba(34,65,49,.16)}
+.bio-kicker{display:inline-block;padding:7px 12px;border:1px solid #ffffff40;border-radius:999px;background:#ffffff18;color:#e7f0e3;font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.bio-hero h1{max-width:850px;margin:22px 0 18px;color:#fff;font-family:Georgia,serif;font-size:clamp(2.25rem,5vw,4.2rem);line-height:1.06;letter-spacing:-.035em}
+.bio-hero .lead{max-width:780px;color:#e4eee5;font-size:clamp(1.05rem,2vw,1.28rem);line-height:1.65}
+.bio-meta,.bio-tags{display:flex;flex-wrap:wrap;gap:9px 20px;margin-top:24px;color:#d4e3d6;font-size:.9rem}.bio-tags{gap:8px}
+.bio-tag{padding:7px 12px;border-radius:999px;color:#e8f1e8;background:#ffffff1a;border:1px solid #ffffff33;font-size:.83rem}
+.bio-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;padding:12px;border:1px solid var(--line);border-radius:16px;background:#ffffffdf}
+.bio-nav a{color:var(--dark);text-decoration:none;font-size:.88rem;font-weight:650;padding:8px 11px;border-radius:999px}.bio-nav a:hover{background:var(--sage)}
+.bio-section{padding:clamp(22px,4vw,38px);margin-bottom:22px;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 8px 24px #2241310b}
+.bio-section h2{margin:0 0 18px;color:var(--dark);font-family:Georgia,serif;font-size:clamp(1.55rem,3vw,2.1rem)}
+.bio-section h3{margin:26px 0 10px;color:#37694d;font-size:1.15rem;font-weight:750}.bio-section h4{color:#37694d;font-size:1rem;font-weight:750}
+.bio-section p,.bio-section li{line-height:1.78}.bio-eyebrow{margin-bottom:8px;color:#78917d;font-size:.76rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.bio-intro{max-width:900px;color:#435b4d;font-size:1.08rem;line-height:1.8}
+.bio-callout{padding:18px 20px;border-left:4px solid var(--gold);border-radius:0 12px 12px 0;background:#fbf7ed;color:#5b513d}
+.bio-note{padding:16px 18px;border:1px solid #e5eadd;border-radius:12px;background:#f7f9f3;color:#596b5d;font-size:.92rem}
+.bio-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}
+.bio-stat{padding:19px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(145deg,#fbfdf9,#eef4eb)}
+.bio-stat .number{display:block;color:var(--dark);font-size:2rem;font-weight:800;line-height:1.1}.bio-stat .label{display:block;margin-top:8px;color:var(--muted);font-size:.84rem;line-height:1.4}
+.bio-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:13px}.bio-table{width:100%;margin:0;border-collapse:collapse;font-size:.94rem}
+.bio-table th{padding:13px 15px;color:#fff;background:#37694d;text-align:left;white-space:nowrap}.bio-table td{padding:12px 15px;border-top:1px solid #e7eee5;vertical-align:top}
+.bio-table tbody tr:nth-child(even){background:#f7faf5}.bio-table td:first-child{font-weight:650;color:#345c43}
+.bio-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.bio-mini-card{height:100%;padding:21px;border:1px solid var(--line);border-radius:15px;background:#f9fbf7}.bio-mini-card h3{margin-top:0}
+.bio-step{display:grid;grid-template-columns:38px 1fr;gap:13px;padding:14px 0;border-bottom:1px solid #edf1e9}.bio-step:last-child{border-bottom:0}
+.bio-step-num{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#e5eee3;color:#315b40;font-weight:800}
+.bio-figure{margin:22px 0 28px;padding:14px;border:1px solid var(--line);border-radius:16px;background:#fbfcf9}
+.bio-figure img{display:block;width:100%;height:auto;max-height:760px;object-fit:contain;border-radius:10px;background:#fff}
+.bio-figure figcaption{padding:12px 6px 3px;color:#63766e;font-size:.9rem;line-height:1.65}
+.bio-figure figcaption strong{color:#315b40}
+.bio-figure .figure-description{display:block;margin-top:5px;color:#53675b}
+.analysis-status{display:inline-block;margin-bottom:12px;padding:6px 10px;border-radius:999px;color:#725c2d;background:#f8f0dc;border:1px solid #ead9ad;font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.code-panel{overflow-x:auto;padding:18px;border-radius:13px;background:#1f2c27;color:#e4eee5;font:.86rem/1.65 ui-monospace,Menlo,Consolas,monospace}
+.bio-reference{padding:14px 0;border-bottom:1px solid #edf1e9}.bio-reference:last-child{border-bottom:0}.bio-reference a{color:#37694d;overflow-wrap:anywhere}
+.bio-footer{padding:28px 10px 0;color:#708074;text-align:center;font-size:.88rem}
+@media(max-width:800px){.bio-stat-grid{grid-template-columns:repeat(2,1fr)}.bio-grid-2{grid-template-columns:1fr}}
+@media(max-width:480px){.bio-stat-grid{gap:8px}.bio-stat{padding:14px}.bio-stat .number{font-size:1.65rem}.bio-nav{gap:3px}.bio-nav a{font-size:.8rem;padding:7px 8px}.bio-figure{padding:8px}}
+</style>
+
+<div class="bio-page"><div class="container">
+<header class="bio-hero">
+  <span class="bio-kicker">GIS · Biodiversity · Citizen Science</span>
+  <h1>Mapping Plant Observation Patterns Around Falcon Sightings</h1>
+  <p class="lead">An exploratory spatial analysis combining iNaturalist observations, Python data preparation, QGIS, and R visualizations to examine how recorded plant taxa are distributed around falcon observation locations in the Ithaca, New York region.</p>
+  <div class="bio-meta"><span>📍 Ithaca, New York</span><span>🗓️ Observation data: 2024–2026</span><span>🧭 Python · QGIS · R</span></div>
+  <div class="bio-tags"><span class="bio-tag">Spatial analysis</span><span class="bio-tag">iNaturalist API</span><span class="bio-tag">Citizen science</span><span class="bio-tag">Conservation technology</span></div>
+</header>
+
+<nav class="bio-nav" aria-label="Research sections">
+<a href="#overview">Overview</a><a href="#question">Research question</a><a href="#study-area">Study area</a><a href="#workflow">Methods</a><a href="#findings">Findings</a><a href="#figures">Figures</a><a href="#analysis">Analysis</a><a href="#limitations">Limitations</a><a href="#next-steps">Next steps</a><a href="#references">References</a>
+</nav>
+
+<section class="bio-section" id="overview">
+<div class="bio-eyebrow">Project overview</div><h2>Using spatial data to ask ecological questions</h2>
+<p class="bio-intro">This project explores whether the plant taxa represented in iNaturalist observations near falcon observation locations differ from those recorded near randomly generated comparison locations. It combines community-contributed biodiversity records with spatial analysis in QGIS and descriptive visualizations in R.</p>
+<p>The workflow brings together data acquisition, spatial processing, taxonomic summaries, and map-based communication. Falcon observation locations were buffered and compared with an equal number of random locations within a defined Ithaca-area study boundary. Plant observation records intersecting those sampling areas were then summarized and compared.</p>
+<div class="bio-callout mt-4"><strong>Scope of interpretation:</strong> This is an exploratory analysis of recorded observations. It does not test plant abundance, falcon diet, habitat preference, or a causal ecological relationship. iNaturalist records show where organisms were documented, not necessarily where they are most abundant.</div>
+</section>
+
+<section class="bio-section" id="question">
+<div class="bio-eyebrow">Research direction</div><h2>Research question & objectives</h2>
+<h3 class="mt-0">Are certain plant taxa disproportionately represented in iNaturalist observations surrounding falcon observation locations compared with randomly selected locations in the Ithaca study area?</h3>
+<p>Here, “represented” refers to the frequency and relative frequency of recorded plant observations. It does not imply that a plant is ecologically preferred by falcons or more abundant in the landscape.</p>
+<div class="bio-grid-2 mt-4">
+<div class="bio-mini-card"><h3>01 · Characterize</h3><p class="mb-0">Map and summarize plant observation records spatially associated with falcon buffers.</p></div>
+<div class="bio-mini-card"><h3>02 · Compare</h3><p class="mb-0">Create a random-location comparison group within the same study boundary and summarize its associated plant records.</p></div>
+<div class="bio-mini-card"><h3>03 · Evaluate</h3><p class="mb-0">Use descriptive statistics and visual comparisons to examine taxonomic representation, observation quality, and spatial structure.</p></div>
+<div class="bio-mini-card"><h3>04 · Improve</h3><p class="mb-0">Identify how GIS methods, data quality, and sampling design can be strengthened for future biodiversity research.</p></div>
+</div>
+</section>
+
+<section class="bio-section" id="study-area">
+<div class="bio-eyebrow">Geographic context</div><h2>Study area and sampling locations</h2>
+<p>The study-area polygon covers approximately 359.35 km² in the Ithaca, New York region. It defines the geographic extent for the falcon observations and the generation of random comparison locations. Both sampling groups contain 124 locations.</p>
+<figure class="bio-figure">
+<img src="{{ url_for('static', filename='figure1.png') }}" alt="Ithaca study area boundary with 124 falcon observation locations and 124 random comparison locations" loading="lazy">
+<figcaption><strong>Figure 1. Ithaca study area and sampling locations.</strong><span class="figure-description">The black boundary outlines the study area. The map displays 124 falcon observation locations and 124 randomly generated comparison locations across the study region.</span></figcaption>
+</figure>
+</section>
+
+<section class="bio-section" id="workflow">
+<div class="bio-eyebrow">Data & methods</div><h2>GIS workflow</h2>
+<p>The workflow combines point observations, polygon buffers, spatial selection, and taxonomic summaries. iNaturalist records were collected and prepared as georeferenced observation datasets, then organized and analyzed in QGIS and R.</p>
+<div class="bio-step"><div class="bio-step-num">1</div><div><h4>Collect falcon observations</h4><p class="mb-0">Compile 124 falcon observation locations within the study boundary. The records include observation identifiers, taxonomic names, dates, quality classifications, and coordinates.</p></div></div>
+<div class="bio-step"><div class="bio-step-num">2</div><div><h4>Collect plant observations</h4><p class="mb-0">Retrieve georeferenced plant records from iNaturalist, retaining taxonomic labels, observation identifiers, dates, quality classifications, and coordinates.</p></div></div>
+<div class="bio-step"><div class="bio-step-num">3</div><div><h4>Create falcon-associated buffers</h4><p class="mb-0">Create a buffer around each falcon location. The preliminary QGIS workflow used EPSG:4326 (WGS 84) and an entered distance of approximately 0.0009 degrees, intended to approximate 100 meters.</p></div></div>
+<div class="bio-step"><div class="bio-step-num">4</div><div><h4>Generate random comparison locations</h4><p class="mb-0">Generate 124 random points within the study-area polygon and create a corresponding set of buffers using the same approximate angular distance.</p></div></div>
+<div class="bio-step"><div class="bio-step-num">5</div><div><h4>Associate plant observations spatially</h4><p class="mb-0">Use spatial relationships in QGIS to identify plant records falling within the falcon-associated and random buffer areas.</p></div></div>
+<div class="bio-step"><div class="bio-step-num">6</div><div><h4>Summarize and visualize</h4><p class="mb-0">Create individual-observation and summary outputs, compare taxonomic-label frequencies and observation quality, and produce maps and charts in QGIS and R.</p></div></div>
+<div class="bio-note mt-4"><strong>Distance and coordinate note:</strong> 0.0009 degrees is an approximation, not a precise 100-meter radius. Degrees of longitude and latitude represent different ground distances, and longitude distance varies with latitude. The existing buffers are retained for this preliminary analysis; validating or rebuilding them in a projected coordinate system such as UTM Zone 18N (EPSG:32618) using meters remains an important next step.</div>
+
+<h3>Data organization</h3>
+<div class="bio-table-wrap"><table class="bio-table"><thead><tr><th>Dataset</th><th>Role in analysis</th><th>Current count</th></tr></thead><tbody>
+<tr><td>Falcon observation locations</td><td>Locations of recorded falcon sightings</td><td>124</td></tr>
+<tr><td>Random comparison locations</td><td>Comparison locations within study boundary</td><td>124</td></tr>
+<tr><td>Falcon buffers</td><td>Approximate areas around falcon observations</td><td>124 polygons</td></tr>
+<tr><td>Random buffers</td><td>Approximate areas around random locations</td><td>124 polygons</td></tr>
+<tr><td>Plants near falcons</td><td>Individual plant records spatially associated with falcon buffers</td><td>426 records</td></tr>
+<tr><td>Plants near random locations</td><td>Individual plant records spatially associated with random buffers</td><td>46 records</td></tr>
+</tbody></table></div>
+</section>
+
+<section class="bio-section" id="findings">
+<div class="bio-eyebrow">Current results</div><h2>Preliminary findings</h2>
+<p>The current individual-observation layers contain more plant records associated with falcon buffers than with random buffers. The difference is descriptive: equal numbers of sampling locations do not guarantee equal observation effort, and the two groups differ in spatial clustering and total recorded observations.</p>
+<div class="bio-stat-grid">
+<div class="bio-stat"><span class="number">124</span><span class="label">Falcon observation locations</span></div>
+<div class="bio-stat"><span class="number">124</span><span class="label">Random comparison locations</span></div>
+<div class="bio-stat"><span class="number">426</span><span class="label">Plant records associated with falcon buffers</span></div>
+<div class="bio-stat"><span class="number">46</span><span class="label">Plant records associated with random buffers</span></div>
+</div>
+<div class="bio-table-wrap"><table class="bio-table"><thead><tr><th>Measure</th><th>Falcon-associated</th><th>Random comparison</th></tr></thead><tbody>
+<tr><td>Sampling locations / buffers</td><td>124</td><td>124</td></tr>
+<tr><td>Individual plant observation records</td><td>426</td><td>46</td></tr>
+<tr><td>Distinct taxonomic labels in frequency output</td><td>259</td><td>41</td></tr>
+<tr><td>Research Grade records</td><td>130 (30.5%)</td><td>15 (32.6%)</td></tr>
+<tr><td>Needs ID records</td><td>279 (65.5%)</td><td>30 (65.2%)</td></tr>
+<tr><td>Casual records</td><td>17 (4.0%)</td><td>1 (2.2%)</td></tr>
+<tr><td>Shared exact taxonomic labels</td><td colspan="2">18</td></tr>
+<tr><td>Intersecting buffer pairs</td><td>184</td><td>1</td></tr>
+</tbody></table></div>
+
+<h3>Frequently recorded taxonomic labels</h3>
+<p>In the falcon-associated frequency table, the most frequent label was <em>Symphyotrichum novae-angliae</em> (15 records), followed by <em>Symphyotrichum</em> (9) and <em>Ligustrum obtusifolium</em> (7). In the random comparison table, <em>Ageratina altissima</em> was most frequent (3 records); <em>Aquilegia canadensis</em>, <em>Campanula intercedens</em>, and <em>Galium</em> each had 2 records. Labels may represent species, genera, or broader taxonomic groups, so they are not all equivalent species-level identifications.</p>
+<p>The relative-frequency comparison provides a different view of the data. For example, <em>Symphyotrichum novae-angliae</em> accounts for 3.52% of falcon-associated plant records, while <em>Ageratina altissima</em> accounts for 6.52% of random-associated records. These percentages are calculated within each group and remain sensitive to observation effort and sample size.</p>
+<div class="bio-callout mt-4"><strong>Important distinction:</strong> The falcon summary layer contained 1,051 plant-buffer associations, while the individual plant-observation layer contained 426 records. These are different units. Because buffers overlap, a single plant observation may be associated with more than one buffer. The 426 count refers to the individual-observation layer, not the total number of buffer-observation associations.</div>
+</section>
+
+<section class="bio-section" id="figures">
+<div class="bio-eyebrow">Visual documentation</div><h2>Maps & figures</h2>
+<p>The eight figures document the study geography, sampling design, spatial distribution of plant records, taxonomic summaries, observation quality, and a key spatial limitation. Together, they show both the descriptive patterns and the design considerations that shape interpretation.</p>
+
+<figure class="bio-figure">
+<img src="{{ url_for('static', filename='figure2.png') }}" alt="Close-up map comparing falcon-associated buffers in blue and random comparison buffers in green" loading="lazy">
+<figcaption><strong>Figure 2. Falcon-associated and random comparison buffers.</strong><span class="figure-description">A close-up view of the two buffer groups in central Ithaca. Blue outlines represent falcon-associated buffers and green outlines represent random comparison buffers. Transparent fills make areas of spatial coincidence easier to see.</span></figcaption>
+</figure>
+
+<figure class="bio-figure">
+<img src="{{ url_for('static', filename='figure3.png') }}" alt="Plant iNaturalist observation locations associated with falcon buffers in pink and random buffers in red" loading="lazy">
+<figcaption><strong>Figure 3. Spatial distribution of plant observations.</strong><span class="figure-description">Plant iNaturalist observations associated with falcon sampling buffers are shown in pink; observations associated with random comparison buffers are shown in red. The map displays recorded observation locations, not plant abundance.</span></figcaption>
+</figure>
+
+<figure class="bio-figure">
+<img src="{{ url_for('static', filename='figure4.png') }}" alt="Horizontal bar charts of the ten most frequently recorded plant taxonomic labels in falcon-associated and random comparison observations" loading="lazy">
+<figcaption><strong>Figure 4. Most frequently recorded plant taxa.</strong><span class="figure-description">The ten most frequent taxonomic labels are shown separately for each group using raw iNaturalist observation counts. The total record counts differ substantially (426 versus 46), so the panels should not be interpreted as equal-effort samples.</span></figcaption>
+</figure>
+
+<figure class="bio-figure">
+<img src="{{ url_for('static', filename='figure5.png') }}" alt="Relative frequency of the ten most frequently recorded plant taxonomic labels in each sampling group" loading="lazy">
+<figcaption><strong>Figure 5. Relative frequency of recorded plant taxa.</strong><span class="figure-description">Bars show each selected taxonomic label as a percentage of all plant observations in its own group. The top ten labels were selected independently within each group; this is a descriptive view of dataset composition.</span></figcaption>
+</figure>
+
+<figure class="bio-figure">
+<img src="{{ url_for('static', filename='figure6.png') }}" alt="Grouped horizontal bar chart comparing relative frequencies of 18 shared plant taxonomic labels" loading="lazy">
+<figcaption><strong>Figure 6. Relative frequency of shared plant taxa.</strong><span class="figure-description">The 18 exact taxonomic labels found in both frequency tables are compared using each group's full observation total as the denominator (426 falcon-associated and 46 random-associated records). Each shared label had one random-group record, so each random percentage is approximately 2.17%. This makes the random percentages sensitive to individual observations.</span></figcaption>
+</figure>
+
+<figure class="bio-figure">
+<img src="{{ url_for('static', filename='figure7.png') }}" alt="One hundred percent stacked bar chart showing Research Grade, Needs ID, and Casual iNaturalist observation quality in both groups" loading="lazy">
+<figcaption><strong>Figure 7. iNaturalist observation quality.</strong><span class="figure-description">The quality composition is similar between groups: Research Grade records account for 30.5% of falcon-associated observations and 32.6% of random-associated observations; Needs ID records account for 65.5% and 65.2%, respectively. Research Grade reflects an iNaturalist community identification standard and does not independently guarantee correctness or standardized sampling.</span></figcaption>
+</figure>
+
+<figure class="bio-figure">
+<img src="{{ url_for('static', filename='figure8.png') }}" alt="Logarithmic bar chart comparing 184 intersecting falcon buffer pairs with one intersecting random buffer pair" loading="lazy">
+<figcaption><strong>Figure 8. Spatial overlap between sampling buffers.</strong><span class="figure-description">The geometry check identified 184 intersecting pairs among falcon buffers and 1 pair among random buffers. The vertical axis uses a logarithmic scale to display the large difference. Intersecting buffer pairs indicate spatial clustering and the potential for a plant observation to be associated with multiple falcon buffers; the pair count does not itself quantify duplicated plant records.</span></figcaption>
+</figure>
+</section>
+
+<section class="bio-section" id="analysis">
+<div class="bio-eyebrow">Analysis status</div><h2>Data analysis in R</h2>
+<span class="analysis-status">Descriptive analysis and figures completed · Inferential analysis not yet completed</span>
+<p>R was used to import the plant frequency tables, calculate within-group relative frequencies, identify the 18 shared taxonomic labels, summarize observation-quality composition, and produce the comparative charts shown above. These are descriptive analyses. No inferential test or model result is reported on this page.</p>
+<div class="bio-grid-2">
+<div class="bio-mini-card"><h3>Completed descriptive work</h3><ul class="mb-0"><li>Summarized raw taxonomic-label frequencies.</li><li>Calculated within-group relative frequencies.</li><li>Joined the frequency tables to identify exact shared labels.</li><li>Compared iNaturalist observation-quality categories.</li><li>Calculated intersecting buffer-pair counts.</li></ul></div>
+<div class="bio-mini-card"><h3>Further analysis required</h3><ul class="mb-0"><li>Preserve unique observation IDs and distinguish observations from buffer associations.</li><li>Build a complete buffer-level table, including buffers with zero plant records.</li><li>Validate buffer geometry and distances in a projected CRS.</li><li>Evaluate sampling effort, spatial dependence, seasonality, and taxonomic rank.</li><li>Select and diagnose any inferential model only after the sampling structure is resolved.</li></ul></div>
+</div>
+<div class="bio-callout mt-4"><strong>Interpretive caution:</strong> A simple comparison of raw counts or percentages does not establish that a plant taxon is statistically overrepresented around falcon locations. The current differences are exploratory and may reflect observation effort, spatial clustering, overlapping buffers, or other sampling biases.</div>
+</section>
+
+<section class="bio-section" id="limitations">
+<div class="bio-eyebrow">Critical evaluation</div><h2>Limitations & interpretation</h2>
+<div class="bio-step"><div class="bio-step-num">!</div><div><h4>Opportunistic observation data</h4><p class="mb-0">iNaturalist records are contributed by users rather than collected through a standardized survey. Observer access, interests, activity, and timing can affect where records occur. Record counts are not direct measures of plant abundance.</p></div></div>
+<div class="bio-step"><div class="bio-step-num">!</div><div><h4>Approximate buffer distance</h4><p class="mb-0">The preliminary buffer operation used approximately 0.0009 degrees in EPSG:4326. This is not a uniform, exact 100-meter radius and should be treated as a limitation of the current spatial workflow.</p></div></div>
+<div class="bio-step"><div class="bio-step-num">!</div><div><h4>Taxonomic resolution and observation quality</h4><p class="mb-0">Some records are identified only to genus or broader taxonomic groups, and many are marked Needs ID. Taxonomic labels are not all equivalent to confirmed species identifications. Research Grade status is useful metadata but is not a guarantee of error-free identification.</p></div></div>
+<p class="mt-4">These limitations do not make the project unusable. They define what can responsibly be concluded from the current data and provide a concrete roadmap for improving the sampling design and analysis.</p>
+</section>
+
+<section class="bio-section" id="next-steps">
+<div class="bio-eyebrow">Continuing the research</div><h2>Next steps</h2>
+<ol>
+<li><strong>Validate spatial methods:</strong> compare the existing angular buffers with buffers generated in a projected coordinate system using an exact distance in meters, then rerun the overlap and plant-selection operations.</li>
+<li><strong>Audit repeated associations:</strong> use unique iNaturalist observation IDs to determine how often a plant record is associated with multiple buffers.</li>
+<li><strong>Reconcile data tables:</strong> document how individual observations, buffer-observation associations, and summary counts relate to one another.</li>
+<li><strong>Improve the comparison design:</strong> consider matching random locations by land cover, accessibility, season, and observation effort, and account for spatial clustering.</li>
+<li><strong>Complete inferential analysis:</strong> conduct sensitivity analyses and select a defensible statistical approach only after the unit of analysis and sampling design have been validated.</li>
+<li><strong>Document reproducibility:</strong> preserve data sources, API query parameters, access dates, QGIS processing steps, scripts, and analysis decisions.</li>
+</ol>
+<p>The longer-term goal is to develop a repeatable approach for connecting community-contributed biodiversity records with spatial analysis. This project is an initial step toward using computational tools to support ecological research, conservation, and environmental decision-making.</p>
+</section>
+
+<section class="bio-section" id="references">
+<div class="bio-eyebrow">Related research</div><h2>References & data sources</h2>
+<div class="bio-reference"><strong>Mak, B., Francis, R. A., & Chadwick, M. A. (2021).</strong> Breeding habitat selection of urban peregrine falcons (<em>Falco peregrinus</em>) in London. <em>Journal of Urban Ecology, 7</em>(1), juab017.<br><a href="https://doi.org/10.1093/jue/juab017" target="_blank" rel="noopener noreferrer">https://doi.org/10.1093/jue/juab017</a><p class="mb-0 mt-2">Relevant example of using public sighting records, GIS, and random comparison locations to investigate urban falcon habitat patterns. Its study design differs from this project.</p></div>
+<div class="bio-reference"><strong>Di Cecco, G. J., Barve, V., Belitz, M. W., Stucky, B. J., Guralnick, R. P., & Hurlbert, A. H. (2021).</strong> Observing the observers: How participants contribute data to iNaturalist and implications for biodiversity science. <em>BioScience, 71</em>(11), 1179–1188.<br><a href="https://doi.org/10.1093/biosci/biab093" target="_blank" rel="noopener noreferrer">https://doi.org/10.1093/biosci/biab093</a><p class="mb-0 mt-2">Discusses spatial, temporal, and taxonomic biases in opportunistic iNaturalist observations.</p></div>
+<div class="bio-reference"><strong>iNaturalist.</strong> Biodiversity observation platform and data source.<br><a href="https://www.inaturalist.org/" target="_blank" rel="noopener noreferrer">https://www.inaturalist.org/</a></div>
+<div class="bio-reference"><strong>QGIS Development Team.</strong> QGIS Geographic Information System.<br><a href="https://qgis.org/" target="_blank" rel="noopener noreferrer">https://qgis.org/</a></div>
+<p class="bio-note mt-3">Project data were collected from iNaturalist and processed for this exploratory analysis. Add the exact API query parameters, data access dates, and any applicable attribution to the project repository or a supplementary methods document for full reproducibility.</p>
+</section>
+
+<div class="bio-footer">Exploratory GIS biodiversity research · Ithaca, New York</div>
+</div></div>
+{% endblock %}
