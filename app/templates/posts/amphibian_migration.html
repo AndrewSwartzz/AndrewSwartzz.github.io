@@ -1,0 +1,156 @@
+{% extends "base.html" %}
+{% block content %}
+<style>
+:root{--ink:#203d36;--muted:#63766e;--green:#477b62;--dark:#28543f;--sage:#e8f0e8;--paper:#f5f7f1;--line:#dce6dc;--gold:#c99b4a}
+.amphibian-page{color:var(--ink);background:var(--paper);padding:34px 0 70px}
+.amphibian-page .container{max-width:1120px}
+.amph-hero{overflow:hidden;border-radius:26px;padding:clamp(32px,6vw,68px);margin-bottom:26px;color:#f8fbf6;background:radial-gradient(circle at 85% 15%,rgba(205,220,183,.24),transparent 28%),linear-gradient(125deg,#203f35 0%,#35634b 58%,#668568 100%);box-shadow:0 18px 42px rgba(34,65,49,.16)}
+.amph-kicker{display:inline-block;padding:7px 12px;border:1px solid #ffffff40;border-radius:999px;background:#ffffff18;color:#e7f0e3;font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase}
+.amph-hero h1{max-width:850px;margin:22px 0 18px;color:#fff;font-family:Georgia,serif;font-size:clamp(2.25rem,5vw,4.2rem);line-height:1.06;letter-spacing:-.035em}
+.amph-hero .lead{max-width:780px;color:#e4eee5;font-size:clamp(1.05rem,2vw,1.28rem);line-height:1.65}
+.amph-meta,.amph-tags{display:flex;flex-wrap:wrap;gap:9px 20px;margin-top:24px;color:#d4e3d6;font-size:.9rem}.amph-tags{gap:8px}
+.amph-tag{padding:7px 12px;border-radius:999px;color:#e8f1e8;background:#ffffff1a;border:1px solid #ffffff33;font-size:.83rem}
+.amph-nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px;padding:12px;border:1px solid var(--line);border-radius:16px;background:#ffffffdf}
+.amph-nav a{color:var(--dark);text-decoration:none;font-size:.88rem;font-weight:650;padding:8px 11px;border-radius:999px}.amph-nav a:hover{background:var(--sage)}
+.amph-section{padding:clamp(22px,4vw,38px);margin-bottom:22px;border:1px solid var(--line);border-radius:20px;background:#fff;box-shadow:0 8px 24px #2241310b}
+.amph-section h2{margin:0 0 18px;color:var(--dark);font-family:Georgia,serif;font-size:clamp(1.55rem,3vw,2.1rem)}
+.amph-section h3{margin:26px 0 10px;color:#37694d;font-size:1.15rem;font-weight:750}.amph-section h4{color:#37694d;font-size:1rem;font-weight:750}
+.amph-section p,.amph-section li{line-height:1.78}.amph-eyebrow{margin-bottom:8px;color:#78917d;font-size:.76rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.amph-intro{max-width:900px;color:#435b4d;font-size:1.08rem;line-height:1.8}
+.amph-callout{padding:18px 20px;border-left:4px solid var(--gold);border-radius:0 12px 12px 0;background:#fbf7ed;color:#5b513d}
+.amph-note{padding:16px 18px;border:1px solid #e5eadd;border-radius:12px;background:#f7f9f3;color:#596b5d;font-size:.92rem}
+.amph-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}
+.amph-stat{padding:19px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(145deg,#fbfdf9,#eef4eb)}
+.amph-stat .number{display:block;color:var(--dark);font-size:2rem;font-weight:800;line-height:1.1}.amph-stat .label{display:block;margin-top:8px;color:var(--muted);font-size:.84rem;line-height:1.4}
+.amph-table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:13px}.amph-table{width:100%;margin:0;border-collapse:collapse;font-size:.94rem}
+.amph-table th{padding:13px 15px;color:#fff;background:#37694d;text-align:left;white-space:nowrap}.amph-table td{padding:12px 15px;border-top:1px solid #e7eee5;vertical-align:top}
+.amph-table tbody tr:nth-child(even){background:#f7faf5}.amph-table td:first-child{font-weight:650;color:#345c43}
+.amph-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.amph-mini{height:100%;padding:21px;border:1px solid var(--line);border-radius:15px;background:#f9fbf7}.amph-mini h3{margin-top:0}
+.amph-step{display:grid;grid-template-columns:38px 1fr;gap:13px;padding:14px 0;border-bottom:1px solid #edf1e9}.amph-step:last-child{border-bottom:0}
+.amph-step-num{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:#e5eee3;color:#315b40;font-weight:800}
+.amph-figure{margin:24px 0 32px;padding:18px;border:1px solid var(--line);border-radius:16px;background:#fbfcf9}
+.amph-figure img{display:block;width:100%;height:auto;max-height:none;object-fit:contain;border-radius:10px;background:#fff}
+.amph-figure figcaption{padding:14px 6px 3px;color:#63766e;font-size:.94rem;line-height:1.7}
+.amph-figure figcaption strong{color:#315b40}.amph-figure .desc{display:block;margin-top:5px;color:#53675b}
+.amph-status{display:inline-block;margin-bottom:12px;padding:6px 10px;border-radius:999px;color:#725c2d;background:#f8f0dc;border:1px solid #ead9ad;font-size:.75rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.amph-footer{padding:28px 10px 0;color:#708074;text-align:center;font-size:.88rem}
+@media(max-width:800px){.amph-stats{grid-template-columns:repeat(2,1fr)}.amph-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.amph-stats{gap:8px}.amph-stat{padding:14px}.amph-stat .number{font-size:1.65rem}.amph-nav{gap:3px}.amph-nav a{font-size:.8rem;padding:7px 8px}.amph-figure{padding:8px}}
+</style>
+
+<div class="amphibian-page"><div class="container">
+<header class="amph-hero">
+  <span class="amph-kicker">Field Research · Amphibian Migration · Conservation</span>
+  <h1>Documenting Amphibian Road Crossings</h1>
+  <p class="lead">A historical data analysis of spring amphibian patrol records, using R to organize field observations and examine species composition, recorded condition, and variation among road transects.</p>
+  <div class="amph-meta"><span>📍 Thomas Road / TCAMP records</span><span>🗓️ Historical observations: 2008 & 2011</span><span>🧭 R · Data visualization · GIS direction</span></div>
+  <div class="amph-tags"><span class="amph-tag">Amphibian migration</span><span class="amph-tag">Road mortality</span><span class="amph-tag">Field data</span><span class="amph-tag">Conservation technology</span></div>
+</header>
+
+<nav class="amph-nav" aria-label="Research sections">
+<a href="#overview">Overview</a><a href="#question">Question</a><a href="#data">Data</a><a href="#methods">Methods</a><a href="#findings">Findings</a><a href="#figures">Figures</a><a href="#limitations">Limitations</a><a href="#next">Next steps</a>
+</nav>
+
+<section class="amph-section" id="overview">
+<div class="amph-eyebrow">Project overview</div><h2>Turning patrol records into ecological information</h2>
+<p class="amph-intro">Seasonal amphibian movements can bring salamanders, frogs, and toads across roads as they move between terrestrial habitat and breeding areas. Volunteer patrols document these crossings and record whether animals are found alive or dead. This project revisits historical patrol records to make the information easier to inspect, summarize, and use in future conservation work.</p>
+<p>The analysis focuses on two distinct historical sources: an individual encounter log from Thomas Road in spring 2008 and a 2011 crossing workbook organized by transect and time interval. I cleaned the records into analysis-ready tables and used R to summarize species counts and recorded condition. The two years are presented separately because the collection formats and sampling structures differ.</p>
+<div class="amph-callout"><strong>Research scope:</strong> These records describe animals documented by patrols. They are not a standardized estimate of the total amphibian population, migration volume, or road mortality rate across the landscape.</div>
+</section>
+
+<section class="amph-section" id="question">
+<div class="amph-eyebrow">Research direction</div><h2>Research question & objectives</h2>
+<h3 class="mt-0">What do historical amphibian patrol records reveal about the species documented during spring road crossings, their recorded condition, and differences among surveyed transects?</h3>
+<div class="amph-grid mt-4">
+<div class="amph-mini"><h3>01 · Organize</h3><p class="mb-0">Convert legacy spreadsheets into tidy observation and count tables while preserving original labels and uncertain entries.</p></div>
+<div class="amph-mini"><h3>02 · Describe</h3><p class="mb-0">Summarize species composition and recorded alive/dead condition within each source year.</p></div>
+<div class="amph-mini"><h3>03 · Compare carefully</h3><p class="mb-0">Explore differences among 2011 transects and time intervals without assuming equal survey effort.</p></div>
+<div class="amph-mini"><h3>04 · Prepare for GIS</h3><p class="mb-0">Identify which missing spatial and survey fields would be needed for future crossing-hotspot analysis.</p></div>
+</div>
+</section>
+
+<section class="amph-section" id="data">
+<div class="amph-eyebrow">Source material</div><h2>Datasets and structure</h2>
+<div class="amph-stats">
+<div class="amph-stat"><span class="number">319</span><span class="label">Individual encounter records · 2008</span></div>
+<div class="amph-stat"><span class="number">6</span><span class="label">Species / identification groups · 2008</span></div>
+<div class="amph-stat"><span class="number">643</span><span class="label">Individuals in 2011 workbook summary</span></div>
+<div class="amph-stat"><span class="number">5</span><span class="label">Named 2011 transects in summary</span></div>
+</div>
+<div class="amph-table-wrap"><table class="amph-table"><thead><tr><th>Source</th><th>Organization</th><th>What it can support</th></tr></thead><tbody>
+<tr><td>Thomas Road · Spring 2008</td><td>Individual encounter rows with date, observers, time, species label, condition code, and location notes.</td><td>Species composition, recorded condition, and date-level summaries.</td></tr>
+<tr><td>Amphibian Crossing · April 4, 2011</td><td>Transect sheets and time-interval counts, including alive/dead tallies by species.</td><td>Species totals, recorded condition, and descriptive transect comparisons.</td></tr>
+<tr><td>2025 TCAMP patrol datasheet</td><td>Blank field form with route, weather, start/end time and temperature, traffic tally, species tallies, movement direction, notes, and fields for coordinates of major crossings or sick individuals.</td><td>Documents the intended contemporary collection fields; it is not a completed observation dataset.</td></tr>
+</tbody></table></div>
+</section>
+
+<section class="amph-section" id="methods">
+<div class="amph-eyebrow">Data & methods</div><h2>Cleaning and analysis workflow</h2>
+<div class="amph-step"><div class="amph-step-num">1</div><div><h4>Inspect the source workbooks</h4><p class="mb-0">Review sheet layouts, headers, species rows, transect names, date/time fields, and ambiguous entries before combining data.</p></div></div>
+<div class="amph-step"><div class="amph-step-num">2</div><div><h4>Reshape into tidy records</h4><p class="mb-0">Store 2008 as one row per individual encounter. Store 2011 as one row per species, status, transect, and time interval with a count field.</p></div></div>
+<div class="amph-step"><div class="amph-step-num">3</div><div><h4>Preserve uncertainty</h4><p class="mb-0">Keep unknown or unspecified identifications visible rather than forcing them into a known species. Retain notes about ambiguous counts.</p></div></div>
+<div class="amph-step"><div class="amph-step-num">4</div><div><h4>Summarize in R</h4><p class="mb-0">Calculate species totals, alive/dead tallies, and transect summaries, then create reproducible high-resolution charts.</p></div></div>
+<div class="amph-step"><div class="amph-step-num">5</div><div><h4>Audit totals against source summaries</h4><p class="mb-0">Compare the tidy record sums with the printed workbook totals and document differences rather than silently adjusting values.</p></div></div>
+</section>
+
+<section class="amph-section" id="findings">
+<div class="amph-eyebrow">Current results</div><h2>What the records show</h2>
+<h3 class="mt-0">2008 · Thomas Road encounter log</h3>
+<p>The 319 encounter records span three dates: March 31 (126 records), April 4 (104), and April 11 (89). Spotted Salamander is the largest recorded group with 165 encounters (51.7%), followed by Spring Peeper with 91 (28.5%) and Eastern Newt (red eft) with 55 (17.2%). The remaining six records are distributed across American Toad (6), Plethodon salamander (1), and Unknown frog (1).</p>
+<div class="amph-stats">
+<div class="amph-stat"><span class="number">177</span><span class="label">Recorded alive · 55.5%</span></div>
+<div class="amph-stat"><span class="number">142</span><span class="label">Recorded dead · 44.5%</span></div>
+<div class="amph-stat"><span class="number">165</span><span class="label">Spotted Salamander encounters</span></div>
+<div class="amph-stat"><span class="number">3</span><span class="label">Survey dates represented</span></div>
+</div>
+<p>The alive/dead split is a description of this encounter log, not a mortality rate for the road or a population-level survival estimate. The records are individual entries, and the source does not provide a denominator for all animals that attempted to cross.</p>
+
+<h3>2011 · April 4 transect workbook</h3>
+<p>The workbook summary reports 643 individuals: 532 alive and 111 dead. The cleaned species/status rows also sum to 643, but classify 529 as alive, 112 as dead, and 2 as unknown/unspecified. The two records coded as unknown/unspecified are shown separately in the cleaned table; this explains why the status subtotals differ from the workbook's printed alive/dead summary.</p>
+<p>Spring Peeper dominates the species-level tally with 490 individuals (76.2% of the cleaned 643 total), followed by Spotted Salamander (75; 11.7%) and Red-spotted Newt (65; 10.1%). All remaining named and unspecified categories account for 13 individuals combined.</p>
+<div class="amph-callout"><strong>Interpretation:</strong> The 2011 workbook provides a much more count-heavy record than the 2008 encounter log. The percentages describe the composition of these recorded patrol tallies; they should not be interpreted as a direct comparison of abundance between years.</div>
+
+<h3>2011 · Differences among transects</h3>
+<p>The workbook's summary lists 189 individuals for Barn to Stream, 165 for Stream to Curve Sign, 61 for Curve Sign to Culvert, 57 for Mound to White, and 171 for Extreme North. The cleaned detailed rows contain 169 records assigned to Extreme North plus 2 records marked Other / unspecified at the all-transects level. The workbook's summary total is 643. These values are retained as reported rather than assigning the two unallocated records to a specific transect.</p>
+</section>
+
+<section class="amph-section" id="figures">
+<div class="amph-eyebrow">Visual documentation</div><h2>Figures & exploratory summaries</h2>
+<p>These figures are deliberately larger so labels, counts, and differences can be read comfortably on a portfolio page. Each figure uses the same forest-green and muted-sage palette as the related biodiversity research page.</p>
+
+<figure class="amph-figure"><img src="{{ url_for('static', filename='species_2008_large.png') }}" alt="Large horizontal bar chart of Thomas Road 2008 amphibian encounters by species" loading="lazy"><figcaption><strong>Figure 1. Thomas Road, spring 2008 — recorded encounters by species.</strong><span class="desc">Spotted Salamander accounts for just over half of the 319 individual encounter records. Spring Peeper and Eastern Newt (red eft) are the next most frequently recorded groups.</span></figcaption></figure>
+
+<figure class="amph-figure"><img src="{{ url_for('static', filename='condition_by_species_2008.png') }}" alt="Stacked horizontal bar chart of alive and dead records by species in 2008" loading="lazy"><figcaption><strong>Figure 2. 2008 — recorded condition by species.</strong><span class="desc">The stacked bars separate records classified as alive and dead within each species group. These are encounter counts, not species-specific mortality rates based on standardized exposure.</span></figcaption></figure>
+
+<figure class="amph-figure"><img src="{{ url_for('static', filename='species_2011_large.png') }}" alt="Large horizontal bar chart of 2011 amphibian counts by species" loading="lazy"><figcaption><strong>Figure 3. April 4, 2011 — recorded counts by species.</strong><span class="desc">Spring Peeper is the dominant category in the workbook's detailed species tally, contributing 490 of 643 records.</span></figcaption></figure>
+
+<figure class="amph-figure"><img src="{{ url_for('static', filename='condition_by_species_2011.png') }}" alt="Stacked horizontal bar chart of 2011 alive and dead counts by species" loading="lazy"><figcaption><strong>Figure 4. 2011 — recorded condition by species.</strong><span class="desc">Alive, dead, and unspecified records are displayed separately. The detailed tally contains 529 alive, 112 dead, and 2 unspecified records.</span></figcaption></figure>
+
+<figure class="amph-figure"><img src="{{ url_for('static', filename='transects_2011_large.png') }}" alt="Horizontal bar chart comparing amphibian counts by 2011 transect" loading="lazy"><figcaption><strong>Figure 5. 2011 — workbook summary by transect.</strong><span class="desc">The values use the workbook's five-transect summary: 189, 165, 61, 57, and 171. Extreme North's detailed rows account for 169, with two additional unspecified records not assigned to an individual transect.</span></figcaption></figure>
+</section>
+
+<section class="amph-section" id="limitations">
+<div class="amph-eyebrow">Critical evaluation</div><h2>Data limitations & interpretation</h2>
+<div class="amph-step"><div class="amph-step-num">!</div><div><h4>Different recording units</h4><p class="mb-0">The 2008 file contains individual encounter rows, while 2011 uses grouped counts by species, status, transect, and interval. Raw totals should not be compared as if they came from identical sampling protocols.</p></div></div>
+<div class="amph-step"><div class="amph-step-num">!</div><div><h4>Uneven survey effort</h4><p class="mb-0">The supplied records do not consistently provide route length, patrol duration, weather, traffic, or observer effort in a form that supports standardized rates across all records.</p></div></div>
+<div class="amph-step"><div class="amph-step-num">!</div><div><h4>Uncertain and unspecified entries</h4><p class="mb-0">Some species labels and counts are ambiguous. Unknown or unspecified records remain visible and are not silently assigned to a taxon or transect.</p></div></div>
+<div class="amph-step"><div class="amph-step-num">!</div><div><h4>Limited geographic information</h4><p class="mb-0">The historical spreadsheets supplied for this analysis do not contain consistent coordinates suitable for mapping individual crossings or producing a defensible hotspot map.</p></div></div>
+<div class="amph-note mt-4"><strong>2025 field-form opportunity:</strong> The blank TCAMP datasheet includes fields for route length, weather, temperature, traffic tally, movement direction, and coordinates for major crossings or sick-looking individuals. Consistently recording these fields would make future spatial and effort-adjusted analyses much stronger.</div>
+</section>
+
+<section class="amph-section" id="next">
+<div class="amph-eyebrow">Continuing the research</div><h2>From historical records to spatial conservation tools</h2>
+<ol>
+<li><strong>Standardize future patrol data:</strong> use consistent species names, explicit zero versus missing values, route identifiers, start/end times, weather, and observer fields.</li>
+<li><strong>Collect georeferenced crossings:</strong> record coordinates for individual observations or at least for crossing clusters, with a clear method for recording location accuracy.</li>
+<li><strong>Calculate comparable rates:</strong> where effort data are available, examine observations per mile or per patrol-hour rather than comparing raw totals alone.</li>
+<li><strong>Build a GIS database:</strong> connect patrol observations to road segments, wetlands, streams, land cover, and potential crossing structures.</li>
+<li><strong>Identify priority locations:</strong> once repeated georeferenced surveys exist, examine spatial clusters and candidate sites for mitigation.</li>
+</ol>
+<p>The longer-term goal is a repeatable conservation data workflow that connects volunteer field observations with R, GIS, and clear public-facing visualizations.</p>
+</section>
+
+<div class="amph-footer">Historical amphibian patrol data · Exploratory analysis in R · Conservation technology</div>
+</div></div>
+{% endblock %}

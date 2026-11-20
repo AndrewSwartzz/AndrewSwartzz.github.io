@@ -21,7 +21,6 @@ import requests
 
 from app import app, db
 
-
 @app.route('/')
 @app.route('/index')
 def home():
@@ -78,7 +77,6 @@ def pokemon_game_project():
 
 @app.route('/pokemon-game', methods=['GET', 'POST'])
 def pokemon_game():
-    # Initialize or reset game state
     if 'game_state' not in session or request.method == 'POST':
         session['game_state'] = {
             'score': 0,
@@ -130,6 +128,12 @@ def pokemon_guess(guess):
         'accuracy': calculate_accuracy(game_state) if game_state else 0
     })
 
+@app.route("/amphibian-migration")
+def amphibian_migration():
+    return render_template(
+        "posts/amphibian_migration.html",
+        title="Amphibian Migration Research"
+    )
 
 @app.route('/add-cute/<pokemon_name>')
 def add_cute(pokemon_name):
@@ -250,49 +254,58 @@ def biodiversity():
 
 @app.route("/birding")
 def birding():
-    csv_path = Path(app.root_path) / "data" / "MyEBirdData-1.csv"
-
+    """
+    Birding dashboard powered entirely by the user's downloaded eBird CSV.
+    No eBird API key or network request is required.
+    """
+    csv_path = Path(app.root_path) / "data" / "MyEBirdData.csv"
     observations = []
+    latest_date = ""
 
-    with csv_path.open(
-        "r", encoding="utf-8-sig", newline=""
-    ) as file:
-        reader = csv.DictReader(file)
+    if csv_path.exists():
+        with csv_path.open("r", encoding="utf-8-sig", newline="") as file:
+            reader = csv.DictReader(file)
 
-        for row in reader:
-            try:
-                latitude = float(row["Latitude"])
-                longitude = float(row["Longitude"])
+            for row in reader:
+                try:
+                    latitude = float(row["Latitude"])
+                    longitude = float(row["Longitude"])
 
-                if not (
-                    -90 <= latitude <= 90
-                    and -180 <= longitude <= 180
-                ):
+                    if not (-90 <= latitude <= 90 and -180 <= longitude <= 180):
+                        continue
+
+                    obs_date = (row.get("Date") or "").strip()
+                    if obs_date and obs_date > latest_date:
+                        latest_date = obs_date
+
+                    observations.append({
+                        "species": row.get("Common Name") or "Unknown species",
+                        "scientific_name": row.get("Scientific Name") or "",
+                        "count": row.get("Count") or "Not recorded",
+                        "location": row.get("Location") or "Unknown location",
+                        "date": obs_date,
+                        "time": row.get("Time") or "",
+                        "latitude": latitude,
+                        "longitude": longitude,
+                        "location_id": row.get("Location ID") or "",
+                        "county": row.get("County") or "",
+                        "state": row.get("State/Province") or "",
+                        "protocol": row.get("Protocol") or "",
+                        "submission_id": row.get("Submission ID") or "",
+                    })
+
+                except (ValueError, TypeError, KeyError):
                     continue
 
-                observations.append({
-                    "species": row["Common Name"] or "Unknown species",
-                    "scientific_name": row["Scientific Name"] or "",
-                    "count": row["Count"] or "Not recorded",
-                    "location": row["Location"] or "Unknown location",
-                    "date": row["Date"] or "",
-                    "time": row["Time"] or "",
-                    "latitude": latitude,
-                    "longitude": longitude,
-                    "location_id": row["Location ID"] or "",
-                })
-
-            except (ValueError, TypeError, KeyError):
-                continue
-
-    species_names = {
-        obs["species"] for obs in observations
-    }
-
+    species_names = {obs["species"] for obs in observations}
     location_names = {
-        obs["location_id"] or obs["location"]
-        for obs in observations
+        obs["location_id"] or obs["location"] for obs in observations
     }
+
+    observations.sort(
+        key=lambda obs: (obs["date"], obs["time"]),
+        reverse=True
+    )
 
     return render_template(
         "projects/birding.html",
@@ -301,13 +314,9 @@ def birding():
         total_observations=len(observations),
         unique_species=len(species_names),
         unique_locations=len(location_names),
+        latest_date=latest_date,
     )
-
 
 @app.route('/media')
 def media():
-    return render_template('media.html')
-
-
-
-
+    return render_template('media.html', title='Media')

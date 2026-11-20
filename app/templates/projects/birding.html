@@ -1,375 +1,181 @@
-
 {% extends "base.html" %}
-
 {% block content %}
-<link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
 <style>
-.birding-page {
-    background: #eaf8fc;
-    color: #244858;
-    min-height: 100vh;
-    padding: 40px 0;
-}
-
-.birding-hero {
-    background: linear-gradient(
-        135deg, #43c6dc, #7de3ed, #b7f4f5
-    );
-    padding: 42px;
-    border-radius: 24px;
-    margin-bottom: 28px;
-    box-shadow: 0 12px 30px rgba(42,164,192,.16);
-}
-
-.birding-hero h1 {
-    color: #15516b;
-    font-weight: 800;
-    font-size: 2.8rem;
-}
-
-.birding-card {
-    background: white;
-    border: 1px solid #c9eaf1;
-    border-radius: 20px;
-    padding: 26px;
-    margin-bottom: 25px;
-    box-shadow: 0 8px 25px rgba(53,153,181,.08);
-}
-
-.birding-card h2 {
-    color: #167e9c;
-    font-weight: 700;
-    margin-bottom: 18px;
-}
-
-.birding-stat {
-    height: 100%;
-    padding: 22px;
-    border-radius: 16px;
-    background: linear-gradient(145deg, #f1fcff, #dff6fb);
-    border: 1px solid #c7edf5;
-}
-
-.birding-stat strong {
-    display: block;
-    font-size: 2rem;
-    color: #167e9c;
-}
-
-.birding-stat span {
-    font-size: .9rem;
-}
-
-#bird-map {
-    height: 480px;
-    border-radius: 14px;
-    border: 1px solid #c9eaf1;
-    z-index: 1;
-}
-
-.birding-page .form-control {
-    border-radius: 12px;
-    border-color: #bde8f0;
-    min-height: 44px;
-}
-
-.birding-table-wrap {
-    overflow-x: auto;
-}
-
-.birding-table {
-    min-width: 650px;
-}
-
-.birding-table thead th {
-    color: #167e9c;
-    background: #f1fbfd;
-    white-space: nowrap;
-}
-
-.birding-table td,
-.birding-table th {
-    vertical-align: middle;
-}
-
-.birding-table tbody tr:hover {
-    background: #f1fbfd;
-}
-
-.birding-button {
-    display: inline-block;
-    background: linear-gradient(135deg, #39bcd5, #218fad);
-    color: white;
-    padding: 11px 22px;
-    border-radius: 24px;
-    text-decoration: none;
-    border: 0;
-}
-
-.birding-button:hover {
-    color: white;
-    text-decoration: none;
-    background: #167c9b;
-}
-
-.birding-muted {
-    color: #63808d;
-    font-size: .9rem;
-}
-
-@media (max-width: 768px) {
-    .birding-hero { padding: 28px; }
-    .birding-hero h1 { font-size: 2.1rem; }
-    .birding-card { padding: 20px; }
-    #bird-map { height: 380px; }
-}
+.birding-page{background:#eaf8fc;color:#244858;min-height:100vh;padding:40px 0}
+.birding-hero{background:linear-gradient(135deg,#43c6dc,#7de3ed,#b7f4f5);padding:42px;border-radius:24px;margin-bottom:28px;box-shadow:0 12px 30px rgba(42,164,192,.16)}
+.birding-hero h1{color:#15516b;font-weight:800;font-size:2.8rem}
+.birding-card{background:white;border:1px solid #c9eaf1;border-radius:20px;padding:26px;margin-bottom:25px;box-shadow:0 8px 25px rgba(53,153,181,.08)}
+.birding-card h2{color:#167e9c;font-weight:700;margin-bottom:18px}
+.birding-stat{height:100%;padding:22px;border-radius:16px;background:linear-gradient(145deg,#f1fcff,#dff6fb);border:1px solid #c7edf5}
+.birding-stat strong{display:block;font-size:2rem;color:#167e9c}
+.birding-stat span{font-size:.9rem}
+#bird-map{height:480px;border-radius:14px;border:1px solid #c9eaf1;z-index:1}
+.birding-page .form-control{border-radius:12px;border-color:#bde8f0;min-height:44px}
+.birding-table-wrap{overflow-x:auto}.birding-table{min-width:760px}
+.birding-table thead th{color:#167e9c;background:#f1fbfd;white-space:nowrap}
+.birding-table td,.birding-table th{vertical-align:middle}
+.birding-table tbody tr:hover{background:#f1fbfd}
+.birding-button{display:inline-block;background:linear-gradient(135deg,#39bcd5,#218fad);color:white;padding:11px 22px;border-radius:24px;text-decoration:none;border:0}
+.birding-button:hover{color:white;text-decoration:none;background:#167c9b}
+.birding-muted{color:#63808d;font-size:.9rem}
+.birding-tag{display:inline-block;background:#e2f7ec;color:#23744a;border-radius:20px;padding:5px 11px;font-size:.8rem;font-weight:700}
+@media(max-width:768px){.birding-hero{padding:28px}.birding-hero h1{font-size:2.1rem}.birding-card{padding:20px}#bird-map{height:380px}}
 </style>
 
 <div class="birding-page">
 <div class="container">
+<header class="birding-hero">
+  <p><strong>FIELD NOTES / BIRDING</strong></p>
+  <h1>Bird Observation Explorer</h1>
+  <p class="lead">A map of my birding observations, species discoveries, and time spent exploring the natural world.</p>
+  <p class="mb-0">Explore my personal eBird export through an interactive map and searchable observation log.</p>
+</header>
 
-    <header class="birding-hero">
-        <p><strong>FIELD NOTES / BIRDING</strong></p>
-        <h1>Bird Observation Explorer</h1>
-        <p class="lead">
-            A map of my birding observations, species discoveries,
-            and time spent exploring the natural world.
-        </p>
-        <p class="mb-0">
-            Explore my personal eBird export through an interactive
-            map and searchable observation log.
-        </p>
-    </header>
+<div class="row mb-4">
+  <div class="col-md-4 mb-3"><div class="birding-stat"><span>Mapped observation records</span><strong>{{ total_observations }}</strong></div></div>
+  <div class="col-md-4 mb-3"><div class="birding-stat"><span>Unique species</span><strong>{{ unique_species }}</strong></div></div>
+  <div class="col-md-4 mb-3"><div class="birding-stat"><span>Recorded locations</span><strong>{{ unique_locations }}</strong></div></div>
+</div>
 
-    <!-- Statistics -->
-    <div class="row mb-4">
-        <div class="col-md-4 mb-3">
-            <div class="birding-stat">
-                <span>Mapped observation records</span>
-                <strong>{{ total_observations }}</strong>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-3">
-            <div class="birding-stat">
-                <span>Unique species</span>
-                <strong>{{ unique_species }}</strong>
-            </div>
-        </div>
-
-        <div class="col-md-4 mb-3">
-            <div class="birding-stat">
-                <span>Recorded locations</span>
-                <strong>{{ unique_locations }}</strong>
-            </div>
-        </div>
+<section class="birding-card">
+  <div class="d-flex flex-wrap justify-content-between align-items-start">
+    <div>
+      <h2>My eBird Data</h2>
+      <p class="mb-2">These records come from my downloaded eBird observation history, including sightings from multiple places I have explored.</p>
+      <p class="birding-muted mb-0">Latest observation in this export: {{ latest_date or "Date unavailable" }}</p>
     </div>
+    <span class="birding-tag">LOCAL CSV DATA</span>
+  </div>
+  <p class="birding-muted mt-3 mb-0">This page reads the CSV stored in the Flask project. It does not make live eBird API requests and does not require an API key. Replace the CSV with a newer eBird export whenever you want to refresh the dashboard.</p>
+</section>
 
-    <!-- Map -->
-    <section class="birding-card">
-        <h2>Observation Map</h2>
-        <p>
-            Select a marker to see which species were recorded
-            and when the observation took place.
-        </p>
+<section class="birding-card">
+  <h2>Observation Map</h2>
+  <p>Select a marker to see the species, count, date, and location recorded in that checklist.</p>
+  <div id="bird-map"></div>
+  <p class="birding-muted mt-3 mb-0">Map data © OpenStreetMap contributors. Markers represent the coordinates included in the personal eBird export.</p>
+</section>
 
-        <div id="bird-map"></div>
+<section class="birding-card">
+  <h2>Observation Log</h2>
+  <div class="row mb-3">
+    <div class="col-md-8 mb-2">
+      <input id="bird-search" class="form-control" type="search" placeholder="Search species, location, county, or date..." aria-label="Search bird observations">
+    </div>
+    <div class="col-md-4 mb-2">
+      <select id="bird-species" class="form-control" aria-label="Filter by species">
+        <option value="">All species</option>
+        {% for species in observations|map(attribute='species')|unique|sort %}
+        <option value="{{ species }}">{{ species }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+  <p class="birding-muted" id="result-count" aria-live="polite"></p>
+  <div class="birding-table-wrap">
+    <table class="table birding-table">
+      <thead><tr><th>Species</th><th>Scientific Name</th><th>Count</th><th>Location</th><th>County / Region</th><th>Date</th></tr></thead>
+      <tbody id="bird-rows">
+      {% for obs in observations %}
+        <tr data-species="{{ obs.species }}" data-search="{{ (obs.species ~ ' ' ~ obs.scientific_name ~ ' ' ~ obs.location ~ ' ' ~ obs.county ~ ' ' ~ obs.state ~ ' ' ~ obs.date)|lower }}">
+          <td>{{ obs.species }}</td>
+          <td><em>{{ obs.scientific_name }}</em></td>
+          <td>{{ obs.count }}</td>
+          <td>{{ obs.location }}</td>
+          <td>{{ obs.county }}{% if obs.state %}, {{ obs.state }}{% endif %}</td>
+          <td>{{ obs.date }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
 
-        <p class="birding-muted mt-3 mb-0">
-            Map data © OpenStreetMap contributors.
-            Locations represent recorded observation coordinates.
-        </p>
-    </section>
-
-    <!-- Search and filters -->
-    <section class="birding-card">
-        <h2>Observation Log</h2>
-
-        <div class="row mb-3">
-            <div class="col-md-8 mb-2">
-                <input
-                    id="bird-search"
-                    class="form-control"
-                    type="search"
-                    placeholder="Search species, location, or date..."
-                    aria-label="Search bird observations"
-                >
-            </div>
-
-            <div class="col-md-4 mb-2">
-                <select id="bird-species" class="form-control"
-                        aria-label="Filter by species">
-                    <option value="">All species</option>
-                    {% for species in observations | map(attribute='species') | unique | sort %}
-                    <option value="{{ species }}">{{ species }}</option>
-                    {% endfor %}
-                </select>
-            </div>
-        </div>
-
-        <p class="birding-muted" id="result-count" aria-live="polite"></p>
-
-        <div class="birding-table-wrap">
-            <table class="table birding-table">
-                <thead>
-                    <tr>
-                        <th>Species</th>
-                        <th>Scientific Name</th>
-                        <th>Count</th>
-                        <th>Location</th>
-                        <th>Date</th>
-                    </tr>
-                </thead>
-
-                <tbody id="bird-rows">
-                    {% for obs in observations %}
-                    <tr
-                        data-species="{{ obs.species }}"
-                        data-search="{{ (obs.species ~ ' ' ~ obs.scientific_name ~ ' ' ~ obs.location ~ ' ' ~ obs.date) | lower }}"
-                    >
-                        <td>{{ obs.species }}</td>
-                        <td><em>{{ obs.scientific_name }}</em></td>
-                        <td>{{ obs.count }}</td>
-                        <td>{{ obs.location }}</td>
-                        <td>{{ obs.date }}</td>
-                    </tr>
-                    {% endfor %}
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <a href="{{ url_for('potoo') }}" class="birding-button">
-        ← Back to Potoo
-    </a>
-
+<a href="{{ url_for('potoo') }}" class="birding-button">← Back to Potoo</a>
 </div>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-
 <script>
-const observations = {{ observations | tojson }};
-const mapElement = document.getElementById("bird-map");
+const observations = {{ observations|tojson }};
+const map = L.map("bird-map");
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution: '&copy; OpenStreetMap contributors',
+  maxZoom: 19
+}).addTo(map);
 
-const map = L.map(mapElement);
-
-L.tileLayer(
-    "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-    {
-        attribution: '&copy; OpenStreetMap contributors',
-        maxZoom: 19
-    }
-).addTo(map);
-
-const markers = [];
 const markerLayer = L.featureGroup().addTo(map);
 
 function escapeHtml(value) {
-    return String(value ?? "").replace(/[&<>"']/g, char => ({
-        "&": "&amp;",
-        "<": "&lt;",
-        ">": "&gt;",
-        '"': "&quot;",
-        "'": "&#39;"
-    })[char]);
+  return String(value ?? "").replace(/[&<>"']/g, char => ({
+    "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"
+  })[char]);
 }
 
 observations.forEach(obs => {
-    const marker = L.marker([
-        obs.latitude,
-        obs.longitude
-    ]);
+  const marker = L.marker([obs.latitude, obs.longitude]);
+  marker.bindPopup(`
+    <strong>${escapeHtml(obs.species)}</strong><br>
+    <em>${escapeHtml(obs.scientific_name)}</em><br>
+    Count: ${escapeHtml(obs.count)}<br>
+    Location: ${escapeHtml(obs.location)}<br>
+    Date: ${escapeHtml(obs.date)} ${escapeHtml(obs.time)}
+  `);
+  marker.observation = obs;
+  markerLayer.addLayer(marker);
+});
 
-    marker.observation = obs;
+if (markerLayer.getLayers().length) {
+  map.fitBounds(markerLayer.getBounds(), {padding:[25,25], maxZoom:12});
+} else {
+  map.setView([42.44,-76.5], 10);
+}
 
-    marker.bindPopup(`
+const searchInput = document.getElementById("bird-search");
+const speciesSelect = document.getElementById("bird-species");
+const rows = [...document.querySelectorAll("#bird-rows tr")];
+const resultCount = document.getElementById("result-count");
+
+function applyFilters() {
+  const query = searchInput.value.trim().toLowerCase();
+  const selectedSpecies = speciesSelect.value;
+  let visibleRows = 0;
+  const visibleMarkers = [];
+
+  rows.forEach(row => {
+    const visible = row.dataset.search.includes(query) &&
+      (!selectedSpecies || row.dataset.species === selectedSpecies);
+    row.hidden = !visible;
+    if (visible) visibleRows++;
+  });
+
+  resultCount.textContent = `Showing ${visibleRows} of ${rows.length} observations`;
+
+  markerLayer.clearLayers();
+  observations.forEach(obs => {
+    const text = `${obs.species} ${obs.scientific_name} ${obs.location} ${obs.county} ${obs.state} ${obs.date}`.toLowerCase();
+    if (text.includes(query) && (!selectedSpecies || obs.species === selectedSpecies)) {
+      const marker = L.marker([obs.latitude, obs.longitude]);
+      marker.bindPopup(`
         <strong>${escapeHtml(obs.species)}</strong><br>
         <em>${escapeHtml(obs.scientific_name)}</em><br>
         Count: ${escapeHtml(obs.count)}<br>
         Location: ${escapeHtml(obs.location)}<br>
-        Date: ${escapeHtml(obs.date)}
-    `);
-
-    markers.push(marker);
-    markerLayer.addLayer(marker);
-});
-
-if (markers.length > 0) {
-    map.fitBounds(markerLayer.getBounds(), {
-        padding: [25, 25],
-        maxZoom: 12
-    });
-} else {
-    map.setView([40.7, -74.9], 5);
-}
-
-// Search table and update the map to match the selected species.
-const searchInput = document.getElementById("bird-search");
-const speciesSelect = document.getElementById("bird-species");
-const rows = Array.from(
-    document.querySelectorAll("#bird-rows tr")
-);
-const resultCount = document.getElementById("result-count");
-
-function applyFilters() {
-    const query = searchInput.value.trim().toLowerCase();
-    const selectedSpecies = speciesSelect.value;
-    const visibleSpecies = new Set();
-    let visibleRows = 0;
-
-    rows.forEach(row => {
-        const matchesText =
-            row.dataset.search.includes(query);
-
-        const matchesSpecies =
-            !selectedSpecies ||
-            row.dataset.species === selectedSpecies;
-
-        const visible = matchesText && matchesSpecies;
-        row.hidden = !visible;
-
-        if (visible) {
-            visibleRows++;
-            visibleSpecies.add(row.dataset.species);
-        }
-    });
-
-    resultCount.textContent =
-        `Showing ${visibleRows} of ${rows.length} observations`;
-
-    markerLayer.clearLayers();
-
-    markers.forEach(marker => {
-        const obs = marker.observation;
-        const matchesText = (
-            `${obs.species} ${obs.scientific_name} ` +
-            `${obs.location} ${obs.date}`
-        ).toLowerCase().includes(query);
-
-        const matchesSpecies =
-            !selectedSpecies || obs.species === selectedSpecies;
-
-        if (matchesText && matchesSpecies) {
-            markerLayer.addLayer(marker);
-        }
-    });
-
-    if (markerLayer.getLayers().length > 0) {
-        map.fitBounds(markerLayer.getBounds(), {
-            padding: [25, 25],
-            maxZoom: 12
-        });
+        Date: ${escapeHtml(obs.date)} ${escapeHtml(obs.time)}
+      `);
+      markerLayer.addLayer(marker);
     }
+  });
+
+  if (markerLayer.getLayers().length) {
+    map.fitBounds(markerLayer.getBounds(), {padding:[25,25], maxZoom:12});
+  }
 }
 
 searchInput.addEventListener("input", applyFilters);
 speciesSelect.addEventListener("change", applyFilters);
-
 applyFilters();
 </script>
 {% endblock %}

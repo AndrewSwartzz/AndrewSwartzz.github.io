@@ -1,876 +1,559 @@
-
 {% extends "base.html" %}
-{% import "bootstrap_wtf.html" as wtf %}
 
 {% block content %}
 <style>
+  :root {
+    --potoo-ink: #164b57;
+    --potoo-deep: #15516b;
+    --potoo-blue: #167e9c;
+    --potoo-aqua: #43c6dc;
+    --potoo-mist: #eaf8fc;
+    --potoo-line: #ccecf2;
+  }
 
-
-body {
-    background: #eaf8fc;
-    color: #244858;
-}
-
-.potoo-hero {
-    background: linear-gradient(135deg, #43c6dc 0%, #7de3ed 50%, #b7f4f5 100%);
-    color: #174b60;
-    border: 1px solid rgba(255,255,255,.85);
-    border-radius: 24px;
-    padding: 55px 40px;
-    margin-bottom: 35px;
-    box-shadow: 0 12px 35px rgba(42, 164, 192, .18);
-}
-
-.potoo-hero h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    color: #15516b;
-}
-
-.potoo-hero .badge-light {
-    background: rgba(255,255,255,.8);
-    color: #17647a;
-}
-
-.potoo-icon {
-    max-width: 200px;
-    width: 100%;
-    border-radius: 30px;
-    box-shadow: 0 15px 35px rgba(35, 130, 160, .2);
-}
-
-.section-card {
-    background: rgba(255,255,255,.92);
-    border: 1px solid rgba(131, 218, 233, .45);
-    border-radius: 20px;
-    padding: 32px;
-    margin-bottom: 28px;
-    box-shadow: 0 8px 25px rgba(53, 153, 181, .09);
-}
-
-.section-card h2 {
-    color: #167e9c;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.section-card h3 {
-    color: #238ba6;
-    font-weight: 700;
-    font-size: 1.2rem;
-    margin-top: 12px;
-}
-
-.section-card h4 {
-    color: #167e9c;
-    font-size: 1.05rem;
-    font-weight: 700;
-}
-
-.section-card p,
-.section-card li {
-    line-height: 1.75;
-}
-
-.feature-card {
-    background: linear-gradient(145deg, #f1fcff, #dff6fb);
-    border-radius: 16px;
-    padding: 24px;
-    height: 100%;
-    border: 1px solid #c7edf5;
-    border-left: 5px solid #4bc5dc;
-}
-
-.feature-card h3 {
-    margin-top: 0;
-    color: #167e9c;
-}
-
-.tech-badge {
-    display: inline-block;
-    padding: 8px 13px;
-    margin: 4px 3px;
-    border-radius: 20px;
-    background: rgba(255,255,255,.75);
-    border: 1px solid rgba(111, 209, 226, .6);
-    color: #176b83;
-    font-weight: 600;
-    font-size: .9rem;
-}
-
-.flow-step {
-    text-align: center;
-    padding: 20px 12px;
-    height: 100%;
-}
-
-.flow-number {
-    width: 42px;
-    height: 42px;
-    line-height: 42px;
-    margin: 0 auto 12px;
-    border-radius: 50%;
-    background: linear-gradient(145deg, #43c6dc, #168eaf);
-    color: white;
-    font-weight: 700;
-    box-shadow: 0 4px 10px rgba(30, 151, 180, .2);
-}
-
-.table-responsive {
-    border-radius: 12px;
-}
-
-.comparison-table th {
-    background: linear-gradient(135deg, #219dbb, #48c8dd);
-    color: white;
-    vertical-align: middle;
-    border-color: #a6e4ee;
-}
-
-.comparison-table td {
-    vertical-align: top;
-    min-width: 145px;
-    border-color: #d9edf2;
-}
-
-.comparison-table tbody tr:nth-child(even) {
-    background: #f1fbfd;
-}
-
-.comparison-table td:first-child {
-    font-weight: 600;
-    color: #28677b;
-}
-
-.persona-card {
-    background: linear-gradient(145deg, #ffffff, #f0fbfd);
-    border: 1px solid #d3edf3;
-    border-radius: 16px;
-    padding: 24px;
-    height: 100%;
-    box-shadow: 0 5px 16px rgba(53, 153, 181, .06);
-}
-
-.persona-label {
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #2398b6;
-    font-weight: 700;
-}
-
-.storyboard-step {
-    border-left: 3px solid #8edbe8;
-    padding: 5px 0 12px 20px;
-    margin-left: 8px;
-}
-
-.storyboard-step:last-child {
-    border-left-color: transparent;
-}
-
-.wireframe-frame {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border: 1px solid #c9eaf1;
-    border-radius: 14px;
-    background: #f5fcfe;
-    box-shadow: 0 8px 24px rgba(53, 153, 181, .08);
-}
-
-.wireframe-frame iframe {
-    display: block;
-    width: 100%;
-    height: 650px;
-    border: 0;
-}
-
-.potoo-button {
-    border-radius: 30px;
-    padding: 11px 22px;
-    background: linear-gradient(135deg, #39bcd5, #218fad);
-    border: 1px solid #269bb9;
-    color: white;
-    box-shadow: 0 4px 12px rgba(33, 143, 173, .18);
-}
-
-.potoo-button:hover {
-    background: linear-gradient(135deg, #25a9c5, #167c9b);
-    border-color: #167c9b;
-    color: white;
-}
-
-.btn-outline-secondary.potoo-button {
-    background: white;
-    color: #1685a2;
-    border-color: #7fd5e4;
-    box-shadow: none;
-}
-
-.btn-outline-secondary.potoo-button:hover {
-    background: #e1f7fb;
-    color: #126a83;
-}
-
-.section-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 9px;
-    margin-bottom: 28px;
-}
-
-.section-nav a {
-    color: #167e9c;
-    background: rgba(255,255,255,.9);
-    border: 1px solid #bde8f0;
-    border-radius: 20px;
-    padding: 8px 14px;
-    font-size: .9rem;
-    text-decoration: none;
-    transition: background .2s ease, transform .2s ease;
-}
-
-.section-nav a:hover {
-    background: #d5f4fa;
-    transform: translateY(-1px);
-}
-
-hr {
-    border-color: #d6edf2;
-}
-
-@media (max-width: 768px) {
-    .potoo-hero {
-        text-align: center;
-        padding: 40px 25px;
-    }
-
-    .potoo-hero h1 {
-        font-size: 2.8rem;
-    }
-
-    .potoo-icon {
-        margin-top: 25px;
-        max-width: 160px;
-    }
-
-    .section-card {
-        padding: 22px;
-    }
-
-    .wireframe-frame iframe {
-        height: 500px;
-    }
-}
-
-
+  .potoo-page { background: #eaf8fc; color: #244858; padding: 2.5rem 0 4rem; }
+  .potoo-page .section-card {
+    background: rgba(255,255,255,.96); border: 1px solid rgba(131,218,233,.48);
+    border-radius: 20px; padding: clamp(1.35rem, 3vw, 2rem); margin-bottom: 1.5rem;
+    box-shadow: 0 8px 25px rgba(53,153,181,.08);
+  }
+  .potoo-hero {
+    background: linear-gradient(135deg,#43c6dc 0%,#7de3ed 50%,#b7f4f5 100%);
+    color: #174b60; border: 1px solid rgba(255,255,255,.85); border-radius: 24px;
+    padding: clamp(2rem,5vw,3.5rem); margin-bottom: 1.5rem;
+    box-shadow: 0 12px 35px rgba(42,164,192,.18);
+  }
+  .potoo-hero h1 { font-size: clamp(2.8rem,6vw,4.2rem); font-weight: 800; color: #15516b; margin-bottom: .3rem; }
+  .potoo-icon { width: min(100%,190px); border-radius: 28px; box-shadow: 0 15px 35px rgba(35,130,160,.2); }
+  .potoo-page h2 { color: #167e9c; font-weight: 750; margin-bottom: 1rem; }
+  .potoo-page h3 { color: #238ba6; font-weight: 700; font-size: 1.18rem; margin-top: .8rem; }
+  .potoo-page p, .potoo-page li { line-height: 1.72; }
+  .potoo-page .lead { font-size: 1.2rem; }
+  .tech-badge, .status-chip {
+    display: inline-block; padding: .42rem .78rem; margin: .2rem .18rem .2rem 0;
+    border-radius: 20px; background: rgba(255,255,255,.78); border: 1px solid #a9e1eb;
+    color: #176b83; font-size: .86rem; font-weight: 650;
+  }
+  .status-chip { font-size: .76rem; letter-spacing: .02em; padding: .28rem .62rem; }
+  .status-working { background:#e4f7ed; border-color:#b8e6ca; color:#246b46; }
+  .status-partial { background:#fff5df; border-color:#f0d99c; color:#805b16; }
+  .status-prototype { background:#edf4ff; border-color:#cbdcf7; color:#385d91; }
+  .status-planned { background:#f2effb; border-color:#d9d0f0; color:#65518f; }
+  .feature-card {
+    height:100%; padding:1.3rem; border-radius:16px;
+    background:linear-gradient(145deg,#f1fcff,#e4f7fb); border:1px solid #c7edf5;
+    border-left:5px solid #4bc5dc;
+  }
+  .feature-card h3 { margin-top:0; }
+  .section-nav { display:flex; flex-wrap:wrap; gap:.5rem; margin-bottom:1.5rem; }
+  .section-nav a {
+    color:#167e9c; background:rgba(255,255,255,.92); border:1px solid #bde8f0;
+    border-radius:20px; padding:.48rem .85rem; font-size:.88rem; text-decoration:none;
+  }
+  .section-nav a:hover { background:#d5f4fa; text-decoration:none; }
+  .stat-card { background:#f1fbfd; border:1px solid #d3edf3; border-radius:15px; padding:1rem; height:100%; }
+  .stat-card strong { display:block; color:#167e9c; font-size:1.08rem; margin-bottom:.25rem; }
+  .screen-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1rem; }
+  .screen-card { background:#f7fcfd; border:1px solid #cdebf1; border-radius:16px; padding:.85rem; }
+  .screen-frame {
+    aspect-ratio: 9 / 16; width:100%; max-height:520px; overflow:hidden; border-radius:12px;
+    background:linear-gradient(145deg,#e4f7fb,#f7fcfd); border:1px dashed #82ccda;
+    display:flex; align-items:center; justify-content:center; text-align:center; padding:1rem;
+  }
+  .screen-frame img { width:100%; height:100%; object-fit:contain; border-radius:10px; }
+  .screen-placeholder { color:#397b8c; font-size:.9rem; }
+  .screen-placeholder .plus { display:block; font-size:2.2rem; line-height:1.2; margin-bottom:.5rem; color:#43aabd; }
+  .screen-card h3 { margin:.85rem 0 .25rem; }
+  .screen-card code { color:#176b83; font-size:.78rem; overflow-wrap:anywhere; }
+  .flow-step { text-align:center; padding:1rem .65rem; height:100%; }
+  .flow-number {
+    width:40px;height:40px;line-height:40px;margin:0 auto .65rem;border-radius:50%;
+    background:linear-gradient(145deg,#43c6dc,#168eaf);color:white;font-weight:700;
+  }
+  .comparison-table th { background:linear-gradient(135deg,#219dbb,#48c8dd);color:white;vertical-align:middle; }
+  .comparison-table td { vertical-align:top; min-width:130px; }
+  .comparison-table tbody tr:nth-child(even) { background:#f1fbfd; }
+  .persona-card { background:linear-gradient(145deg,#fff,#f0fbfd);border:1px solid #d3edf3;border-radius:16px;padding:1.25rem;height:100%; }
+  .persona-label { font-size:.76rem;text-transform:uppercase;letter-spacing:1px;color:#2398b6;font-weight:700; }
+  .storyboard-step { border-left:3px solid #8edbe8;padding:0 0 .9rem 1rem;margin-left:.45rem; }
+  .wireframe-frame { overflow:hidden;border:1px solid #c9eaf1;border-radius:14px;background:#f5fcfe; }
+  .wireframe-frame iframe { display:block;width:100%;height:650px;border:0; }
+  .potoo-button { border-radius:30px;padding:.65rem 1.2rem;background:linear-gradient(135deg,#39bcd5,#218fad);border:1px solid #269bb9;color:white; }
+  .potoo-button:hover { background:linear-gradient(135deg,#25a9c5,#167c9b);color:white; }
+  .note-panel { background:#f2fbfd;border-left:4px solid #43c6dc;padding:1rem 1.1rem;border-radius:0 12px 12px 0; }
+  .muted-small { color:#66848c;font-size:.88rem; }
+  @media(max-width:768px) {
+    .potoo-hero { text-align:center; }
+    .potoo-icon { margin-top:1.5rem;max-width:150px; }
+    .wireframe-frame iframe { height:500px; }
+  }
 </style>
 
-<div class="container py-5">
+<div class="potoo-page">
+<div class="container">
 
-<!-- HERO -->
-<div class="potoo-hero">
+  <!-- HERO -->
+  <header class="potoo-hero">
     <div class="row align-items-center">
-        <div class="col-lg-8">
-            <span class="badge badge-light mb-3">Mobile Nature Companion</span>
-            <h1>Potoo</h1>
-            <p class="lead">Your window to the wild.</p>
-            <p>
-                A mobile nature companion that combines nearby wildlife
-                discovery, species identification, and game-like progression
-                while encouraging users to observe the natural world rather
-                than remain focused on their screens.
-            </p>
-            <div class="mt-4">
-                <span class="tech-badge">React Native</span>
-                <span class="tech-badge">Expo</span>
-                <span class="tech-badge">Mobile Development</span>
-                <span class="tech-badge">Nature & Birding</span>
-            </div>
+      <div class="col-lg-8">
+        <span class="badge badge-light mb-3">Mobile Nature Technology · Active Prototype</span>
+        <h1>Potoo</h1>
+        <p class="lead mb-2">Discover the world around you.</p>
+        <p class="mb-3">
+          A mobile nature companion that connects local wildlife discovery, field-guide learning,
+          and outdoor exploration. Potoo is designed to help people become more curious and
+          confident naturalists — while keeping the experience rooted in the real world.
+        </p>
+        <div>
+          <span class="tech-badge">React Native</span>
+          <span class="tech-badge">Expo</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">Apple Maps</span>
+          <span class="tech-badge">iNaturalist API</span>
+          <span class="tech-badge">Nature & Birding</span>
         </div>
-        <div class="col-lg-4 text-center">
-            <img src="{{ url_for('static', filename='potoo.png') }}"
-                 class="potoo-icon" alt="Potoo owl icon">
-        </div>
+      </div>
+      <div class="col-lg-4 text-center">
+        <img src="{{ url_for('static', filename='potoo.png') }}" class="potoo-icon" alt="Potoo project owl icon">
+      </div>
     </div>
-</div>
+  </header>
 
-<!-- SECTION NAVIGATION -->
-<nav class="section-nav" aria-label="Project sections">
+  <nav class="section-nav" aria-label="Project sections">
     <a href="#overview">Overview</a>
-    <a href="#audience">Audience</a>
+    <a href="#current-build">Current Build</a>
+    <a href="#screenshots">App Screens</a>
     <a href="#features">Features</a>
-    <a href="#comparative-analysis">Comparative Analysis</a>
-    <a href="#personas">Personas</a>
-    <a href="#use-cases">Use Cases</a>
-    <a href="#storyboards">Storyboards</a>
-    <a href="#wireframes">Wireframes</a>
-</nav>
+    <a href="#design">Design & Research</a>
+    <a href="#development">Development Process</a>
+    <a href="#technical">Technical</a>
+    <a href="#next-steps">Next Steps</a>
+  </nav>
 
-<!-- 1. MISSION STATEMENT -->
-<section class="section-card" id="overview">
-    <h2>1. Mission Statement</h2>
+  <!-- OVERVIEW -->
+  <section class="section-card" id="overview">
+    <h2>01 · Project Overview</h2>
     <p>
-        Potoo makes nature exploration more accessible and engaging by
-        combining location-based discovery, species identification, and
-        game-like progression while encouraging users to observe the natural
-        world rather than remain focused on their screens.
-    </p>
-
-    <h3>Project Summary</h3>
-    <p>
-        Potoo is a mobile nature companion that helps users discover nearby
-        wildlife and learn about the species they encounter. Before exploring,
-        users can browse a field guide to learn about birds they are likely
-        to see in their area.
+      Potoo explores how mobile technology and game-inspired design can make nature observation
+      more accessible. The concept brings together nearby outdoor places, a location-aware bird
+      field guide, camera-based observation, and a longer-term idea for personal collections and
+      exploration challenges.
     </p>
     <p>
-        During outdoor activities, the app encourages users to put their
-        phones away and pay attention to their surroundings. After an
-        observation, users can record what they remember and work through
-        identification clues about appearance, habitat, behavior, season,
-        and calls before receiving an answer.
-    </p>
-    <p class="mb-0">
-        Users can build a personal collection of identified species and
-        participate in optional quests and location-based activities that
-        encourage continued learning and exploration.
-    </p>
-</section>
-
-<!-- 2. AUDIENCE -->
-<section class="section-card" id="audience">
-    <h2>2. Audience</h2>
-    <p>
-        Potoo is designed for beginning naturalists, students, outdoor
-        enthusiasts, and experienced birdwatchers who want to learn more
-        about the wildlife around them.
+      The intended audience ranges from beginning naturalists and students to outdoor enthusiasts
+      and experienced birdwatchers. A beginner should be able to use Potoo to learn what lives nearby
+      and build identification confidence; a more experienced birder should be able to use local
+      discovery tools and keep track of encounters. The design aims to make getting started feel
+      approachable without removing the depth that makes nature observation rewarding.
     </p>
     <p>
-        Beginners can use the app to learn about unfamiliar species and
-        develop identification skills, while experienced naturalists can
-        discover local hotspots and keep track of their observations.
-        Potoo is intended for people who enjoy spending time outdoors but
-        may not know where to start or how to identify what they encounter.
+      The project began with a simple question: how can an app encourage someone to notice more
+      of the natural world around them? Rather than making the phone the center of the experience,
+      Potoo is intended to help users prepare for an outing, use the app briefly when useful, and
+      then return their attention to the landscape, wildlife, and sounds around them.
     </p>
-    <p class="mb-0">
-        By combining educational resources with optional challenges and
-        collection features, Potoo aims to make nature exploration
-        approachable for a wide range of ages and experience levels.
-    </p>
-</section>
-
-<!-- 3. CORE FEATURES -->
-<section class="section-card" id="features">
-    <h2>3. Core Features & User Experience</h2>
-
+    <div class="note-panel">
+      <strong>Core design principle:</strong> Technology that knows when to get out of the way.
+      Potoo should support curiosity and observation, not compete with the outdoors for attention.
+    </div>
+    <h3 class="mt-4">The intended experience</h3>
     <div class="row">
-        <div class="col-md-6 mb-4">
-            <div class="feature-card">
-                <h3>📍 Explore Nearby</h3>
-                <p class="mb-0">
-                    Discover nearby hotspots on a map and learn which
-                    species may be present before visiting a location.
-                </p>
-            </div>
+      {% set steps = [
+        ("1","Prepare","Check which birds have been observed in the surrounding area."),
+        ("2","Explore","Find a park, natural area, or outdoor place to visit."),
+        ("3","Observe","Look and listen first; use the camera when documentation is useful."),
+        ("4","Learn","Use species information to build recognition and naturalist knowledge."),
+        ("5","Reflect","Over time, build a record of discoveries and return to new places.")
+      ] %}
+      {% for n, title, description in steps %}
+      <div class="col-md">
+        <div class="flow-step">
+          <div class="flow-number">{{ n }}</div>
+          <h3>{{ title }}</h3>
+          <p class="mb-0">{{ description }}</p>
         </div>
-        <div class="col-md-6 mb-4">
-            <div class="feature-card">
-                <h3>📖 Field Guide</h3>
-                <p class="mb-0">
-                    Browse regional species profiles, including appearance,
-                    habitat, behavior, seasonal activity, and calls.
-                </p>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="feature-card">
-                <h3>🔎 Guided Identification</h3>
-                <p class="mb-0">
-                    Recall an observation and work through identification
-                    clues before receiving feedback and learning the answer.
-                </p>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="feature-card">
-                <h3>🗂️ My Collection</h3>
-                <p class="mb-0">
-                    Keep a personal collection of identified species and
-                    track discoveries over time.
-                </p>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="feature-card">
-                <h3>🎯 Quests & Challenges</h3>
-                <p class="mb-0">
-                    Complete optional activities that encourage users to
-                    explore, learn about species, and build identification skills.
-                </p>
-            </div>
-        </div>
-        <div class="col-md-6 mb-4">
-            <div class="feature-card">
-                <h3>🌿 Observe First</h3>
-                <p class="mb-0">
-                    Keep phone interactions brief and purposeful so the
-                    primary experience remains observing wildlife outdoors.
-                </p>
-            </div>
-        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- CURRENT BUILD -->
+  <section class="section-card" id="current-build">
+    <h2>02 · Current Build & Development Status</h2>
+    <p>
+      The current project is a runnable React Native application with working navigation,
+      a location-aware bird field guide, and a functioning camera capture flow. Other parts
+      of the experience are at different stages of prototyping. The distinction matters:
+      Potoo is a working mobile prototype, not yet a fully connected observation platform.
+    </p>
+    <div class="row">
+      <div class="col-md-4 mb-3"><div class="stat-card">
+        <strong><span class="status-chip status-working">Working</span> App runtime</strong>
+        The application launches and runs on a device or simulator.
+      </div></div>
+      <div class="col-md-4 mb-3"><div class="stat-card">
+        <strong><span class="status-chip status-working">Working</span> Navigation</strong>
+        Home screen feature navigation and bottom-tab navigation are implemented.
+      </div></div>
+      <div class="col-md-4 mb-3"><div class="stat-card">
+        <strong><span class="status-chip status-working">Working</span> Field Guide</strong>
+        Retrieves nearby bird species using device location and the iNaturalist API.
+      </div></div>
+      <div class="col-md-4 mb-3"><div class="stat-card">
+        <strong><span class="status-chip status-working">Working</span> Camera</strong>
+        Requests camera permission, displays a live camera view, captures an image, and allows retaking it.
+      </div></div>
+      <div class="col-md-4 mb-3"><div class="stat-card">
+        <strong><span class="status-chip status-partial">In progress</span> Explore map</strong>
+        Uses Apple Maps with nature-oriented points of interest; the map experience is still being refined.
+      </div></div>
+      <div class="col-md-4 mb-3"><div class="stat-card">
+        <strong><span class="status-chip status-prototype">Prototype</span> Collection & Quests</strong>
+        These screens currently use sample content and are not connected to persistent user data.
+      </div></div>
     </div>
 
-    <h3>Intended User Flow</h3>
-    <div class="row">
-        {% set steps = [
-            ("1", "Prepare", "Browse the field guide and learn which species may be nearby."),
-            ("2", "Explore", "Visit a location and pay attention to the surrounding wildlife."),
-            ("3", "Observe", "Remember details about appearance, habitat, behavior, and calls."),
-            ("4", "Identify", "Work through clues and make an identification attempt."),
-            ("5", "Learn", "Receive feedback and explore the species profile."),
-            ("6", "Collect", "Add the species to a personal collection and continue exploring.")
-        ] %}
-        {% for n, title, description in steps %}
-        <div class="col-md-4">
-            <div class="flow-step">
-                <div class="flow-number">{{ n }}</div>
-                <h4>{{ title }}</h4>
-                <p>{{ description }}</p>
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-</section>
-
-<!-- 4. COMPARATIVE ANALYSIS -->
-<section class="section-card" id="comparative-analysis">
-    <h2>4. Comparative Analysis</h2>
-    <p>
-        Potoo draws inspiration from existing nature applications while
-        emphasizing a different experience: guided learning, personal
-        progression, and outdoor observation with minimal screen time.
-    </p>
-
-    <h3>App 1: Merlin Bird ID</h3>
-    <p>
-        Merlin Bird ID, developed by the Cornell Lab of Ornithology, helps
-        users identify birds using photographs, recorded sounds, and guided
-        questions. It also provides bird information and regional species
-        resources.
-    </p>
-
-    <div class="row">
-        <div class="col-md-6 mb-3">
-            <div class="feature-card">
-                <h3>Strengths</h3>
-                <ul class="mb-0">
-                    <li>Multiple identification methods support different situations.</li>
-                    <li>Regional information helps users find likely species.</li>
-                    <li>Species profiles support learning beyond identification.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6 mb-3">
-            <div class="feature-card">
-                <h3>Limitations for Potoo's Goals</h3>
-                <ul class="mb-0">
-                    <li>Primarily focused on bird identification.</li>
-                    <li>Quick identification may leave less room for deliberate clue-based learning.</li>
-                    <li>Quests, collection progression, and location-based game loops are not its primary focus.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <h3>Design Decisions for Potoo</h3>
+    <h3 class="mt-3">Implementation snapshot</h3>
     <ul>
-        <li>Provide accessible identification tools and useful species profiles.</li>
-        <li>Use regional information to help users prepare for outdoor exploration.</li>
-        <li>Offer optional clue-based identification that encourages users to think through their observations.</li>
+      <li><strong>Application:</strong> React Native with Expo and JavaScript.</li>
+      <li><strong>Navigation:</strong> React Navigation with a native stack and bottom-tab navigator.</li>
+      <li><strong>Location:</strong> Expo Location requests foreground permission and retrieves the device's coordinates.</li>
+      <li><strong>Species data:</strong> iNaturalist's species-count observations endpoint is used to retrieve nearby bird taxa.</li>
+      <li><strong>Mapping:</strong> Apple Maps is the map provider currently used in the Explore screen.</li>
+      <li><strong>Camera:</strong> Expo Camera provides permission handling, live preview, capture, and retake behavior.</li>
+      <li><strong>Data persistence:</strong> No backend or persistent storage is currently connected. Collection and quest examples are prototype data.</li>
     </ul>
+    <p class="muted-small mb-0">
+      Status reflects the latest development update provided for this portfolio page. Features may
+      evolve as the prototype develops.
+    </p>
+  </section>
 
-    <hr>
-
-    <h3>App 2: iNaturalist</h3>
+  <!-- SCREENSHOTS -->
+  <section class="section-card" id="screenshots">
+    <h2>03 · App Screens</h2>
     <p>
-        iNaturalist is a nature observation platform where users document
-        organisms, receive identification suggestions, and contribute
-        observations to a community-supported biodiversity database.
+      Screenshots are loaded directly from the existing Flask <code>static/</code> directory.
+      The filenames below match the assets already in the project.
     </p>
 
+    <div class="screen-grid">
+      {% set screens = [
+        ("Home","home_screen.PNG","The main landing screen and entry point to Potoo's four primary areas."),
+        ("Explore · Apple Maps","map.PNG","The map interface for discovering nearby outdoor points of interest."),
+        ("Field Guide","field_guide.png","Nearby bird species retrieved using location and iNaturalist observation data."),
+        ("Camera","camera.png","The in-app camera experience for capturing a wildlife observation."),
+        ("My Collection","collection.png","The collection interface. Current entries are sample content."),
+        ("Quests","quests.PNG","The challenge and progression concept. Current entries are sample content."),
+        ("Profile","profile.PNG","The user's naturalist profile, discovery summary, and achievement overview. Current profile values are sample content.")
+      ] %}
+      {% for title, filename, caption in screens %}
+      <article class="screen-card">
+        <div class="screen-frame">
+          {% if filename %}
+          <img src="{{ url_for('static', filename=filename) }}"
+               alt="Potoo {{ title }} app screenshot"
+               loading="lazy">
+          {% else %}
+          <div class="screen-placeholder">
+            <span class="plus">＋</span>
+            <strong>Screenshot coming soon</strong><br>
+            <span class="muted-small">Add a {{ title }} capture to the static folder.</span>
+          </div>
+          {% endif %}
+        </div>
+        <h3>{{ title }}</h3>
+        <p class="muted-small mb-0">{{ caption }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section-card" id="features">
+    <h2>04 · Core Features & User Experience</h2>
     <div class="row">
-        <div class="col-md-6 mb-3">
-            <div class="feature-card">
-                <h3>Strengths</h3>
-                <ul class="mb-0">
-                    <li>Supports many types of organisms beyond birds.</li>
-                    <li>Connects observations with geographic locations.</li>
-                    <li>Community identification can support learning and scientific knowledge.</li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6 mb-3">
-            <div class="feature-card">
-                <h3>Limitations for Potoo's Goals</h3>
-                <ul class="mb-0">
-                    <li>The range of information may feel overwhelming to beginners.</li>
-                    <li>Observation and community workflows can require substantial device interaction.</li>
-                    <li>Guided, game-like learning progression is not its primary organizing principle.</li>
-                </ul>
-            </div>
-        </div>
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>📍 Explore Nearby <span class="status-chip status-partial">In progress</span></h3>
+        <p class="mb-0">An Apple Maps-based view intended to help users find parks, natural areas, and other outdoor points of interest. The current map implementation is present, with the discovery experience still being refined.</p>
+      </div></div>
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>📖 Location-Aware Field Guide <span class="status-chip status-working">Working</span></h3>
+        <p class="mb-0">Uses foreground location permission and the iNaturalist API to retrieve bird species observed within a local radius. Results include species names and observation counts, with search and refresh states.</p>
+      </div></div>
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>📷 Observation Camera <span class="status-chip status-working">Working</span></h3>
+        <p class="mb-0">Provides a live camera preview, permission request, photo capture, and retake flow. Capturing an image is implemented; automatic species identification and saving observations are not currently claimed as implemented.</p>
+      </div></div>
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>🗂️ My Collection <span class="status-chip status-prototype">Sample data</span></h3>
+        <p class="mb-0">A scrapbook-like place to represent a user's species discoveries and observation history. The current screen demonstrates the intended interface with sample profile and observation content.</p>
+      </div></div>
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>🎯 Quests & Challenges <span class="status-chip status-prototype">Sample data</span></h3>
+        <p class="mb-0">A game-inspired layer for optional outdoor goals and learning challenges. The current screen uses example tasks and progress values rather than a persistent quest system connected to real observations.</p>
+      </div></div>
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>🧭 Simple Navigation <span class="status-chip status-working">Working</span></h3>
+        <p class="mb-0">A home screen provides entry points to the main app areas, supported by a bottom-tab navigation structure for moving between screens.</p>
+      </div></div>
     </div>
-
-    <h3>Design Decisions for Potoo</h3>
-    <ul>
-        <li>Use location-aware discovery to help users find nearby wildlife.</li>
-        <li>Keep the interface focused and approachable for beginners.</li>
-        <li>Avoid making social feeds, posting, or constant phone interaction central to the experience.</li>
-        <li>Prioritize observing wildlife first and interacting with the app afterward.</li>
-    </ul>
-
-    <h3 class="mt-4">Feature Comparison Matrix</h3>
-    <div class="table-responsive">
-        <table class="table table-bordered comparison-table">
-            <thead>
-                <tr>
-                    <th>Feature</th>
-                    <th>Merlin Bird ID</th>
-                    <th>iNaturalist</th>
-                    <th>Potoo</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Bird identification</td>
-                    <td>Core feature</td>
-                    <td>Available</td>
-                    <td>Core feature</td>
-                </tr>
-                <tr>
-                    <td>Photo or sound identification</td>
-                    <td>Photo and sound</td>
-                    <td>Photo-based observations and identification suggestions</td>
-                    <td>Planned</td>
-                </tr>
-                <tr>
-                    <td>Species information</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Location-based discovery</td>
-                    <td>Regional bird information</td>
-                    <td>Geographic observations</td>
-                    <td>Nearby hotspots</td>
-                </tr>
-                <tr>
-                    <td>Personal species collection</td>
-                    <td>Identification history and life-list features</td>
-                    <td>Observation records</td>
-                    <td>Collection progression</td>
-                </tr>
-                <tr>
-                    <td>Quests and game-like progression</td>
-                    <td>Not a primary focus</td>
-                    <td>Not a primary focus</td>
-                    <td>Planned</td>
-                </tr>
-                <tr>
-                    <td>Guided, clue-based learning</td>
-                    <td>Guided identification options</td>
-                    <td>Identification suggestions</td>
-                    <td>Planned</td>
-                </tr>
-                <tr>
-                    <td>Screen-light outdoor exploration</td>
-                    <td>Not its primary design focus</td>
-                    <td>Not its primary design focus</td>
-                    <td>Core design principle</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <p class="text-muted small mb-0">
-        Potoo features describe the proposed design, not necessarily
-        implemented functionality. Comparisons summarize each app's
-        general focus rather than every available feature.
-    </p>
-</section>
-
-<!-- 5. PERSONAS -->
-<section class="section-card" id="personas">
-    <h2>5. Personas, Use Cases & Storyboards</h2>
-
-    <h3>User Personas</h3>
-    <div class="row">
-        <div class="col-lg-4 mb-4">
-            <div class="persona-card">
-                <span class="persona-label">Persona 1</span>
-                <h3>The Beginner Naturalist</h3>
-                <p><strong>Name:</strong> Jamie Jim</p>
-                <p><strong>Background:</strong> A college student who enjoys walking around local parks but knows little about bird identification.</p>
-                <p><strong>Goals:</strong></p>
-                <ul>
-                    <li>Find interesting wildlife.</li>
-                    <li>Learn to recognize common birds.</li>
-                    <li>Gain confidence outdoors.</li>
-                </ul>
-                <p><strong>Frustrations:</strong> Unfamiliar bird names and calls can be confusing, and traditional field guides can be difficult to navigate.</p>
-                <p class="mb-0"><strong>Design implications:</strong> Provide approachable species information, nearby discovery, and simple identification clues.</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4 mb-4">
-            <div class="persona-card">
-                <span class="persona-label">Persona 2</span>
-                <h3>The Experienced Birdwatcher</h3>
-                <p><strong>Name:</strong> Jimmy James</p>
-                <p><strong>Background:</strong> An experienced outdoor enthusiast who regularly visits parks and records bird observations.</p>
-                <p><strong>Goals:</strong></p>
-                <ul>
-                    <li>Discover productive birding locations.</li>
-                    <li>Encounter unfamiliar species.</li>
-                    <li>Maintain a record of discoveries.</li>
-                </ul>
-                <p><strong>Frustrations:</strong> Repetitive activities and excessive screen time can distract from observing wildlife.</p>
-                <p class="mb-0"><strong>Design implications:</strong> Offer location-based discovery, a useful collection, and optional challenges without interrupting outdoor activities.</p>
-            </div>
-        </div>
-
-        <div class="col-lg-4 mb-4">
-            <div class="persona-card">
-                <span class="persona-label">Persona 3</span>
-                <h3>The Casual Explorer</h3>
-                <p><strong>Name:</strong> Gregor Kafka</p>
-                <p><strong>Background:</strong> A student who enjoys outdoor activities with friends but has little prior interest in birdwatching.</p>
-                <p><strong>Goals:</strong></p>
-                <ul>
-                    <li>Find fun outdoor activities.</li>
-                    <li>Learn something new.</li>
-                    <li>Explore without extensive prior knowledge.</li>
-                </ul>
-                <p><strong>Frustrations:</strong> Birdwatching can initially feel intimidating or difficult to turn into an engaging activity.</p>
-                <p class="mb-0"><strong>Design implications:</strong> Provide short quests, clear goals, and visible progress without requiring extensive technical knowledge.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- USE CASES -->
-<section class="section-card" id="use-cases">
-    <h2>Use Case 1: Discover a Nearby Birding Location</h2>
-    <p><strong>Primary actor:</strong> Jamie, the beginner naturalist.</p>
-    <p><strong>Goal:</strong> Find a nearby location where birds can be observed.</p>
-    <p><strong>Precondition:</strong> Jamie has opened Potoo and can access the Explore screen.</p>
-
-    <h3>Main Flow</h3>
-    <ol>
-        <li>Jamie opens Potoo and selects Explore.</li>
-        <li>The app displays a map with nearby points of interest.</li>
-        <li>Jamie selects a hotspot on the map.</li>
-        <li>The app displays information about the location and potentially observable species.</li>
-        <li>Jamie chooses to visit the location and observe the surrounding wildlife.</li>
-    </ol>
-
-    <p class="mb-0"><strong>Expected outcome:</strong> Jamie discovers a place to explore and has an idea of what to look and listen for.</p>
-
-    <hr>
-
-    <h2 class="mt-4">Use Case 2: Identify and Collect a Bird</h2>
-    <p><strong>Primary actor:</strong> Jamie, the beginner naturalist.</p>
-    <p><strong>Goal:</strong> Identify an unfamiliar bird and add it to a personal collection.</p>
-    <p><strong>Precondition:</strong> Jamie has observed a bird outdoors and remembers enough details to attempt identification.</p>
-
-    <h3>Main Flow</h3>
-    <ol>
-        <li>Jamie opens Potoo and begins an observation.</li>
-        <li>Jamie records what they remember about the bird's appearance, behavior, habitat, or call.</li>
-        <li>Potoo presents relevant identification clues or questions.</li>
-        <li>Jamie makes an identification attempt.</li>
-        <li>Potoo reveals feedback and provides information about the species.</li>
-        <li>Jamie adds the identified bird to My Collection.</li>
-        <li>Jamie learns about the species and makes progress toward becoming a more confident naturalist.</li>
-    </ol>
-
-    <p class="mb-0"><strong>Expected outcome:</strong> Jamie turns an outdoor observation into a learning opportunity and records a new discovery.</p>
-</section>
-
-<!-- STORYBOARDS -->
-<section class="section-card" id="storyboards">
-    <h2>Storyboards</h2>
-
-    <h3>Storyboard 1: From Home to Outdoor Exploration</h3>
-    <p><strong>Associated use case:</strong> Discover a Nearby Birding Location.</p>
-
-    <div class="storyboard-step">
-        <h4>1. Starting Point</h4>
-        <p>Jamie opens Potoo at home and sees the main navigation options.</p>
-    </div>
-    <div class="storyboard-step">
-        <h4>2. Discovery</h4>
-        <p>Jamie selects Explore and views nearby hotspots on a map.</p>
-    </div>
-    <div class="storyboard-step">
-        <h4>3. Decision</h4>
-        <p>Jamie selects a hotspot and reviews the location's details and likely bird species.</p>
-    </div>
-    <div class="storyboard-step">
-        <h4>4. Real-World Action</h4>
-        <p>Jamie visits the location, puts the phone away, and watches and listens for birds.</p>
-    </div>
-
+    <h3 class="mt-3">The intended observation-to-identification journey</h3>
     <p>
-        The Home and Explore screens allow Jamie to move from opening the app
-        to choosing a real-world destination. Location information helps Jamie
-        prepare for the visit, while the final step reinforces Potoo's goal
-        of encouraging direct observation rather than continuous screen use.
+      The original product plan describes an observation workflow that begins outside the app:
+      a person notices a bird, watches and listens, and remembers useful details. Afterward, they
+      can enter what they recall and work through guided clues about appearance, habitat, behavior,
+      season, and calls before receiving feedback. The identified species can then become part of
+      My Collection. This is an important part of the product vision, but the guided identification
+      flow and saved observation system are not yet implemented in the current build.
     </p>
-
-    <hr>
-
-    <h3>Storyboard 2: From Observation to Identification</h3>
-    <p><strong>Associated use case:</strong> Identify and Collect a Bird.</p>
-
-    <div class="storyboard-step">
-        <h4>1. Observation</h4>
-        <p>Jamie sees an unfamiliar bird in a park and remembers its colors, behavior, and call.</p>
+    <div class="note-panel">
+      <strong>Design choice:</strong> Potoo is not intended to reward constant phone use. Its
+      game-like elements should give people reasons to explore, learn, and return outdoors—not
+      encourage them to stare at a screen while wildlife is around.
     </div>
-    <div class="storyboard-step">
-        <h4>2. Recall</h4>
-        <p>After observing the bird, Jamie opens Potoo and records the details they remember.</p>
-    </div>
-    <div class="storyboard-step">
-        <h4>3. Identification</h4>
-        <p>Potoo provides clues and questions that help Jamie narrow down possible species before revealing feedback.</p>
-    </div>
-    <div class="storyboard-step">
-        <h4>4. Progress</h4>
-        <p>Jamie learns about the identified species and adds it to My Collection.</p>
-    </div>
-
+    <h3 class="mt-3">A note on the larger product vision</h3>
     <p class="mb-0">
-        This workflow turns a real-world encounter into a learning opportunity.
-        The collection provides a record of discoveries and a reason to
-        continue exploring.
+      The broader Potoo concept includes guided, clue-based identification after an observation:
+      users recall details such as color, shape, habitat, behavior, season, or calls and use those
+      clues to narrow down a species. This remains part of the intended experience rather than a
+      feature represented as complete in the current app build.
     </p>
-</section>
+  </section>
 
-<!-- WIREFRAMES -->
-<section class="section-card" id="wireframes">
-    <h2>6. Wireframes</h2>
+  <!-- DESIGN & RESEARCH -->
+  <section class="section-card" id="design">
+    <h2>05 · Design Direction & Research</h2>
+    <h3>Visual language</h3>
     <p>
-        The following Figma prototype presents the early interface direction
-        for Potoo. The wireframes explore how users navigate between discovery,
-        the field guide, their personal collection, and optional quests.
-        These screens establish the structure and navigation of the proposed
-        mobile experience before detailed implementation.
+      Potoo uses a soft aqua and blue-green palette, nature-inspired imagery, rounded interface
+      elements, and translucent glass-style feature cards. The goal is to make the app feel
+      welcoming and exploratory rather than like a dense scientific database.
     </p>
+    <div class="mb-3">
+      <span class="tech-badge">Aqua & blue-green palette</span>
+      <span class="tech-badge">Glassmorphism</span>
+      <span class="tech-badge">Nature imagery</span>
+      <span class="tech-badge">Field-guide influence</span>
+      <span class="tech-badge">Mobile-first interface</span>
+    </div>
 
+    <h3>Design inspiration and comparative analysis</h3>
+    <p>
+      Potoo draws inspiration from tools such as Merlin Bird ID and iNaturalist, while exploring
+      a different combination of local discovery, beginner-friendly learning, and optional
+      game-inspired progression.
+    </p>
+    <div class="row">
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>Merlin Bird ID</h3>
+        <p class="mb-0">A reference for accessible bird identification, species information, and helping people connect observations with likely species.</p>
+      </div></div>
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>iNaturalist</h3>
+        <p class="mb-0">A reference for location-linked biodiversity observations and community-supported species knowledge. Potoo currently uses its API for nearby bird species data.</p>
+      </div></div>
+    </div>
+
+    <h3>What Potoo takes from existing nature apps</h3>
+    <p>
+      The original comparative research looked at Merlin Bird ID and iNaturalist to identify
+      useful patterns as well as opportunities for a different experience.
+    </p>
+    <div class="row">
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>Merlin Bird ID · Identification and learning</h3>
+        <p><strong>What informed Potoo:</strong> accessible identification tools, regional bird
+        information, and useful species profiles.</p>
+        <p class="mb-0"><strong>Where Potoo differs:</strong> the concept adds optional quests,
+        collection progression, and a more deliberate clue-based learning process rather than
+        centering the whole experience on fast identification.</p>
+      </div></div>
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>iNaturalist · Biodiversity and place</h3>
+        <p><strong>What informed Potoo:</strong> location-linked observations and the ability to
+        explore organisms beyond birds. Its API also supplies nearby bird observation data to
+        the current Field Guide.</p>
+        <p class="mb-0"><strong>Where Potoo differs:</strong> the interface aims to be more focused
+        for beginners and to keep social posting and extended screen interaction out of the
+        center of the experience.</p>
+      </div></div>
+    </div>
+    <h3>User groups</h3>
+    <div class="row">
+      <div class="col-lg-4 mb-3"><div class="persona-card">
+        <span class="persona-label">Persona 1</span>
+        <h3>The Beginner Naturalist</h3>
+        <p>A student or casual walker who enjoys local parks but is still learning how to recognize birds.</p>
+        <p class="mb-0"><strong>Design need:</strong> approachable species information, useful local context, and low-friction exploration.</p>
+      </div></div>
+      <div class="col-lg-4 mb-3"><div class="persona-card">
+        <span class="persona-label">Persona 2</span>
+        <h3>The Experienced Birder</h3>
+        <p>An outdoor enthusiast who visits natural areas regularly and wants to discover new places and species.</p>
+        <p class="mb-0"><strong>Design need:</strong> relevant local discovery and tools that complement, rather than interrupt, observation.</p>
+      </div></div>
+      <div class="col-lg-4 mb-3"><div class="persona-card">
+        <span class="persona-label">Persona 3</span>
+        <h3>The Casual Explorer</h3>
+        <p>Someone who enjoys being outdoors but may not yet think of themselves as a naturalist.</p>
+        <p class="mb-0"><strong>Design need:</strong> clear entry points, approachable challenges, and a reason to keep exploring.</p>
+      </div></div>
+    </div>
+
+    <h3 class="mt-3">Figma wireframes and early interface planning</h3>
+    <p>The Figma design documents the early structure and visual direction that informed the current mobile prototype.</p>
     <div class="wireframe-frame">
-        <iframe
-            src="https://embed.figma.com/design/Cfz9lB6RglbFGgGyhN6rgJ/Potoo?node-id=0-1&amp;embed-host=share"
-            title="Potoo mobile app wireframes in Figma"
-            allowfullscreen
-            loading="lazy">
-        </iframe>
+      <iframe src="https://embed.figma.com/design/Cfz9lB6RglbFGgGyhN6rgJ/Potoo?node-id=0-1&amp;embed-host=share"
+              title="Potoo mobile app wireframes in Figma" allowfullscreen loading="lazy"></iframe>
     </div>
-
-    <p class="text-muted small mt-3">
-        If the embedded prototype does not load, open the design directly
-        in Figma.
-    </p>
     <a href="https://www.figma.com/design/Cfz9lB6RglbFGgGyhN6rgJ/Potoo"
-       class="btn btn-outline-secondary potoo-button"
-       target="_blank"
-       rel="noopener noreferrer">
-        Open Wireframes in Figma ↗
-    </a>
-</section>
+       class="btn potoo-button mt-3" target="_blank" rel="noopener noreferrer">Open Potoo in Figma ↗</a>
+  </section>
 
-<!-- TECHNICAL DIRECTION -->
-<section class="section-card">
-    <h2>Technical Direction</h2>
-
-    <h3>React Native & Expo</h3>
+  <!-- DEVELOPMENT PROCESS -->
+  <section class="section-card" id="development">
+    <h2>06 · Design Iteration & Development Process</h2>
     <p>
-        Potoo is suited to mobile development because its experience depends
-        on location, observation, identification, and interactions that happen
-        while users are outside. React Native and Expo provide a path toward
-        an iOS and Android interface while supporting components, state,
-        JavaScript, and responsive mobile UI.
+      Potoo developed through a sequence of wireframing, design review, prototype requirements,
+      and revisions. The project documentation records not just the intended screens, but the
+      reasoning behind changes to the map, Field Guide, collection, and observation experience.
     </p>
-    <div class="mb-4">
-        <span class="tech-badge">React Native</span>
-        <span class="tech-badge">Expo</span>
-        <span class="tech-badge">JavaScript</span>
-        <span class="tech-badge">Components</span>
-        <span class="tech-badge">State</span>
-        <span class="tech-badge">Mobile UI</span>
+
+    <h3>From early wireframes to a more defined app structure</h3>
+    <p>
+      The early wireframes established Home as the starting point, with Explore, Field Guide,
+      My Collection, and Quests as the four primary feature areas. The navigation plan also
+      separated the main Observation flow and Profile from those feature screens. The later
+      mockups explored a more distinctive visual language: a nature-themed home screen, map-based
+      discovery, a botanical field-guide treatment for species pages, and a notebook or scrapbook
+      style for personal records.
+    </p>
+
+    <h3>Design feedback translated into decisions</h3>
+    <div class="row">
+      <div class="col-md-4 mb-3"><div class="feature-card">
+        <h3>Home screen hierarchy</h3>
+        <p class="mb-0">The initial home screen risked having too many competing elements. The design review called for a clearer visual hierarchy around search and the main exploration features.</p>
+      </div></div>
+      <div class="col-md-4 mb-3"><div class="feature-card">
+        <h3>More informative map</h3>
+        <p class="mb-0">Map pins needed to communicate why a place was worth visiting. The proposed improvement was selectable markers with hotspot details and potentially observable species.</p>
+      </div></div>
+      <div class="col-md-4 mb-3"><div class="feature-card">
+        <h3>Richer species and collection screens</h3>
+        <p class="mb-0">The Field Guide was planned around common and scientific names plus identification information. Collection cards were envisioned with species images, dates, locations, and observation counts.</p>
+      </div></div>
     </div>
 
-    <h3>Godot & Game Design</h3>
+    <h3>Sprint milestones</h3>
+    <div class="storyboard-step">
+      <strong>Sprint 1 · Establish the app structure</strong>
+      <p class="mb-0">Define persistent navigation, the Home dashboard, Explore map with placeholder markers, searchable Field Guide, sample Collection cards, and sample Quests. The test plan focused on launch, navigation, screen access, and the expected placeholder content.</p>
+    </div>
+    <div class="storyboard-step">
+      <strong>Sprint 2 · Improve interaction and learning</strong>
+      <p class="mb-0">Refine the Explore map so markers can reveal hotspot details and potentially observable birds. Improve searchable species details, and define a guided observation process in which users enter characteristics and work through identification questions before viewing a result.</p>
+    </div>
+    <div class="note-panel mt-3">
+      <strong>How this connects to the current build:</strong> the running app now has working navigation,
+      location-aware bird data in the Field Guide, and camera capture. The interactive discovery
+      experience and guided identification workflow remain development priorities; the original
+      sprint requirements document the intended behavior, not proof that every requirement is complete.
+    </div>
+  </section>
+
+  <!-- TECHNICAL -->
+  <section class="section-card" id="technical">
+    <h2>07 · Technical Implementation</h2>
     <p>
-        Potoo also connects to game development through its collection system,
-        progression, identification challenges, and exploration mechanics.
-        Godot can be used to prototype these systems while exploring
-        object-oriented programming, state management, event-driven programming,
-        debugging, modularity, and software architecture.
+      Potoo is currently built as a mobile application using React Native and Expo. The code is
+      organized around reusable React Native components and screen-level state, with native
+      device capabilities used for location, mapping, and camera access.
     </p>
+    <div class="row">
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>Mobile application</h3>
+        <ul class="mb-0">
+          <li>React Native</li>
+          <li>Expo</li>
+          <li>JavaScript and React hooks/state</li>
+          <li>React Navigation: native stack and bottom tabs</li>
+          <li>Expo Blur and Linear Gradient for interface styling</li>
+        </ul>
+      </div></div>
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>Device and data integrations</h3>
+        <ul class="mb-0">
+          <li>Expo Location for foreground location permission and coordinates</li>
+          <li>Apple Maps for the Explore map</li>
+          <li>Expo Camera for live preview and photo capture</li>
+          <li>iNaturalist API for nearby bird species counts</li>
+        </ul>
+      </div></div>
+    </div>
+    <h3>How the Field Guide data flow works</h3>
+    <ol>
+      <li>The app requests permission to access the user's foreground location.</li>
+      <li>It retrieves the device's current coordinates and derives a readable area label.</li>
+      <li>It sends a request to the iNaturalist species-counts endpoint, filtered to birds and a local radius.</li>
+      <li>The response is transformed into a list of taxa with local observation counts.</li>
+      <li>The screen sorts and displays the results, and supports searching and refreshing the list.</li>
+    </ol>
+    <div class="note-panel">
+      <strong>Current architecture boundary:</strong> Potoo does not yet have a backend or persistent
+      storage layer. The Field Guide retrieves external observation data, but the Collection and
+      Quests screens currently demonstrate sample content rather than storing a user's records.
+    </div>
+    <h3 class="mt-4">Potential next architecture step</h3>
     <p class="mb-0">
-        These mechanics apply game design techniques outside a conventional
-        game. Progression and feedback can encourage learning and exploration
-        without turning outdoor activities into a screen-based experience.
+      A future data layer could connect captured observations, identified species, collection entries,
+      and quest progress. That would turn the current interface prototypes into a continuous user
+      experience. This is a future development direction, not a claim about the current build.
     </p>
-    <div class="mt-3">
-        <span class="tech-badge">Godot</span>
-        <span class="tech-badge">GDScript</span>
-        <span class="tech-badge">Game Design</span>
-        <span class="tech-badge">State Management</span>
-        <span class="tech-badge">Prototyping</span>
+  </section>
+
+  <!-- NEXT STEPS -->
+  <section class="section-card" id="next-steps">
+    <h2>08 · Development Priorities</h2>
+    <div class="row">
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>Refine Explore</h3>
+        <p class="mb-0">Continue developing the Apple Maps experience, focusing on useful outdoor points of interest and a clear map interaction model.</p>
+      </div></div>
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>Connect observations</h3>
+        <p class="mb-0">Design a data model and storage approach so camera captures and species records can become saved observations.</p>
+      </div></div>
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>Make the collection real</h3>
+        <p class="mb-0">Replace sample entries with a collection populated by the user's saved observations and identified species.</p>
+      </div></div>
+      <div class="col-md-6 mb-3"><div class="feature-card">
+        <h3>Build connected quests</h3>
+        <p class="mb-0">Connect challenge completion and progress to actual observations, species discoveries, and visits to new places.</p>
+      </div></div>
     </div>
-</section>
-
-<!-- PROJECT DIRECTION -->
-<section class="section-card">
-    <h2>Project Direction</h2>
     <p>
-        Potoo is an evolving project concept and prototype. Its proposed
-        features combine nature information, identification challenges,
-        location-based discovery, and game-inspired progression into a
-        single mobile experience.
+      These priorities follow the current prototype's most important gap: the core screens exist,
+      but they do not yet share a persistent record of what a user has seen and learned.
     </p>
-    <p>
-        The project's central design challenge is not simply building an
-        identification app. It is designing technology that knows when to
-        get out of the way. Potoo's most important interaction may ultimately
-        be the moment when the user closes the app, looks into the trees,
-        and starts paying attention.
+    <div class="note-panel">
+      <strong>Long-term direction:</strong> Potoo sits at the intersection of mobile development,
+      geospatial technology, biodiversity data, and nature education. The goal is to build technology
+      that helps people develop a stronger relationship with the places and species around them.
+    </div>
+
+    <p class="muted-small">
+      Project source: <a href="https://github.com/AndrewSwartzz/potoo" target="_blank" rel="noopener noreferrer">Potoo on GitHub</a>.
+      The repository is the place to review the implementation alongside this project overview.
     </p>
+    <div class="mt-4">
+      <a href="{{ url_for('projects') }}" class="btn potoo-button">← Back to Projects</a>
+      <a href="{{ url_for('birding') }}" class="btn btn-outline-secondary potoo-button ml-2">Explore My Birding Data →</a>
+    </div>
+  </section>
 
-    <a href="{{ url_for('projects') }}"
-       class="btn btn-primary potoo-button">
-        ← Back to Projects
-    </a>
-</section>
-
-
-<div class="section-card">
-    <h2>My Birding Data</h2>
-    <p>
-        Explore real bird observations through an interactive map
-        built from my eBird data. This experiment connects Potoo's
-        ideas about species discovery and location-based exploration
-        with real-world birding records.
-    </p>
-    <a href="{{ url_for('birding') }}" class="btn potoo-button">
-        Explore Bird Observations →
-    </a>
 </div>
-
-
 </div>
 {% endblock %}

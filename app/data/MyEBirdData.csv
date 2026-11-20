@@ -1,0 +1,604 @@
+Submission ID,Common Name,Scientific Name,Taxonomic Order,Count,State/Province,County,Location ID,Location,Latitude,Longitude,Date,Time,Protocol,Duration (Min),All Obs Reported,Distance Traveled (km),Area Covered (ha),Number of Observers,Breeding Code,Observation Details,Checklist Comments,ML Catalog Numbers
+S394608566,Snow Goose,Anser caerulescens,268,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-20,09:13 AM,eBird - Traveling Count,80,1,.929,,2
+S347837441,Barnacle Goose,Branta leucopsis,326,X,NO-03,,L68009576,Oslo,59.895708,10.730409,2026-05-27,02:16 PM,eBird - Casual Observation,,0,,,1
+S389983312,Canada Goose,Branta canadensis,347,7,US-NJ,Bergen,L786203,Halifax Road,41.0852971,-74.183338,2026-09-05,11:58 AM,eBird - Traveling Count,27,1,.233,,1
+S389908874,Canada Goose,Branta canadensis,347,2,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S350287531,Canada Goose,Branta canadensis,347,X,US-PA,Northampton,L68531961,Waterfowl Observations,40.704893,-75.252755,2026-05-31,12:36 PM,eBird - Casual Observation,,0,,,1
+S389362821,Canada Goose,Branta canadensis,347,4,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S395503635,Canada Goose,Branta canadensis,347,15,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-23,07:01 AM,eBird - Traveling Count,96,1,.577,,1,F Flyover
+S397451898,Canada Goose,Branta canadensis,347,10,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-29,07:34 AM,eBird - Traveling Count,89,1,.773,,1
+S400284165,Canada Goose,Branta canadensis,347,23,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S398748123,Canada Goose,Branta canadensis,347,50,US-NY,Tompkins,L99409,"Jennings Pond, Danby",42.3450877,-76.4879603,2026-10-03,12:52 PM,eBird - Traveling Count,22,1,.232,,2
+S391528786,Canada Goose,Branta canadensis,347,75,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S394562884,Canada Goose,Branta canadensis,347,8,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-09-20,08:04 AM,eBird - Traveling Count,51,1,.598,,2
+S407818528,Canada Goose,Branta canadensis,347,7,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-11-03,04:27 PM,eBird - Traveling Count,42,1,.354,,2
+S392698448,Canada Goose,Branta canadensis,347,2,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-09-13,05:11 PM,eBird - Traveling Count,79,1,1.769,,1
+S397327923,Canada Goose,Branta canadensis,347,30,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-09-28,06:54 PM,eBird - Traveling Count,60,1,.63,,1
+S398045494,Canada Goose,Branta canadensis,347,48,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S391097554,Canada Goose,Branta canadensis,347,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-08,12:58 PM,eBird - Traveling Count,68,1,.85,,1
+S400886770,Canada Goose,Branta canadensis,347,35,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1,F Flyover
+S401969574,Canada Goose,Branta canadensis,347,14,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-13,07:51 AM,eBird - Traveling Count,69,1,1.473,,1
+S407318920,Canada Goose,Branta canadensis,347,50,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-11-01,01:29 PM,eBird - Traveling Count,48,1,1.207,,1
+S401392325,Canada Goose,Branta canadensis,347,3,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-11,11:20 AM,eBird - Stationary Count,18,1,,,1,F Flyover
+S403964561,Canada Goose,Branta canadensis,347,16,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-20,07:55 AM,eBird - Traveling Count,46,1,1.252,,1
+S383049765,Canada Goose,Branta canadensis,347,12,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2
+S361857656,Mute Swan,Cygnus olor,382,10,MK-310,,L67940394,Lake Ohrid,41.120188,20.810935,2026-04-18,07:51 PM,eBird - Traveling Count,30,1,.805,,1,,,,660171328
+S401337774,Trumpeter Swan,Cygnus buccinator,388,2,US-NY,Tompkins,L353038,Salt Point Natural Area,42.5394116,-76.5496267,2026-10-11,09:44 AM,eBird - Traveling Count,10,1,.087,,1
+S350283898,Wood Duck,Aix sponsa,463,X,US-PA,Northampton,L68531961,Waterfowl Observations,40.704893,-75.252755,2026-05-31,12:36 PM,eBird - Casual Observation,,0,,,1
+S384208086,Wood Duck,Aix sponsa,463,6,US-NY,Rockland,L27681279,Clarkstown Landfill,41.0903291,-73.9557961,2026-08-16,06:08 PM,eBird - Traveling Count,102,1,2.551,,1
+S385247499,Wood Duck,Aix sponsa,463,8,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S391528786,Wood Duck,Aix sponsa,463,40,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S392698448,Wood Duck,Aix sponsa,463,2,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-09-13,05:11 PM,eBird - Traveling Count,79,1,1.769,,1
+S387415595,Wood Duck,Aix sponsa,463,3,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S394608566,Wood Duck,Aix sponsa,463,6,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-20,09:13 AM,eBird - Traveling Count,80,1,.929,,2
+S399239221,Wood Duck,Aix sponsa,463,6,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-04,12:55 PM,eBird - Traveling Count,125,1,1.748,,2
+S401969574,Wood Duck,Aix sponsa,463,9,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-13,07:51 AM,eBird - Traveling Count,69,1,1.473,,1
+S401392325,Wood Duck,Aix sponsa,463,15,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-11,11:20 AM,eBird - Stationary Count,18,1,,,1
+S403964561,Wood Duck,Aix sponsa,463,14,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-20,07:55 AM,eBird - Traveling Count,46,1,1.252,,1
+S347828329,Mandarin Duck,Aix galericulata,465,X,SI-102,,L68007542,Bled,46.369753,14.106453,2026-05-27,02:11 PM,eBird - Casual Observation,,0,,,1,,,,660068705
+S405659716,Blue-winged Teal,Spatula discors,492,3,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S405659716,Cinnamon Teal,Spatula cyanoptera,495,4,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S399239221,Northern Shoveler,Spatula clypeata,509,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-04,12:55 PM,eBird - Traveling Count,125,1,1.748,,2
+S396885077,Gadwall,Mareca strepera,513,7,US-NY,New York,L318103,Central Park--The Pool,40.7947416,-73.9606707,2026-09-27,10:05 AM,eBird - Traveling Count,110,1,2.349,,2
+S401392325,American Wigeon,Mareca americana,525,1,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-11,11:20 AM,eBird - Stationary Count,18,1,,,1
+S389983312,Mallard,Anas platyrhynchos,554,2,US-NJ,Bergen,L786203,Halifax Road,41.0852971,-74.183338,2026-09-05,11:58 AM,eBird - Traveling Count,27,1,.233,,1
+S390892653,Mallard,Anas platyrhynchos,554,1,US-NJ,Bergen,L753961,Oradell Reservoir and Emerson Woods,40.9700482,-74.0069962,2026-09-07,04:53 PM,eBird - Traveling Count,118,1,.944,,2
+S389908874,Mallard,Anas platyrhynchos,554,5,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S396885077,Mallard,Anas platyrhynchos,554,30,US-NY,New York,L318103,Central Park--The Pool,40.7947416,-73.9606707,2026-09-27,10:05 AM,eBird - Traveling Count,110,1,2.349,,2
+S361600981,Mallard,Anas platyrhynchos,554,2,US-PA,Northampton,L70776985,"Forks Township Parks and Recreation, Easton US-PA 40.71807, -75.22792",40.718068,-75.227916,2026-06-22,08:56 AM,eBird - Traveling Count,27,1,.814,,1,,,,660169908
+S350281189,Mallard,Anas platyrhynchos,554,X,US-PA,Northampton,L68531961,Waterfowl Observations,40.704893,-75.252755,2026-05-31,12:33 PM,eBird - Casual Observation,,0,,,1
+S389362821,Mallard,Anas platyrhynchos,554,9,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14,FL Recently Fledged Young,6 babies!
+S385247499,Mallard,Anas platyrhynchos,554,1,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S394562884,Mallard,Anas platyrhynchos,554,8,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-09-20,08:04 AM,eBird - Traveling Count,51,1,.598,,2
+S401326962,Mallard,Anas platyrhynchos,554,5,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-10-11,09:06 AM,eBird - Traveling Count,26,1,.404,,1
+S407818528,Mallard,Anas platyrhynchos,554,15,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-11-03,04:27 PM,eBird - Traveling Count,42,1,.354,,2
+S401337774,Mallard,Anas platyrhynchos,554,1,US-NY,Tompkins,L353038,Salt Point Natural Area,42.5394116,-76.5496267,2026-10-11,09:44 AM,eBird - Traveling Count,10,1,.087,,1
+S387415595,Mallard,Anas platyrhynchos,554,53,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S391097554,Mallard,Anas platyrhynchos,554,8,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-08,12:58 PM,eBird - Traveling Count,68,1,.85,,1
+S399239221,Mallard,Anas platyrhynchos,554,25,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-04,12:55 PM,eBird - Traveling Count,125,1,1.748,,2
+S400886770,Mallard,Anas platyrhynchos,554,25,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1
+S401969574,Mallard,Anas platyrhynchos,554,22,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-13,07:51 AM,eBird - Traveling Count,69,1,1.473,,1
+S403486924,Mallard,Anas platyrhynchos,554,15,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-18,01:10 PM,eBird - Traveling Count,20,1,.077,,1
+S407318920,Mallard,Anas platyrhynchos,554,23,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-11-01,01:29 PM,eBird - Traveling Count,48,1,1.207,,1
+S401392325,Mallard,Anas platyrhynchos,554,3,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-11,11:20 AM,eBird - Stationary Count,18,1,,,1
+S403964561,Mallard,Anas platyrhynchos,554,28,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-20,07:55 AM,eBird - Traveling Count,46,1,1.252,,1
+S373695772,American Black Duck,Anas rubripes,581,3,US-NY,Rockland,L275331,Piermont Pier,41.04254,-73.90091,2026-07-18,03:53 PM,eBird - Traveling Count,107,1,1.878,,1,,,Saw Forster’s Tern perched on end of pier. Two terns making their call. One was a juvenile.    Female Red-breasted Merganser by itself on shore
+S347829805,Green-winged Teal,Anas crecca,625,X,SI-102,,L68007542,Bled,46.369753,14.106453,2026-05-27,02:16 PM,eBird - Casual Observation,,0,,,1
+S347832282,Red-crested Pochard,Netta rufina,674,X,CZ-JC,,L68008418,South Moravia,48.972202,14.474716,2026-05-27,02:16 PM,eBird - Casual Observation,,0,,,1
+S403486924,Lesser Scaup,Aythya affinis,719,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-18,01:10 PM,eBird - Traveling Count,20,1,.077,,1
+S407818528,Bufflehead,Bucephala albeola,763,1,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-11-03,04:27 PM,eBird - Traveling Count,42,1,.354,,2
+S388407102,Hooded Merganser,Lophodytes cucullatus,775,3,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S387415595,Hooded Merganser,Lophodytes cucullatus,775,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S361674999,Common Merganser,Mergus merganser,783,10,US-PA,Northampton,L9152727,Bushkill/Penn Pump Park/Bushkill Creek Waterfowl Observation Area,40.7032682,-75.2521717,2026-06-22,11:13 AM,eBird - Traveling Count,42,1,.549,,1,,,,660169673
+S400284165,Common Merganser,Mergus merganser,783,2,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S407818528,Common Merganser,Mergus merganser,783,5,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-11-03,04:27 PM,eBird - Traveling Count,42,1,.354,,2
+S401337774,Common Merganser,Mergus merganser,783,1,US-NY,Tompkins,L353038,Salt Point Natural Area,42.5394116,-76.5496267,2026-10-11,09:44 AM,eBird - Traveling Count,10,1,.087,,1
+S387415595,Common Merganser,Mergus merganser,783,3,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S399239221,Common Merganser,Mergus merganser,783,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-04,12:55 PM,eBird - Traveling Count,125,1,1.748,,2
+S400886770,Common Merganser,Mergus merganser,783,2,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1
+S407318920,Common Merganser,Mergus merganser,783,3,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-11-01,01:29 PM,eBird - Traveling Count,48,1,1.207,,1
+S373695772,Red-breasted Merganser,Mergus serrator,791,1,US-NY,Rockland,L275331,Piermont Pier,41.04254,-73.90091,2026-07-18,03:53 PM,eBird - Traveling Count,107,1,1.878,,1,,Standing on shore alone.,Saw Forster’s Tern perched on end of pier. Two terns making their call. One was a juvenile.    Female Red-breasted Merganser by itself on shore
+S405659716,Ruddy Duck,Oxyura jamaicensis,799,4,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S403486924,Ruddy Duck,Oxyura jamaicensis,799,3,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-18,01:10 PM,eBird - Traveling Count,20,1,.077,,1
+S359660291,Indian Peafowl,Pavo cristatus,1595,X,CZ-PR,,L68007053,Prague!,50.083789,14.418877,2026-03-12,10:42 AM,eBird - Casual Observation,,0,,,1
+S405091130,Rock Pigeon (Feral Pigeon),Columba livia (Feral Pigeon),1890,14,MX-BCS,Los Cabos,L504180,El Arco de Cabo San Lucas,22.8761534,-109.8955965,2026-10-24,08:19 AM,eBird - Traveling Count,242,1,22.546,,1
+S396885077,Rock Pigeon (Feral Pigeon),Columba livia (Feral Pigeon),1890,10,US-NY,New York,L318103,Central Park--The Pool,40.7947416,-73.9606707,2026-09-27,10:05 AM,eBird - Traveling Count,110,1,2.349,,2
+S400886770,Rock Pigeon (Feral Pigeon),Columba livia (Feral Pigeon),1890,5,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1
+S360795846,Rock Pigeon (Feral Pigeon),Columba livia (Feral Pigeon),1890,10,CZ-PR,,L68007053,Prague!,50.083789,14.418877,2026-03-02,10:00 AM,eBird - Stationary Count,20,1,,,2,,,,660069166
+S405659716,Common Ground Dove,Columbina passerina,2267,2,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S405659716,Ruddy Ground Dove,Columbina talpacoti,2292,1,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S405659716,White-winged Dove,Zenaida asiatica,2415,7,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S389908874,Mourning Dove,Zenaida macroura,2438,2,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S352335378,Mourning Dove,Zenaida macroura,2438,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-04,12:29 PM,eBird - Casual Observation,,0,,,1
+S389362821,Mourning Dove,Zenaida macroura,2438,1,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S387415595,Mourning Dove,Zenaida macroura,2438,3,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S350258353,Chimney Swift,Chaetura pelagica,3931,X,US-PA,Northampton,L68525397,Downtown,40.690171,-75.205615,2026-05-31,11:55 AM,eBird - Casual Observation,,0,,,1
+S361889950,Chimney Swift,Chaetura pelagica,3931,5,US-PA,Northampton,L70776985,"Forks Township Parks and Recreation, Easton US-PA 40.71807, -75.22792",40.718068,-75.227916,2026-06-22,07:33 PM,eBird - Traveling Count,81,1,.527,,1
+S389908874,Ruby-throated Hummingbird,Archilochus colubris,4839,1,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S377178851,Ruby-throated Hummingbird,Archilochus colubris,4839,1,US-NJ,Ocean,L452526,Cattus Island County Park,39.9826119,-74.1285324,2026-07-27,06:02 PM,eBird - Traveling Count,95,1,1.473,,1
+S385247499,Ruby-throated Hummingbird,Archilochus colubris,4839,1,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S387415595,Ruby-throated Hummingbird,Archilochus colubris,4839,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S347487503,Eurasian Moorhen,Gallinula chloropus,5500,X,MK-310,,L67940394,Lake Ohrid,41.120188,20.810935,2026-04-18,08:58 AM,eBird - Casual Observation,,0,,,1
+S361856589,Eurasian Moorhen,Gallinula chloropus,5500,3,MK-310,,L67940394,Lake Ohrid,41.120188,20.810935,2026-04-18,11:23 AM,eBird - Traveling Count,82,1,2.414,,1
+S405659716,Common Gallinule,Gallinula galeata,5506,18,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S347842269,Eurasian Coot,Fulica atra,5525,X,CZ-PR,,L68007053,Prague!,50.083789,14.418877,2026-05-27,02:16 PM,eBird - Casual Observation,,0,,,1
+S405659716,American Coot,Fulica americana,5538,3,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S400886770,American Coot,Fulica americana,5538,7,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1
+S403486924,American Coot,Fulica americana,5538,9,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-18,01:10 PM,eBird - Traveling Count,20,1,.077,,1
+S407318920,American Coot,Fulica americana,5538,30,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-11-01,01:29 PM,eBird - Traveling Count,48,1,1.207,,1
+S383049765,American Oystercatcher,Haematopus palliatus,5838,2,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2,,,,663021668
+S405659716,Killdeer,Charadrius vociferus,5866,30,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S384208086,Killdeer,Charadrius vociferus,5866,5,US-NY,Rockland,L27681279,Clarkstown Landfill,41.0903291,-73.9557961,2026-08-16,06:08 PM,eBird - Traveling Count,102,1,2.551,,1
+S398056354,Killdeer,Charadrius vociferus,5866,3,US-NY,Tompkins,L4748811,Ithaca College Campus,42.4230447,-76.4944017,2026-10-01,12:04 PM,eBird - Casual Observation,,0,,,1,,Near Tennis Courts
+S383049765,Semipalmated Plover,Charadrius semipalmatus,5873,4,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2
+S383049765,Hudsonian Whimbrel,Numenius hudsonicus,6052,1,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2,,,,663021814
+S405659716,Long-billed Dowitcher,Limnodromus scolopaceus,6102,2,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S390892653,Spotted Sandpiper,Actitis macularius,6167,1,US-NJ,Bergen,L753961,Oradell Reservoir and Emerson Woods,40.9700482,-74.0069962,2026-09-07,04:53 PM,eBird - Traveling Count,118,1,.944,,2
+S405659716,Spotted Sandpiper,Actitis macularius,6167,4,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S384208086,Spotted Sandpiper,Actitis macularius,6167,3,US-NY,Rockland,L27681279,Clarkstown Landfill,41.0903291,-73.9557961,2026-08-16,06:08 PM,eBird - Traveling Count,102,1,2.551,,1
+S373695772,Spotted Sandpiper,Actitis macularius,6167,1,US-NY,Rockland,L275331,Piermont Pier,41.04254,-73.90091,2026-07-18,03:53 PM,eBird - Traveling Count,107,1,1.878,,1,,,Saw Forster’s Tern perched on end of pier. Two terns making their call. One was a juvenile.    Female Red-breasted Merganser by itself on shore
+S383049765,Spotted Sandpiper,Actitis macularius,6167,1,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2
+S394562884,Solitary Sandpiper,Tringa solitaria,6170,1,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-09-20,08:04 AM,eBird - Traveling Count,51,1,.598,,2,,Saw in flight
+S389908874,Lesser Yellowlegs,Tringa flavipes,6186,1,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S389908874,Greater Yellowlegs,Tringa melanoleuca,6195,1,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S398748123,Greater Yellowlegs,Tringa melanoleuca,6195,1,US-NY,Tompkins,L99409,"Jennings Pond, Danby",42.3450877,-76.4879603,2026-10-03,12:52 PM,eBird - Traveling Count,22,1,.232,,2
+S383049765,Ruddy Turnstone,Arenaria interpres,6202,1,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2,,,,663021828
+S405659716,Least Sandpiper,Calidris minutilla,6267,50,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S384208086,Least Sandpiper,Calidris minutilla,6267,3,US-NY,Rockland,L27681279,Clarkstown Landfill,41.0903291,-73.9557961,2026-08-16,06:08 PM,eBird - Traveling Count,102,1,2.551,,1
+S383049765,Least Sandpiper,Calidris minutilla,6267,2,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2
+S347487449,Black-headed Gull,Chroicocephalus ridibundus,6516,X,MK-310,,L67940394,Lake Ohrid,41.120188,20.810935,2026-04-18,08:58 AM,eBird - Casual Observation,,0,,,1
+S361856589,Black-headed Gull,Chroicocephalus ridibundus,6516,12,MK-310,,L67940394,Lake Ohrid,41.120188,20.810935,2026-04-18,11:23 AM,eBird - Traveling Count,82,1,2.414,,1
+S383049765,Laughing Gull,Leucophaeus atricilla,6533,15,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2
+S389908874,Ring-billed Gull,Larus delawarensis,6564,3,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S373695772,Ring-billed Gull,Larus delawarensis,6564,1,US-NY,Rockland,L275331,Piermont Pier,41.04254,-73.90091,2026-07-18,03:53 PM,eBird - Traveling Count,107,1,1.878,,1,,,Saw Forster’s Tern perched on end of pier. Two terns making their call. One was a juvenile.    Female Red-breasted Merganser by itself on shore
+S389362821,Ring-billed Gull,Larus delawarensis,6564,10,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S394562884,Ring-billed Gull,Larus delawarensis,6564,400,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-09-20,08:04 AM,eBird - Traveling Count,51,1,.598,,2
+S401326962,Ring-billed Gull,Larus delawarensis,6564,100,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-10-11,09:06 AM,eBird - Traveling Count,26,1,.404,,1
+S407818528,Ring-billed Gull,Larus delawarensis,6564,51,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-11-03,04:27 PM,eBird - Traveling Count,42,1,.354,,2
+S387415595,Ring-billed Gull,Larus delawarensis,6564,30,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S391097554,Ring-billed Gull,Larus delawarensis,6564,400,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-08,12:58 PM,eBird - Traveling Count,68,1,.85,,1
+S400886770,Ring-billed Gull,Larus delawarensis,6564,50,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1
+S401969574,Ring-billed Gull,Larus delawarensis,6564,110,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-13,07:51 AM,eBird - Traveling Count,69,1,1.473,,1
+S403486924,Ring-billed Gull,Larus delawarensis,6564,100,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-18,01:10 PM,eBird - Traveling Count,20,1,.077,,1
+S407318920,Ring-billed Gull,Larus delawarensis,6564,31,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-11-01,01:29 PM,eBird - Traveling Count,48,1,1.207,,1
+S383049765,Ring-billed Gull,Larus delawarensis,6564,2,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2
+S405659716,Western Gull,Larus occidentalis,6571,4,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S389908874,American Herring Gull,Larus smithsonianus,6582,10,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S387415595,American Herring Gull,Larus smithsonianus,6582,4,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S407318920,American Herring Gull,Larus smithsonianus,6582,3,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-11-01,01:29 PM,eBird - Traveling Count,48,1,1.207,,1
+S383049765,American Herring Gull,Larus smithsonianus,6582,2,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2
+S401337774,Great Black-backed Gull,Larus marinus,6608,1,US-NY,Tompkins,L353038,Salt Point Natural Area,42.5394116,-76.5496267,2026-10-11,09:44 AM,eBird - Traveling Count,10,1,.087,,1
+S387415595,Great Black-backed Gull,Larus marinus,6608,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S374129582,Least Tern,Sternula antillarum,6749,3,US-NJ,Bergen,L1794321,Richard W. DeKorte Park--Marsh Discovery Trail,40.785376,-74.1005132,2026-07-19,02:10 PM,eBird - Traveling Count,146,1,3.46,,1
+S374129582,Forster's Tern,Sterna forsteri,6781,3,US-NJ,Bergen,L1794321,Richard W. DeKorte Park--Marsh Discovery Trail,40.785376,-74.1005132,2026-07-19,02:10 PM,eBird - Traveling Count,146,1,3.46,,1
+S405659716,Forster's Tern,Sterna forsteri,6781,2,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S373695772,Forster's Tern,Sterna forsteri,6781,3,US-NY,Rockland,L275331,Piermont Pier,41.04254,-73.90091,2026-07-18,03:53 PM,eBird - Traveling Count,107,1,1.878,,1,,One was juvenile. Male making call,Saw Forster’s Tern perched on end of pier. Two terns making their call. One was a juvenile.    Female Red-breasted Merganser by itself on shore
+S374129582,Common Tern,Sterna hirundo,6798,1,US-NJ,Bergen,L1794321,Richard W. DeKorte Park--Marsh Discovery Trail,40.785376,-74.1005132,2026-07-19,02:10 PM,eBird - Traveling Count,146,1,3.46,,1,,Single tern making call on bird box in marsh
+S405659716,Common Tern,Sterna hirundo,6798,4,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S383049765,Sandwich Tern,Thalasseus sandvicensis,6825,2,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2
+S405659716,Elegant Tern,Thalasseus elegans,6831,3,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S383049765,Royal Tern,Thalasseus maximus,6840,3,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2
+S398748123,Pied-billed Grebe,Podilymbus podiceps,6907,1,US-NY,Tompkins,L99409,"Jennings Pond, Danby",42.3450877,-76.4879603,2026-10-03,12:52 PM,eBird - Traveling Count,22,1,.232,,2
+S399239221,Pied-billed Grebe,Podilymbus podiceps,6907,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-04,12:55 PM,eBird - Traveling Count,125,1,1.748,,2
+S405659716,Eared Grebe,Podiceps nigricollis,6928,1,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S347833685,White Stork,Ciconia ciconia,7346,X,CZ-JC,,L68008418,South Moravia,48.972202,14.474716,2026-05-27,02:16 PM,eBird - Casual Observation,,0,,,1
+S405091130,Magnificent Frigatebird,Fregata magnificens,7370,4,MX-BCS,Los Cabos,L504180,El Arco de Cabo San Lucas,22.8761534,-109.8955965,2026-10-24,08:19 AM,eBird - Traveling Count,242,1,22.546,,1
+S347832785,Great Cormorant,Phalacrocorax carbo,7452,X,CZ-JC,,L68008418,South Moravia,48.972202,14.474716,2026-05-27,02:16 PM,eBird - Casual Observation,,0,,,1
+S390892653,Double-crested Cormorant,Nannopterum auritum,7480,12,US-NJ,Bergen,L753961,Oradell Reservoir and Emerson Woods,40.9700482,-74.0069962,2026-09-07,04:53 PM,eBird - Traveling Count,118,1,.944,,2
+S389908874,Double-crested Cormorant,Nannopterum auritum,7480,3,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S379288048,Double-crested Cormorant,Nannopterum auritum,7480,1,US-NJ,Bergen,L229904,The Celery Farm,41.0364972,-74.1271909,2026-08-02,11:46 AM,eBird - Traveling Count,150,1,1.802,,1
+S373695772,Double-crested Cormorant,Nannopterum auritum,7480,4,US-NY,Rockland,L275331,Piermont Pier,41.04254,-73.90091,2026-07-18,03:53 PM,eBird - Traveling Count,107,1,1.878,,1,,,Saw Forster’s Tern perched on end of pier. Two terns making their call. One was a juvenile.    Female Red-breasted Merganser by itself on shore
+S389362821,Double-crested Cormorant,Nannopterum auritum,7480,2,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S391528786,Double-crested Cormorant,Nannopterum auritum,7480,2,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S401326962,Double-crested Cormorant,Nannopterum auritum,7480,2,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-10-11,09:06 AM,eBird - Traveling Count,26,1,.404,,1
+S392698448,Double-crested Cormorant,Nannopterum auritum,7480,1,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-09-13,05:11 PM,eBird - Traveling Count,79,1,1.769,,1
+S387415595,Double-crested Cormorant,Nannopterum auritum,7480,125,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S391097554,Double-crested Cormorant,Nannopterum auritum,7480,20,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-08,12:58 PM,eBird - Traveling Count,68,1,.85,,1
+S394254195,Double-crested Cormorant,Nannopterum auritum,7480,8,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-19,10:40 AM,eBird - Traveling Count,41,1,.318,,2
+S400886770,Double-crested Cormorant,Nannopterum auritum,7480,35,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1
+S401969574,Double-crested Cormorant,Nannopterum auritum,7480,23,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-13,07:51 AM,eBird - Traveling Count,69,1,1.473,,1
+S383049765,Double-crested Cormorant,Nannopterum auritum,7480,3,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2
+S383049765,Glossy Ibis,Plegadis falcinellus,7523,10,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2
+S405659716,White-faced Ibis,Plegadis chihi,7524,6,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S391152200,Least Bittern,Botaurus exilis,7623,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-08,06:40 PM,eBird - Traveling Count,49,1,.634,,1,,Seen in reeds north of stone platform moving laterally and horizontally for 20 minutes before flying off to southside of Fuertes pond,,664569825 664569892
+S403150554,Yellow-crowned Night Heron,Nyctanassa violacea,7649,1,US-FL,Sarasota,L312034,Marie Selby Botanical Gardens,27.3279838,-82.5392425,2025-08-07,01:42 PM,eBird - Traveling Count,1,1,1.609,,2
+S379288048,Green Heron,Butorides virescens,7762,1,US-NJ,Bergen,L229904,The Celery Farm,41.0364972,-74.1271909,2026-08-02,11:46 AM,eBird - Traveling Count,150,1,1.802,,1
+S405659716,Green Heron,Butorides virescens,7762,1,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S359138390,Green Heron,Butorides virescens,7762,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-18,10:33 AM,eBird - Casual Observation,,0,,,1,,,,660068837
+S360274902,Green Heron,Butorides virescens,7762,1,US-PA,Northampton,L70776985,"Forks Township Parks and Recreation, Easton US-PA 40.71807, -75.22792",40.718068,-75.227916,2026-06-20,11:48 AM,eBird - Casual Observation,,0,,,1,,,,660068813
+S361649034,Green Heron,Butorides virescens,7762,1,US-PA,Northampton,L2816994,Palmer Bikeway,40.7136925,-75.2465594,2026-06-22,10:04 AM,eBird - Traveling Count,58,1,1.094,,1
+S385247499,Green Heron,Butorides virescens,7762,4,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S391528786,Green Heron,Butorides virescens,7762,1,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S388407102,Green Heron,Butorides virescens,7762,3,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S387415595,Green Heron,Butorides virescens,7762,3,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S391097554,Green Heron,Butorides virescens,7762,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-08,12:58 PM,eBird - Traveling Count,68,1,.85,,1
+S389908874,Great Egret,Ardea alba,7787,8,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S379288048,Great Egret,Ardea alba,7787,1,US-NJ,Bergen,L229904,The Celery Farm,41.0364972,-74.1271909,2026-08-02,11:46 AM,eBird - Traveling Count,150,1,1.802,,1
+S405091130,Great Egret,Ardea alba,7787,6,MX-BCS,Los Cabos,L504180,El Arco de Cabo San Lucas,22.8761534,-109.8955965,2026-10-24,08:19 AM,eBird - Traveling Count,242,1,22.546,,1
+S405659716,Great Egret,Ardea alba,7787,1,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S377178851,Great Egret,Ardea alba,7787,2,US-NJ,Ocean,L452526,Cattus Island County Park,39.9826119,-74.1285324,2026-07-27,06:02 PM,eBird - Traveling Count,95,1,1.473,,1
+S373695772,Great Egret,Ardea alba,7787,3,US-NY,Rockland,L275331,Piermont Pier,41.04254,-73.90091,2026-07-18,03:53 PM,eBird - Traveling Count,107,1,1.878,,1,,,Saw Forster’s Tern perched on end of pier. Two terns making their call. One was a juvenile.    Female Red-breasted Merganser by itself on shore
+S403150554,Great Egret,Ardea alba,7787,1,US-FL,Sarasota,L312034,Marie Selby Botanical Gardens,27.3279838,-82.5392425,2025-08-07,01:42 PM,eBird - Traveling Count,1,1,1.609,,2
+S347843205,Great Egret,Ardea alba,7787,X,US-FL,Sarasota,L68010849,Sarasota,27.33462,-82.538819,2026-05-27,02:16 PM,eBird - Casual Observation,,0,,,1
+S389983312,Great Blue Heron,Ardea herodias,7811,1,US-NJ,Bergen,L786203,Halifax Road,41.0852971,-74.183338,2026-09-05,11:58 AM,eBird - Traveling Count,27,1,.233,,1
+S389908874,Great Blue Heron,Ardea herodias,7811,3,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S374129582,Great Blue Heron,Ardea herodias,7811,5,US-NJ,Bergen,L1794321,Richard W. DeKorte Park--Marsh Discovery Trail,40.785376,-74.1005132,2026-07-19,02:10 PM,eBird - Traveling Count,146,1,3.46,,1
+S379288048,Great Blue Heron,Ardea herodias,7811,1,US-NJ,Bergen,L229904,The Celery Farm,41.0364972,-74.1271909,2026-08-02,11:46 AM,eBird - Traveling Count,150,1,1.802,,1
+S405659716,Great Blue Heron,Ardea herodias,7811,5,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S364687597,Great Blue Heron,Ardea herodias,7811,1,US-PA,Northampton,L23340404,Hugh Moore Park,40.6638513,-75.2382277,2026-06-28,06:48 AM,eBird - Traveling Count,77,1,1.469,,1
+S373695772,Great Blue Heron,Ardea herodias,7811,1,US-NY,Rockland,L275331,Piermont Pier,41.04254,-73.90091,2026-07-18,03:53 PM,eBird - Traveling Count,107,1,1.878,,1,,,Saw Forster’s Tern perched on end of pier. Two terns making their call. One was a juvenile.    Female Red-breasted Merganser by itself on shore
+S396202003,Great Blue Heron,Ardea herodias,7811,1,US-NY,Tompkins,L77702417,"117 Hudson St, Ithaca US-NY 42.43823, -76.49367",42.438225,-76.493668,2026-09-25,03:00 PM,eBird - Traveling Count,130,1,.741,,1
+S395808636,Great Blue Heron,Ardea herodias,7811,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S391528786,Great Blue Heron,Ardea herodias,7811,1,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S401326962,Great Blue Heron,Ardea herodias,7811,1,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-10-11,09:06 AM,eBird - Traveling Count,26,1,.404,,1
+S387415595,Great Blue Heron,Ardea herodias,7811,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S391097554,Great Blue Heron,Ardea herodias,7811,2,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-08,12:58 PM,eBird - Traveling Count,68,1,.85,,1
+S394608566,Great Blue Heron,Ardea herodias,7811,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-20,09:13 AM,eBird - Traveling Count,80,1,.929,,2
+S399239221,Great Blue Heron,Ardea herodias,7811,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-04,12:55 PM,eBird - Traveling Count,125,1,1.748,,2
+S401969574,Great Blue Heron,Ardea herodias,7811,2,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-13,07:51 AM,eBird - Traveling Count,69,1,1.473,,1
+S401392325,Great Blue Heron,Ardea herodias,7811,1,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-11,11:20 AM,eBird - Stationary Count,18,1,,,1
+S403964561,Great Blue Heron,Ardea herodias,7811,2,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-20,07:55 AM,eBird - Traveling Count,46,1,1.252,,1
+S383049765,Great Blue Heron,Ardea herodias,7811,3,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2,,,,663021683
+S405659716,American White Pelican,Pelecanus erythrorhynchos,7849,1,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S405091130,Brown Pelican,Pelecanus occidentalis,7850,20,MX-BCS,Los Cabos,L504180,El Arco de Cabo San Lucas,22.8761534,-109.8955965,2026-10-24,08:19 AM,eBird - Traveling Count,242,1,22.546,,1
+S405659716,Brown Pelican,Pelecanus occidentalis,7850,1,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S383049765,Brown Pelican,Pelecanus occidentalis,7850,2,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2
+S405141845,Turkey Vulture,Cathartes aura,7873,1,MX-BCS,Los Cabos,L18390688,Pueblo Bonito Sunset Beach Golf and Spa Resort,22.874297,-109.9312592,2026-10-24,01:31 PM,eBird - Traveling Count,56,1,.221,,2
+S405659716,Turkey Vulture,Cathartes aura,7873,10,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S351058618,Turkey Vulture,Cathartes aura,7873,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-01,06:21 PM,eBird - Casual Observation,,0,,,1
+S384208086,Turkey Vulture,Cathartes aura,7873,5,US-NY,Rockland,L27681279,Clarkstown Landfill,41.0903291,-73.9557961,2026-08-16,06:08 PM,eBird - Traveling Count,102,1,2.551,,1
+S395613757,Turkey Vulture,Cathartes aura,7873,1,US-NY,Tompkins,L97554,Cornell Botanic Gardens--Mundy Wildflower Garden,42.4507848,-76.4694708,2026-09-23,02:58 PM,eBird - Stationary Count,60,1,,,2
+S400284165,Turkey Vulture,Cathartes aura,7873,1,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S389908874,Osprey,Pandion haliaetus,7890,1,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S405659716,Osprey,Pandion haliaetus,7890,2,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S360322235,Osprey,Pandion haliaetus,7890,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-20,12:55 PM,eBird - Casual Observation,,0,,,1
+S377178851,Osprey,Pandion haliaetus,7890,1,US-NJ,Ocean,L452526,Cattus Island County Park,39.9826119,-74.1285324,2026-07-27,06:02 PM,eBird - Traveling Count,95,1,1.473,,1
+S373695772,Osprey,Pandion haliaetus,7890,4,US-NY,Rockland,L275331,Piermont Pier,41.04254,-73.90091,2026-07-18,03:53 PM,eBird - Traveling Count,107,1,1.878,,1,,,Saw Forster’s Tern perched on end of pier. Two terns making their call. One was a juvenile.    Female Red-breasted Merganser by itself on shore
+S387415595,Osprey,Pandion haliaetus,7890,3,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S391097554,Osprey,Pandion haliaetus,7890,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-08,12:58 PM,eBird - Traveling Count,68,1,.85,,1
+S391152200,Osprey,Pandion haliaetus,7890,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-08,06:40 PM,eBird - Traveling Count,49,1,.634,,1
+S401969574,Osprey,Pandion haliaetus,7890,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-13,07:51 AM,eBird - Traveling Count,69,1,1.473,,1
+S358227617,Cooper's Hawk,Astur cooperii,8337,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-16,08:48 AM,eBird - Casual Observation,,0,,,1
+S360274902,Cooper's Hawk,Astur cooperii,8337,1,US-PA,Northampton,L70776985,"Forks Township Parks and Recreation, Easton US-PA 40.71807, -75.22792",40.718068,-75.227916,2026-06-20,11:48 AM,eBird - Casual Observation,,0,,,1
+S352335212,Bald Eagle,Haliaeetus leucocephalus,8429,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-04,12:29 PM,eBird - Casual Observation,,0,,,1
+S389362821,Bald Eagle,Haliaeetus leucocephalus,8429,1,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S387415595,Bald Eagle,Haliaeetus leucocephalus,8429,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S391097554,Bald Eagle,Haliaeetus leucocephalus,8429,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-08,12:58 PM,eBird - Traveling Count,68,1,.85,,1,,Juvenile
+S394254195,Bald Eagle,Haliaeetus leucocephalus,8429,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-19,10:40 AM,eBird - Traveling Count,41,1,.318,,2
+S383049765,Bald Eagle,Haliaeetus leucocephalus,8429,1,US-MD,Worcester,L38252293,Sinepuxent Bay Boat Trip,38.3258273,-75.0991663,2026-08-13,03:41 PM,eBird - Traveling Count,245,1,24.135,,2
+S405659716,Broad-winged Hawk,Buteo platypterus,8541,12,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2,F Flyover,"Observed a large flock of raptors soaring over the San José del Cabo estuary, Baja California Sur, Mexico, on October 28, 2026. Multiple birds were visible simultaneously, gliding high overhead. Based on the birds’ apparent compact build, broad wings, and pale underwings with darker markings, Broad-winged Hawk is the leading identification, consistent with suggestions from other birders reviewing the photographs and video.    Broad-winged Hawks are documented annual fall and winter visitors to the Cape Region, with regional records spanning September 30 through April 17. The large group and soaring behavior are consistent with raptor migration. Individual birds were distant, so the identification is based on the available visual evidence rather than close diagnostic views.",,667807214
+S390095207,Red-tailed Hawk,Buteo jamaicensis,8569,1,US-NJ,Bergen,L76741335,Harrington Ave,40.992408,-74.022906,2026-09-05,05:33 PM,eBird - Casual Observation,,0,,,1,,,Sitting on power line across from elementary school
+S394941975,Red-tailed Hawk,Buteo jamaicensis,8569,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-21,08:29 AM,eBird - Traveling Count,113,1,.708,,1,,,,665329192
+S401969574,Red-tailed Hawk,Buteo jamaicensis,8569,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-13,07:51 AM,eBird - Traveling Count,69,1,1.473,,1,S Singing Bird
+S403964561,Red-tailed Hawk,Buteo jamaicensis,8569,1,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-20,07:55 AM,eBird - Traveling Count,46,1,1.252,,1
+S405482918,Great Horned Owl,Bubo virginianus,8975,1,MX-BCS,Los Cabos,L18390688,Pueblo Bonito Sunset Beach Golf and Spa Resort,22.874297,-109.9312592,2026-10-25,06:36 PM,eBird - Casual Observation,,0,,,2
+S379062043,Barred Owl,Strix varia,9282,1,US-NJ,Bergen,L1638487,Pascack Brook County Park,40.9890854,-74.0140427,2026-08-01,07:15 PM,eBird - Traveling Count,65,1,.686,,1
+S389860644,Barred Owl,Strix varia,9282,1,US-NJ,Bergen,L1638487,Pascack Brook County Park,40.9890854,-74.0140427,2026-09-04,06:42 PM,eBird - Traveling Count,43,1,1.149,,1,FL Recently Fledged Young
+S389362821,Belted Kingfisher,Megaceryle alcyon,10378,2,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S385247499,Belted Kingfisher,Megaceryle alcyon,10378,1,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S391528786,Belted Kingfisher,Megaceryle alcyon,10378,1,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S394562884,Belted Kingfisher,Megaceryle alcyon,10378,1,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-09-20,08:04 AM,eBird - Traveling Count,51,1,.598,,2
+S388407102,Belted Kingfisher,Megaceryle alcyon,10378,1,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S387415595,Belted Kingfisher,Megaceryle alcyon,10378,3,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S391097554,Belted Kingfisher,Megaceryle alcyon,10378,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-08,12:58 PM,eBird - Traveling Count,68,1,.85,,1
+S399239221,Belted Kingfisher,Megaceryle alcyon,10378,2,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-04,12:55 PM,eBird - Traveling Count,125,1,1.748,,2
+S401969574,Belted Kingfisher,Megaceryle alcyon,10378,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-13,07:51 AM,eBird - Traveling Count,69,1,1.473,,1
+S403486924,Belted Kingfisher,Megaceryle alcyon,10378,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-18,01:10 PM,eBird - Traveling Count,20,1,.077,,1
+S375946551,Belted Kingfisher,Megaceryle alcyon,10378,1,US-NY,Ulster,L6656633,Mill Brook Preserve,41.7547893,-74.0717016,2026-07-24,06:08 PM,eBird - Traveling Count,60,1,4.828,,3
+S398761129,Yellow-bellied Sapsucker,Sphyrapicus varius,11197,2,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S387415595,Yellow-bellied Sapsucker,Sphyrapicus varius,11197,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S405141845,Gila Woodpecker,Melanerpes uropygialis,11247,1,MX-BCS,Los Cabos,L18390688,Pueblo Bonito Sunset Beach Golf and Spa Resort,22.874297,-109.9312592,2026-10-24,01:31 PM,eBird - Traveling Count,56,1,.221,,2
+S405659716,Gila Woodpecker,Melanerpes uropygialis,11247,40,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S390892653,Red-bellied Woodpecker,Melanerpes carolinus,11270,1,US-NJ,Bergen,L753961,Oradell Reservoir and Emerson Woods,40.9700482,-74.0069962,2026-09-07,04:53 PM,eBird - Traveling Count,118,1,.944,,2
+S353604195,Red-bellied Woodpecker,Melanerpes carolinus,11270,X,US-NJ,Bergen,L69257162,Palisades,40.994825,-73.905067,2026-06-06,07:04 PM,eBird - Casual Observation,,0,,,1,,,,660068966
+S362159167,Red-bellied Woodpecker,Melanerpes carolinus,11270,2,US-PA,Northampton,L1279950,Housenick Memorial Park/Archibald Johnston Conservation Area,40.6733768,-75.3534758,2026-06-23,08:25 AM,eBird - Traveling Count,182,1,2.,,1
+S389362821,Red-bellied Woodpecker,Melanerpes carolinus,11270,2,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S394941975,Red-bellied Woodpecker,Melanerpes carolinus,11270,2,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-21,08:29 AM,eBird - Traveling Count,113,1,.708,,1
+S395808636,Red-bellied Woodpecker,Melanerpes carolinus,11270,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S400284165,Red-bellied Woodpecker,Melanerpes carolinus,11270,3,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S361600981,Downy Woodpecker,Dryobates pubescens,11477,1,US-PA,Northampton,L70776985,"Forks Township Parks and Recreation, Easton US-PA 40.71807, -75.22792",40.718068,-75.227916,2026-06-22,08:56 AM,eBird - Traveling Count,27,1,.814,,1,,,,660169858 660169859
+S362159167,Downy Woodpecker,Dryobates pubescens,11477,3,US-PA,Northampton,L1279950,Housenick Memorial Park/Archibald Johnston Conservation Area,40.6733768,-75.3534758,2026-06-23,08:25 AM,eBird - Traveling Count,182,1,2.,,1
+S364687597,Downy Woodpecker,Dryobates pubescens,11477,1,US-PA,Northampton,L23340404,Hugh Moore Park,40.6638513,-75.2382277,2026-06-28,06:48 AM,eBird - Traveling Count,77,1,1.469,,1
+S361649034,Downy Woodpecker,Dryobates pubescens,11477,1,US-PA,Northampton,L2816994,Palmer Bikeway,40.7136925,-75.2465594,2026-06-22,10:04 AM,eBird - Traveling Count,58,1,1.094,,1
+S394941975,Downy Woodpecker,Dryobates pubescens,11477,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-21,08:29 AM,eBird - Traveling Count,113,1,.708,,1,,,,665329189
+S399722183,Downy Woodpecker,Dryobates pubescens,11477,2,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-10-06,07:44 AM,eBird - Traveling Count,78,1,.55,,1
+S395808636,Downy Woodpecker,Dryobates pubescens,11477,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S385247499,Downy Woodpecker,Dryobates pubescens,11477,1,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S388407102,Downy Woodpecker,Dryobates pubescens,11477,1,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S398761129,Downy Woodpecker,Dryobates pubescens,11477,1,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S400886770,Downy Woodpecker,Dryobates pubescens,11477,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1
+S390892653,Hairy Woodpecker,Leuconotopicus villosus,11504,1,US-NJ,Bergen,L753961,Oradell Reservoir and Emerson Woods,40.9700482,-74.0069962,2026-09-07,04:53 PM,eBird - Traveling Count,118,1,.944,,2
+S379288048,Hairy Woodpecker,Leuconotopicus villosus,11504,1,US-NJ,Bergen,L229904,The Celery Farm,41.0364972,-74.1271909,2026-08-02,11:46 AM,eBird - Traveling Count,150,1,1.802,,1
+S395808636,Hairy Woodpecker,Leuconotopicus villosus,11504,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S392698448,Hairy Woodpecker,Leuconotopicus villosus,11504,1,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-09-13,05:11 PM,eBird - Traveling Count,79,1,1.769,,1
+S398045494,Hairy Woodpecker (Eastern),Leuconotopicus villosus [villosus Group],11505,2,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S389362821,Pileated Woodpecker,Dryocopus pileatus,11840,2,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S394941975,Pileated Woodpecker,Dryocopus pileatus,11840,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-21,08:29 AM,eBird - Traveling Count,113,1,.708,,1
+S398265463,Pileated Woodpecker,Dryocopus pileatus,11840,1,US-NY,Tompkins,L124514,Mulholland Wildflower Preserve,42.431675,-76.48283,2026-10-02,07:18 AM,eBird - Traveling Count,58,1,1.046,,1,,Called multiple times from canopy
+S398045494,Pileated Woodpecker,Dryocopus pileatus,11840,1,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S398761129,Pileated Woodpecker,Dryocopus pileatus,11840,1,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S390892653,Northern Flicker,Colaptes auratus,11980,5,US-NJ,Bergen,L753961,Oradell Reservoir and Emerson Woods,40.9700482,-74.0069962,2026-09-07,04:53 PM,eBird - Traveling Count,118,1,.944,,2
+S396885077,Northern Flicker,Colaptes auratus,11980,1,US-NY,New York,L318103,Central Park--The Pool,40.7947416,-73.9606707,2026-09-27,10:05 AM,eBird - Traveling Count,110,1,2.349,,2
+S359144686,Northern Flicker,Colaptes auratus,11980,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-18,10:35 AM,eBird - Casual Observation,,0,,,1,,,,660068830
+S394941975,Northern Flicker,Colaptes auratus,11980,6,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-21,08:29 AM,eBird - Traveling Count,113,1,.708,,1
+S395211988,Northern Flicker,Colaptes auratus,11980,10,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-22,07:06 AM,eBird - Traveling Count,92,1,.499,,1
+S395808636,Northern Flicker,Colaptes auratus,11980,2,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S391528786,Northern Flicker,Colaptes auratus,11980,2,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S394562884,Northern Flicker,Colaptes auratus,11980,3,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-09-20,08:04 AM,eBird - Traveling Count,51,1,.598,,2
+S400886770,Northern Flicker,Colaptes auratus,11980,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1
+S389362821,Northern Flicker (Yellow-shafted),Colaptes auratus auratus/luteus,11983,3,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14,,Very vocal and chasing each other
+S405141845,Gilded Flicker,Colaptes chrysoides,11994,1,MX-BCS,Los Cabos,L18390688,Pueblo Bonito Sunset Beach Golf and Spa Resort,22.874297,-109.9312592,2026-10-24,01:31 PM,eBird - Traveling Count,56,1,.221,,2
+S405141845,American Kestrel,Falco sparverius,12108,1,MX-BCS,Los Cabos,L18390688,Pueblo Bonito Sunset Beach Golf and Spa Resort,22.874297,-109.9312592,2026-10-24,01:31 PM,eBird - Traveling Count,56,1,.221,,2
+S387415595,Merlin,Falco columbarius,12142,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S361851345,Monk Parakeet,Myiopsitta monachus,12902,6,ES-CT,Barcelona,L68009740,Barcelona,41.412481,2.165217,2026-05-10,09:52 AM,eBird - Traveling Count,30,1,1.931,,1,,,,660170273
+S347838332,Monk Parakeet,Myiopsitta monachus,12902,X,ES-CT,Barcelona,L68009740,Barcelona,41.412481,2.165217,2026-05-27,02:16 PM,eBird - Casual Observation,,0,,,1
+S357838141,Eastern Wood-Pewee,Contopus virens,17019,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-15,11:37 AM,eBird - Casual Observation,,0,,,1,,,,660068866
+S389362821,Eastern Wood-Pewee,Contopus virens,17019,1,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S385247499,Eastern Wood-Pewee,Contopus virens,17019,1,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S391528786,Empidonax sp.,Empidonax sp.,17091,1,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S405659716,Black Phoebe,Sayornis nigricans,17092,4,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S361674999,Eastern Phoebe,Sayornis phoebe,17101,1,US-PA,Northampton,L9152727,Bushkill/Penn Pump Park/Bushkill Creek Waterfowl Observation Area,40.7032682,-75.2521717,2026-06-22,11:13 AM,eBird - Traveling Count,42,1,.549,,1,,,,660169692
+S361142801,Eastern Phoebe,Sayornis phoebe,17101,X,US-PA,Northampton,L70776985,"Forks Township Parks and Recreation, Easton US-PA 40.71807, -75.22792",40.718068,-75.227916,2026-06-21,01:53 PM,eBird - Casual Observation,,0,,,1
+S389362821,Eastern Phoebe,Sayornis phoebe,17101,1,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S394941975,Eastern Phoebe,Sayornis phoebe,17101,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-21,08:29 AM,eBird - Traveling Count,113,1,.708,,1
+S395808636,Eastern Phoebe,Sayornis phoebe,17101,3,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S400284165,Eastern Phoebe,Sayornis phoebe,17101,2,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S388407102,Eastern Phoebe,Sayornis phoebe,17101,1,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S398045494,Eastern Phoebe,Sayornis phoebe,17101,2,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S350386110,Great Crested Flycatcher,Myiarchus crinitus,17428,X,US-PA,Northampton,L68556322,Jacobsburg,40.782581,-75.293563,2026-05-31,02:34 PM,eBird - Casual Observation,,0,,,1
+S388407102,Great Crested Flycatcher,Myiarchus crinitus,17428,1,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S405659716,Tropical Kingbird,Tyrannus melancholicus,17546,1,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S362159167,Eastern Kingbird,Tyrannus tyrannus,17566,1,US-PA,Northampton,L1279950,Housenick Memorial Park/Archibald Johnston Conservation Area,40.6733768,-75.3534758,2026-06-23,08:25 AM,eBird - Traveling Count,182,1,2.,,1
+S364687597,Eastern Kingbird,Tyrannus tyrannus,17566,1,US-PA,Northampton,L23340404,Hugh Moore Park,40.6638513,-75.2382277,2026-06-28,06:48 AM,eBird - Traveling Count,77,1,1.469,,1
+S377178851,Eastern Kingbird,Tyrannus tyrannus,17566,1,US-NJ,Ocean,L452526,Cattus Island County Park,39.9826119,-74.1285324,2026-07-27,06:02 PM,eBird - Traveling Count,95,1,1.473,,1
+S385247499,Eastern Kingbird,Tyrannus tyrannus,17566,1,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S395211988,White-eyed Vireo,Vireo griseus,19261,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-22,07:06 AM,eBird - Traveling Count,92,1,.499,,1,,"Possible White-eyed Vireo. Observed low in dense shrubs beneath the pines, in the same area where the Yellow billed Cuckoo was previously seen. Bird remained in the low vegetation and moved through the shrubs making observation difficult though. Appeared olive and brown above with yellowish sides underparts a distinct white eye was visible."
+S347895895,Yellow-throated Vireo,Vireo flavifrons,19316,X,US-PA,Monroe,L68022139,Minsi,40.978427,-75.13998,2026-05-27,04:14 PM,eBird - Casual Observation,,0,,,1
+S347895945,Yellow-throated Vireo,Vireo flavifrons,19316,X,US-PA,Monroe,L68022139,Minsi,40.978427,-75.13998,2026-05-27,04:14 PM,eBird - Casual Observation,,0,,,1
+S391528786,Yellow-throated Vireo,Vireo flavifrons,19316,3,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11,,Heard clearly in 3 different places.
+S399722183,Blue-headed Vireo,Vireo solitarius,19322,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-10-06,07:44 AM,eBird - Traveling Count,78,1,.55,,1
+S395808636,Blue-headed Vireo,Vireo solitarius,19322,2,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S398761129,Blue-headed Vireo,Vireo solitarius,19322,1,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S395503635,Philadelphia Vireo,Vireo philadelphicus,19340,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-23,07:01 AM,eBird - Traveling Count,96,1,.577,,1
+S360363438,Eastern Warbling Vireo,Vireo gilvus,19341,X,US-PA,Northampton,L70795309,Bushkill creek,40.71035,-75.246362,2026-06-20,01:55 PM,eBird - Casual Observation,,0,,,2,,,,660068646
+S389362821,Eastern Warbling Vireo,Vireo gilvus,19341,2,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S364687597,Red-eyed Vireo,Vireo olivaceus,19363,1,US-PA,Northampton,L23340404,Hugh Moore Park,40.6638513,-75.2382277,2026-06-28,06:48 AM,eBird - Traveling Count,77,1,1.469,,1
+S350430953,Red-eyed Vireo,Vireo olivaceus,19363,X,US-PA,Northampton,L68556322,Jacobsburg,40.782581,-75.293563,2026-05-31,03:47 PM,eBird - Casual Observation,,0,,,1
+S389362821,Red-eyed Vireo,Vireo olivaceus,19363,2,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S391528786,Red-eyed Vireo,Vireo olivaceus,19363,2,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S350403396,Blue Jay,Cyanocitta cristata,21395,X,US-PA,Northampton,L68556322,Jacobsburg,40.782581,-75.293563,2026-05-31,03:06 PM,eBird - Casual Observation,,0,,,1
+S389362821,Blue Jay,Cyanocitta cristata,21395,3,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S395613757,Blue Jay,Cyanocitta cristata,21395,1,US-NY,Tompkins,L97554,Cornell Botanic Gardens--Mundy Wildflower Garden,42.4507848,-76.4694708,2026-09-23,02:58 PM,eBird - Stationary Count,60,1,,,2
+S395211988,Blue Jay,Cyanocitta cristata,21395,3,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-22,07:06 AM,eBird - Traveling Count,92,1,.499,,1
+S395503635,Blue Jay,Cyanocitta cristata,21395,12,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-23,07:01 AM,eBird - Traveling Count,96,1,.577,,1
+S399722183,Blue Jay,Cyanocitta cristata,21395,16,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-10-06,07:44 AM,eBird - Traveling Count,78,1,.55,,1
+S395808636,Blue Jay,Cyanocitta cristata,21395,8,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S397451898,Blue Jay,Cyanocitta cristata,21395,5,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-29,07:34 AM,eBird - Traveling Count,89,1,.773,,1
+S400284165,Blue Jay,Cyanocitta cristata,21395,14,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S385247499,Blue Jay,Cyanocitta cristata,21395,6,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S389474836,Blue Jay,Cyanocitta cristata,21395,1,US-NY,Tompkins,L76636030,Giles Street Six Mile Creek Area,42.438124,-76.492777,2026-09-03,05:39 PM,eBird - Traveling Count,38,1,.462,,1
+S391528786,Blue Jay,Cyanocitta cristata,21395,2,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S398265463,Blue Jay,Cyanocitta cristata,21395,1,US-NY,Tompkins,L124514,Mulholland Wildflower Preserve,42.431675,-76.48283,2026-10-02,07:18 AM,eBird - Traveling Count,58,1,1.046,,1
+S388407102,Blue Jay,Cyanocitta cristata,21395,10,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S398045494,Blue Jay,Cyanocitta cristata,21395,8,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S387415595,Blue Jay,Cyanocitta cristata,21395,6,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S400886770,Blue Jay,Cyanocitta cristata,21395,2,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1
+S347836817,Eurasian Jay,Garrulus glandarius,21440,X,CZ-PR,,L68007053,Prague!,50.083789,14.418877,2026-05-27,02:16 PM,eBird - Casual Observation,,0,,,1
+S361859028,Eurasian Magpie,Pica pica,21565,4,CZ-PR,,L68007053,Prague!,50.083789,14.418877,2026-02-09,11:37 AM,eBird - Traveling Count,30,1,1.609,,1,,,,660171520
+S347826091,Eurasian Magpie,Pica pica,21565,X,CZ-PR,,L68007053,Prague!,50.083789,14.418877,2026-05-27,02:11 PM,eBird - Casual Observation,,0,,,1,,,,660068745
+S347840861,Rook,Corvus frugilegus,21653,X,DK-01,København,L68010308,Cooenhagen,55.674602,12.594108,2026-05-27,02:16 PM,eBird - Casual Observation,,0,,,1
+S350973960,American Crow,Corvus brachyrhynchos,21656,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-01,02:51 PM,eBird - Casual Observation,,0,,,1,,,,660069224
+S389362821,American Crow,Corvus brachyrhynchos,21656,4,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S396202003,American Crow,Corvus brachyrhynchos,21656,1,US-NY,Tompkins,L77702417,"117 Hudson St, Ithaca US-NY 42.43823, -76.49367",42.438225,-76.493668,2026-09-25,03:00 PM,eBird - Traveling Count,130,1,.741,,1
+S395211988,American Crow,Corvus brachyrhynchos,21656,3,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-22,07:06 AM,eBird - Traveling Count,92,1,.499,,1
+S395808636,American Crow,Corvus brachyrhynchos,21656,2,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S400284165,American Crow,Corvus brachyrhynchos,21656,6,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S385247499,American Crow,Corvus brachyrhynchos,21656,1,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S391528786,American Crow,Corvus brachyrhynchos,21656,3,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S398265463,American Crow,Corvus brachyrhynchos,21656,1,US-NY,Tompkins,L124514,Mulholland Wildflower Preserve,42.431675,-76.48283,2026-10-02,07:18 AM,eBird - Traveling Count,58,1,1.046,,1
+S398045494,American Crow,Corvus brachyrhynchos,21656,2,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S398761129,American Crow,Corvus brachyrhynchos,21656,1,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S387415595,American Crow,Corvus brachyrhynchos,21656,3,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S401969574,American Crow,Corvus brachyrhynchos,21656,2,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-13,07:51 AM,eBird - Traveling Count,69,1,1.473,,1
+S391097554,Fish Crow,Corvus ossifragus,21669,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-08,12:58 PM,eBird - Traveling Count,68,1,.85,,1
+S395211988,Common Raven,Corvus corax,21721,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-22,07:06 AM,eBird - Traveling Count,92,1,.499,,1
+S400284165,Common Raven,Corvus corax,21721,2,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S398045494,Common Raven,Corvus corax,21721,1,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S395211988,Black-capped Chickadee,Poecile atricapillus,22164,3,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-22,07:06 AM,eBird - Traveling Count,92,1,.499,,1
+S395503635,Black-capped Chickadee,Poecile atricapillus,22164,5,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-23,07:01 AM,eBird - Traveling Count,96,1,.577,,1
+S395808636,Black-capped Chickadee,Poecile atricapillus,22164,2,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S397451898,Black-capped Chickadee,Poecile atricapillus,22164,4,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-29,07:34 AM,eBird - Traveling Count,89,1,.773,,1
+S385247499,Black-capped Chickadee,Poecile atricapillus,22164,2,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S392698448,Black-capped Chickadee,Poecile atricapillus,22164,2,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-09-13,05:11 PM,eBird - Traveling Count,79,1,1.769,,1
+S398045494,Black-capped Chickadee,Poecile atricapillus,22164,8,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S398761129,Black-capped Chickadee,Poecile atricapillus,22164,2,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S400886770,Black-capped Chickadee,Poecile atricapillus,22164,2,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1
+S355817219,Tufted Titmouse,Baeolophus bicolor,22261,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-11,10:44 AM,eBird - Casual Observation,,0,,,1,,,,660068953
+S361889950,Tufted Titmouse,Baeolophus bicolor,22261,3,US-PA,Northampton,L70776985,"Forks Township Parks and Recreation, Easton US-PA 40.71807, -75.22792",40.718068,-75.227916,2026-06-22,07:33 PM,eBird - Traveling Count,81,1,.527,,1
+S377178851,Tufted Titmouse,Baeolophus bicolor,22261,1,US-NJ,Ocean,L452526,Cattus Island County Park,39.9826119,-74.1285324,2026-07-27,06:02 PM,eBird - Traveling Count,95,1,1.473,,1
+S395503635,Tufted Titmouse,Baeolophus bicolor,22261,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-23,07:01 AM,eBird - Traveling Count,96,1,.577,,1
+S395808636,Tufted Titmouse,Baeolophus bicolor,22261,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S391528786,Tufted Titmouse,Baeolophus bicolor,22261,1,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S405659716,Verdin,Auriparus flaviceps,22370,4,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S356643518,Tree Swallow,Tachycineta bicolor,24169,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-13,09:20 AM,eBird - Casual Observation,,0,,,1,,,,660068872
+S373695772,Tree Swallow,Tachycineta bicolor,24169,7,US-NY,Rockland,L275331,Piermont Pier,41.04254,-73.90091,2026-07-18,03:53 PM,eBird - Traveling Count,107,1,1.878,,1,,,Saw Forster’s Tern perched on end of pier. Two terns making their call. One was a juvenile.    Female Red-breasted Merganser by itself on shore
+S377178851,Purple Martin,Progne subis,24186,10,US-NJ,Ocean,L452526,Cattus Island County Park,39.9826119,-74.1285324,2026-07-27,06:02 PM,eBird - Traveling Count,95,1,1.473,,1
+S361674999,Northern Rough-winged Swallow,Stelgidopteryx serripennis,24211,5,US-PA,Northampton,L9152727,Bushkill/Penn Pump Park/Bushkill Creek Waterfowl Observation Area,40.7032682,-75.2521717,2026-06-22,11:13 AM,eBird - Traveling Count,42,1,.549,,1,,,,660169696
+S361674999,Barn Swallow,Hirundo rustica,24292,2,US-PA,Northampton,L9152727,Bushkill/Penn Pump Park/Bushkill Creek Waterfowl Observation Area,40.7032682,-75.2521717,2026-06-22,11:13 AM,eBird - Traveling Count,42,1,.549,,1,,,,660169721
+S362159167,Barn Swallow,Hirundo rustica,24292,12,US-PA,Northampton,L1279950,Housenick Memorial Park/Archibald Johnston Conservation Area,40.6733768,-75.3534758,2026-06-23,08:25 AM,eBird - Traveling Count,182,1,2.,,1
+S364687597,Barn Swallow,Hirundo rustica,24292,1,US-PA,Northampton,L23340404,Hugh Moore Park,40.6638513,-75.2382277,2026-06-28,06:48 AM,eBird - Traveling Count,77,1,1.469,,1
+S384208086,Barn Swallow,Hirundo rustica,24292,20,US-NY,Rockland,L27681279,Clarkstown Landfill,41.0903291,-73.9557961,2026-08-16,06:08 PM,eBird - Traveling Count,102,1,2.551,,1
+S389362821,Barn Swallow (American),Hirundo rustica erythrogaster,24300,4,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S373695772,Cliff Swallow,Petrochelidon pyrrhonota,24387,4,US-NY,Rockland,L275331,Piermont Pier,41.04254,-73.90091,2026-07-18,03:53 PM,eBird - Traveling Count,107,1,1.878,,1,,,Saw Forster’s Tern perched on end of pier. Two terns making their call. One was a juvenile.    Female Red-breasted Merganser by itself on shore
+S399722183,Ruby-crowned Kinglet,Corthylio calendula,26988,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-10-06,07:44 AM,eBird - Traveling Count,78,1,.55,,1
+S395808636,Ruby-crowned Kinglet,Corthylio calendula,26988,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S397451898,Ruby-crowned Kinglet,Corthylio calendula,26988,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-29,07:34 AM,eBird - Traveling Count,89,1,.773,,1
+S398761129,Ruby-crowned Kinglet,Corthylio calendula,26988,2,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S390892653,White-breasted Nuthatch,Sitta carolinensis,27033,1,US-NJ,Bergen,L753961,Oradell Reservoir and Emerson Woods,40.9700482,-74.0069962,2026-09-07,04:53 PM,eBird - Traveling Count,118,1,.944,,2
+S361674999,White-breasted Nuthatch,Sitta carolinensis,27033,2,US-PA,Northampton,L9152727,Bushkill/Penn Pump Park/Bushkill Creek Waterfowl Observation Area,40.7032682,-75.2521717,2026-06-22,11:13 AM,eBird - Traveling Count,42,1,.549,,1,,,,660169816
+S362159167,White-breasted Nuthatch,Sitta carolinensis,27033,2,US-PA,Northampton,L1279950,Housenick Memorial Park/Archibald Johnston Conservation Area,40.6733768,-75.3534758,2026-06-23,08:25 AM,eBird - Traveling Count,182,1,2.,,1
+S395808636,White-breasted Nuthatch,Sitta carolinensis,27033,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S403964561,White-breasted Nuthatch,Sitta carolinensis,27033,2,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-20,07:55 AM,eBird - Traveling Count,46,1,1.252,,1
+S389362821,White-breasted Nuthatch (Eastern),Sitta carolinensis carolinensis,27034,1,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S405659716,Blue-gray Gnatcatcher,Polioptila caerulea,27278,1,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S355920138,Northern House Wren,Troglodytes aedon,27347,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-11,03:39 PM,eBird - Casual Observation,,0,,,1,,,,660068913 660068914
+S374129582,Eastern Marsh Wren,Cistothorus palustris,27495,2,US-NJ,Bergen,L1794321,Richard W. DeKorte Park--Marsh Discovery Trail,40.785376,-74.1005132,2026-07-19,02:10 PM,eBird - Traveling Count,146,1,3.46,,1
+S377178851,Eastern Marsh Wren,Cistothorus palustris,27495,1,US-NJ,Ocean,L452526,Cattus Island County Park,39.9826119,-74.1285324,2026-07-27,06:02 PM,eBird - Traveling Count,95,1,1.473,,1
+S360366592,Carolina Wren,Thryothorus ludovicianus,27505,X,US-PA,Northampton,L68531961,Waterfowl Observations,40.704893,-75.252755,2026-06-20,01:53 PM,eBird - Casual Observation,,0,,,1,,,,660068794
+S385247499,Carolina Wren,Thryothorus ludovicianus,27505,1,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S405141845,Cactus Wren,Campylorhynchus brunneicapillus,27569,2,MX-BCS,Los Cabos,L18390688,Pueblo Bonito Sunset Beach Golf and Spa Resort,22.874297,-109.9312592,2026-10-24,01:31 PM,eBird - Traveling Count,56,1,.221,,2
+S405659716,Cactus Wren,Campylorhynchus brunneicapillus,27569,2,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S351992301,European Starling,Sturnus vulgaris,27986,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-03,05:44 PM,eBird - Casual Observation,,0,,,1
+S389362821,European Starling,Sturnus vulgaris,27986,20,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S396202003,European Starling,Sturnus vulgaris,27986,1,US-NY,Tompkins,L77702417,"117 Hudson St, Ithaca US-NY 42.43823, -76.49367",42.438225,-76.493668,2026-09-25,03:00 PM,eBird - Traveling Count,130,1,.741,,1
+S385247499,European Starling,Sturnus vulgaris,27986,38,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S389474836,European Starling,Sturnus vulgaris,27986,2,US-NY,Tompkins,L76636030,Giles Street Six Mile Creek Area,42.438124,-76.492777,2026-09-03,05:39 PM,eBird - Traveling Count,38,1,.462,,1
+S391528786,European Starling,Sturnus vulgaris,27986,65,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S394562884,European Starling,Sturnus vulgaris,27986,30,US-NY,Tompkins,L99615,Myers Point,42.5371252,-76.5506476,2026-09-20,08:04 AM,eBird - Traveling Count,51,1,.598,,2
+S388407102,European Starling,Sturnus vulgaris,27986,20,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S392698448,European Starling,Sturnus vulgaris,27986,15,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-09-13,05:11 PM,eBird - Traveling Count,79,1,1.769,,1
+S398045494,European Starling,Sturnus vulgaris,27986,17,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S398761129,European Starling,Sturnus vulgaris,27986,12,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S387415595,European Starling,Sturnus vulgaris,27986,8,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S407318920,European Starling,Sturnus vulgaris,27986,12,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-11-01,01:29 PM,eBird - Traveling Count,48,1,1.207,,1
+S403964561,European Starling,Sturnus vulgaris,27986,27,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-20,07:55 AM,eBird - Traveling Count,46,1,1.252,,1
+S379288048,Gray Catbird,Dumetella carolinensis,28176,5,US-NJ,Bergen,L229904,The Celery Farm,41.0364972,-74.1271909,2026-08-02,11:46 AM,eBird - Traveling Count,150,1,1.802,,1
+S350258874,Gray Catbird,Dumetella carolinensis,28176,X,US-PA,Northampton,L68525397,Downtown,40.690171,-75.205615,2026-05-31,11:55 AM,eBird - Casual Observation,,0,,,1
+S389362821,Gray Catbird,Dumetella carolinensis,28176,3,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S395613757,Gray Catbird,Dumetella carolinensis,28176,3,US-NY,Tompkins,L97554,Cornell Botanic Gardens--Mundy Wildflower Garden,42.4507848,-76.4694708,2026-09-23,02:58 PM,eBird - Stationary Count,60,1,,,2
+S395503635,Gray Catbird,Dumetella carolinensis,28176,20,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-23,07:01 AM,eBird - Traveling Count,96,1,.577,,1
+S399722183,Gray Catbird,Dumetella carolinensis,28176,4,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-10-06,07:44 AM,eBird - Traveling Count,78,1,.55,,1
+S395808636,Gray Catbird,Dumetella carolinensis,28176,2,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S385247499,Gray Catbird,Dumetella carolinensis,28176,1,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S391528786,Gray Catbird,Dumetella carolinensis,28176,2,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S388407102,Gray Catbird,Dumetella carolinensis,28176,10,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S398045494,Gray Catbird,Dumetella carolinensis,28176,2,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S398761129,Gray Catbird,Dumetella carolinensis,28176,1,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S387415595,Gray Catbird,Dumetella carolinensis,28176,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S405659716,Northern Mockingbird,Mimus polyglottos,28293,2,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S362159167,Northern Mockingbird,Mimus polyglottos,28293,1,US-PA,Northampton,L1279950,Housenick Memorial Park/Archibald Johnston Conservation Area,40.6733768,-75.3534758,2026-06-23,08:25 AM,eBird - Traveling Count,182,1,2.,,1
+S388407102,Northern Mockingbird,Mimus polyglottos,28293,1,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S387415595,Northern Mockingbird,Mimus polyglottos,28293,2,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S349091923,Eastern Bluebird,Sialia sialis,28305,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-05-29,08:03 PM,eBird - Casual Observation,,0,,,1
+S400284165,Eastern Bluebird,Sialia sialis,28305,6,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S395613757,Swainson's Thrush,Catharus ustulatus,28502,2,US-NY,Tompkins,L97554,Cornell Botanic Gardens--Mundy Wildflower Garden,42.4507848,-76.4694708,2026-09-23,02:58 PM,eBird - Stationary Count,60,1,,,2
+S350442126,Wood Thrush,Hylocichla mustelina,28525,X,US-PA,Monroe,L68022139,Minsi,40.978427,-75.13998,2026-05-31,04:04 PM,eBird - Casual Observation,,0,,,1,,,,660069325
+S362159167,Wood Thrush,Hylocichla mustelina,28525,2,US-PA,Northampton,L1279950,Housenick Memorial Park/Archibald Johnston Conservation Area,40.6733768,-75.3534758,2026-06-23,08:25 AM,eBird - Traveling Count,182,1,2.,,1
+S347839979,Fieldfare,Turdus pilaris,28773,X,NO-03,,L68009576,Oslo,59.895708,10.730409,2026-05-27,02:16 PM,eBird - Casual Observation,,0,,,1
+S390892653,American Robin,Turdus migratorius,28813,1,US-NJ,Bergen,L753961,Oradell Reservoir and Emerson Woods,40.9700482,-74.0069962,2026-09-07,04:53 PM,eBird - Traveling Count,118,1,.944,,2
+S379062043,American Robin,Turdus migratorius,28813,1,US-NJ,Bergen,L1638487,Pascack Brook County Park,40.9890854,-74.0140427,2026-08-01,07:15 PM,eBird - Traveling Count,65,1,.686,,1
+S379288048,American Robin,Turdus migratorius,28813,10,US-NJ,Bergen,L229904,The Celery Farm,41.0364972,-74.1271909,2026-08-02,11:46 AM,eBird - Traveling Count,150,1,1.802,,1
+S347896117,American Robin,Turdus migratorius,28813,X,US-PA,Monroe,L68022139,Minsi,40.978427,-75.13998,2026-05-27,04:14 PM,eBird - Casual Observation,,0,,,1
+S396885077,American Robin,Turdus migratorius,28813,5,US-NY,New York,L318103,Central Park--The Pool,40.7947416,-73.9606707,2026-09-27,10:05 AM,eBird - Traveling Count,110,1,2.349,,2
+S361600981,American Robin,Turdus migratorius,28813,1,US-PA,Northampton,L70776985,"Forks Township Parks and Recreation, Easton US-PA 40.71807, -75.22792",40.718068,-75.227916,2026-06-22,08:56 AM,eBird - Traveling Count,27,1,.814,,1
+S389362821,American Robin,Turdus migratorius,28813,9,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S395503635,American Robin,Turdus migratorius,28813,5,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-23,07:01 AM,eBird - Traveling Count,96,1,.577,,1
+S395808636,American Robin,Turdus migratorius,28813,2,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S400284165,American Robin,Turdus migratorius,28813,8,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S385247499,American Robin,Turdus migratorius,28813,1,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S391528786,American Robin,Turdus migratorius,28813,1,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S388407102,American Robin,Turdus migratorius,28813,15,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S398045494,American Robin,Turdus migratorius,28813,4,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S387415595,American Robin,Turdus migratorius,28813,3,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S403964561,American Robin,Turdus migratorius,28813,1,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-20,07:55 AM,eBird - Traveling Count,46,1,1.252,,1
+S347833063,European Robin,Erithacus rubecula,29444,X,SI-102,,L68007542,Bled,46.369753,14.106453,2026-05-27,02:16 PM,eBird - Casual Observation,,0,,,1
+S379288048,Cedar Waxwing,Bombycilla cedrorum,30109,1,US-NJ,Bergen,L229904,The Celery Farm,41.0364972,-74.1271909,2026-08-02,11:46 AM,eBird - Traveling Count,150,1,1.802,,1
+S350250928,Cedar Waxwing,Bombycilla cedrorum,30109,X,US-PA,Northampton,L68525397,Downtown,40.690171,-75.205615,2026-05-31,11:55 AM,eBird - Casual Observation,,0,,,1
+S364687597,Cedar Waxwing,Bombycilla cedrorum,30109,1,US-PA,Northampton,L23340404,Hugh Moore Park,40.6638513,-75.2382277,2026-06-28,06:48 AM,eBird - Traveling Count,77,1,1.469,,1
+S389362821,Cedar Waxwing,Bombycilla cedrorum,30109,10,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14,FL Recently Fledged Young,1 young fledgling
+S399722183,Cedar Waxwing,Bombycilla cedrorum,30109,15,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-10-06,07:44 AM,eBird - Traveling Count,78,1,.55,,1,,Flock flew into tree
+S391528786,Cedar Waxwing,Bombycilla cedrorum,30109,2,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S388407102,Cedar Waxwing,Bombycilla cedrorum,30109,2,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S387415595,Cedar Waxwing,Bombycilla cedrorum,30109,4,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S391097554,Cedar Waxwing,Bombycilla cedrorum,30109,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-08,12:58 PM,eBird - Traveling Count,68,1,.85,,1
+S405659716,Phainopepla,Phainopepla nitens,30130,2,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S389908874,House Sparrow,Passer domesticus,31772,8,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S405091130,House Sparrow,Passer domesticus,31772,3,MX-BCS,Los Cabos,L504180,El Arco de Cabo San Lucas,22.8761534,-109.8955965,2026-10-24,08:19 AM,eBird - Traveling Count,242,1,22.546,,1
+S405659716,House Sparrow,Passer domesticus,31772,6,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S347896039,House Sparrow,Passer domesticus,31772,X,US-PA,Monroe,L68022139,Minsi,40.978427,-75.13998,2026-05-27,04:14 PM,eBird - Casual Observation,,0,,,1
+S396885077,House Sparrow,Passer domesticus,31772,15,US-NY,New York,L318103,Central Park--The Pool,40.7947416,-73.9606707,2026-09-27,10:05 AM,eBird - Traveling Count,110,1,2.349,,2
+S396202003,House Sparrow,Passer domesticus,31772,2,US-NY,Tompkins,L77702417,"117 Hudson St, Ithaca US-NY 42.43823, -76.49367",42.438225,-76.493668,2026-09-25,03:00 PM,eBird - Traveling Count,130,1,.741,,1
+S350267366,House Finch,Haemorhous mexicanus,32556,X,US-PA,Northampton,L68525397,Downtown,40.690171,-75.205615,2026-05-31,11:55 AM,eBird - Casual Observation,,0,,,1
+S400886770,House Finch,Haemorhous mexicanus,32556,2,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1
+S389860644,American Goldfinch,Spinus tristis,32871,2,US-NJ,Bergen,L1638487,Pascack Brook County Park,40.9890854,-74.0140427,2026-09-04,06:42 PM,eBird - Traveling Count,43,1,1.149,,1
+S389908874,American Goldfinch,Spinus tristis,32871,5,US-NJ,Bergen,L389007,Richard W. DeKorte Park,40.7833,-74.1025167,2026-09-05,07:39 AM,eBird - Traveling Count,108,1,1.014,,2
+S360273099,American Goldfinch,Spinus tristis,32871,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-20,11:46 AM,eBird - Casual Observation,,0,,,1
+S360274902,American Goldfinch,Spinus tristis,32871,1,US-PA,Northampton,L70776985,"Forks Township Parks and Recreation, Easton US-PA 40.71807, -75.22792",40.718068,-75.227916,2026-06-20,11:48 AM,eBird - Casual Observation,,0,,,1,,,,660068815
+S364687597,American Goldfinch,Spinus tristis,32871,1,US-PA,Northampton,L23340404,Hugh Moore Park,40.6638513,-75.2382277,2026-06-28,06:48 AM,eBird - Traveling Count,77,1,1.469,,1
+S377178851,American Goldfinch,Spinus tristis,32871,1,US-NJ,Ocean,L452526,Cattus Island County Park,39.9826119,-74.1285324,2026-07-27,06:02 PM,eBird - Traveling Count,95,1,1.473,,1
+S389362821,American Goldfinch,Spinus tristis,32871,1,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S394941975,American Goldfinch,Spinus tristis,32871,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-21,08:29 AM,eBird - Traveling Count,113,1,.708,,1
+S395503635,American Goldfinch,Spinus tristis,32871,3,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-23,07:01 AM,eBird - Traveling Count,96,1,.577,,1
+S395808636,American Goldfinch,Spinus tristis,32871,5,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S397451898,American Goldfinch,Spinus tristis,32871,7,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-29,07:34 AM,eBird - Traveling Count,89,1,.773,,1
+S400284165,American Goldfinch,Spinus tristis,32871,40,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S385247499,American Goldfinch,Spinus tristis,32871,6,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S391528786,American Goldfinch,Spinus tristis,32871,2,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S398265463,American Goldfinch,Spinus tristis,32871,1,US-NY,Tompkins,L124514,Mulholland Wildflower Preserve,42.431675,-76.48283,2026-10-02,07:18 AM,eBird - Traveling Count,58,1,1.046,,1
+S398045494,American Goldfinch,Spinus tristis,32871,1,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S358460545,Chipping Sparrow,Spizella passerina,33243,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-16,06:14 PM,eBird - Casual Observation,,0,,,1,,,,660068843
+S362159167,Field Sparrow,Spizella pusilla,33255,1,US-PA,Northampton,L1279950,Housenick Memorial Park/Archibald Johnston Conservation Area,40.6733768,-75.3534758,2026-06-23,08:25 AM,eBird - Traveling Count,182,1,2.,,1
+S395808636,Field Sparrow,Spizella pusilla,33255,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S397451898,Field Sparrow,Spizella pusilla,33255,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-29,07:34 AM,eBird - Traveling Count,89,1,.773,,1
+S400284165,Field Sparrow,Spizella pusilla,33255,2,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S397451898,Dark-eyed Junco,Junco hyemalis,33379,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-29,07:34 AM,eBird - Traveling Count,89,1,.773,,1
+S398761129,Dark-eyed Junco,Junco hyemalis,33379,1,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S400284165,White-throated Sparrow,Zonotrichia albicollis,33455,20,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S397327923,White-throated Sparrow,Zonotrichia albicollis,33455,2,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-09-28,06:54 PM,eBird - Traveling Count,60,1,.63,,1
+S398045494,White-throated Sparrow,Zonotrichia albicollis,33455,8,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S398761129,White-throated Sparrow,Zonotrichia albicollis,33455,6,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S400284165,Savannah Sparrow,Passerculus sandwichensis,33498,1,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S398761129,Savannah Sparrow,Passerculus sandwichensis,33498,1,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S355988864,Song Sparrow,Melospiza melodia,33527,X,US-PA,Northampton,L68269150,Easton,40.717218,-75.229957,2026-06-11,07:57 PM,eBird - Casual Observation,,0,,,1,,,,660068890
+S395808636,Song Sparrow,Melospiza melodia,33527,4,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S400284165,Song Sparrow,Melospiza melodia,33527,30,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S385247499,Song Sparrow,Melospiza melodia,33527,1,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S391528786,Song Sparrow,Melospiza melodia,33527,1,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S398761129,Song Sparrow,Melospiza melodia,33527,10,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S387415595,Song Sparrow,Melospiza melodia,33527,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S398045494,Song Sparrow (Eastern),Melospiza melodia [melodia Group],33528,6,US-NY,Tompkins,L15122799,Sapsucker Woods--Duemling Meadows,42.4774268,-76.4419829,2026-10-01,07:35 AM,eBird - Traveling Count,98,1,2.216,,11
+S398761129,Lincoln's Sparrow,Melospiza lincolnii,33559,1,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S397451898,Swamp Sparrow,Melospiza georgiana,33564,2,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-29,07:34 AM,eBird - Traveling Count,89,1,.773,,1
+S400284165,Eastern Meadowlark,Sturnella magna,33815,5,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S360346350,Orchard Oriole,Icterus spurius,33927,X,US-PA,Northampton,L70795309,Bushkill creek,40.71035,-75.246362,2026-06-20,01:27 PM,eBird - Casual Observation,,0,,,1,,,,660068804
+S405141845,Hooded Oriole,Icterus cucullatus,33930,3,MX-BCS,Los Cabos,L18390688,Pueblo Bonito Sunset Beach Golf and Spa Resort,22.874297,-109.9312592,2026-10-24,01:31 PM,eBird - Traveling Count,56,1,.221,,2
+S405659716,Hooded Oriole,Icterus cucullatus,33930,5,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S352335558,Baltimore Oriole,Icterus galbula,34011,X,US-PA,Northampton,L68556322,Jacobsburg,40.782581,-75.293563,2026-06-04,12:29 PM,eBird - Casual Observation,,0,,,1,,,,660069200
+S389362821,Baltimore Oriole,Icterus galbula,34011,1,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S379288048,Red-winged Blackbird,Agelaius phoeniceus,34020,3,US-NJ,Bergen,L229904,The Celery Farm,41.0364972,-74.1271909,2026-08-02,11:46 AM,eBird - Traveling Count,150,1,1.802,,1
+S360359391,Red-winged Blackbird,Agelaius phoeniceus,34020,X,US-PA,Northampton,L70776985,"Forks Township Parks and Recreation, Easton US-PA 40.71807, -75.22792",40.718068,-75.227916,2026-06-20,01:50 PM,eBird - Casual Observation,,0,,,1
+S361649034,Red-winged Blackbird,Agelaius phoeniceus,34020,10,US-PA,Northampton,L2816994,Palmer Bikeway,40.7136925,-75.2465594,2026-06-22,10:04 AM,eBird - Traveling Count,58,1,1.094,,1
+S400284165,Red-winged Blackbird,Agelaius phoeniceus,34020,15,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S388407102,Red-winged Blackbird,Agelaius phoeniceus,34020,30,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S400886770,Red-winged Blackbird,Agelaius phoeniceus,34020,3,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1
+S401969574,Red-winged Blackbird,Agelaius phoeniceus,34020,10,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-13,07:51 AM,eBird - Traveling Count,69,1,1.473,,1
+S403964561,Red-winged Blackbird,Agelaius phoeniceus,34020,12,US-NY,Tompkins,L1131448,Stewart Park and Renwick Woods,42.4589608,-76.5055355,2026-10-20,07:55 AM,eBird - Traveling Count,46,1,1.252,,1
+S396885077,Brown-headed Cowbird,Molothrus ater,34072,2,US-NY,New York,L318103,Central Park--The Pool,40.7947416,-73.9606707,2026-09-27,10:05 AM,eBird - Traveling Count,110,1,2.349,,2
+S350261727,Brown-headed Cowbird,Molothrus ater,34072,X,US-PA,Northampton,L68525397,Downtown,40.690171,-75.205615,2026-05-31,11:55 AM,eBird - Casual Observation,,0,,,1
+S362159167,Brown-headed Cowbird,Molothrus ater,34072,1,US-PA,Northampton,L1279950,Housenick Memorial Park/Archibald Johnston Conservation Area,40.6733768,-75.3534758,2026-06-23,08:25 AM,eBird - Traveling Count,182,1,2.,,1
+S390892653,Common Grackle,Quiscalus quiscula,34091,1,US-NJ,Bergen,L753961,Oradell Reservoir and Emerson Woods,40.9700482,-74.0069962,2026-09-07,04:53 PM,eBird - Traveling Count,118,1,.944,,2
+S350291574,Common Grackle,Quiscalus quiscula,34091,X,US-PA,Northampton,L68531961,Waterfowl Observations,40.704893,-75.252755,2026-05-31,12:36 PM,eBird - Casual Observation,,0,,,1
+S387415595,Common Grackle,Quiscalus quiscula,34091,2,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-08-27,06:55 AM,eBird - Traveling Count,135,1,1.159,,18
+S350450887,Louisiana Waterthrush,Parkesia motacilla,34191,X,US-PA,Northampton,L68556322,Jacobsburg,40.782581,-75.293563,2026-05-31,04:19 PM,eBird - Casual Observation,,0,,,1,,,,660069266 660069267
+S400886770,Northern Waterthrush,Parkesia noveboracensis,34192,1,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-10-10,09:16 AM,eBird - Traveling Count,90,1,1.517,,1,,"Late, calling in Swan Pen. Saw bobbing on log near center"
+S395808636,Tennessee Warbler,Leiothlypis peregrina,34211,3,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S395808636,Nashville Warbler,Leiothlypis ruficapilla,34220,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S390892653,Common Yellowthroat,Geothlypis trichas,34268,1,US-NJ,Bergen,L753961,Oradell Reservoir and Emerson Woods,40.9700482,-74.0069962,2026-09-07,04:53 PM,eBird - Traveling Count,118,1,.944,,2
+S395503635,Common Yellowthroat,Geothlypis trichas,34268,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-23,07:01 AM,eBird - Traveling Count,96,1,.577,,1
+S395808636,Common Yellowthroat,Geothlypis trichas,34268,3,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S397451898,Common Yellowthroat,Geothlypis trichas,34268,4,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-29,07:34 AM,eBird - Traveling Count,89,1,.773,,1
+S347923778,Hooded Warbler,Setophaga citrina,34297,X,US-PA,Monroe,L68027962,Minsi,40.974177,-75.138375,2026-05-27,04:56 PM,eBird - Casual Observation,,0,,,1
+S395808636,Hooded Warbler,Setophaga citrina,34297,2,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S395211988,Magnolia Warbler,Setophaga magnolia,34319,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-22,07:06 AM,eBird - Traveling Count,92,1,.499,,1
+S395503635,Magnolia Warbler,Setophaga magnolia,34319,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-23,07:01 AM,eBird - Traveling Count,96,1,.577,,1
+S395808636,Magnolia Warbler,Setophaga magnolia,34319,2,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S397451898,Magnolia Warbler,Setophaga magnolia,34319,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-29,07:34 AM,eBird - Traveling Count,89,1,.773,,1
+S379288048,Northern Yellow Warbler,Setophaga aestiva,34328,1,US-NJ,Bergen,L229904,The Celery Farm,41.0364972,-74.1271909,2026-08-02,11:46 AM,eBird - Traveling Count,150,1,1.802,,1
+S405659716,Northern Yellow Warbler,Setophaga aestiva,34328,1,MX-BCS,Los Cabos,L277480,Reserva Ecológica Estero de San José del Cabo,23.0504835,-109.6878944,2026-10-26,07:21 AM,eBird - Traveling Count,293,1,6.645,,2
+S395211988,Blackpoll Warbler,Setophaga striata,34379,1,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-22,07:06 AM,eBird - Traveling Count,92,1,.499,,1
+S394254195,Palm Warbler,Setophaga palmarum,34389,3,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-19,10:40 AM,eBird - Traveling Count,41,1,.318,,2
+S395808636,Yellow-rumped Warbler,Setophaga coronata,34401,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S400284165,Yellow-rumped Warbler,Setophaga coronata,34401,2,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S398748123,Yellow-rumped Warbler,Setophaga coronata,34401,2,US-NY,Tompkins,L99409,"Jennings Pond, Danby",42.3450877,-76.4879603,2026-10-03,12:52 PM,eBird - Traveling Count,22,1,.232,,2
+S398761129,Yellow-rumped Warbler,Setophaga coronata,34401,6,US-NY,Tompkins,L1498735,Sapsucker Woods--Stadlen and Hoyt-Pileated Trail,42.4777154,-76.4481604,2026-10-03,07:59 AM,eBird - Traveling Count,157,1,1.855,,2
+S394254195,Yellow-rumped Warbler,Setophaga coronata,34401,5,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-19,10:40 AM,eBird - Traveling Count,41,1,.318,,2
+S394608566,Yellow-rumped Warbler,Setophaga coronata,34401,2,US-NY,Tompkins,L99381,Stewart Park,42.460791,-76.5068525,2026-09-20,09:13 AM,eBird - Traveling Count,80,1,.929,,2
+S395211988,Black-throated Green Warbler,Setophaga virens,34460,3,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-22,07:06 AM,eBird - Traveling Count,92,1,.499,,1
+S395808636,Black-throated Green Warbler,Setophaga virens,34460,3,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S390892653,Scarlet Tanager,Piranga olivacea,34687,1,US-NJ,Bergen,L753961,Oradell Reservoir and Emerson Woods,40.9700482,-74.0069962,2026-09-07,04:53 PM,eBird - Traveling Count,118,1,.944,,2
+S347895799,Scarlet Tanager,Piranga olivacea,34687,X,US-PA,Monroe,L68022139,Minsi,40.978427,-75.13998,2026-05-27,04:14 PM,eBird - Casual Observation,,0,,,1
+S389362821,Scarlet Tanager,Piranga olivacea,34687,3,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S390892653,Northern Cardinal,Cardinalis cardinalis,34768,1,US-NJ,Bergen,L753961,Oradell Reservoir and Emerson Woods,40.9700482,-74.0069962,2026-09-07,04:53 PM,eBird - Traveling Count,118,1,.944,,2
+S379062043,Northern Cardinal,Cardinalis cardinalis,34768,1,US-NJ,Bergen,L1638487,Pascack Brook County Park,40.9890854,-74.0140427,2026-08-01,07:15 PM,eBird - Traveling Count,65,1,.686,,1
+S350266435,Northern Cardinal,Cardinalis cardinalis,34768,X,US-PA,Northampton,L68525397,Downtown,40.690171,-75.205615,2026-05-31,11:55 AM,eBird - Casual Observation,,0,,,1
+S389362821,Northern Cardinal,Cardinalis cardinalis,34768,1,US-NY,Seneca,L504420,Frontenac Pt.,42.5581699,-76.6245747,2026-09-03,07:10 AM,eBird - Traveling Count,102,1,.496,,14
+S399722183,Northern Cardinal,Cardinalis cardinalis,34768,3,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-10-06,07:44 AM,eBird - Traveling Count,78,1,.55,,1
+S395808636,Northern Cardinal,Cardinalis cardinalis,34768,1,US-NY,Tompkins,L446377,Durland Preserve,42.4379956,-76.3979816,2026-09-24,07:45 AM,eBird - Traveling Count,99,1,.897,,15
+S400284165,Northern Cardinal,Cardinalis cardinalis,34768,2,US-NY,Tompkins,L1756344,"Freese Rd., Cornell Community Garden Plots",42.4621456,-76.4439485,2026-10-08,07:25 AM,eBird - Traveling Count,116,1,1.023,,19
+S385247499,Northern Cardinal,Cardinalis cardinalis,34768,6,US-NY,Tompkins,L1127217,Freeville Marshes,42.5097546,-76.3485003,2026-08-20,07:00 AM,eBird - Traveling Count,113,1,.818,,19,,,100% cloud cover and foggy. 63F.
+S389474836,Northern Cardinal,Cardinalis cardinalis,34768,2,US-NY,Tompkins,L76636030,Giles Street Six Mile Creek Area,42.438124,-76.492777,2026-09-03,05:39 PM,eBird - Traveling Count,38,1,.462,,1
+S391528786,Northern Cardinal,Cardinalis cardinalis,34768,1,US-NY,Tompkins,L109055,Lindsay-Parsons Biodiversity Preserve (FLLT),42.3101677,-76.5216895,2026-09-10,06:58 AM,eBird - Traveling Count,127,1,1.45,,11
+S388407102,Northern Cardinal,Cardinalis cardinalis,34768,1,US-NY,Tompkins,L97555,Sapsucker Woods,42.4787599,-76.4529133,2026-08-30,11:42 AM,eBird - Traveling Count,123,1,1.345,,2
+S395613757,Rose-breasted Grosbeak,Pheucticus ludovicianus,34812,1,US-NY,Tompkins,L97554,Cornell Botanic Gardens--Mundy Wildflower Garden,42.4507848,-76.4694708,2026-09-23,02:58 PM,eBird - Stationary Count,60,1,,,2
+S395211988,Rose-breasted Grosbeak,Pheucticus ludovicianus,34812,2,US-NY,Tompkins,L287796,Cornell Botanic Gardens--Palmer Woods Natural Area,42.4604469,-76.4789951,2026-09-22,07:06 AM,eBird - Traveling Count,92,1,.499,,1
+S362159167,Indigo Bunting,Passerina cyanea,34862,2,US-PA,Northampton,L1279950,Housenick Memorial Park/Archibald Johnston Conservation Area,40.6733768,-75.3534758,2026-06-23,08:25 AM,eBird - Traveling Count,182,1,2.,,1
